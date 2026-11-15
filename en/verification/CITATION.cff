@@ -5,7 +5,7 @@ title: "The Constant Term of the n-Queens Problem: Exact Verification"
 authors:
   - family-names: "Mejia"
     given-names: "Dilan Steven"
-version: "0.3.4"
+version: "1.0.0"
 license: MIT
 references:
   - type: article
