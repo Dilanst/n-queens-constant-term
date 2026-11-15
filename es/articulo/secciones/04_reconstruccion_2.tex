@@ -1,0 +1,20 @@
+Para seleccionar el máximo global, sea $d(a,b)=a\log(a/b)-a+b$, extendida por continuidad a $a=0$.
+Para cualquier competidor factible $s$, restamos en la entropía su término lineal en $p$. Este término
+se anula por estacionariedad y por la igualdad de las sumas de filas y columnas. La diferencia de
+entropías entre $s$ y $p$
+vale
+\[
+ -\sum_e\bigl[d(s_e,p_e)-3d(1-s_e,1-p_e)\bigr]
+ -\sum_f d(h_f(s),h_f(p)).
+\]
+Para $0<b\le e^{-4}$, la función $\tilde d_b(a)=d(a,b)-3d(1-a,1-b)$ satisface
+\[
+ \tilde d_b(b)=\tilde d_b'(b)=0,\qquad
+ \tilde d_b''(a)=\frac{1-4a}{a(1-a)},\qquad
+ \tilde d_b(1)=\log(1/b)-4+4b>0 .
+\]
+Es estrictamente convexa hasta $1/4$ y, por consiguiente, positiva allí salvo en $b$. En $[1/4,1]$ la
+concavidad la sitúa por encima de la cuerda entre dos valores positivos. Para $n$ grande,
+$p_e=O_\delta(1/k)\le e^{-4}$. Toda casilla en que $s_e\ne p_e$ da una pérdida estricta y cada
+divergencia de vacancia es no negativa. Así $p$ es el único máximo.
+\end{proof}

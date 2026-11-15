@@ -1,0 +1,68 @@
+\begin{proposicion}[Coste de salida en el tramo macroscópico]\label{coste-macro}
+Si $N=O_\delta(k)$ y se cumplen las hipótesis del Lema~\ref{coste-estatico}, entonces el coste de
+salida satisface
+\[
+ g^+(B)\le C_\delta k^{2/3},
+\]
+con una constante que depende también de las cotas exteriores.
+\end{proposicion}
+\begin{proof}
+Para $Q(B)>0$ fijemos la colocación aumentada del Lema~\ref{coste-comparacion}. Asignar tiempos
+uniformes independientes en $[0,1]$ a sus $N$ piezas induce el orden uniforme. Distinguimos una pieza
+$b$ de la colocación y condicionamos a que su tiempo sea $t$. Los tiempos de las otras piezas siguen
+siendo independientes. Escribamos $z=1-t$. Para una candidata del tipo de $b$, cada uno de sus cuatro
+vértices pertenece a una pieza de la colocación. Si $j$ piezas distintas de $b$ contienen algún
+vértice de la candidata, su probabilidad de estar disponible al tiempo $t$ es exactamente $z^j$.
+
+Salvo en dos casos se tiene $j=4$. El primero ocurre cuando dos vértices de la candidata pertenecen a
+una misma pieza de la colocación. Hay seis pares de vértices por pieza y cualquier par de líneas
+físicas distintas determina a lo sumo una casilla. Este caso incluye a lo sumo $6N$ candidatas reales.
+El segundo ocurre cuando la candidata toca $b$. Cada línea física contiene a lo sumo $k$ casillas
+residuales, de modo que este caso añade a lo sumo $4k$ candidatas reales. Una candidata con $j=0$
+tiene todos sus vértices en $b$ y por tanto coincide con $b$. Si $b$ es real, usando $v_e\le C/k$
+obtenemos
+\[
+ \E[W_R\mid b,t]\le W z^4+(6N+4k)(C/k)z+C/k
+                   \le W z^4+C_\delta z+C/k .
+\]
+En el caso virtual, para dos vértices fijados en familias distintas hay a lo sumo $N^2$ candidatas, y
+para uno solo a lo sumo $N^3$. Los dos casos anteriores cuentan, respectivamente, a lo sumo $6N^3$ y
+$4N^3$ candidatas virtuales. Sus pesos son a lo sumo uno. De nuevo sólo la propia pieza puede tener
+$j=0$. Si $b$ es virtual, esto da
+\[
+ \E[W_V\mid b,t]\le H^4 z^4+10N^3z+1.
+\]
+
+En ambos casos la masa disponible es positiva porque incluye a $b$. Aplicamos ahora Jensen
+condicionalmente y luego integramos en $t$. Para $a>0$ y $r>1$ usamos
+\[
+ \int_0^1\log(1+a z^{-r})\,dz
+ \le a^{1/r}\int_0^\infty\log(1+u^{-r})\,du
+ \le C_r a^{1/r}.
+\]
+La integral final converge, ya que su integrando es a lo sumo $\log 2-r\log u$ para $0<u<1$ y a lo
+sumo $u^{-r}$ para $u\ge1$. Para una pieza real extraemos $Wz^4$ en el logaritmo. La desigualdad
+$\log(1+x+y)\le\log(1+x)+\log(1+y)$ deja dos errores integrados con coeficientes
+$C_\delta/W=O_\delta(k^{-1})$ delante de $z^{-3}$ y $C/(kW)=O(k^{-2})$ delante de $z^{-4}$. Aquí
+usamos $W=k+O(1)$. Como $\int_0^1\log z\,dz=-1$, la contribución esperada de esa pieza es a lo sumo
+\[
+ \log W-4+O_\delta(k^{-1/3}+k^{-1/2}).
+\]
+Para una pieza virtual se extrae $H^4z^4$. Puesto que $k\le n$ y $N=2n-1$, se tiene $H\ge n-1$ y por
+tanto $H\asymp N$ para $n\ge2$. Los coeficientes son $10N^3/H^4=O(N^{-1})$ y $1/H^4=O(N^{-4})$. La
+contribución esperada es a lo sumo $4\log H-4+O(N^{-1/3}+N^{-1})$.
+
+Las estimaciones son uniformes sobre las colocaciones aumentadas. Sumándolas para las $k$ piezas
+reales y las $H$ virtuales, y usando $N=O_\delta(k)$, el Lema~\ref{coste-comparacion} da
+\[
+ \begin{split}
+ \log Q(B)\le {}&
+ k\log W-4k+4H\log H-4H\\
+ &-\log\mathcal K-\log k!-4\log H!+O_\delta(k^{2/3}).
+ \end{split}
+\]
+La fórmula de Stirling para los dos factoriales y $k\log(W/k)=O(1)$ reducen el lado derecho a
+$-\log\mathcal K-3k+O_\delta(k^{2/3})$. El Lema~\ref{coste-vacancias} identifica los dos primeros
+términos con $H_B(p)+O(1)$, y el Lema~\ref{coste-estatico} proporciona la cota anunciada tras restar
+$L(B)$. Cuando $Q(B)=0$ la conclusión se sigue de la definición de $g^+$.
+\end{proof}

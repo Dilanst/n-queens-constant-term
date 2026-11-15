@@ -1,0 +1,68 @@
+\section{Permanencia desde el corte hasta un número fijo de filas}\label{meso}
+En esta sección indexamos por el tamaño: $\mathcal F_k$ es la historia hasta el tablero de tamaño $k$,
+mientras que en la Sección~\ref{macro} el índice de $\mathcal F_s$ era el número de pasos. Sea
+$M=\lceil\delta n\rceil$. En el tablero de tamaño $k$ escribimos $D_{\max}(k)$ para el máximo, sobre
+las diagonales de las dos familias del tablero inicial, del número de cruces vacíos que
+contiene la línea, disponibles o no. Esta cantidad es
+decreciente a lo largo de la historia y domina la cuenta de casillas disponibles en cualquier
+diagonal de las dos familias. Todas las probabilidades de esta sección corresponden a la ley
+adaptativa $\nu$ iniciada en el tablero inicial. Denotamos por $G_k^-$ el suceso de que, al llegar al
+tamaño $k$, todos los tableros de tamaños estrictamente mayores hayan sido regulares
+(Definición~\ref{def:regular}). Incluimos en $G_k^-$ la transición que llega al tablero de primera
+salida.
+
+\subsection{Prescripciones y presupuesto diagonal}
+\begin{lema}[Cotas de un paso]\label{meso:paso}
+En un padre regular de tamaño $k$, sea $\nu_B(j\mid i)$ la probabilidad adaptativa de elegir la
+columna $j$ dada la elección de la fila $i$, con $\nu_B(j\mid i)=0$ en las casillas no disponibles.
+Existen constantes $C_q,C_{\rm c}$, que se pueden fijar antes de $\delta$ y de la cota $\varepsilon$
+de la masa diagonal, tales que, para $n$ suficientemente grande y $k$ mayor que un umbral fijo,
+\begin{align*}
+ \nu(i\text{ elegida}\mid\mathcal F_k)&=1/k,\\
+ \left|\nu(j\text{ elegida}\mid\mathcal F_k)-1/k\right|&\le C_{\rm c}/k^2,\\
+ \nu((i,j)\text{ elegida}\mid\mathcal F_k)&\le C_q/k^2 .
+\end{align*}
+\end{lema}
+\begin{proof}
+En la representación por hijo de \cite[Teoremas~7.1 y~8.1]{pred}, la perturbación relativa
+de $p_e$ es $d_e+O(k^{-2})$, con $d_e=O(k^{-1})$ y $B(p\odot d)=0$ por \cite[Sección~6.1]{pred},
+donde $B$ designa aquí la matriz de incidencia de filas y columnas y no el tablero. Al
+normalizar por la fila se conserva el resto relativo $O(k^{-2})$ porque $\sum_jp_{ij}d_{ij}=0$. Al
+sumar por la columna también desaparece la parte lineal, pues $\sum_i p_{ij}d_{ij}=0$. Así $\sum_i
+\nu_B(j\mid i)=1+O(k^{-2})$. En el tramo macroscópico, el resto de la probabilidad de elegir la
+columna es $O_\delta(k^{-3})$. Para cada $\delta$ fijado, $k\ge\delta n$ permite absorberlo en
+$k^{-2}$ con coeficiente uno tomando $n$ grande. En el mismo tramo, $\nu_B(j\mid i)\le 2p_{ij}$ para
+$n$ grande y la constante de difusión de $p$ proviene del perfil. En el tramo mesoscópico se usan las
+cotas de difusión, vacancia y brecha de la clase exterior, cuyas constantes no dependen de $\delta$
+ni de $\varepsilon$. La representación requiere que el padre sea regular y las estimaciones por hijo de la
+prueba del teorema citado, también para el tablero de primera salida.
+\end{proof}
+
+\begin{lema}[Filas y columnas prescritas]\label{meso:prescripciones}
+Para cualesquiera $s$ filas y $t$ columnas fijas del tablero inicial se cumple
+\begin{equation}\label{prescr}
+ \nu(\text{las $s$ filas y $t$ columnas siguen vacías en el tamaño $m$},G_m^-)
+ \le (m/n)^{s+t}\exp\{C(st+s+t)/m\}.
+\end{equation}
+Si no caben las prescripciones, el miembro izquierdo es cero. La constante $C$ es común a todos los
+valores de $s,t$.
+\end{lema}
+\begin{proof}
+En un padre regular de tamaño $k$ que contiene los índices prescritos, el Lema~\ref{meso:paso} da que
+la probabilidad de elegir una fila prescrita es $s/k$, la de elegir una columna prescrita es al menos
+$t/k-C_{\rm c}t/k^2$, y la intersección es a lo sumo $C_qst/k^2$. Dentro de cada familia los sucesos
+son disjuntos. El factor de supervivencia es por tanto a lo sumo
+$\exp[-(s+t)/k+C_1(st+s+t)/k^2]$. Iteramos desde $n$ hasta $m+1$, descartando las historias que ya
+tenían un padre no regular. Las desigualdades $\sum_{k=m+1}^n k^{-1}\ge\log(n/m)-1/m$ y
+$\sum_{k=m+1}^n k^{-2}\le1/m$ dan \eqref{prescr}, también cuando $s,t$ dependen de $m$.
+\end{proof}
+
+Fijar $s$ casillas de una diagonal prescribe exactamente $s$ filas y $s$ columnas distintas,
+independientemente de la disponibilidad. Hay menos de $4n$ diagonales y cada una admite a lo sumo
+$\binom ns$ elecciones. Por \eqref{prescr} y $\binom ns\le(en/s)^s$,
+existe $C_{\rm geo}<\infty$ fijo tal que, para $1\le s\le m/4$,
+\begin{equation}\label{geompres}
+ \nu(D_{\max}(m)\ge s,G_m^-)\le 4n\left(\frac{C_{\rm geo}m^2}{ns}\right)^s .
+\end{equation}
+En efecto, el factor $\exp[C(s^2+2s)/m]$ se absorbe en una constante elevada a $s$. Para $s>m$ el
+suceso es vacío.

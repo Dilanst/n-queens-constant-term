@@ -1,0 +1,58 @@
+\begin{lema}[Cancelación de los dieciséis términos y brecha]\label{macro:brecha}
+Para $E=q-V$ se tiene
+\[
+ \|E\|_{\rm op}\le C_\delta(\Delta_R+a_{\rm mac}+C_{\mathcal I}/n)^{1/4}.
+\]
+Si $\Delta$, $a_{\rm mac}$ y $C_{\mathcal I}/n$ son suficientemente pequeños en función de $\delta$ y
+del perfil, el
+laplaciano de filas y columnas con pesos $q$ tiene brecha al menos $c_\nu/2$ en el complemento del
+vector constante.
+\end{lema}
+\begin{proof}
+Por los valores singulares y la expansión de la traza,
+\[
+ \|E\|_{\rm op}^4\le {\rm tr}((EE^T)^2)
+ =\sum_{i,i',j,j'}E_{ij}E_{i'j}E_{i'j'}E_{ij'} .
+\]
+En el sumando se puede extraer el indicador de las cuatro líneas de filas y columnas disponibles y el
+factor $k^{-4}\prod_m\nu_1(e_m)$. Lo que resta es $\prod_{m=1}^4(B_m-1)$, con
+
+\[ B_m=\frac{X_{D(e_m)}X_{A(e_m)}}{U_{D(e_m)}U_{A(e_m)}}. \]
+Si $B_T=\prod_{m\in T}B_m$ y en los subíndices
+abreviamos los conjuntos por sus elementos, la expansión completa es
+\[
+ \begin{aligned}
+ 1
+ &-(B_1+B_2+B_3+B_4)\\
+ &+(B_{12}+B_{13}+B_{14}+B_{23}+B_{24}+B_{34})\\
+ &-(B_{123}+B_{124}+B_{134}+B_{234})+B_{1234}.
+ \end{aligned}
+\]
+Las cuádruplas excepcionales aportan $O_\delta(1/n)$ en total, pues cada producto es
+$O_\delta(k^{-4})$. Para cada término ordinario, el peso que multiplica el patrón de la
+Definición~\ref{macro:rectangulos} en la suma normalizada por $n^4$ es
+\[
+ W_T=x^{-4}\frac{\prod_m\nu_1(e_m)}
+                 {\prod_{m\in T}U_{D(e_m)}U_{A(e_m)}} .
+\]
+Tiene norma suprema y constante Lipschitz acotadas en función de $\delta$ y el perfil. En cada caja,
+sustituirlo por una constante cuesta en conjunto $O_\delta(a_{\rm mac})$, porque para cada $T$ la masa
+de todas
+las cajas suma a lo sumo uno. Sustituir después las masas discretas por sus objetivos cuesta
+$O_\delta(\Delta_R)$. Al devolver el peso variable a la integral, la densidad objetivo ponderada de
+cada uno de los dieciséis términos es exactamente $\prod_m\nu_1(e_m)$. Por tanto su coeficiente total
+es $1-4+6-4+1=0$. Esto prueba la estimación de la norma.
+
+Sea $V'=V-c_\nu\mathbf1\mathbf1^T/k$. Sus entradas son no negativas y sus sumas de filas y columnas son
+a lo sumo $1-c_\nu+O_\delta(\zeta)$ por el Lema~\ref{macro:balances}. La cota de Schur da el mismo
+límite para $\|V'\|_{\rm op}$. Si $(u,v)\perp\mathbf1_{2k}$, entonces $(\sum_i u_i)(\sum_j
+v_j)=-(\sum_i u_i)^2\le0$. En la forma cuadrática del laplaciano el término de la matriz constante es,
+pues, no negativo. Los grados diagonales son $1+O_\delta(\zeta)$, y
+$2\|u\|_2\|v\|_2\le\|u\|_2^2+\|v\|_2^2$. La forma cuadrática queda acotada inferiormente por
+\[
+ \bigl(c_\nu-O_\delta(\zeta)-\|E\|_{\rm op}\bigr)
+                   (\|u\|_2^2+\|v\|_2^2).
+\]
+Reduciendo los tres umbrales se obtiene la brecha afirmada. La potencia de exponente $1/4$ se usa sólo
+para garantizar esta brecha.
+\end{proof}

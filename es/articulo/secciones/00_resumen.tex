@@ -1,0 +1,42 @@
+\begin{abstract}
+\noindent Sea $Q(n)$ el número de colocaciones de $n$ reinas sin ataques en un tablero de
+$n\times n$. Simkin determinó $\log Q(n)$ salvo un error $o(n)$ mediante un problema variacional. Un
+trabajo anterior construyó, a partir de una entropía de Bethe, el predictor canónico
+$Q_{\rm pred}(n)$ y obtuvo su término constante $C_{\rm pred}$, pero dejó abierto si éste es también
+el término constante del conteo exacto. Probamos que lo es:
+\[
+\begin{aligned}
+ \log Q(n)-\log n!-n\Phi &\longrightarrow C_{\rm pred},\\
+ C_{\rm pred} &=\tfrac12\log2-\tfrac12-\tfrac32I_2-\tfrac12\log{\det}_2(I+J).
+\end{aligned}
+\]
+Aquí $\Phi=s_1+1$, donde $s_1$ es el valor óptimo en masa uno, que alcanza el perfil de masa uno;
+$I_2$ es la integral del cuadrado de ese perfil y $J$ es el operador de Hilbert--Schmidt construido
+a partir de él. Equivalentemente, $Q(n)\sim e^{C_{\rm pred}}\,n!\,e^{n\Phi}$ y
+$\log Q(n)-\log Q_{\rm pred}(n)\to0$; la cota $O(1/n)$ para esta diferencia, conjeturada en ese
+trabajo, sigue abierta.
+
+\smallskip\noindent La prueba compara dos leyes para el proceso que inserta una reina por fila, en
+un orden uniforme de las filas: la ley uniforme, que revela una solución uniforme, y la ley
+adaptativa, que elige cada casilla según el predictor del tablero resultante. Ese trabajo probó que
+el predictor satisface la recursión del conteo salvo un factor $e^{O(k^{-2})}$ en dos clases de
+tableros con $k$ filas vacías. Con esa consistencia, una identidad entrópica reduce la comparación
+de los conteos al tablero en que se detiene el proceso. Bajo la ley adaptativa, los tableros
+satisfacen hasta que quedan $K$ filas vacías unas condiciones que los mantienen en esas clases,
+salvo probabilidad $O(e^{-cK})+o(1)$, y acotamos el coste en el primer tablero que deja de
+satisfacerlas. En el tablero con $K$ filas vacías, salvo probabilidad $O(K^4/n)$, ninguna diagonal
+contiene dos de sus cruces vacíos, las intersecciones de las filas y las columnas vacías, y el
+conteo es un permanente, al que aplicamos la estimación de McCullagh en la forma uniforme probada
+por Divoux y Wang.
+
+\smallskip\noindent Numéricamente, $C_{\rm pred}\approx0{,}9401$, sin cota de error certificada; los
+conteos exactos para ${16\le n\le27}$ son compatibles con el teorema, que no da velocidad de
+convergencia.
+
+\medskip\noindent
+\textbf{Palabras clave:} problema de las $n$ reinas; enumeración asintótica; término constante;
+entropía relativa; permanente.
+
+\noindent
+\textbf{MSC 2020:} 05A16; 05A05; 60C05; 94A17; 15A15.
+\end{abstract}

@@ -1,0 +1,85 @@
+\begin{proposicion}[Concentración de los observables]\label{prop:concentracion-meso}
+Para una familia fija de patrones y tipos de fibras de pesos acotados, fijemos $b_1>0$ y $\chi>0$.
+Existe $c_{\rm pat}>0$ tal que, para cada suelo $K$, en las historias de entrada regular, salvo
+probabilidad $\le C e^{-c_{\rm pat}K}$, cada observable alcanzado antes de la primera salida o en la
+transición que
+llega a ella difiere de su valor en $M$ en a lo sumo
+\[
+ C_H\{A(\delta+1/n)+\chi+1/K\}+b_1 .
+\]
+Para las fibras se compara cada línea distinguida todavía disponible con su propia fibra en $M$. La
+tasa depende de las constantes de la clase exterior, de la familia de observables, de $b_1$ y de
+$\chi$.
+\end{proposicion}
+\begin{proof}
+Restamos a cada incremento su esperanza predecible y congelamos el proceso a partir del tablero de
+primera salida. Para un patrón sin línea distinguida, el salto centrado en el paso desde el tamaño
+$u$ es a lo sumo $2C_H/u$. La desigualdad maximal de Azuma \eqref{macro:max-mart}, con
+$\sum_{u>k}u^{-2}\le1/k$, acota por $2\exp(-c_H b_1^2k)$ la probabilidad de que la martingala alcance
+en módulo $b_1$ desde $M$ hasta $k$. El
+Lema~\ref{lema:presupuesto-meso} y la suma de $u^{-2}$ acotan la deriva acumulada en todos los
+prefijos a la vez.
+
+Fijada la historia de entrada y una de sus líneas distinguidas, usemos el núcleo auxiliar que en cada
+padre regular divide el núcleo original restringido a los hijos que mantienen disponible la línea
+distinguida por su probabilidad de supervivencia $y_u$. Este núcleo sólo condiciona el paso siguiente.
+En cualquier prefijo que llega con la línea distinguida disponible al tamaño $k$, incluido el que
+termina en la primera salida, el peso bajo $\nu$ es el peso auxiliar multiplicado por
+\[
+ \prod_{u=k+1}^{M}y_u
+ =\prod_{u=k+1}^{M}\big(1-1/u+O(u^{-2})\big)
+ =(k/M)\exp(O(1/k)).
+\]
+Para la fila el producto es exactamente $k/M$. Para la columna el error es uniforme aun cuando los
+factores dependan de los tableros del prefijo. La misma identidad de pesos vale en un instante de
+parada porque se aplica por separado a cada prefijo terminal. Bajo el núcleo auxiliar restamos la
+deriva condicional del Lema~\ref{lema:incrementos-meso} y congelamos al llegar al tablero de primera
+salida. La
+misma desigualdad maximal de Azuma vale desde cualquier historia de entrada regular.
+
+En la banda $m\le k<2m$, con $m=2^jK$, paremos en la primera observación de la banda en que la martingala
+de esta línea distinguida tenga módulo $\ge b_1$, si existe. Al transferir los prefijos de parada a
+$\nu$, el factor cuesta a lo sumo $(2m/M)e^{C/m}$. La unión condicional sobre las $M$ líneas
+distinguidas de cada familia y los tipos fijos de pesos, y después la suma sobre las bandas, cuestan a
+lo sumo $\sum_m C m e^{-c_H b_1^2 m}\le C'e^{-c' b_1^2K}$. Mientras la línea distinguida siga disponible,
+la resta de deriva en estas trayectorias es exactamente la del núcleo auxiliar; su módulo acumulado
+queda controlado por el presupuesto en la trayectoria original. El fallo del presupuesto se cuenta una
+sola vez bajo $\nu$, mediante el Lema~\ref{lema:presupuesto-meso}, después de integrar sobre la
+historia de entrada. Así no aparece un factor $M$ en la cola de ese fallo ni un factor $n$ en la cola
+de las fibras.
+\end{proof}
+
+\subsection{Reconstrucción de las condiciones de regularidad}\label{meso:regularidad}
+Escribimos $W_0=\nu_1/(u_Du_A)=b_0r_Rr_C$, que es el valor en $x=0$ del peso $W_x$ de la
+Proposición~\ref{macro:trayectoria}, $q_{ij}=Y_{ij}W_{0,ij}/k$ y
+$V_{ij}=\nu_{1,ij}/k$, evaluados en las coordenadas originales de la casilla. Las cotas $c_\nu,C_\nu$
+para la densidad, la vacancia mínima $\kappa_\nu$ y la constante de Lipschitz $L_\nu$ son las
+constantes fijas del perfil. Consideramos una partición fija de $[0,1]$ en intervalos de longitud a
+lo sumo $a_{\rm mes}$. El radio $\varrho_{\rm mac}$ y el paso $a_{\rm mac}$ de la
+Sección~\ref{macro} se eligen después, en el punto~5 de la Sección~\ref{meso:constantes}, en función
+de esta partición, de las tolerancias que siguen y de $\delta$ (Lema~\ref{meso:entrada}). Para filas
+y columnas controlamos sus proporciones restantes en cada intervalo con objetivo la longitud del
+intervalo. Fijamos una tolerancia $\varrho_{\rm mes}>0$ y tolerancias individuales cuya suma es a lo
+sumo $\varrho_{\rm mes}$ por familia, por ejemplo $\varrho_{\rm mes}|I|$ para $I$ en esta partición.
+Las fibras de fila y columna tienen pesos $W_0$, objetivo $1$ y tolerancia a lo sumo
+$\varrho_{\rm mes}$ cada una.
+
+Para describir los otros patrones escribamos $T=\{1,2\}\times\{1,2\}$. Por cada $S\subseteq T$ tomamos
+el patrón de dos filas y dos columnas que requiere una casilla disponible en las posiciones de $S$. Su
+peso es $\prod_{e\in S}W_{0,e}\prod_{e\in T\setminus S}\nu_{1,e}$. Los dieciséis tienen un mismo
+objetivo,
+\[
+ \int_{[0,1]^4}\nu_1(r,c)\nu_1(r,c')\nu_1(r',c)\nu_1(r',c')\,dr\,dr'\,dc\,dc' .
+\]
+La normalización inyectiva es $(k)_2^2$. Usar $k^4$ y agregar las asignaciones que repiten fila o
+columna modifica cada patrón en $O(1/k)$, porque hay $O(k^3)$ asignaciones adicionales con peso
+acotado. Con $E=q-V$, como en el Lema~\ref{macro:brecha}, la identidad
+\[
+ \operatorname{tr}\big[(EE^{T})^2\big]
+ =\sum_{i,i',j,j'} E_{ij}E_{i'j}E_{i'j'}E_{ij'}
+\]
+produce los dieciséis términos así extendidos con signos $(-1)^{4-|S|}$. Los dieciséis objetivos se
+cancelan por $(1-1)^4=0$. Se escogen las tolerancias positivas por separado de modo que su suma, más
+$O(1/K_0)$, sea menor que la cuarta potencia de la cota espectral requerida. Entonces $\|q-V\|_{\rm
+op}\le\operatorname{tr}[(EE^T)^2]^{1/4}$ es menor que dicha cota. La expansión incluye
+$S=\varnothing$, y permite diagonales repetidas en todos los términos.

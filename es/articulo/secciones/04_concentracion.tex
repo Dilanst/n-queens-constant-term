@@ -1,0 +1,134 @@
+\subsection{Deriva por familia y control hasta la primera salida}\label{macro:control}
+
+\begin{lema}[Pérdida condicional de un patrón]\label{macro:deriva}
+Supongamos que el padre cumple los umbrales de la Proposición~\ref{macro:maximo} y que $k\ge\delta n$.
+Para un conjunto $\mathcal L$ de un número acotado de líneas distintas disponibles, sea $H^*(\mathcal
+L)$ la suma de un uno por fila o columna y de $\ell_f^*$ por cada diagonal o antidiagonal $f$. En un
+paso,
+\[
+ P^{\rm B}(\text{se ocupa alguna línea de }\mathcal L\mid\mathcal F_s)
+ =\frac{H^*(\mathcal L)}{k}
+       +O_\delta\!\left(\frac{\zeta+k^{-1}}{k}\right).
+\]
+Las tasas de las fibras son las de la Definición~\ref{macro:fibras}, y la del término rectangular $T$
+es
+\[
+ H_T^*=4+\sum_{m\in T}\bigl(\ell_{D(e_m)}^*+\ell_{A(e_m)}^*\bigr).
+\]
+\end{lema}
+\begin{proof}
+La suma de probabilidades individuales se obtiene con el Lema~\ref{macro:casilla}. Al sustituir las
+masas diagonales por sus objetivos se comete el error de \eqref{macro:predictor} dividido por $k$ y
+multiplicado por el número de líneas. Cada intersección de dos líneas distintas tiene probabilidad a
+lo sumo $\max_e p_e/k=O_\delta(k^{-2})$. Las dos primeras desigualdades de inclusión y exclusión
+acotan el error de la unión por la suma de esas intersecciones.
+
+Para una línea distinguida disponible $\lambda$, escribimos $Y_{e|\lambda}=\prod_{f\ni
+e,\,f\ne\lambda}X_f$. Si $Y_{e|\lambda}=1$, su contribución disminuye cuando se alcanza alguna de las
+otras tres líneas sin ocupar $\lambda$. Excluir la ocupación simultánea de $\lambda$ y de una de las
+tres líneas cambia la probabilidad en $O_\delta(k^{-2})$. Si se ocupa $\lambda$, la regla de
+congelación conserva el observable. Por tanto, con $\nabla_s$ denotando el incremento de un paso,
+\[
+ \E_{\rm B}[\nabla_s F_{\lambda,I}\mid\mathcal F_s]
+ =-\frac1{kn}\sum_{e\in\lambda_I}Y_{e|\lambda}H_\lambda^*(e)
+   +O_\delta\!\left(\frac{\zeta+k^{-1}}{k}F_{\lambda,I}\right).
+\]
+La derivada temporal de cada densidad de fibra en la tabla es $-H^*_\lambda/x$ veces esa densidad, por
+\eqref{macro:derivadas}. El incremento de su objetivo sin congelación es la integral de esta derivada
+dividida por $n$, con error de Taylor $O_\delta(n^{-2}|\lambda_I|)$, donde $|\lambda_I|$ mide el
+intervalo de su parámetro. La probabilidad de congelación es $O(1/k)$ y el incremento ordinario del
+objetivo es $O_\delta(|\lambda_I|/n)$. Congelar el objetivo en el paso en que se ocupa la línea añade
+por tanto
+$O_\delta(|\lambda_I|/(kn))$ a su deriva condicional. Una fibra ya congelada tiene ambas derivas
+iguales a cero.
+
+Para las masas de filas o columnas se tiene exactamente
+$\E_{\rm B}[\nabla_s N_I\mid\mathcal F_s]=-N_I/k$ y el objetivo disminuye en $|I|/n$. Para el
+rectángulo se aplica la fórmula de la unión a las cuatro líneas de filas y columnas y las $2|T|$
+líneas diagonales. Son distintas para las cuádruplas ordinarias. Si $Y_{T}$ denota el producto de sus
+indicadores,
+\[
+ \E_{\rm B}[\nabla_s P_{\Theta,T}\mid\mathcal F_s]
+ =-\frac1{kn^4}\sum_{(i,i',j,j')\in\Theta}^{\rm ord}Y_T H_T^*
+   +O_\delta\!\left(\frac{\zeta+k^{-1}}{k}P_{\Theta,T}\right).
+\]
+Cuando $Y_T=0$ su contribución sigue valiendo cero. La densidad del objetivo tiene derivada
+exactamente igual a $-H_T^*/x$ veces ella misma. La segunda derivada temporal está uniformemente
+acotada para $x\ge\delta$, de modo que el error de Taylor integrado es $O_\delta(|\Theta|/n^2)$.
+\end{proof}
+
+\begin{proposicion}[Cota de parada bajo la ley auxiliar]\label{macro:parada}
+Sea $M=\lceil\delta n\rceil$. Para todo radio $\varrho_{\rm mac}>0$ suficientemente pequeño, se
+puede fijar una partición $\mathcal I$ de paso $a_{\rm mac}$ y constantes
+$c_{\delta,\varrho_{\rm mac}},C_{\delta,\varrho_{\rm mac}}>0$ de modo que, para $n$ suficientemente
+grande,
+\[
+ P^{\rm B}\!\left(\max_{0\le s\le n-M}\Delta(s)\ge\varrho_{\rm mac}\right)
+ \le C_{\delta,\varrho_{\rm mac}}\exp(-c_{\delta,\varrho_{\rm mac}}n).
+\]
+Se puede imponer el mismo control a una partición de observación fija pasando a un refinamiento suyo.
+\end{proposicion}
+\begin{proof}
+Sea $\tau$ el primer índice con $\Delta(s)\ge\varrho_{\rm mac}$, limitado por $n-M$. Paramos en
+$\tau$ las discrepancias y los incrementos centrados de cada observable menos su objetivo. El
+incremento que llega a $\tau$ se incluye si la historia hasta el padre seguía dentro del radio
+$\varrho_{\rm mac}$. Sea $\mathcal M^*$ la suma de los máximos temporales absolutos de esas
+martingalas para intervalos de filas y columnas y para cajas y subconjuntos, más el máximo sobre las
+líneas distinguidas de la suma de los máximos absolutos de sus intervalos.
+
+En una caja o intervalo restamos en la deriva empírica y en la del objetivo un mismo valor de la tasa
+$H^*$, tomado en un punto de esa región. El término de tasa constante es a lo sumo $C_\delta/n$ veces
+la discrepancia absoluta de masa en esa región. La oscilación de $H^*$ es $O_\delta(a_{\rm mac})$ por
+regularidad espacial y multiplica la suma de la masa empírica y la masa objetivo. En todas las
+subfibras de una línea esas masas suman a lo sumo dos. Para cada uno de los dieciséis tipos, también
+suman a lo sumo dos sobre todas las cajas. En los errores de Taylor las longitudes o volúmenes suman a
+lo sumo uno por familia o tipo. Estos hechos dan, con una constante $C_\delta$ independiente del
+número de intervalos,
+\begin{equation}\label{macro:gronwall}
+ \Delta(s\wedge\tau)\le \Delta(0)+\mathcal M^*
+ +\frac{C_\delta}{n}\sum_{j<s\wedge\tau}\Delta(j)
+ +C_\delta(a_{\rm mac}+C_{\mathcal I}/n),\qquad 0\le s\le n-M .
+\end{equation}
+Para las fibras primero se suman los errores absolutos sobre sus intervalos y luego se toma el máximo
+sobre las líneas. La contribución de cada fibra cesa desde su congelación. Las estimaciones del
+Lema~\ref{macro:deriva} sólo emplean en la deriva $\zeta$, que es lineal en $\Delta_0+\Delta_F$. El
+exponente $1/4$ del Lema~\ref{macro:brecha} no afecta al coeficiente de \eqref{macro:gronwall}.
+
+Hay $O_{\mathcal I}(n)$ martingalas escalares. Para una fibra que sigue disponible cada línea recién
+ocupada afecta a lo sumo una casilla de la fibra, pues las líneas distintas se cortan a lo sumo una
+vez. En el paso que ocupa la línea distinguida se congela toda su observación. Para un rectángulo,
+requerir que una de las líneas ocupadas pase por una posición fija del rectángulo determina una
+relación lineal no idéntica y permite $O(n^3)$ cuádruplas. Cada incremento de una masa normalizada,
+incluido el del objetivo, tiene por tanto módulo a lo sumo $C_\delta/n$. La misma cota, con otra
+constante, vale después de centrar y parar los incrementos.
+
+Si $(\xi_j)$ son diferencias de martingala con $|\xi_j|\le d_j$, para $\theta>0$ la convexidad de la
+exponencial entre $-d_j$ y $d_j$ y la media condicional cero dan
+$\E[\exp(\theta\xi_j)\mid\mathcal F_{j-1}]\le\cosh(\theta d_j)\le\exp(\theta^2d_j^2/2)$. El producto
+compensado es una supermartingala positiva. Pararla en el primer $h$ con $\sum_{j\le h}\xi_j\ge u$,
+aplicar la misma cuenta a $-\xi_j$ y optimizar $\theta$ da
+\begin{equation}\label{macro:max-mart}
+ P\left(\max_{h\le m}\left|\sum_{j\le h}\xi_j\right|\ge u\right)
+ \le 2\exp\!\left(-\frac{u^2}{2\sum_{j\le m}d_j^2}\right).
+\end{equation}
+Para la partición $\mathcal I$ fija existe $C'_{\mathcal I}$ tal que si todas las martingalas escalares
+tienen máximo absoluto menor
+que $b/C'_{\mathcal I}$ entonces $\mathcal M^*<b$. El factor $C'_{\mathcal I}$ cuenta los intervalos de
+una sola fibra y las
+observaciones de intervalos y rectángulos. El número de líneas distinguidas sólo interviene en la
+unión de sucesos. De \eqref{macro:max-mart} resulta
+\[
+ P^{\rm B}(\mathcal M^*\ge b)\le C_{\mathcal I}(n+1)\exp(-c_{\delta,\mathcal I}b^2 n).
+\]
+
+Al inicio $x=U_f=1$. Las sumas de retícula por intervalos y cajas, la aproximación de los extremos
+de las fibras y las $O(n^3)$ cuádruplas excepcionales dan $\Delta(0)\le C_{\mathcal I}/n$,
+uniformemente en la línea distinguida. Elegimos primero $\varrho_{\rm mac}$ dentro de los umbrales
+deterministas, después $a_{\rm mac}$ y $b$ con
+$e^{C_\delta}(b+C_\delta a_{\rm mac})<\varrho_{\rm mac}/3$, y finalmente $n$ grande a partición
+fija. Gronwall discreto en \eqref{macro:gronwall} da $\Delta(s\wedge\tau)<\varrho_{\rm mac}$ siempre
+que $\mathcal M^*<b$, también para el paso que llega a $\tau$. Esto excluye la primera salida y
+prueba la cota, absorbiendo $n+1$ en la exponencial. Al refinar una partición todas las masas y
+objetivos de una región gruesa se obtienen sumando los de las regiones finas, también para fibras
+congeladas. La desigualdad triangular transfiere la cota a la partición gruesa.
+\end{proof}

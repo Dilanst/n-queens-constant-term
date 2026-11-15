@@ -1,0 +1,46 @@
+\begin{corolario}[Cambio de ley hasta la primera salida]\label{macro:cambio}
+La conclusión de la Proposición~\ref{macro:parada} vale bajo la ley $\nu$ con otras constantes
+$C_{\delta,\varrho_{\rm mac}},c_{\delta,\varrho_{\rm mac}}>0$. En particular, con probabilidad al menos
+$1-C_{\delta,\varrho_{\rm mac}}\exp(-c_{\delta,\varrho_{\rm mac}}n)$, en todos los tableros hasta $k=M$,
+incluido ese
+extremo, el punto de
+Bethe es el máximo único y cumple cotas macroscópicas uniformes de difusión, vacancia y brecha.
+\end{corolario}
+\begin{proof}
+Por \eqref{macro:predictor}, eligiendo los umbrales suficientemente pequeños se pueden fijar, por
+ejemplo, una cota superior $4C_\nu/\kappa_\nu^2$ para $k\max_e p_e$, una cota inferior $\kappa_\nu/4$
+para las vacancias y una cota inferior estrictamente menor que $c_\nu/8$ para la brecha. La
+comparación de pesos en el Lema~\ref{macro:brecha} y la Proposición~\ref{macro:reequilibrado}
+justifica esta última elección. Éstas son las cotas macroscópicas que se verifican en cada padre
+regular del tramo macroscópico.
+
+Para dicho padre y cualquiera de sus hijos, la expansión de un paso de \cite[Teorema~7.1 y
+Corolario~7.2, con sus pruebas]{pred} da
+\[
+ L(B+e)-L(B)=\log[p_e(1+d_e)]+r_e,\qquad
+ |d_e|\le C'_\delta/k,\qquad |r_e|\le C''_\delta/k^2,\qquad
+ \sum_{e\in i}p_ed_e=0
+\]
+en cada fila disponible $i$. Aquí $d_e$ es la corrección relativa $\delta_c$
+de~\cite[Teorema~7.1]{pred} y $r_e$ es el resto $r_c$ de su prueba. La construcción del hijo por
+eliminación en \cite[Sección~6.5]{pred} permite usar la expansión también en el tablero de primera
+salida. Sólo
+se exige el control del padre. Las dos leyes usan la misma elección uniforme de la próxima fila.
+Condicionalmente a esa fila, el cociente de la probabilidad de columna bajo $\nu$ y su probabilidad
+$p_e$ bajo $P^{\rm B}$ es
+\[
+ \frac{(1+d_e)e^{r_e}}{\sum_{e'\in i}p_{e'}(1+d_{e'})e^{r_{e'}}} .
+\]
+Para $k\ge2C'_\delta$ todos los factores $1+d_{e'}$ son positivos. La cancelación por fila implica
+$\sum_{e'\in i}p_{e'}(1+d_{e'})=1$, de modo que el denominador pertenece a
+$[e^{-C''_\delta/k^2},e^{C''_\delta/k^2}]$. El módulo del logaritmo del cociente es a lo sumo
+$2C'_\delta/k+2C''_\delta/k^2$.
+
+A lo largo de una trayectoria parada en la primera salida o al llegar a $M$, el módulo del logaritmo
+de la densidad relativa se acota por \[
+\sum_{k=M+1}^{n}\left(\frac{2C'_\delta}{k}+\frac{2C''_\delta}{k^2}\right) \le
+2C'_\delta\log(n/M)+2C''_\delta/M=O_\delta(1). \] La cota incluye la transición que produce la
+salida. Al sumar sobre las historias paradas en las que la discrepancia alcanza el radio
+$\varrho_{\rm mac}$ obtenemos, por la Proposición~\ref{macro:parada}, la cola exponencial afirmada.
+Fuera de ese suceso se aplica la reconstrucción determinista en todos los tableros hasta $M$.
+\end{proof}

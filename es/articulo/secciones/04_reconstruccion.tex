@@ -1,0 +1,132 @@
+\subsection{Reconstrucción del punto de Bethe}\label{macro:reconstruccion}
+
+\begin{proposicion}[Reequilibrado de filas y columnas]\label{macro:reequilibrado}
+Bajo los umbrales del Lema~\ref{macro:brecha}, existe una matriz $\bar p$ con el soporte de $q$,
+sumas por filas y por columnas exactamente iguales a uno y
+\[
+ \max_{q_e>0}\left|\frac{\bar p_e}{q_e}-1\right|\le C_\delta\zeta .
+\]
+Sus vacancias diagonales son al menos $\kappa_\nu/2$, sus entradas son $O_\delta(1/k)$ y su laplaciano
+de filas y columnas conserva una brecha positiva uniforme.
+\end{proposicion}
+\begin{proof}
+Restringimos las variables a las casillas disponibles, donde $q_e>0$. Sea $B$ la matriz de incidencia
+de filas y columnas por casillas; como en~\cite[Sección~6.1]{pred}, la letra $B$ designa aquí esa
+matriz y no un tablero. Sea $J$ la matriz diagonal que cambia el signo de las coordenadas de
+columnas, y pongamos $B_o=JB$. Para $b=\mathbf1-Bq$ se tiene $\|b\|_\infty=O_\delta(\zeta)$ y
+$\mathbf1^TJb=0$, pues la suma de las masas por filas coincide con la suma por columnas. Con el
+laplaciano de filas y columnas $L_q$ de pesos $q$, definimos
+\[
+ L_q=B_o\operatorname{diag}(q)B_o^T,\qquad
+ \phi=L_q^+Jb,\qquad z=\operatorname{diag}(q)B_o^T\phi .
+\]
+La brecha y la compatibilidad dan $Bz=b$ y $\|\phi\|_2\le C_\delta\sqrt{k}\,\zeta$. En un vértice
+$\gamma$ del grafo, es decir, en una fila o una columna, la ecuación $L_q\phi=Jb$ y su grado
+$d_\gamma=1+O_\delta(\zeta)$ dan
+\[
+ d_\gamma|\phi_\gamma|\le |b_\gamma|+
+ \left(\sum_{e\in\gamma}q_e^2\right)^{1/2}\|\phi\|_2,
+ \qquad \sum_{e\in\gamma}q_e^2\le \frac{C_\delta}{k}d_\gamma .
+\]
+Así $\|\phi\|_\infty=O_\delta(\zeta)$ y $|z_e|/q_e\le2\|\phi\|_\infty$. Tomamos $\bar p=q+z$. La
+comparación multiplicativa de pesos conserva una fracción fija de la brecha de $L_q$. También cambia
+cada masa diagonal en $O_\delta(\zeta)$ por el Lema~\ref{macro:balances}. Las vacancias objetivo son
+al menos $\kappa_\nu$ por \eqref{macro:derivadas}, lo que da las cotas de la proposición al reducir
+los umbrales.
+\end{proof}
+
+\begin{lema}[Inversa tangente en el punto factible]\label{macro:inversa}
+Para $\bar p$ como en la Proposición~\ref{macro:reequilibrado}, denotemos por $K_{\bar p}$ la hessiana
+negativa de la entropía de Bethe en $\bar p$ y por $Z$ una matriz de columnas ortonormales que
+generan $\ker B$. Para $n$
+grande,
+\[
+ R=Z(Z^TK_{\bar p}Z)^{-1}Z^T,\qquad
+ \|\operatorname{diag}(\bar p)^{-1}R\|_{\infty\to\infty}\le C_\delta .
+\]
+\end{lema}
+\begin{proof}
+Damos el argumento matricial de \cite[Secciones~6.3 y~7.2]{pred} en este punto factible. Sea $D$ la
+incidencia de casillas por diagonales de las dos familias, como en~\cite[Sección~6.1]{pred}; la
+letra $D$ sola designa esa matriz y $D(e)$ sigue siendo la diagonal de la casilla $e$. Sean
+$H=\operatorname{diag}(h_f(\bar p))$ y
+\[
+ w_e=\left(\frac1{\bar p_e}-\frac3{1-\bar p_e}\right)^{-1},
+ \qquad W=\operatorname{diag}(w_e),\qquad
+ K_{\bar p}=W^{-1}+DH^{-1}D^T .
+\]
+Se tiene $w_e/\bar p_e=1+O_\delta(1/k)>0$. Si $\Upsilon$ se forma apilando $B_o$ y $D^T$, el
+sistema para $v=R\psi$ equivale a
+\begin{equation}\label{macro:sistema-inverso}
+ (\Upsilon W\Upsilon^T+\operatorname{diag}(0,H))\,y=\Upsilon W\psi,\qquad
+ v=W(\psi-\Upsilon^Ty).
+\end{equation}
+En efecto, el primer bloque da $B_ov=0$ y el segundo $D^Tv=Hy_D$, donde $y_D$ reúne las dos familias
+diagonales. De aquí $K_{\bar p}v=\psi-B_o^Ty_{RC}$.
+
+Resolvemos \eqref{macro:sistema-inverso} con $y_{RC}\perp\mathbf1_{2k}$, condición compatible con el
+primer bloque. La forma cuadrática de la matriz del sistema es
+\[
+ \|W^{1/2}(B_o^Ty_{RC}+Dy_D)\|_2^2+y_D^THy_D .
+\]
+Su segundo término domina $\kappa_\nu\|y_D\|_2^2/2$. Además
+$\|W^{1/2}Dy_D\|_2^2\le 2\max_f\sum_{e\in f}w_e\,\|y_D\|_2^2$,
+pues cada casilla incide en dos diagonales. La brecha de $B_oWB_o^T$ y la desigualdad triangular
+muestran entonces que la forma también domina una constante positiva por $\|y_{RC}\|_2^2$. Los
+coeficientes de $\Upsilon W\psi$ están acotados por $C_\delta\|\psi\|_\infty$ y hay a lo sumo $2k+4n$
+líneas. Por coercividad,
+$\|y\|_2\le C_\delta\sqrt{k}\|\psi\|_\infty$.
+
+Cada diagonal principal del sistema está separada de cero por las sumas de filas y columnas o por
+$H$. Dos líneas distintas se cortan a lo sumo en una casilla. Así, fuera de la diagonal principal,
+cada coeficiente tiene módulo a lo sumo $\max_e w_e=O_\delta(1/k)$, y en cada fila la suma de módulos
+es a lo sumo tres veces el grado ponderado de la línea, que es $O_\delta(1)$. La norma euclídea de la
+parte no diagonal de cada fila es, por tanto, $O_\delta(k^{-1/2})$. Aplicando la ecuación coordenada a
+coordenada resulta $\|y\|_\infty\le C_\delta\|\psi\|_\infty$. Como $\Upsilon^Ty$ suma cuatro
+multiplicadores con signo, la segunda fórmula de \eqref{macro:sistema-inverso} da la estimación anunciada.
+\end{proof}
+
+\begin{proposicion}[Punto estacionario y máximo único]\label{macro:maximo}
+Existen umbrales positivos para $\Delta$, $a_{\rm mac}$, $C_{\mathcal I}/n$ y un $n$ mínimo,
+dependientes de $\delta$ y del
+perfil, tales que el punto de Bethe $p$ del tablero existe y es el máximo global único de la entropía
+de Bethe entre los puntos factibles. Cumple
+\begin{equation}\label{macro:predictor}
+ \max_{q_e>0}|p_e/q_e-1|\le C_\delta(\zeta+k^{-1}),\qquad
+ \max_{f\ {\rm diagonal\ disponible}}|\ell_f(p)-\ell_f^*|
+                       \le C_\delta(\zeta+k^{-1}).
+\end{equation}
+La segunda cota incluye las dos familias diagonales.
+\end{proposicion}
+\begin{proof}
+Escribamos el negativo del gradiente, módulo multiplicadores de fila y de columna, como
+\[
+ \Xi_e(p)=\log p_e+3\log(1-p_e)-\log h_{D(e)}(p)-\log h_{A(e)}(p).
+\]
+En $q$, al usar las vacancias objetivo, se obtiene exactamente
+\[
+ \log q_e-\log(u_D/U_D)-\log(u_A/U_A)
+ =\log(b_0/k)+\log r_R(r_i)+\log r_C(c_j).
+\]
+Al pasar a $\bar p$, las diferencias de los logaritmos de vacancias son $O_\delta(\zeta)$ y
+$3\log(1-\bar p_e)=O_\delta(k^{-1})$. Además
+$\log(\bar p_e/q_e)=(B_o^T\phi)_e+O_\delta(\zeta^2)$.
+Sustrayendo los multiplicadores exhibidos obtenemos un representante $\psi$ de $\Xi(\bar p)$, módulo
+multiplicadores, con $\|\psi\|_\infty\le C_\delta(\zeta+k^{-1})$.
+
+Usamos la norma $\|v\|_{\rm rel}=\max_e|v_e|/\bar p_e$. En $\|v\|_{\rm rel}\le\vartheta$ tenemos
+$|(D^Tv)_f|\le\vartheta\ell_f(\bar p)\le\vartheta$. Para $\vartheta$ pequeño, las casillas siguen
+positivas y las
+vacancias superan $\kappa_\nu/4$. Las fórmulas de Taylor para los tres tipos de logaritmos dan
+\[
+ \Xi(\bar p+v)=\Xi(\bar p)+K_{\bar p}v+N(v),\qquad
+ \|N(v)\|_\infty\le C_\delta\vartheta^2,\qquad
+ \|N(v)-N(w)\|_\infty\le C_\delta\vartheta\|v-w\|_{\rm rel}.
+\]
+Para $\log p_e$ se aplica el desarrollo a $v_e/\bar p_e$. Para $\log(1-p_e)$ y los logaritmos de las
+vacancias, los denominadores están separados de cero y las respectivas perturbaciones están acotadas
+por $\vartheta$. La ecuación de estacionariedad en $\ker B$ es $v=-R(\psi+N(v))$. Por el
+Lema~\ref{macro:inversa}, esta aplicación preserva la bola de radio $2C_\delta\|\psi\|_\infty$ y tiene
+constante de contracción menor que $1/2$ al reducir los umbrales. Su punto fijo $p=\bar p+v$ es
+factible y estacionario. La comparación con $q$ y el Lema~\ref{macro:balances} dan
+\eqref{macro:predictor}.

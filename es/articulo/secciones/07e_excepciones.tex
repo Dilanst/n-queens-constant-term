@@ -1,0 +1,54 @@
+\begin{proposicion}[Error en el último tablero]\label{terminal-error}
+Existe una sucesión $\theta_K\to0$, dependiente sólo de las cotas exteriores, tal que en
+$F\cap D_K^c$
+\[
+ |\log Q(B_K)-L(B_K)|\le\theta_K .
+\]
+Si $G=F\cap\{Q(B_K)>0\}$, entonces $\nu(G)\ge\nu(F)-d_{n,K}$. Para $L_K^{\max}=C K\log(K+1)$ y
+$\nu(G)>0$ se cumplen
+\[
+ \begin{aligned}
+ \E_\mu\!\left[|g(B_K)|\mathbf1_F\right]
+ &\le\theta_K+(L_K^{\max}+\log K!)\, CK^4/n,\\
+ \E_{\nu(\cdot\mid G)}[g(B_K)^-]
+ &\le\theta_K+L_K^{\max}\,d_{n,K}/\nu(G).
+ \end{aligned}
+\]
+Aquí $u^-=\max\{-u,0\}$.
+\end{proposicion}
+\begin{proof}
+En $F\cap D_K^c$ tomemos $P=(p_{ij})$ igual al punto de Bethe, extendido por cero fuera de $A$. El
+Lema~\ref{terminal-pivotes} da $H_B=H_T$, $L=H_T+\log\Gamma_2$ y $Q(B_K)=\per A>0$. La estacionariedad
+de torres dice que $W_{ij}=a_i b_j$ en todo el soporte de $A$. Sea
+$\mathcal K_T=\prod_i a_i\prod_j b_j$.
+Al multiplicar los pesos de una permutación y sumar obtenemos $\per W=\mathcal K_T\,\per A$. Al
+ponderar con $P_{ij}$ los logaritmos de $P_{ij}(1-P_{ij})=a_i b_j$ sobre las casillas disponibles y
+usar que las masas de fila y de columna valen uno, se obtiene
+\[
+ H_T(P)=-\log\mathcal K_T+\sum_{ij}\log(1-P_{ij}).
+\]
+Por consiguiente
+\[
+ \log\per A-H_T(P)
+ =\log\frac{\per W}{\prod_{ij}(1-P_{ij})}.
+\]
+El Lema~\ref{terminal-normalizador} da la primera conclusión por su uniformidad sobre los posibles
+tableros en $F$. En particular $F\cap D_K^c\subseteq G$, de donde $\nu(G)\ge\nu(F)-d_{n,K}$ por el
+Lema~\ref{terminal-geometria}.
+
+En el resto de $F$ usamos directamente la entropía del predictor completo. En cada fila, $-\sum_j
+p_{ij}\log p_{ij}\le\log K$, mientras que $0\le -(1-y)\log(1-y)\le y$ para $0\le y\le1$. Sumando sobre
+casillas y sobre diagonales, con $\sum_e p_e=K$ y $\sum_f\ell_f=2K$, se deduce
+\[
+ -3K\le H_B(p)\le K\log K+2K .
+\]
+El Lema~\ref{coste-estatico} da entonces $|L(B_K)|\le L_K^{\max}$ para $K$ suficientemente grande. En
+una historia que se puede completar, $1\le Q(B_K)\le K!$, de modo que $|g(B_K)|\le L_K^{\max}+\log K!$
+y $g(B_K)^-\le L_K^{\max}$.
+
+Bajo $\mu$ las historias siempre se pueden completar. Aplicamos la primera conclusión en $F\cap D_K^c$
+y la última cota absoluta en $F\cap D_K$, cuya probabilidad es a lo sumo $CK^4/n$ al promediar el
+Lema~\ref{terminal-geometria} sobre $\pi$. Bajo $\nu(\cdot\mid G)$ la historia también es completable,
+y la probabilidad de $D_K$ es a lo sumo $\nu(F\cap D_K)/\nu(G)\le d_{n,K}/\nu(G)$. La primera
+conclusión en $D_K^c$ y la cota de $g^-$ en $D_K$ dan la segunda desigualdad.
+\end{proof}

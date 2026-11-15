@@ -1,0 +1,109 @@
+\begin{proposicion}[Permanente de la matriz auxiliar]\label{terminal-permanente}
+Para las matrices del Lema~\ref{terminal-escalado}, pongamos $B=P-J_K$. Uniformemente bajo
+\eqref{terminal-hipotesis-matriz} se cumple
+\[
+ \log\frac{\per W}{\prod_{ij}(1-P_{ij})}
+ =\tfrac12\log(2\pi K)-\tfrac12a_K
+   -\tfrac12\log\det(I-B^TB)+o(1).
+\]
+\end{proposicion}
+\begin{proof}
+Usamos la estimación de McCullagh~\cite{mccullagh} en la forma de \cite[Proposición~3.1]{dw}. Si
+$D=J_K+B_D$ es bistocástica, $\max_{ij}|B_{D,ij}|\le A_0/K$ y $\|B_D\|_{\rm op}\le\rho_0<1$, entonces
+\[
+ \frac{K^K\per D}{K!}=(1+o(1))\det(I-B_D^TB_D)^{-1/2}.
+\]
+En \cite[Sección~2.1]{dw} una matriz bistocástica es no negativa, con filas y columnas de suma uno,
+de modo que se admiten entradas nulas. Divoux y Wang demuestran la estimación con un error relativo
+que tiende a cero uniformemente en la clase de matrices con cotas $A_0,\rho_0$ fijas
+\cite[Observación~2.1]{dw}, que es la forma que necesitamos. La uniformidad también se deduce del
+enunciado para sucesiones, con una matriz en cada orden. Si fallase, habría un $\epsilon>0$ y órdenes
+crecientes $K_j$ con matrices
+en esta clase y error relativo al menos $\epsilon$. Al completar esos órdenes con la matriz $J_K$ en
+cada orden restante $K$ se obtendría una sucesión con las mismas dos cotas para la que fallaría la
+proposición citada.
+
+Sea $D$ el escalado del Lema~\ref{terminal-escalado}. Puesto que $D_{ij}=P_{ij}(1+O(K^{-1}))$, sus
+entradas están acotadas por $C/K$ y $\max|B_{D,ij}|\le A_0/K$. Si fijamos $\rho_*<\rho_0<1$, entonces
+\[
+ \|B_D\|_{\rm op}\le\|P-J_K\|_{\rm op}+\|D-P\|_{\rm HS}
+       \le\rho_0
+\]
+para $K$ suficientemente grande, uniformemente. Por otra parte,
+$\|B\|_{\rm HS}^2=a_K-1=O(1)$ y $\|B_D\|_{\rm HS}=O(1)$. Usando
+$\|X^TY\|_1\le\|X\|_{\rm HS}\|Y\|_{\rm HS}$ para la norma traza, obtenemos
+\[
+ \|B_D^TB_D-B^TB\|_1
+ \le(\|B_D\|_{\rm HS}+\|B\|_{\rm HS})\|D-P\|_{\rm HS}
+ =O(K^{-1}).
+\]
+Para todo punto $H$ del segmento entre ambos productos de Gram se cumple $0\le H\le\rho_0^2I$. La
+derivada de $\log\det(I-H)$ en dirección $U$ es $-\operatorname{tr}((I-H)^{-1}U)$, de módulo a lo sumo
+$\|U\|_1/(1-\rho_0^2)$. Integrar sobre el segmento permite sustituir $B_D$ por $B$ dentro del
+logaritmo del determinante, con error $O(K^{-1})$.
+
+Cada producto de una permutación recibe en el escalado el mismo factor $\exp(\sum\alpha+\sum\beta)$.
+Luego
+\[
+ \log\per W=\log\per D-a_K+O(K^{-1}).
+\]
+Finalmente, $\sum_{ij}P_{ij}=K$, $\sum_{ij}P_{ij}^3=O(K^{-1})$ y Taylor da
+$-\sum_{ij}\log(1-P_{ij})=K+a_K/2+O(K^{-1})$. Aplicando a $D$ la estimación citada y usando
+$\log(K!/K^K)=-K+\tfrac12\log(2\pi K)+O(K^{-1})$, obtenemos la fórmula anunciada. Todas las
+perturbaciones y la elección de $A_0,\rho_0$ son uniformes para los parámetros de
+\eqref{terminal-hipotesis-matriz}.
+\end{proof}
+
+\begin{lema}[Identificación con el factor de torres]\label{terminal-normalizador}
+Con los pesos del Lema~\ref{terminal-escalado},
+\[
+ \log\frac{\per W}{\prod_{ij}(1-P_{ij})}=\log\Gamma_2+o(1)
+\]
+uniformemente bajo \eqref{terminal-hipotesis-matriz}.
+\end{lema}
+\begin{proof}
+Para $S_0=\left(\begin{smallmatrix}I&P\\P^T&I\end{smallmatrix}\right)$ el autovalor constante positivo
+es dos, el otro constante es nulo y, fuera de esas rectas, los valores singulares de $P-J_K$ producen
+los factores $(1-\sigma)(1+\sigma)$. Por tanto
+\[
+ \pdet S_0=2\det(I-B^TB).
+\]
+El bloque de incidencia de torres es $S_2=S_0+\Delta$, donde, con $\iota_e$ el vector indicador de la
+fila y la
+columna de la casilla $e$,
+\[
+ \Delta=\sum_e\bigl(\tau_2(P_e)-P_e\bigr)\iota_e\iota_e^T,\qquad
+ \tau_2(P_e)-P_e=\frac{P_e^2}{1-2P_e}.
+\]
+La matriz $\Delta$ es positiva semidefinida y anula el modo cero. Las sumas absolutas en una fila de
+$\Delta$ son $O(K^{-1})$ porque $P$ es bistocástica y $P_{ij}\le M_0/K$, luego $\|\Delta\|_{\rm
+op}=O(K^{-1})$. Además
+$\operatorname{tr}\Delta=2\sum_e P_e^2/(1-2P_e)=2a_K+O(K^{-1})$ y
+$\|\Delta\|_{\rm HS}^2\le\|\Delta\|_{\rm op}\operatorname{tr}\Delta=O(K^{-1})$.
+
+El complemento del modo cero de $S_0$ tiene brecha al menos $1-\rho_*$. Allí ponemos
+$X=S_0^{-1/2}\Delta S_0^{-1/2}$. Se tiene $X\ge0$ y $\|X\|_{\rm HS}^2=O(K^{-1})$. Aplicando
+$|\log(1+x)-x|\le x^2/2$ para $x\ge0$ obtenemos
+\[
+ \log\pdet S_2-\log\pdet S_0
+ =\operatorname{tr}(S_0^+\Delta)+O(K^{-1}).
+\]
+Para estimar la traza observemos que $\|S_0^+-I\|_{\rm HS}=O(1)$. En las rectas constantes esto es
+inmediato. En el complemento de ambas, $S_0-I$ tiene bloques cruzados $B,B^T$ y por tanto norma de
+Hilbert--Schmidt $O(1)$. Multiplicarlo por la inversa acotada $-S_0^{-1}$ da allí $S_0^{-1}-I$. La
+desigualdad de Cauchy--Schwarz para la traza muestra entonces que
+\[
+ |\operatorname{tr}((S_0^+-I)\Delta)|\le
+ \|S_0^+-I\|_{\rm HS}\|\Delta\|_{\rm HS}=O(K^{-1/2}).
+\]
+En conclusión,
+\[
+ \log\pdet S_2=\log 2+\log\det(I-B^TB)+2a_K+O(K^{-1/2}).
+\]
+El término local es
+$C_2=\sum_{ij}(\log(1-2P_{ij})-2\log(1-P_{ij}))=-a_K+O(K^{-1})$.
+Al sustituir ambos desarrollos en
+$\log\Gamma_2=(\log(4\pi K)-C_2-\log\pdet S_2)/2$
+se recupera el lado derecho de la Proposición~\ref{terminal-permanente}, con diferencia $o(1)$
+uniforme.
+\end{proof}

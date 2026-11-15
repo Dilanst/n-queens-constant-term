@@ -1,0 +1,105 @@
+\begin{proposicion}[Reconstrucción de la clase interior]\label{meso:reconstruccion}
+Existen constantes $C_{\rm in},\eta_{\rm in},\gamma_{\rm in}>0$, que dependen sólo del perfil, con
+la propiedad siguiente.
+Supongamos que los observables de esta sección, es decir, las proporciones por intervalos, las fibras
+y los dieciséis términos del rectángulo, están dentro de sus tolerancias y que
+$D_{\max}(k)<\alpha k$ con $\alpha=\varepsilon/(4\|W_0\|_\infty)$. Si el paso $a_{\rm mes}$, la tolerancia
+$\varrho_{\rm mes}$ y $\varepsilon$ son suficientemente pequeños y $k$ es grande, el punto de
+Bethe del tablero existe, cumple con desigualdad estricta las cotas de difusión, vacancia y brecha
+con esas constantes, y la masa de cada diagonal es menor que $\varepsilon$. En las casillas
+disponibles $p_e/q_e=1+O(\varrho_{\rm mes}+\varepsilon+1/k)$, con constante dependiente del perfil. Además,
+para esos $\varepsilon$ y $k$ grande, todo hijo de un tablero cuyo punto de Bethe cumple esas cotas con
+masa diagonal a lo
+sumo $\varepsilon$ cumple las cotas exteriores, y la masa de cada una de sus diagonales es a lo sumo
+$\varepsilon_{\rm out}=2\varepsilon$.
+\end{proposicion}
+\begin{proof}
+La suma de cada fila y columna de $q$ es $1+O(\varrho_{\rm mes})$ por las fibras. Para $V$ se aproxima
+$\nu_1(r,\cdot)$, o $\nu_1(\cdot,c)$, por una constante en cada intervalo. La normalización continua
+del perfil, su regularidad de Lipschitz y la suma de las tolerancias de los intervalos dan grados
+$1+O(a_{\rm mes}+\varrho_{\rm mes})$ uniformemente en la coordenada de la línea distinguida. Fijemos
+${0<\theta<\min(c_\nu,1)/2}$.
+La matriz $V-\theta\mathbf1\mathbf1^T/k$ es no negativa y tiene sumas de filas y columnas
+${\le1-\theta+O(a_{\rm mes}+\varrho_{\rm mes})}$. Su norma de operador está acotada por esa misma
+cantidad, por la
+desigualdad de
+Schur. La aproximación de rango uno y la cota para $q-V$ dan
+\[
+ \sigma_2(q)\le1-\theta+O(a_{\rm mes}+\varrho_{\rm mes})+\|q-V\|_{\rm op}.
+\]
+Si $D_R,D_C$ son las
+matrices diagonales de
+los grados de $q$, la matriz $D_R^{-1/2}qD_C^{-1/2}$ difiere de $q$ en norma de operador en
+$O(\varrho_{\rm mes})$. Con las tolerancias anteriores suficientemente pequeñas, su segundo valor
+singular es
+$\le1-\theta/2$.
+
+Detallamos cómo pasar de estos observables al punto de Bethe. En el soporte de $q$, sea $B$ la matriz
+de incidencia de filas y columnas de la Sección~\ref{macro:reconstruccion} y
+$P_q=\operatorname{diag}(q_e)$. Para el reequilibrado resolvemos
+$(BP_qB^T)z=\mathbf1-Bq$ en el complemento del gauge $(\mathbf1,-\mathbf1)$. El segundo
+miembro es ortogonal a ese vector. El cambio de signo en las coordenadas de columna convierte la
+matriz en el laplaciano de filas y columnas de pesos $q$. La brecha anterior y los grados acotados
+superior e inferiormente dan $\|z\|_2/\sqrt{k}=O(\varrho_{\rm mes})$. En la ecuación de cada vértice,
+el término
+de vecinos es a lo sumo $(\sum_j q_{ij}^2)^{1/2}\|z\|_2=O(\varrho_{\rm mes})$, pues
+$q_{ij}\le\|W_0\|_\infty/k$;
+análogamente en columnas. Al dividir por el grado resulta $\|z\|_\infty=O(\varrho_{\rm mes})$. Por tanto
+\[
+ \bar q=q+P_qB^Tz,\qquad B\bar q=\mathbf1,\qquad
+ \bar q_e/q_e=1+O(\varrho_{\rm mes}).
+\]
+Las cotas de difusión y de brecha siguen cumpliéndose con desigualdad estricta por comparación de los
+pesos. Si $D_{\max}(k)\le\alpha k$ con $\alpha=\varepsilon/(4\|W_0\|_\infty)$, cada diagonal de las
+dos familias tiene masa de $q$
+a lo sumo $\varepsilon/4$ y masa de $\bar q$ a lo sumo $\varepsilon/2$ tomando $\varrho_{\rm mes}$
+suficientemente pequeño con independencia de $\varepsilon$.
+
+Para precisar la inversión relativa, pongamos $P=\operatorname{diag}(\bar q)$ y
+\[
+ \mathcal T=\{x:BPx=0\},\qquad
+ \Pi=I-B^T(BPB^T)^+BP ,
+\]
+donde el superíndice $+$ denota la inversa en el complemento del gauge, prolongada por cero. Esta
+proyección sobre $\mathcal T$ anula $\operatorname{im}B^T$, el espacio de los multiplicadores de fila
+y de columna, y tiene norma de $\ell^\infty$
+acotada uniformemente: se aplica la estimación anterior del laplaciano con segundo miembro $BPv$, de
+norma $\le\|v\|_\infty$ porque $B\bar q=\mathbf1$. En las variables factibles ${p=\bar q\odot(1+x)}$,
+$x\in\mathcal T$, la ecuación KKT es $F(x)=-\Pi\nabla H_B(p)=0$, donde $H_B$ es la entropía de
+Bethe \eqref{bethe}, cuyo subíndice es el tablero y no la matriz de incidencia. Módulo multiplicadores
+de fila y de columna, su gradiente tiene componentes
+$-\log p_e-3\log(1-p_e)+\log h_{D(e)}+\log h_{A(e)}$. En $\bar q$ se tiene
+$\log q\in\operatorname{im}B^T$
+por $W_0=b_0 r_Rr_C$, y $\log(\bar q/q)=B^Tz+O(\varrho_{\rm mes}^2)$ en norma uniforme. Los términos de
+vacancia
+y de $1-\bar q_e$ son $O(\varepsilon+1/k)$. Por consiguiente $\|F(0)\|_\infty\le
+C(\varrho_{\rm mes}^2+\varepsilon+1/k)$.
+
+En la bola $\|x\|_\infty\le t<1/2$ la derivada de $\log p$ en variables relativas es la diagonal
+$1/(1+x_e)$; su diferencia con la identidad es $O(t)$. La derivada de $\log(1-p_e)$ tiene norma
+$O(1/k)$, y cada derivada de $\log h_f$ tiene norma $\le\sum_{e\in f}\bar q_e/h_f=O(\varepsilon)$. La
+proyección es la identidad en $\mathcal T$, de modo que $\|DF(x)-I\|_{\infty,\mathcal T}\le
+C(t+\varepsilon+1/k)$. Fijamos $t$ pequeño y después $\varrho_{\rm mes},\varepsilon,1/K_0$ suficientemente
+pequeños
+para que $x\mapsto x-F(x)$ sea una contracción con constante $\le1/2$ en la bola y
+$2\|F(0)\|_\infty\le t$. El punto fijo satisface
+\[
+ \|p/\bar q-1\|_\infty\le 2\|F(0)\|_\infty,\qquad
+ p_e/q_e=1+O(\varrho_{\rm mes}+\varepsilon+1/k).
+\]
+Todas las razones se toman en casillas disponibles. El punto es el único estacionario del dominio
+convexo $0<p_e<1/4$, $h_f>0$, ya que la hessiana negativa de la entropía de Bethe tiene allí diagonal
+positiva
+$1/p_e-3/(1-p_e)$ más formas positivas semidefinidas de las líneas. Como $p_{\max}\le C/k\le e^{-4}$
+para $k$ grande,
+el cálculo escalar de la Proposición~\ref{macro:maximo} muestra además que el punto construido es
+el único máximo global. Es, por tanto, la rama
+seleccionada en la representación de \cite[Teorema~8.1 y su prueba]{pred}. Obtenemos las cotas de
+difusión, brecha y vacancia con desigualdad estricta, y masa diagonal $<\varepsilon$. La construcción
+usó solamente observables del tablero alcanzado. Para cualquier hijo de un último padre regular, aun
+cuando falle uno de esos observables, la herencia de \cite[Secciones~8.2--8.3]{pred} da en las
+casillas que siguen disponibles una variación relativa $1+O(1/k)$ respecto del padre, con constantes
+de la clase exterior. Su masa diagonal es a lo sumo $(1+O(1/k))\varepsilon\le\varepsilon_{\rm
+out}=2\varepsilon$
+tras aumentar $K_0$.
+\end{proof}

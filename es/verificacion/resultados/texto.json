@@ -1,0 +1,13 @@
+{
+  "cotejo": {
+    "archivos": 41,
+    "definicion": 21,
+    "formula": 1879,
+    "inclusion": 40,
+    "texto": 1059
+  },
+  "ensayos": {
+    "alteraciones_detectadas": 9,
+    "controles_positivos": 2
+  }
+}

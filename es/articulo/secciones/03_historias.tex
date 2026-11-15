@@ -1,0 +1,66 @@
+\section{Las dos comparaciones sobre historias detenidas}\label{historias}
+Sea $\tau$ una parada que usa solamente el orden de filas y lo revelado hasta el paso actual.
+Supongamos que cada padre anterior a la parada y cada uno de sus hijos tienen un predictor finito.
+Escribimos $B_t$ para el tablero de la historia tras $t$ inserciones e $i_t$ para la fila que se
+revela a continuación. Escribimos $\omega$ para el prefijo de casillas, incluyendo la última
+inserción, $B_\tau$ para su residual y $\mu^\tau,\nu^\tau$ para las leyes conjuntas del orden y del
+prefijo. Definimos
+\[
+ A_\tau=\sum_{t<\tau}\log\rho(B_t,i_t),\qquad g(B)=\log Q(B)-L(B)\quad(Q(B)>0).
+\]
+
+\begin{lema}[Comparación en la primera parada]\label{hist:igualdad}
+Si $Q(B_0)>0$, se tiene $\mu^\tau\ll\nu^\tau$ y
+\begin{equation}\label{super}
+ g(B_0)=\E_\mu[A_\tau+g(B_\tau)]-D(\mu^\tau\Vert\nu^\tau).
+\end{equation}
+Aquí $D$ es la entropía relativa de las dos leyes discretas.
+\end{lema}
+\begin{proof}
+Fijado el orden $\sigma$, cada una de las $Q(B_\tau)$ completaciones prolonga el prefijo de
+una sola manera. Bajo $\nu$ multiplicamos las probabilidades de escoger las sucesivas casillas.
+Las diferencias de los predictores se suman telescópicamente. Así, las masas en el mismo átomo son
+\[
+ \mu^\tau(\sigma,\omega)=\frac{Q(B_\tau)}{n!\,Q(B_0)},\qquad
+ \nu^\tau(\sigma,\omega)=\frac{\exp\{L(B_\tau)-L(B_0)-A_\tau\}}{n!}.
+\]
+La segunda masa es positiva en el soporte de la primera. Tomar el logaritmo de su cociente
+en el orden $\mu^\tau/\nu^\tau$ da $A_\tau+g(B_\tau)-g(B_0)$. Su media bajo $\mu^\tau$
+es, por definición, la entropía relativa que figura en \eqref{super}.
+\end{proof}
+
+\begin{proposicion}[Cota inferior por permanencia]\label{hist:inferior}
+Sea $\tau$ la parada de la Definición~\ref{def:regular}: la primera salida o, si no la hay, la
+llegada al tamaño $K$. Sean $F$ el suceso de permanencia y $B_K$ el tablero de tamaño $K$, de modo
+que $B_K=B_\tau$ en $F$. El subíndice de $B_K$ cuenta filas vacías y no pasos. Sea
+$G=F\cap\{Q(B_K)>0\}$. Si $s=\nu(G)>0$, entonces
+\begin{equation}\label{infer}
+ g(B_0)\ge \E_{\nu(\cdot\mid G)}[A_\tau+g(B_K)]+\log s.
+\end{equation}
+\end{proposicion}
+\begin{proof}
+Para cada orden, los prefijos detenidos distintos tienen conjuntos disjuntos de completaciones.
+En cada historia de $G$, multiplicar su masa bajo $\nu^\tau$ por $\exp\{A_\tau+g(B_K)\}$
+deja $Q(B_K)e^{-L(B_0)}/n!$. Sumando primero en los prefijos y después en los órdenes obtenemos
+\[
+ \int_G\exp\{A_\tau+g(B_K)\}\,d\nu^\tau\le Q(B_0)e^{-L(B_0)} .
+\]
+La integral es $s$ veces la esperanza condicional del exponencial. La concavidad del logaritmo
+da \eqref{infer}, también cuando el condicionamiento modifica la distribución del orden.
+\end{proof}
+
+\begin{corolario}[Consistencia acumulada]\label{hist:consistencia}
+En cada padre anterior a la parada supongamos las hipótesis del Teorema~7.1 y del Corolario~7.2
+de~\cite{pred} para $k>M=\lceil\delta n\rceil$, y las del Teorema~8.1 del mismo trabajo para
+$K<k\le M$. Entonces $|A_\tau|\le C/K+O_\delta(n^{-1})$ uniformemente en las historias.
+\end{corolario}
+\begin{proof}
+Esos resultados dan $|\log\rho(B,i)|\le C_*/k^2$ en cada fila, incluyendo en $\rho$ todos los
+hijos de esa fila. Para los padres con $k>M$ la constante depende de $\delta$ y de las cotas de
+difusión, vacancia y brecha. Para los padres con $K<k\le M$ depende de las constantes de la clase
+débil de~\cite[Sección~8.1]{pred}. Un padre regular de la Definición~\ref{def:regular} está en la
+clase interior, por definición si $k<M$ y por la Proposición~\ref{meso:reconstruccion} si $k=M$. La
+suma de $k^{-2}$ para $k>m$
+es a lo sumo $\int_m^\infty t^{-2}\,dt=1/m$. Una historia que termina antes usa un
+subconjunto de estos sumandos.
+\end{proof}

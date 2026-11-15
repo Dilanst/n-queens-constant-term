@@ -1,0 +1,67 @@
+\section{El último tablero}\label{terminal}
+
+\subsection{Geometría bajo las dos leyes}
+
+Al llegar a $K$ filas vacías y $K$ columnas vacías, el tablero residual se obtiene de sus $K^2$
+cruces vacíos suprimiendo los no disponibles, que son los que comparten diagonal con una reina ya
+colocada. La Figura~\ref{fig:terminal} distingue entre los cruces vacíos y la \emph{máscara}, la
+matriz $A=(Y_{ij})$ de sus indicadores de disponibilidad.
+\input{figuras/terminal}
+
+Recordamos que $F$ es el suceso de permanencia de la Definición~\ref{def:regular}: la historia llega
+al tamaño $K$ y todos sus tableros, incluido el de llegada $B_K$, son regulares. La figura ilustra la
+geometría. En ella la fila 1 fuerza la
+columna 1, por lo que toda matriz bistocástica sobre la máscara asigna masa cero a la casilla
+disponible $(9,1)$. El ejemplo queda fuera de $F$. Sea
+$D_K$ el suceso de que dos cruces vacíos distintos del tablero de tamaño $K$ pertenezcan a una misma
+diagonal del tablero inicial. Para $m\ge 1$ escribimos
+$(u)_m=u(u-1)\cdots(u-m+1)$ si
+$u\ge m$, y $(u)_m=0$ si $0\le u<m$.
+
+\begin{lema}[Diagonales compartidas en el último tablero]\label{terminal-geometria}
+Bajo $\nu$ y bajo la ley $\mu$ de una solución uniforme revelada en orden uniforme independiente,
+respectivamente,
+\[
+ \nu(F\cap D_K)\le d_{n,K}:=\frac{C K^4}{n}\,e^{C'/K},
+ \qquad \mu(D_K\mid\pi)\le \frac{C K^4}{n}
+\]
+para toda solución $\pi$. La segunda probabilidad es respecto del orden de
+revelado.
+\end{lema}
+\begin{proof}
+En el tablero inicial hay a lo sumo $Cn^3$ pares de casillas distintas que comparten diagonal. Se
+elige la primera entre $n^2$ casillas y la segunda entre a lo sumo $2(n-1)$ casillas de sus
+diagonales. Para que las dos casillas de un par sean cruces vacíos en el tamaño $K$ deben quedar
+vacías dos filas distintas y dos columnas distintas. En $F$ no hubo salida anterior, de modo que
+\eqref{prescr} con
+$s=t=2$ acota la probabilidad de cada par por $(K/n)^4e^{C'/K}$. La unión da la primera afirmación.
+
+Para la segunda afirmación fijemos $\pi$. Las últimas $K$ filas en el orden uniforme forman un
+subconjunto uniforme $I$ de tamaño $K$. Las columnas correspondientes son $\pi(I)$ y los cruces vacíos
+forman $I\times\pi(I)$. La Figura~\ref{fig:testigos} muestra cómo intervienen las etiquetas de fila en
+dos de esos cruces.
+\input{figuras/testigos}
+
+Un par que comparte diagonal se escribe $(i,\pi(j)),(i',\pi(j'))$, con
+\[
+ |i-i'|=|\pi(j)-\pi(j')|>0,\qquad i,i',j,j'\in I.
+\]
+Llamamos \emph{testigo} a una cuádrupla de etiquetas $(i,i',j,j')$ que cumple esta igualdad de
+distancias, pertenezcan o no a $I$. Pongamos $m=|\{i,i',j,j'\}|$. Si $m=2$, los pares de etiquetas
+$\{i,i'\}$ y $\{j,j'\}$ coinciden. La
+igualdad de distancias diría que las reinas de $\pi$ en las filas $i,i'$ se atacan, lo que es imposible.
+Si $m=3$, fijamos $i,i'$ y cuál de las dos etiquetas se repite en cuál de las posiciones $j,j'$. La
+imagen bajo $\pi$ de esa etiqueta es conocida. La otra imagen debe estar a distancia $|i-i'|$ de ella,
+por lo que tiene a lo sumo dos valores posibles. Cada uno determina su etiqueta mediante $\pi^{-1}$.
+Hay por tanto $O(n^2)$ testigos con tres etiquetas. Para $m=4$, fijar $i,i',j$ deja a lo sumo dos
+valores para $\pi(j')$, y da $O(n^3)$ testigos.
+
+El subconjunto $I$ contiene $m$ etiquetas fijadas con probabilidad $(K)_m/(n)_m\le(K/n)^m$ cuando
+$n\ge m$. Para $n\ge4$ resulta por unión
+\[
+ \mu(D_K\mid\pi)\le C\left[n^2(K/n)^3+n^3(K/n)^4\right]\le CK^4/n.
+\]
+Bajo $\mu$, la solución y el orden se pueden completar también para historias ya detenidas. Como
+$F\cap D_K\subseteq D_K$, integrar la estimación respecto de $\pi$ da también $\mu(F\cap D_K)\le
+CK^4/n$.
+\end{proof}

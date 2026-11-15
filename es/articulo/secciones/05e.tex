@@ -1,0 +1,105 @@
+\subsection{Entrada, elección de constantes y salida por bandas}\label{meso:constantes}
+\begin{lema}[Entrada regular en $M$]\label{meso:entrada}
+Sean dadas las tolerancias de entrada de los observables de la Sección~\ref{meso:regularidad} y
+$0<\alpha<1/4$. Supongamos que $\delta$ es tan pequeño que los errores deterministas de entrada, es
+decir, las diferencias $O(\delta+1/n)$ entre los objetivos del tramo macroscópico en $M$ y los de esa
+sección, caben con desigualdad estricta en esas tolerancias, uniformemente en las líneas distinguidas,
+y que vale la segunda estimación del Lema~\ref{lema:presupuesto-meso} con una tasa $\lambda$. Si el
+radio $\varrho_{\rm mac}$ y el paso $a_{\rm mac}$ de la Proposición~\ref{macro:parada} son
+suficientemente pequeños y $n$ es suficientemente grande, en todo tablero de tamaño $M$ cuya
+discrepancia $\Delta$ es menor que $\varrho_{\rm mac}$ los observables están dentro de sus
+tolerancias de entrada, simultáneamente para todas las líneas distinguidas disponibles. Además, la
+probabilidad de llegar a $M$ sin salida previa y con $D_{\max}(M)\ge\alpha M$ cumple
+$\nu(G_M^-,D_{\max}(M)\ge\alpha M)\le C_\lambda e^{-\lambda M}$.
+\end{lema}
+\begin{proof}
+En $M=\lceil\delta n\rceil$ los objetivos de disponibilidad del tramo macroscópico cumplen
+$U_f=u_f+O(\delta+1/n)$ uniformemente. Como $u_f\ge\kappa_\nu$, el peso macroscópico $W_x$, con
+$x=M/n$, y el peso fijo $W_0$ difieren relativamente en $O(\delta+1/n)$. En un patrón de posiciones
+disponibles $S$, la densidad de supervivencia de sus líneas diagonales distintas aporta
+$\prod_{e\in S}U_{D(e)}U_{A(e)}$. Multiplicada por $\prod_{e\in S}W_{0,e}\prod_{e\notin S}\nu_{1,e}$
+da $\prod_{e\in T}\nu_{1,e}(1+O(\delta+1/n))$. Las asignaciones con coincidencias de líneas entre
+posiciones diferentes están en una unión finita de hiperplanos de medida cero; en la suma sobre el
+tablero inicial hay $O(n^3)$ asignaciones de ese tipo y su coste al normalizar en $M$ es
+$O_\delta(1/n)$. El mismo cálculo para una sola casilla de una fibra da $1+O(\delta+1/n)$,
+uniformemente en la línea distinguida, porque la integral de $\nu_1$ por la coordenada transversal
+vale $1$. Los intervalos tienen las proporciones del perfil uniforme de filas y columnas que
+sobreviven. Por la hipótesis sobre $\delta$, estas diferencias deterministas dejan cada objetivo
+dentro de su tolerancia de entrada con desigualdad estricta. Al pasar de cuentas macroscópicas en
+unidades de $n$ a cuentas residuales en unidades de $M$, se divide por $(M/n)$ por cada índice
+libre. Para $\delta$ fijo se pueden exigir en la Sección~\ref{macro} errores macroscópicos tan
+pequeños, es decir, $\varrho_{\rm mac}$ y $a_{\rm mac}$ tan pequeños, con $\mathcal I$ un
+refinamiento de la partición de paso $a_{\rm mes}$, que todos los errores aleatorios, tras esa
+división, quepan en lo que queda de las respectivas tolerancias de entrada; los errores de
+discretización $O_\delta(1/n)$ desaparecen aumentando $n$. Esto vale simultáneamente para todas las
+líneas distinguidas disponibles, con las estimaciones de fibras de aquella sección.
+
+La cota para $D_{\max}(M)$ es la segunda estimación del Lema~\ref{lema:presupuesto-meso} en $M$.
+Es una condición sobre todos los cruces vacíos y por ello se estima desde el tablero inicial, también
+para los no disponibles.
+\end{proof}
+Decimos que una historia tiene \emph{entrada regular} en $M$ si no tiene salida hasta el tablero
+de tamaño $M$, incluido éste. Un fallo de entrada en $M$, sea de un observable o de la geometría, es
+una salida
+macroscópica en el tablero de tamaño $M$ (Definición~\ref{def:regular}). Ese tablero dispone de las
+cotas exteriores macroscópicas por la herencia desde su último padre regular. En particular el fallo
+geométrico en $M$ tiene probabilidad a lo sumo $C_\lambda e^{-\lambda M}$, exponencial en $n$ para el
+$\delta$ ya fijado.
+
+Fijamos las constantes en el siguiente orden.
+\begin{enumerate}
+\item Partimos del perfil y de dos clases de la forma de~\cite[Sección~8.1]{pred}. La \emph{clase
+interior} es la de las constantes $C_{\rm in},\eta_{\rm in},\gamma_{\rm in}$ de la
+Proposición~\ref{meso:reconstruccion}, con
+masa diagonal a lo sumo $\varepsilon$. La \emph{clase exterior}, que la contiene, tiene cotas de
+difusión, vacancia y brecha con constantes $C_{\rm out},\eta_{\rm out},\gamma_{\rm out}$
+estrictamente más débiles y masa diagonal a lo sumo $\varepsilon_{\rm out}=2\varepsilon$. El valor de
+$\varepsilon$ se elige en el punto~4. Con las
+cotas de la clase exterior, las constantes de las prescripciones, de los incrementos y de la herencia
+por hijo se fijan una sola vez.
+\item Elegimos $a_{\rm mes},\varrho_{\rm mes}$ y las tolerancias de las fibras, de los intervalos y
+de cada uno de los dieciséis términos para que valgan el reequilibrado y la reconstrucción
+espectral. Reservamos, por ejemplo, un cuarto de cada tolerancia individual para la entrada: son las
+\emph{tolerancias de entrada}.
+\item Con esta familia fijada, escogemos $\chi,b_1>0$ para que $C_H\chi+b_1$ quepa estrictamente en
+otro cuarto de todas las tolerancias, absorbiendo las constantes del presupuesto. Esto da $c_{\rm
+pat}>0$ en la Proposición~\ref{prop:concentracion-meso} con independencia de la cota $\varepsilon$ de
+la masa diagonal y del suelo.
+\item Tomamos ahora $\varepsilon>0$ suficientemente pequeña para la reconstrucción, con
+$\varepsilon_{\rm out}=2\varepsilon$ no mayor que la cota
+$\varepsilon_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$ del Teorema~8.1 de~\cite{pred}, y para
+que se cumpla $2\beta(\varepsilon_{\rm out})<c_{\rm pat}/4$, donde ${\beta(v)=2v/(1-v)}$. Fijamos
+$\alpha=\varepsilon/(4\|W_0\|_\infty)<1/4$ y elegimos $\delta>0$ de modo que los errores
+deterministas de entrada y el término $C_HA\delta$ quepan con desigualdad estricta en sus
+tolerancias, la restricción $A(\delta+1/n)+\chi+1/K<1/4$ se cumpla con desigualdad estricta, y la
+tasa $\lambda$ del Lema~\ref{lema:presupuesto-meso} pueda escogerse mayor que $c_{\rm pat}$.
+\item Fijamos finalmente $K_0\ge k_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$, con el $k_0$ del
+mismo teorema, y suficientemente grande; según el Lema~\ref{meso:entrada}, el radio
+$\varrho_{\rm mac}$ y el paso $a_{\rm mac}$ del tramo macroscópico; y después $n$ suficientemente
+grande para este $\delta$. Se absorben así los errores de redondeo, los términos $O(1/K_0)$ y los
+restos macroscópicos. Las condiciones que definen la clase interior, incluida la masa diagonal
+$\le\varepsilon$, son independientes del suelo $K$.
+\end{enumerate}
+
+\begin{proposicion}[Salida por bandas]\label{prop:salida-banda-meso}
+Existen $C<\infty$ y $c>2\beta(\varepsilon_{\rm out})$ tales que para cada $K_0\le K\le M$ y $j\ge0$
+con $2^jK\le M$,
+\[
+ \nu\big(\text{entrada regular en $M$ y primera salida en un tamaño }
+              k\in[2^jK,2^{j+1}K)\big)
+ \le C e^{-c\,2^jK}.
+\]
+\end{proposicion}
+\begin{proof}
+Para cualquier suelo $K'$ entre $K_0$ y $M$, aplicamos la Proposición~\ref{prop:concentracion-meso} y
+la segunda estimación del Lema~\ref{lema:presupuesto-meso} con ese suelo. En una historia de entrada
+regular, salvo sus excepciones, cada observable al llegar a cualquier tamaño $k\ge K'$ hasta la
+primera salida queda dentro de su tolerancia de reconstrucción, y $D_{\max}(k)<\alpha k$. Si se
+produjera la primera salida en este rango, su propio tablero de llegada cumpliría esas condiciones y
+la Proposición~\ref{meso:reconstruccion} lo situaría en la clase interior. Por tanto la salida exige
+una de las excepciones, de probabilidad $\le Ce^{-cK'}$ con, por ejemplo, $c=c_{\rm pat}/2$. Se toma
+$K'=2^jK$, con la misma clase y las mismas constantes, para obtener el enunciado. La cota es una
+probabilidad de historias desde el tablero inicial; el presupuesto diagonal no se condiciona a un
+tablero arbitrario del corte. Un
+paso que llegue a $K$ y viole una condición se contabiliza como salida en $K$.
+\end{proof}

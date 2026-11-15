@@ -1,0 +1,90 @@
+\subsection{La comparación entrópica en el tramo macroscópico}
+
+\begin{lema}[Factorización estacionaria]\label{coste-vacancias}
+Sea $p$ un punto estacionario interior de la entropía de Bethe $H_B$, con masas de fila y de columna
+iguales a uno y $h_f>0$. Existen números positivos $a_i,b_j$ tales que, en toda casilla disponible,
+\[
+ v_e:=p_e(1-p_e)^3=a_i b_j h_{D(e)}h_{A(e)} .
+\]
+Si además $p_{\max}\le C/k$, para $k$ suficientemente grande, con $\mathcal K=\prod_i a_i\prod_j
+b_j\prod_f h_f$ y $W=\sum_e v_e$, entonces
+\[
+ W=k+O_C(1),\qquad H_B(p)=-\log\mathcal K+3\sum_e\log(1-p_e)
+             =-\log\mathcal K-3k+O_C(1).
+\]
+\end{lema}
+\begin{proof}
+La derivada de $H_B$ con respecto a $p_e$ es
+$-\log p_e-3\log(1-p_e)+\log h_{D(e)}+\log h_{A(e)}-2$.
+En el punto interior se anula su producto escalar con toda variación que preserve las sumas de filas y
+columnas. Por ortogonalidad al núcleo de la aplicación que da esas sumas, esta derivada es una suma de un
+multiplicador de fila y otro de columna. Al exponenciar y absorber la constante se obtiene la
+factorización. Multiplicando su logaritmo por $p_e$ y sumando en las casillas, los dos multiplicadores
+contribuyen $\sum_i\log a_i+\sum_j\log b_j$ y las diagonales contribuyen $\sum_f\ell_f\log h_f$. La
+identidad para $H_B$ se sigue de $\ell_f+h_f=1$. Además $0\le p_e-v_e\le3p_e^2$ y
+$|\log(1-p_e)+p_e|\le p_e^2/(1-p_{\max})$. Ambas cotas se pueden sumar, pues $\sum_e p_e^2\le C$.
+\end{proof}
+
+\begin{lema}[Comparación con colocaciones aumentadas]\label{coste-comparacion}
+Supongamos que $Q(B)>0$ y que $n$ es el orden del tablero inicial. Pongamos $N=2n-1$ y $H=N-k$.
+Existe una ley de comparación, uniforme sobre colocaciones aumentadas ordenadas, con $k$ piezas
+reales y $H$ piezas
+virtuales, para la cual
+\[
+ \log Q(B)\le
+ \E\sum_{s=1}^N\log W_{T_s}(s)
+       -\log\mathcal K-\log k!-4\log H! .
+\]
+Aquí $T_s$ es el tipo de la pieza en el lugar $s$, y $W_{T_s}(s)$ es la masa disponible de ese tipo
+inmediatamente antes de revelar la pieza.
+\end{lema}
+\begin{proof}
+Desarrollamos la cuenta de colocaciones aumentadas de \cite[Teorema~3.6]{ultimas} para el soporte de
+$B$. En cada una de las cuatro familias tomamos $N$ vértices. En las dos primeras conservamos las $k$
+filas y las $k$ columnas físicas de $B$ y añadimos $H$ vértices ficticios en cada familia. En cada
+familia diagonal usamos las $N$ etiquetas del tablero inicial. Una diagonal residual conserva su línea
+física. En el lugar de una diagonal ya ocupada ponemos un vértice ficticio de la misma etiqueta, al
+que ninguna casilla residual es incidente. Una línea sin casillas disponibles tiene también grado real
+cero. En ambos casos la masa residual es cero y extendemos $h_f=1$ a esa etiqueta. Esta extensión sólo
+interviene en la cuenta auxiliar. Deja inalteradas la identidad de estacionariedad en todas las
+casillas disponibles y la constante $\mathcal K$.
+
+Las piezas reales son las casillas disponibles con peso $v_e$. Para las piezas virtuales asignamos
+peso de vértice cero a filas y columnas físicas, uno a filas y columnas ficticias y $h_f$ a las
+etiquetas diagonales. Una pieza virtual consta de un vértice en cada familia y pesa el producto de sus
+cuatro pesos. Sólo usamos las de peso positivo. En una familia diagonal cada casilla contribuye su
+masa exactamente una vez. Por ello
+\[
+ \sum_{f\text{ de una familia diagonal}}h_f=N-\sum_e p_e=H.
+\]
+Los pesos de vértice suman igualmente $H$ en las otras dos familias. De aquí que la masa virtual
+inicial sea $H^4$, aunque hubiese diagonales ocupadas antes de llegar a $B$.
+
+Una colocación real completa deja descubiertos $H$ vértices en cada familia. Para completarla fijamos
+las $H$ filas ficticias como índices y elegimos independientemente tres biyecciones con los vértices
+descubiertos de las otras tres familias. Esto da exactamente $(H!)^3$ completaciones virtuales, todas
+de peso positivo por $h_f\ge\eta$. Recíprocamente, en una colocación aumentada que cubre todos los
+vértices, las filas físicas deben estar cubiertas por piezas reales y las ficticias por virtuales. Las
+piezas reales forman así una de las $Q(B)$ completaciones de $B$. Cada colocación aumentada admite $N!$
+órdenes. En cualquiera de ellos el producto de los pesos de todas las piezas es $\mathcal K$. En
+efecto, las reales aportan una vez cada $a_i$ y cada $b_j$, y entre reales y virtuales se usa una vez
+el factor $h_f$ de cada etiqueta diagonal.
+
+Como en~\cite[Sección~3]{ultimas}, sea $\mathbb P$ la ley de comparación, uniforme sobre estas
+historias exitosas, y sea $\mathbb Q$ el siguiente proceso de referencia. Primero se toma
+uniformemente una palabra de colores con $k$ colores reales y $H$ virtuales. En cada
+lugar se elige entre las piezas disponibles del tipo prescrito con probabilidad proporcional a su
+peso. Una pieza está disponible si ninguno de sus vértices ha sido cubierto. Si la masa de ese tipo es
+cero, el proceso termina en fallo y conserva allí la probabilidad correspondiente. Para una historia
+exitosa $\omega$ se tiene
+\[
+ \mathbb P(\omega)=\frac{1}{Q(B)(H!)^3N!},\qquad
+ \mathbb Q(\omega)=\frac{k!H!}{N!}\,
+             \frac{\mathcal K}{\prod_{s=1}^N W_{T_s}(s)} .
+\]
+En particular $\mathbb Q(\omega)>0$. Jensen aplicado al logaritmo da
+$\E_{\mathbb P}\log(\mathbb Q/\mathbb P)\le\log\sum_{\omega:\mathbb P(\omega)>0}\mathbb Q(\omega)\le0$.
+Sustituyendo ambas masas se obtiene la desigualdad del lema. La esperanza se toma bajo $\mathbb P$,
+en el
+único tablero $B$ que se está contando.
+\end{proof}

@@ -1,0 +1,90 @@
+Llamamos \emph{suelo} al tamaño $K$ hasta el que se sigue la historia, y \emph{presupuesto diagonal}
+a la suma del lema siguiente, que controla el efecto acumulado de las diagonales sobre las derivas.
+\begin{lema}[Presupuesto diagonal]\label{lema:presupuesto-meso}
+Fijemos $A\ge4C_{\rm geo}$ y $\chi>0$ pequeña. Para cualquier suelo entero $K_0\le K\le M$, salvo un
+suceso de probabilidad $\le C_\chi e^{-c_\chi K}$, hasta el tablero de primera salida inclusive se
+tiene
+\[
+ \sum_{\substack{K<k\le M\\\text{padres regulares alcanzados}}}
+          \frac{(D_{\max}(k)-1)_+}{k^2}
+ \le C\{A(\delta+1/n)+\chi+1/K\}.
+\]
+Aquí basta que $A(\delta+1/n)+\chi+1/K<1/4$. Además, fijado $0<\alpha<1/4$, para cualquier tasa
+$\lambda>0$ se puede tomar $\delta>0$ tan pequeño y luego $K_0,n$ tan grandes que
+\[
+ \nu\big(\exists\,K\le k\le M:\ G_k^-,\ D_{\max}(k)\ge\alpha k\big)
+ \le C_\lambda e^{-\lambda K},\qquad
+ \nu(G_M^-,D_{\max}(M)\ge\alpha M)\le C_\lambda e^{-\lambda M}.
+\]
+\end{lema}
+\begin{proof}
+Tomamos los extremos superiores $m$ de los intervalos $[2^jK,\min(2^{j+1}K,M)]$ no vacíos, incluyendo
+$M$ en el último, y en cada uno fijamos $s_m=\lceil Am^2/n+\chi\sqrt{Km}\rceil$. Se cumple
+$s_m/m\le1/4$ y $v=C_{\rm geo}m^2/(ns_m)\le1/4$. La cota
+$4nv^{s_m}=4C_{\rm geo}m^2v^{s_m-1}/s_m\le C m^2e^{-c s_m}$
+elimina el factor $n$ del tablero inicial. Sumando sobre los extremos se obtiene
+$C_\chi e^{-c_\chi K}$: también la suma sobre todos los enteros $m\ge K$ de
+$m^2e^{-c\chi\sqrt{Km}}$ tiene esa cota,
+separando las bandas $2^jK\le m<2^{j+1}K$. En un intervalo alcanzado por una historia todavía regular,
+su extremo superior ya fue alcanzado sin salida previa. Allí $D_{\max}(m)<s_m$ fuera de la excepción.
+La monotonía y $s_m-1\le Am^2/n+\chi\sqrt{Km}$ acotan la contribución del intervalo por
+$C(Am/n+\chi\sqrt{K/m})$. Sumamos las dos progresiones geométricas, incluida la última banda
+truncada.
+
+Para la segunda estimación ponemos $s=\lceil\alpha k\rceil\le k/4$ en \eqref{geompres}. Ahora $v\le
+2C_{\rm geo}\delta/\alpha$ para $n$ grande y $4nv^s\le4C_{\rm geo} k^2v^{s-1}/s$. Escogemos
+$\alpha\log(\alpha/(2C_{\rm geo}\delta))>\lambda$ con desigualdad estricta. La diferencia absorbe el
+factor polinómico
+y la suma sobre $k\ge K$, aumentando $K_0$ si hace falta. La estimación en $M$ usa únicamente el
+término $k=M$.
+\end{proof}
+
+\subsection{Patrones y fibras con línea distinguida disponible}
+Un patrón fijo $H$ tiene $s$ índices de fila, $t$ de columna, un conjunto $S$ de posiciones que deben
+ser casillas disponibles y un peso determinista $w$ de norma acotada en cada asignación de índices.
+Los indicadores de intervalos pueden incorporarse a $w$. Sea $Z_H$ la suma sobre asignaciones
+inyectivas por familia, con sus pesos e indicadores de disponibilidad, dividida por $(k)_s(k)_t$,
+donde $(k)_s=k(k-1)\cdots(k-s+1)$. Tomamos $K_0$ mayor que el doble de todos los órdenes de patrones
+usados.
+\begin{lema}[Incrementos de un patrón]\label{lema:incrementos-meso}
+Para un padre regular de tamaño $k$ y $\Delta Z_H=Z_H(k-1)-Z_H(k)$,
+\[
+ |\mathbb E_\nu(\Delta Z_H\mid\mathcal F_k)|
+ \le C_H\frac{1+(D_{\max}(k)-1)_+}{k^2},\qquad
+ |\Delta Z_H|\le C_H/k .
+\]
+Las mismas cotas valen para $F_i(k)/k$, donde $i$ es una fila distinguida y $F_i(k)=\sum_{j\ {\rm
+disponible}}Y_{ij}w_{ij}$, si el paso se condiciona a que sobreviva $i$. También valen para una
+columna distinguida condicionada a sobrevivir. Aquí $Y_{ij}$ es el indicador de disponibilidad de la
+casilla; los pesos son fijos y acotados.
+\end{lema}
+\begin{proof}
+La probabilidad de que el borrado de fila y columna afecte una asignación fija es
+$(s+t)/k+O_H(k^{-2})$ por inclusión-exclusión y el Lema~\ref{meso:paso}. El cociente exacto de las
+normalizaciones es $(1-s/k)(1-t/k)$. Se cancela pues el término de primer orden de la deriva. Después
+de descontar el borrado por fila y columna, para perder una casilla $e\in S$ aún disponible hay que
+elegir otra casilla en una de sus dos diagonales. En cada diagonal hay a lo sumo $(D_{\max}(k)-1)_+$
+posibilidades y cada una tiene probabilidad $\le C_q/k^2$. Sumamos sobre $S$ y sobre las asignaciones,
+usando el valor absoluto del peso. Para el salto, el borrado de una fila y una columna afecta
+$O_H(k^{s+t-1})$ asignaciones. Cuando $S\ne\varnothing$, las dos diagonales borradas contienen a lo
+sumo $2k$ cruces vacíos y cada casilla fijada en una posición de $S$ afecta a lo sumo
+$O_H(k^{s+t-2})$ asignaciones. El cambio de la normalización es relativo $O_H(1/k)$. No se impone
+restricción de diagonal distinta a las posiciones de un patrón.
+
+Condicionemos ahora sólo el siguiente paso a que sobreviva $i$. La probabilidad de borrar una columna
+$j$ es
+\[
+ \frac{\nu(j\ {\rm elegida}\mid\mathcal F_k)-
+       \nu((i,j)\ {\rm elegida}\mid\mathcal F_k)}{1-1/k}
+   =1/k+O(k^{-2})
+\]
+uniformemente. Para una columna distinguida se intercambian familias y el denominador es
+$1-1/k+O(k^{-2})$. En ambos casos la pérdida esperada por el borrado transversal es $F_i/k+O(1/k)$,
+pues hay a lo sumo $k$ sumandos acotados. Tras dividir por $k-1$ se cancela con el cambio de
+normalización, con error $O(k^{-2})$. Para cada casilla de la fibra, la probabilidad adicional de
+perderla por una diagonal es a lo sumo $2C_q(D_{\max}(k)-1)_+/k^2$ dividido por la probabilidad de
+supervivencia de la línea
+distinguida en este paso, uniformemente separada de cero. Sumamos sobre la fibra y dividimos por
+$k-1$. Cada diagonal corta la fibra en a lo sumo una casilla, por lo que el salto normalizado es
+$O(1/k)$.
+\end{proof}

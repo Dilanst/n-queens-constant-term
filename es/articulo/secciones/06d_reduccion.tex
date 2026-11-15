@@ -1,0 +1,98 @@
+\subsection{Reducción a un permanente auxiliar}\label{costes:permanente}
+
+Sea $\varepsilon_{\rm out}\ge\max_f\ell_f$ la cota exterior común, con $\varepsilon_{\rm out}<1$.
+Sean $P=(p_{ij})$ con ceros fuera del soporte y
+$W_{ij}=p_{ij}(1-p_{ij})$. En lo que sigue $W$ denota esta matriz auxiliar. Escribimos
+\[
+ S_{R,d}=A_R^T\operatorname{diag}(\tau_d(p_e))A_R,\qquad
+ S_2=S_{R,2},\qquad
+ \Gamma_2=\frac{e^{-C_2/2}\sqrt{4\pi k}}{\sqrt{\pdet S_2}} .
+\]
+Una permutación en el soporte usa una casilla por fila y por columna. La llamamos legal si además usa
+cada diagonal a lo sumo una vez.
+
+\begin{lema}[Reducción a un permanente]\label{coste-factor}
+Sea $\mu_W(\sigma)=\prod_{e\in\sigma}W_e/\per W$ la probabilidad que la matriz $W$ induce en las
+permutaciones del soporte, y sea
+\[
+ F(\sigma)=
+ \frac{\prod_f h_f}{\prod_e(1-p_e)^2}\,
+ \mathbf1_{\{\sigma\ {\rm legal}\}}
+ \prod_{e\in\sigma}\frac{(1-p_e)^2}{h_{D(e)}h_{A(e)}} .
+\]
+Entonces
+\[
+ Q(B)e^{-H_B(p)}
+   =\frac{\per W}{\prod_e(1-p_e)}\,\E_{\mu_W}F.
+\]
+Para $Q(B)>0$, si $P$ cumple las hipótesis \eqref{terminal-hipotesis-matriz} de la
+Sección~\ref{permanente} con $K=k$, resulta uniformemente
+\[
+ g(B)=\log\E_{\mu_W}F-\log(\Gamma_4/\Gamma_2)+o(1)
+ \qquad (k\longrightarrow\infty).
+\]
+\end{lema}
+\begin{proof}
+Las filas y columnas de $P$ suman uno. La masa de cualquier conjunto de filas está contenida en sus
+columnas vecinas, cada una de capacidad uno. Por el teorema de Hall existe una permutación del soporte
+y $\per W>0$. En una permutación legal, multiplicar $W_e$ por la fracción de la última productoria da
+\[
+ \frac{p_e(1-p_e)^3}{h_{D(e)}h_{A(e)}}=a_i b_j
+\]
+por el Lema~\ref{coste-vacancias}. El producto sobre la permutación vale entonces $\prod_i a_i\prod_j
+b_j$, independientemente de la colocación. Sumando sobre las $Q(B)$ permutaciones legales, el lado
+derecho de la primera igualdad es
+$Q(B)\mathcal K/\prod_e(1-p_e)^3$, que vale $Q(B)e^{-H_B(p)}$ por ese mismo lema.
+
+El Lema~\ref{terminal-normalizador} da
+$\log(\per W/\prod_e(1-p_e))=\log\Gamma_2+o(1)$ para la matriz bistocástica $P$ y los pesos
+$W=P\circ(1-P)$. Su prueba, como la de la Proposición~\ref{terminal-permanente}, sólo toma de esta
+sección las definiciones de $S_2$, $C_2$ y $\Gamma_2$. Los pesos se construyen con este mismo $P$ en
+el mismo tablero, de modo que en la
+ecuación estacionaria ponderada de torres, $p_e(1-p_e)=W_e$, los multiplicadores pueden tomarse
+iguales a uno. Tomar logaritmos en la primera igualdad y usar $L(B)=H_B(p)+\log\Gamma_4$ prueba la
+segunda. La ley $\mu_W$ se usa únicamente para contar en $B$.
+\end{proof}
+
+\subsection{Los términos del cociente de normalizadores}
+
+\begin{lema}[Inversa de las matrices de filas y columnas]\label{coste-inversa}
+Bajo las hipótesis del Lema~\ref{coste-estatico}, escribamos
+$S_0=A_R^T\operatorname{diag}(p)A_R$ y $\iota_e$ para el vector indicador de la fila y la columna de
+$e$.
+Para $0\le s\le1$ ponemos
+$S(s)=(1-s)S_{R,2}+sS_{R,4}$. Uniformemente en $s$ y en los índices físicos $u,v$,
+\[
+ (S(s)^+)_{uv}=\mathbf1_{\{u=v\}}+O(k^{-1}).
+\]
+En consecuencia $\iota_e^TS(s)^+\iota_{e'}$ es el número de vértices de fila y columna comunes a
+$e,e'$, con
+error $O(k^{-1})$.
+\end{lema}
+\begin{proof}
+Como las masas de fila y de columna valen uno,
+\[
+ S_0=\begin{pmatrix}I&P\\P^T&I\end{pmatrix}.
+\]
+Denotemos por $\Pi_+,\Pi_-$ los proyectores ortogonales sobre las dos rectas generadas por
+$(\mathbf1_R,\mathbf1_C)$ y $(\mathbf1_R,-\mathbf1_C)$, respectivamente. Sus entradas tienen módulo
+$1/(2k)$. Los autovalores correspondientes son dos y cero. Sea $N_0$ la matriz simétrica de bloques
+diagonales nulos y bloques cruzados $P-\mathbf1\mathbf1^T/k$ y su traspuesta. Anula ambas rectas
+constantes, y en su complemento $S_0=I+N_0$. Tanto las filas como las columnas de $P$ tienen norma
+euclídea $O(k^{-1/2})$, por $\sum_jp_{ij}^2\le C/k$ y su análoga en columnas. Vale lo mismo para las
+filas de $N_0$. Sus entradas son $O(1/k)$ y $\|(I+N_0)^{-1}\|_{\rm op}\le1/\min\{1,\gamma\}$. La
+identidad exacta
+\[
+ (I+N_0)^{-1}= I-N_0+N_0(I+N_0)^{-1}N_0
+\]
+muestra, por Cauchy--Schwarz entre dos filas de $N_0$, que sus entradas difieren de las de $I$ en
+$O(k^{-1})$. Para recuperar $S_0^+$ se resta $\Pi_-+\tfrac12\Pi_+$, lo que respeta la misma
+estimación.
+
+Para $d=2,4$ se tiene $0\le\tau_d(p_e)-p_e=O(p_e^2)$. En cada fila de $S_{R,d}-S_0$ la suma absoluta
+es dos veces la suma de estas diferencias sobre una línea física y es $O(k^{-1})$. Por simetría la
+norma de operador tiene esta misma cota, también para $S(s)-S_0$. Todas las matrices tienen el mismo
+núcleo y dominan $S_0$ en su complemento. En ese complemento la identidad de resolventes da
+$\|S(s)^+-S_0^+\|_{\rm op}\le\gamma^{-2}\|S(s)-S_0\|_{\rm op}=O(k^{-1})$.
+Al contraer con $\iota_e,\iota_{e'}$ intervienen sólo cuatro entradas. Esto da la afirmación restante.
+\end{proof}

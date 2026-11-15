@@ -1,0 +1,83 @@
+\subsection{Difusión, escalado y determinante}\label{permanente}
+
+En esta subsección $K$ es el orden de una matriz bistocástica $P$ y $J_K=\mathbf1\mathbf1^T/K$. Las
+estimaciones valen asimismo con $K=k$ al aplicarlas en la Sección~\ref{costes}. Las cotas
+exteriores fijan constantes $M_0$ y $\rho_*<1$ tales que
+\begin{equation}\label{terminal-hipotesis-matriz}
+ 0\le P_{ij}\le M_0/K,\qquad \|P-J_K\|_{\rm op}\le\rho_* .
+\end{equation}
+En efecto, para una matriz bistocástica, el bloque de filas y columnas con pesos $P$ es
+$\left(\begin{smallmatrix}I&P\\P^T&I\end{smallmatrix}\right)$; sus autovalores son $1\pm\sigma_j(P)$.
+Las dos rectas constantes corresponden al valor singular uno. Una brecha $\gamma>0$ fuera del modo
+cero implica que los restantes valores singulares son a lo sumo $1-\gamma$, que es precisamente la
+cota requerida para $P-J_K$.
+
+\begin{lema}[Escalado bistocástico]\label{terminal-escalado}
+Supongamos \eqref{terminal-hipotesis-matriz} y escribamos
+$W_{ij}=P_{ij}(1-P_{ij})$ y $a_K=\sum_{ij}P_{ij}^2$. Para $K$ suficientemente grande hay vectores
+$\alpha,\beta$ con $\sum_i\alpha_i=\sum_j\beta_j$ tales que $D_{ij}=e^{\alpha_i+\beta_j}W_{ij}$ es
+bistocástica. Además,
+\[
+ \max\{\|\alpha\|_\infty,\|\beta\|_\infty\}=O(K^{-1}),\qquad
+ \sum_i\alpha_i+\sum_j\beta_j=a_K+O(K^{-1}),\qquad
+ \|D-P\|_{\rm HS}=O(K^{-1}).
+\]
+Las constantes dependen sólo de $M_0,\rho_*$. El soporte de $D$ coincide con el de $P$.
+\end{lema}
+\begin{proof}
+Para controlar la precisión del escalado, tratado en general en \cite{sk}, consideremos $S=PP^T$. Es
+simétrica y bistocástica, con $S_{ij}\le M_0/K$ y $\|S-J_K\|_{\rm op}\le\rho_*^2$, pues
+$S-J_K=(P-J_K)(P-J_K)^T$. Cada fila de $S-J_K$ tiene norma euclídea al cuadrado
+$\sum_j S_{ij}^2-1/K\le (M_0-1)/K$. Como $S^t-J_K=(S-J_K)^t$ para todo entero $t\ge1$, multiplicar una
+fila de $S-J_K$ por $(S-J_K)^{t-1}$ y pasar de norma euclídea a norma de suma absoluta da
+\[
+ \|S^t-J_K\|_{\infty\to\infty}
+ \le \sqrt{M_0-1}\,\rho_*^{\,2(t-1)} .
+\]
+En los vectores de media cero, la serie $\sum_{t\ge0}S^t$ es por tanto la inversa de $I-S$ y tiene
+norma $\infty\to\infty$ uniformemente acotada. La misma prueba con $P^TP$ da la cota para
+$(I-P^TP)^{-1}$ en ese subespacio.
+
+Pongamos $S_0=\left(\begin{smallmatrix}I&P\\P^T&I\end{smallmatrix}\right)$.
+En el subespacio $\sum x=\sum y$, la ecuación $S_0(x,y)=(f,g)$ se plantea para $\sum f=\sum g$. Si
+$s=K^{-1}\sum f$, la eliminación en los dos bloques da
+\[
+ \begin{aligned}
+ x&=\tfrac12s\mathbf1+(I-PP^T)^{-1}(f-Pg),\\
+ y&=\tfrac12s\mathbf1+(I-P^TP)^{-1}(g-P^Tf).
+ \end{aligned}
+\]
+Los argumentos de ambas inversas tienen media cero. La parte constante viene de que $x+Py=f$ y
+$y+P^Tx=g$ tienen ambas media $s$ y las medias de $x,y$ coinciden. Como
+$\|P\|_{\infty\to\infty}=\|P^T\|_{\infty\to\infty}=1$, la inversa $T$ de $S_0$ con este gauge
+satisface $\|T\|_{\infty\to\infty}\le C_1(M_0,\rho_*)$.
+
+Sea $\Psi(\alpha,\beta)$ el vector formado por las sumas de filas y de columnas de
+$(e^{\alpha_i+\beta_j}W_{ij})$ menos
+uno por coordenada. Sus dos sumas son iguales. En cero el defecto es a lo sumo $M_0/K$ por
+$\sum_jP_{ij}^2\le M_0/K$ y su análoga en columnas. En una bola de radio $r\le1$ la derivada de $\Psi$
+tiene en los bloques diagonales las sumas de filas y de columnas de la matriz escalada en el punto
+considerado, y esa matriz y su traspuesta en los bloques cruzados. En cada fila y columna
+\[
+ \sum_j\big|e^{\alpha_i+\beta_j}W_{ij}-P_{ij}\big|
+ \le C_2(r+K^{-1})\sum_jP_{ij}=C_2(r+K^{-1}),
+\]
+con la misma desigualdad al sumar en $i$. Se usaron $|\alpha_i+\beta_j|\le2r$ y $P_{ij}\le M_0/K$. Así
+$\|\Psi'-S_0\|_{\infty\to\infty}\le 2C_2(r+K^{-1})$.
+
+En el gauge fijado, el mapa $u\mapsto u-T\Psi(u)$ desplaza el origen a distancia a lo sumo
+$C_1M_0/K$. Tomemos la bola cerrada de radio $r=2C_1M_0/K$. Para $K$ grande su derivada tiene norma a
+lo sumo $2C_1C_2(r+K^{-1})\le1/2$. Conserva por tanto la bola y es una contracción. Su punto fijo
+resuelve $\Psi=0$ y tiene norma $O(K^{-1})$. Como $P_{ij}<1$ para $K$ grande, el factor
+$(1-P_{ij})e^{\alpha_i+\beta_j}$ es positivo y conserva el soporte.
+
+Uniformemente en los índices tenemos ahora
+\[
+ D_{ij}=P_{ij}\bigl(1+\alpha_i+\beta_j-P_{ij}+O(K^{-2})\bigr).
+\]
+Sumamos en $i,j$. Puesto que tanto $D$ como $P$ tienen masa total $K$, y las sumas de filas y de
+columnas de $P$ valen uno,
+obtenemos $\sum_i\alpha_i+\sum_j\beta_j-a_K=O(K^{-1})$. Por otra parte, $|D_{ij}-P_{ij}|\le
+C_3P_{ij}/K$ y $a_K\le M_0$. Elevar al cuadrado y sumar prueba la afirmación en norma de
+Hilbert--Schmidt.
+\end{proof}

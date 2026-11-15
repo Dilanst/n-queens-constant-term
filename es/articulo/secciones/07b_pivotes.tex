@@ -1,0 +1,66 @@
+\begin{lema}[Reducción a torres en el último tablero]\label{terminal-pivotes}
+Sea $A$ la máscara del tablero $B_K$. En $F\cap D_K^c$ hay una
+colocación que completa el tablero y
+\[
+ Q(B_K)=\per A,\qquad L(B_K)=L_T(A),
+\]
+donde $L_T(A)=H_T(p)+\log\Gamma_2$ es el predictor de torres en el mismo soporte, como en el modelo
+de torres con máscara de~\cite[Secciones~8.1 y~8.5]{pred}. Aquí $H_T(p)=-\sum_e p_e\log p_e
++\sum_e(1-p_e)\log(1-p_e)$ es la entropía de torres, evaluada en su punto estacionario con masas
+de fila y de columna iguales a uno, y $\Gamma_2$ es el factor de la
+Sección~\ref{costes:permanente}.
+\end{lema}
+\begin{proof}
+En $F$ el punto de Bethe $p$ de $B_K$ tiene masas de fila y de columna iguales a uno y es positivo en
+todas las casillas disponibles. Para un conjunto cualquiera $I$ de filas, toda su masa $|I|$ llega al
+conjunto
+de columnas vecinas, que admite a lo sumo una unidad por columna. En consecuencia $|\mathcal
+N(I)|\ge|I|$. Para ver directamente que se puede cubrir toda fila, tómese un emparejamiento de
+cardinal máximo. Si deja una fila sin cubrir, desde todas las filas descubiertas se recorren
+alternativamente aristas fuera del emparejamiento desde las filas y aristas del emparejamiento desde
+las columnas. Una columna descubierta alcanzable daría un camino aumentante, contradicción. Luego cada
+columna alcanzable está emparejada con una fila alcanzable, y estas filas emparejadas no agotan las
+filas alcanzables, entre las que hay una descubierta. Todas las vecinas de una fila alcanzable son
+alcanzables, incluida, si existe, la columna por la que se entró en esa fila. Esto contradice la
+desigualdad para el conjunto de filas alcanzables. Así $\per A>0$.
+
+En $D_K^c$, cada diagonal contiene a lo sumo un cruce vacío. Toda permutación del
+soporte respeta por ello las dos restricciones diagonales. Además, las casillas de diagonales ocupadas
+ya se excluyeron al formar $A$, por lo que cualquier permutación del soporte da una completación legal
+de $B_K$. La construcción es reversible y prueba $Q(B_K)=\per A$.
+
+En una diagonal libre con una casilla disponible $e$, la vacancia es $h_f=1-p_e=:q_e$. Cada casilla
+tiene dos de estas diagonales y una diagonal libre sin casillas tiene $h_f=1$. Así en $H_B$ los
+términos diagonales restan dos copias de $\sum_e q_e\log q_e$, y queda exactamente la entropía de
+torres
+\[
+ H_T(p)=-\sum_e p_e\log p_e+\sum_e q_e\log q_e .
+\]
+La ecuación estacionaria del Lema~\ref{coste-vacancias} pasa a ser $p_eq_e=a_ib_j$ en toda casilla
+disponible, con los mismos $a_i,b_j$. También se obtiene $H_B=H_T$
+directamente como identidad de los funcionales en los puntos factibles del soporte: en toda diagonal
+de una sola casilla la vacancia siempre es el complemento de la única entrada. De aquí que el punto
+de Bethe sea también el punto estacionario del predictor de torres.
+
+Queda verificar el normalizador, como en \cite[Sección~8.1]{pred}. Para una casilla de masa $p$
+ponemos $q=1-p$, $\tau_d=pq/(1-dp)$ y $b_d=(1-dp)/q^d$. Al eliminar la coordenada de su primera
+diagonal, el pivote en $S_4$ es $q+\tau_4$. Si $r$ indica las otras líneas de la casilla, la
+contribución $\tau_4rr^T$ en el bloque restante se sustituye, por el complemento de Schur, por
+$(\tau_4-\tau_4^2/(q+\tau_4))rr^T$. La segunda diagonal de esa casilla se elimina después con $d=3$.
+En ambos pasos
+\[
+ q+\tau_d=\frac{q(1-(d-1)p)}{1-dp},\qquad
+ \tau_d-\frac{\tau_d^2}{q+\tau_d}=\tau_{d-1},\qquad
+ b_d(q+\tau_d)=b_{d-1}.
+\]
+Dado que la diagonal eliminada tiene una sola casilla, la operación afecta sólo a la contribución de
+esa casilla. Una línea sin casillas tiene pivote uno y no afecta a las otras coordenadas. El modo cero
+$(\mathbf1_R,-\mathbf1_C,0)$ tiene coordenada cero en cada línea eliminada. Por ello podemos calcular
+el pseudodeterminante en una base ortonormal de su complemento que contenga los vectores de las
+diagonales eliminadas. Allí la factorización ordinaria por los pivotes es exacta y el modo de filas y
+columnas conserva su longitud $\sqrt{2K}$. El factor correspondiente del normalizador es
+$\sqrt{2\pi}\sqrt{2K}=\sqrt{4\pi K}$ tanto antes como después. Como $e^{C_d}=\prod_e b_d(p_e)$, las
+identidades prueban
+$e^{C_4}\pdet S_4=e^{C_2}\pdet S_2$ tras completar las dos eliminaciones por casilla. En particular
+$\Gamma_4=\Gamma_2$. Esto da $L(B_K)=H_T(p)+\log\Gamma_2=L_T(A)$.
+\end{proof}

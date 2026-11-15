@@ -1,0 +1,70 @@
+\section{Introducción}
+El problema de las $n$ reinas pregunta cuántas maneras hay de colocar $n$ reinas en un
+tablero de $n\times n$ sin que dos se ataquen. Denotamos ese número por $Q(n)$ y contamos
+por separado las soluciones relacionadas por una simetría. Leer las columnas de sus reinas
+por orden de filas identifica cada solución con una permutación. Las restricciones diagonales
+determinan cuáles de las $n!$ permutaciones sirven.
+
+Simkin~\cite[Teorema~1.1]{simkin} obtuvo el orden principal de $\log Q(n)$ mediante
+un problema variacional. Los resultados de Luria y Simkin~\cite{ls} y de Bowtell y
+Keevash~\cite{bk} estudian el conteo por métodos combinatorios. Nobel, Agrawal y Boyd~\cite{nab}
+acotaron la constante de primer orden. Para determinar el factor multiplicativo que queda en
+el conteo después de extraer el término principal hace falta una estimación más precisa.
+
+Sea $Q_{\rm pred}(n)$ el predictor canónico de~\cite{pred} y pongamos
+$R_Q(n)=\log Q(n)-\log Q_{\rm pred}(n)$. El siguiente resultado establece que
+$R_Q(n)\to0$, la forma cualitativa de la Conjetura~10.1 de~\cite{pred}.
+\begin{teorema}[Término constante del conteo]\label{princ}
+En el tablero ordinario, cuando $n\to\infty$,
+\[
+ \log Q(n)-\log n!-n\Phi\longrightarrow
+ \tfrac12\log2-\tfrac12-\tfrac32 I_2-\tfrac12\log{\det}_2(I+J)=C_{\rm pred}.
+\]
+\end{teorema}
+Aquí $\nu_1$ es el perfil óptimo de masa uno de~\cite{perfil}, $\Phi=s_1+1$ con $s_1$ su entropía, e
+$I_2=\int_{[0,1]^2}\nu_1^2$. El operador $J$ es el de (D3.6) de~\cite{pred}, y su determinante
+regularizado se describe en (D4.1) de ese trabajo. Un error que tiende a cero en el logaritmo
+equivale a un cociente de conteos que tiende
+a uno. La estimación cuantitativa $|R_Q(n)|\le C/n$ de la misma conjetura sigue abierta.
+
+En la Sección~9 de~\cite{pred} se estima $C_{\rm pred}\approx0{,}9401$, y la evaluación directa de
+la fórmula da $0{,}940144$; ninguna de las dos cifras tiene cota de error certificada. Con la
+referencia $\Phi_0=1-1{,}944001$ de esa sección, los conteos exactos para $16\le n\le27$ dan
+$\log Q(n)-\log n!-n\Phi_0$ entre $0{,}913$ y $0{,}941$ \cite[Tabla~2]{pred}, y $R_Q(n)$ vale
+$0{,}0208$ en $n=20$ y $0{,}0119$ en $n=27$. Estos valores son compatibles con el
+Teorema~\ref{princ}, pero ningún cálculo en valores finitos de $n$ lo comprueba, porque el
+teorema afirma un límite sin velocidad de convergencia.
+
+La Sección~10 de~\cite{pred} identifica tres cuestiones. La primera es la regularidad de
+los tableros residuales a lo largo del proceso aleatorio. La segunda es el efecto de las
+últimas filas, donde quedan pocas opciones de inserción. La tercera es cómo reunir los errores
+de las sucesivas inserciones al comparar ambos conteos.
+
+\paragraph{Esquema de la demostración.}
+Escribimos $g(B)=\log Q(B)-L(B)$, donde $L(B)$ es el predictor de un tablero residual $B$
+(Sección~\ref{leyes}). Hay que probar que $g(B_0)\to0$ en el tablero inicial $B_0$. Comparamos dos
+leyes sobre las historias que insertan una reina por fila, en un orden uniforme de las filas. La ley
+uniforme $\mu$ revela una solución uniforme. La ley adaptativa $\nu$ elige cada casilla $e$ con
+probabilidad proporcional a $\exp L(B+e)$, la predicción del tablero que resulta. La
+Sección~\ref{historias} expresa $g(B_0)$ con ambas leyes en una historia detenida: una identidad con
+la entropía relativa de $\mu$ respecto de $\nu$ y una cota inferior bajo $\nu$. El término acumulado
+de esas fórmulas es pequeño por la consistencia de~\cite{pred}.
+
+Fijamos $\delta>0$ pequeño y un entero $K$ grande, y ponemos $M=\lceil\delta n\rceil$. El orden en
+que se eligen las constantes está en la Sección~\ref{meso:constantes}. Las Secciones~\ref{macro}
+y~\ref{meso} prueban que, bajo $\nu$, los tableros de la historia son regulares
+(Definición~\ref{def:regular}) hasta que quedan $K$ filas vacías, salvo probabilidad
+$O(e^{-cK})+o(1)$: primero mientras quedan al menos $M$ filas y después entre $M$ y $K$. La
+Sección~\ref{costes} acota por arriba $g$ en el primer tablero que deja de ser regular. La
+Sección~\ref{terminal} prueba que, en el tablero de $K$ filas, el conteo es un permanente fuera de
+un suceso de probabilidad $O(K^4/n)$, y que allí $g$ tiende a cero al crecer $K$. En la
+Sección~\ref{balance} se hace primero $n\to\infty$ con $\delta$ y $K$ fijos y después $K\to\infty$.
+
+Los Teoremas~1.1--1.3, la Proposición~5.2 y el Teorema~7.7 de~\cite{perfil} proporcionan el
+perfil continuo y sus cotas. La comparación entrópica del Teorema~3.6 de~\cite{ultimas}
+motiva el argumento de la Sección~\ref{costes}, donde verificamos las estimaciones sobre el
+soporte de cada residual. Usamos los Teoremas~7.1 y~8.1 y el Corolario~7.2 de~\cite{pred}
+para las inserciones, y sus Teoremas~1.1 y~5.7 para la constante. La única estimación
+asintótica de permanentes que usamos es la de McCullagh~\cite{mccullagh}, en la forma uniforme
+probada por Divoux y Wang~\cite[Proposición~3.1 y Observación~2.1]{dw}. En la
+Sección~\ref{permanente} verificamos sus hipótesis tras escalar la matriz del residual.

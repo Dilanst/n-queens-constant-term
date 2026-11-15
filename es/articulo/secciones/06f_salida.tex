@@ -1,0 +1,28 @@
+\begin{corolario}[Coste de salida en el tramo mesoscópico]\label{coste-debil}
+Para un tablero de primera salida del tramo mesoscópico, que cumple las cotas de la clase exterior y
+en el que $\max_f\ell_f\le\varepsilon_{\rm out}<1$, se tiene, para $k$ suficientemente grande,
+\[
+ g^+(B)\le C_0+\beta(\varepsilon_{\rm out})k,\qquad
+ \beta(v)=\frac{2v}{1-v},
+\]
+con la función $\beta$ de la Sección~\ref{meso:constantes}. La constante $C_0$ se puede elegir
+uniformemente para esas cotas.
+\end{corolario}
+\begin{proof}
+Para $0\le x<1$ se tiene $-\log(1-x)-x=\int_0^x t/(1-t)\,dt\le x^2/(2(1-x))$. En el factor de $F$ que
+es común a todas las permutaciones obtenemos, usando $\log(1-\ell_f)\le-\ell_f$,
+\[
+ \sum_f\log h_f-2\sum_e\log(1-p_e)
+ \le-\sum_f\ell_f+2\sum_ep_e+
+       \frac{\sum_ep_e^2}{1-p_{\max}}
+ =O_C(1).
+\]
+Para las permutaciones legales el numerador $(1-p_e)^2$ de cada factor de casilla es a lo sumo uno.
+Además $-\log h_f\le\ell_f/(1-\ell_f)\le\varepsilon_{\rm out}/(1-\varepsilon_{\rm out})$. Hay dos de
+esos logaritmos por cada una de las $k$ casillas elegidas. Se sigue que
+$F(\sigma)\le\exp(C'+\beta(\varepsilon_{\rm out})k)$, desigualdad que también vale si el indicador de
+legalidad es cero. El Lema~\ref{coste-factor} y la Proposición~\ref{coste-normalizadores} dan la cota
+para $g$ cuando $Q(B)>0$. Se absorben la cota uniforme de $\log(\Gamma_4/\Gamma_2)$ y el $o(1)$
+uniforme en $C_0$, que se toma positivo. Esto permite pasar a $g^+$, y cubre asimismo el caso
+$Q(B)=0$.
+\end{proof}

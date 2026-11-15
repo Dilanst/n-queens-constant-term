@@ -1,0 +1,2 @@
+# Python >= 3.10; sólo se utiliza su biblioteca estándar.
+# No hay paquetes externos que instalar.

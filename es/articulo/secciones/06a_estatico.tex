@@ -1,0 +1,86 @@
+\section{El coste en el tablero de primera salida}\label{costes}
+
+Sea $B$ el tablero de primera salida de una historia y sea $k$ su tamaño. Cuando $Q(B)>0$ recordamos
+que $g(B)=\log Q(B)-L(B)$, y ponemos $g^+(B)=\max\{g(B),0\}$. Si $Q(B)=0$ ponemos
+$g^+(B)=0$. Llamamos \emph{coste de salida} a $g^+(B)$. Todas las estimaciones de esta sección son
+para un tablero fijo. Las cotas de difusión, vacancia y brecha que usamos en él son las cotas
+exteriores, que hereda de su padre regular. No se le imponen las condiciones de regularidad que
+acaba de incumplir.
+
+\subsection{El normalizador en un tablero residual}\label{costes:normalizador}
+
+Sea $p=(p_e)$ el punto de Bethe de $B$. Cada casilla $e=(i,j)$
+pertenece a una fila, una columna y dos diagonales $D(e),A(e)$. Como en la Sección~\ref{leyes},
+$\ell_f=\sum_{e\in f}p_e$ y $h_f=1-\ell_f$ son la masa y la vacancia de cada diagonal residual $f$.
+Escribimos $\mathcal A=(A_R,D)$ para la matriz de
+incidencia de casillas con líneas, cuyas primeras columnas son las de filas y columnas y cuyas otras
+columnas son las diagonales. Así $D$ es la incidencia de casillas por diagonales de la
+Sección~\ref{macro:reconstruccion}, y $A_R=B^T$ es la traspuesta de la matriz de incidencia de filas
+y columnas de esa sección, que aquí no llamamos $B$ para no confundirla con el tablero. Definimos
+\[
+ \tau_d(p)=\frac{p(1-p)}{1-dp},\qquad
+ C_d=\sum_e\bigl[\log(1-dp_e)-d\log(1-p_e)\bigr],\qquad d=2,4 .
+\]
+En las estimaciones asintóticas tomamos $k$ suficientemente grande para que $4p_{\max}\le1/2$. Para
+$d=4$ la matriz del normalizador es
+\[
+ S_4=\operatorname{diag}(0_{RC},h)+
+          \mathcal A^T\operatorname{diag}(\tau_4(p_e))\mathcal A .
+\]
+Es el operador de líneas $S_B$ de la Sección~\ref{leyes}. Su modo cero es
+$(\mathbf1_R,-\mathbf1_C,0)$. El pseudodeterminante $\pdet$ es el producto de los
+autovalores positivos. Con esta notación el predictor se escribe
+\[
+ \Gamma_4=\frac{e^{-C_4/2}\sqrt{4\pi k}}{\sqrt{\pdet S_4}},
+ \qquad L(B)=H_B(p)+\log\Gamma_4 ,
+\]
+donde $H_B$ es la entropía de Bethe \eqref{bethe}. Las hipótesis del lema siguiente son las cotas
+de difusión, vacancia y brecha de la Sección~\ref{leyes}: la matriz
+$A_R^T\operatorname{diag}(p)A_R$ es el laplaciano de filas y columnas salvo el cambio de signo de
+las coordenadas de columna.
+
+\begin{lema}[Estimación del normalizador]\label{coste-estatico}
+Supongamos que $p_{\max}\le C/k$, que $h_f\ge\eta>0$ y que
+$A_R^T\operatorname{diag}(p)A_R$ tiene brecha al menos $\gamma>0$ sobre el complemento ortogonal de
+$(\mathbf1_R,-\mathbf1_C)$. Entonces
+\[
+ L(B)-H_B(p)=\tfrac12\log(4\pi k)+O_{C,\eta,\gamma}(1).
+\]
+\end{lema}
+\begin{proof}
+Escribamos $\tau_e=\tau_4(p_e)$ y $E=S_4-I$. En una fila o columna la suma de los $p_e$ incidentes
+vale uno. En una diagonal vale $1-h_f$. Por tanto, para cualquier línea $f$,
+\[
+ E_{ff}=\sum_{e\in f}(\tau_e-p_e),\qquad
+ \tau_e-p_e=\frac{3p_e^2}{1-4p_e}.
+\]
+Puesto que $\sum_e p_e=k$ y $\sum_e p_e^2\le C$, se obtiene
+$\operatorname{tr}E=4\sum_e(\tau_e-p_e)=O(1)$. Además $0\le E_{ff}=O(1/k)$, pues la masa de cada línea
+es a lo sumo uno. En consecuencia $\sum_f E_{ff}^2=O(1/k)$. Dos líneas de familias diferentes se
+cortan a lo sumo en una casilla. Cada casilla da doce pares ordenados de líneas distintas, luego
+\[
+ \sum_{f\ne j}E_{fj}^2=12\sum_e\tau_e^2=O(1).
+\]
+
+Sean $y\perp(\mathbf1_R,-\mathbf1_C)$, $z$ un vector diagonal y $P_0=\operatorname{diag}(p)$. Por
+$\tau_e\ge p_e$, la forma de $S_4$ en $(y,z)$ domina
+$\|P_0^{1/2}(A_Ry+Dz)\|^2+\eta\|z\|^2$. Como cada casilla toca dos diagonales,
+\[
+ \|P_0^{1/2}Dz\|^2
+ \le2\sum_f\ell_f z_f^2\le2\|z\|^2.
+\]
+Para $0<\theta<1$, completar el cuadrado da
+$\|a+b\|^2\ge\theta\|a\|^2-\theta\|b\|^2/(1-\theta)$. Con $\theta=\eta/(\eta+4)$, la forma anterior es
+al menos
+$\theta\gamma\|y\|^2+(\eta/2)\|z\|^2$.
+Esto prueba que el modo señalado es el único modo cero y que los autovalores positivos son al menos
+$c=\min\{\theta\gamma,\eta/2\}$. Para esos autovalores,
+\[
+ \sum_{\lambda>0}(\lambda-1)=\operatorname{tr}E+1,\qquad
+ \sum_{\lambda>0}(\lambda-1)^2\le\operatorname{tr}E^2=O(1).
+\]
+La cota de Taylor $|\log\lambda-(\lambda-1)|\le
+(\lambda-1)^2/(2\min\{1,c\}^2)$ da $\log\pdet S_4=O(1)$.
+Finalmente, los términos lineales se cancelan en $C_4$, de modo que $|C_4|\le C'\sum_e p_e^2=O(1)$.
+Sustituir estas dos estimaciones en $\log\Gamma_4$ demuestra la fórmula.
+\end{proof}

@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\IfFontExistsTF{texgyrepagella-regular.otf}
+ {\setmainfont{texgyrepagella}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,
+   ItalicFont=*-italic,BoldItalicFont=*-bolditalic]}
+ {\IfFontExistsTF{Palatino Linotype}{\setmainfont{Palatino Linotype}}{\setmainfont{Latin Modern Roman}}}
+\linespread{1.05}
+\IfFileExists{spanish.ldf}
+ {\usepackage[spanish,es-noshorthands,es-nodecimaldot,es-tabla]{babel}}
+ {\usepackage{babel}\babelprovide[import,main,hyphenrules=nohyphenation]{spanish}\input{guionado}}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{unicode-math}
+\IfFontExistsTF{texgyrepagella-math.otf}{\setmathfont{texgyrepagella-math.otf}}{\setmathfont{Latin Modern Math}}
+\usepackage[margin=26mm]{geometry}
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\IfFileExists{titlesec.sty}{\usepackage[nobottomtitles*]{titlesec}
+  \renewcommand{\bottomtitlespace}{.12\textheight}}{}
+\usepackage{booktabs,array}
+\usepackage[shortlabels]{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor={blue!45!black},citecolor={green!35!black},urlcolor={blue!55!black}]{hyperref}
+
+\AtBeginDocument{\renewcommand{\tablename}{Tabla}}
+\setlength{\parindent}{1.15em}
+\setlength{\parskip}{0pt plus .35pt}
+\setlength{\textfloatsep}{14pt plus 3pt minus 3pt}
+\setlength{\intextsep}{12pt plus 3pt minus 3pt}
+\setlength{\abovecaptionskip}{6pt}
+\setlength{\belowcaptionskip}{2pt}
+\AtBeginDocument{\setlength{\abovedisplayskip}{9pt plus 2pt minus 3pt}%
+  \setlength{\belowdisplayskip}{9pt plus 2pt minus 3pt}}
+\clubpenalty=7000
+\widowpenalty=7000
+\displaywidowpenalty=3000
+\input{figuras/simbolos}
+\setlength{\emergencystretch}{2em}
+\allowdisplaybreaks[2]
+\numberwithin{equation}{section}
+
+\theoremstyle{plain}
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{proposicion}[teorema]{Proposición}
+\newtheorem{lema}[teorema]{Lema}
+\newtheorem{corolario}[teorema]{Corolario}
+\theoremstyle{definition}
+\newtheorem{definicion}[teorema]{Definición}
+\newtheorem{conjetura}[teorema]{Conjetura}
+\theoremstyle{remark}
+\newtheorem{observacion}[teorema]{Observación}
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\ind}{\mathbf{1}}
+\DeclareMathOperator{\pdet}{pdet}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\tr}{tr}
+\newcommand{\Cpred}{C_{\rm pred}}
+\newcommand{\Qpred}{Q_{\rm pred}}
+
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\DeclareMathOperator{\per}{per}

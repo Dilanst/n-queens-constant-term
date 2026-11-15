@@ -1,0 +1,55 @@
+\section{Comparación final de los conteos}\label{balance}
+\begin{proof}[Demostración del Teorema~\ref{princ}]
+Fijamos las constantes de las clases, $a_{\rm mes}$, $\varrho_{\rm mes}$ y las tolerancias,
+$\varepsilon$, $\delta$, $K_0$, $\varrho_{\rm mac}$ y $a_{\rm mac}$ en el orden de la
+Sección~\ref{meso:constantes}. Sea $K\ge K_0$ un entero fijo. Distinguimos la primera salida
+macroscópica $E_{\rm mac}$, la primera salida en la banda de tamaño $2^jK$ denotada por $E_j$
+y la permanencia $F$. Atribuimos cada salida a la banda del padre que conduce a ella,
+incluyendo el hijo alcanzado. Las bandas se pueden desplazar un paso en la estimación de la
+Proposición~\ref{prop:salida-banda-meso}, cambiando la constante multiplicativa. Un fallo de
+entrada en el corte $k=M$ pertenece a $E_{\rm mac}$. Los sucesos forman una partición.
+
+Sea $\Lambda$ la función de la historia detenida que vale $\Lambda_{\rm mac}=C_\delta n^{2/3}$ en
+$E_{\rm mac}$, $\Lambda_j=C_0+2\beta(\varepsilon_{\rm out})2^jK$ en $E_j$, y cero en $F$.
+La Proposición~\ref{coste-macro} y el Corolario~\ref{coste-debil} se aplican al tablero de primera
+salida, porque su padre regular garantiza las cotas exteriores en él. Se tiene
+$g(B_\tau)\mathbf1_{F^c}\le\Lambda$ en las historias con masa positiva bajo $\mu$.
+
+Aplicamos la desigualdad variacional de Gibbs~\cite[cap.~2]{ct} a $\Lambda$ y a las leyes de
+las historias detenidas. En este espacio finito se obtiene directamente por Jensen,
+restringiendo la suma bajo $\nu$ al soporte de $\mu$:
+\[
+ \E_\mu\Lambda-D(\mu^\tau\Vert\nu^\tau)\le\log\E_\nu e^\Lambda
+ =\log\!\left(1+\nu(E_{\rm mac})(e^{\Lambda_{\rm mac}}-1)
+              +\sum_{j\ge0}\nu(E_j)(e^{\Lambda_j}-1)\right).
+\]
+El Corolario~\ref{macro:cambio} y la estimación de entrada en la Sección~\ref{meso}
+acotan el sumando macroscópico por $C_1\exp(-c_1n+C_\delta n^{2/3})$, con $C_1,c_1>0$ que dependen
+de $\delta$ y de $\varrho_{\rm mac}$.
+Para las bandas, la Proposición~\ref{prop:salida-banda-meso} da una tasa
+$c>2\beta(\varepsilon_{\rm out})$. Tomando $c'$ menor que la diferencia, la suma de
+$\exp[-(c-2\beta(\varepsilon_{\rm out}))2^jK]$ es $O(e^{-c'K})$ para $K$ grande.
+El Corolario~\ref{hist:consistencia}, \eqref{super} y la estimación terminal bajo $\mu$
+de la Proposición~\ref{terminal-error} dan
+\[
+ \limsup_{n\to\infty}g(B_0)\le C/K+\theta_K+Ce^{-c'K},\qquad\theta_K\to0 .
+\]
+En efecto, a $K$ fijo el coste excepcional terminal es a lo sumo
+$C_K K^4/n$, que tiende a cero antes de tomar el límite en $K$.
+
+Para la otra desigualdad usamos $G=F\cap\{Q(B_K)>0\}$. Por la estimación geométrica bajo
+$\nu$ de la Sección~\ref{terminal}, $s=\nu(G)\ge1-Ce^{-cK}-o_n(1)-d_{n,K}$, donde
+$d_{n,K}\to0$ a $K$ fijo. Para $K$ grande este límite inferior es positivo. La parte
+negativa del coste terminal excepcional tiene esperanza bajo $\nu(\cdot\mid G)$ a lo sumo
+$C_Kd_{n,K}/s$. En las historias restantes basta $\theta_K$. Tomando el límite inferior en
+\eqref{infer} y usando $\log(1-z)\ge-2z$ para $0\le z\le1/2$ obtenemos
+\[
+ \liminf_{n\to\infty}g(B_0)\ge-C/K-\theta_K-Ce^{-cK}.
+\]
+Hacemos tender ahora $K$ a infinito en las dos desigualdades. En el tablero inicial $B_0$, el
+máximo global de la Proposición~\ref{macro:maximo} satisface $p_{\max}<1/4$ para $n$ grande y,
+por tanto, coincide con el maximizador canónico de~\cite{pred}. La relación entre el cofactor y el
+pseudodeterminante de la Sección~\ref{leyes} da $L(B_0)=\log Q_{\rm pred}(n)$. Resulta
+$g(B_0)=\log Q(n)-\log Q_{\rm pred}(n)\to0$. Aplicar el Teorema~1.1 de~\cite{pred} al
+segundo logaritmo identifica la constante que aparece en el enunciado.
+\end{proof}
