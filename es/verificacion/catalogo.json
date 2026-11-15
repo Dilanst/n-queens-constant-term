@@ -2356,31 +2356,19 @@
     ],
     [
       "formula",
-      "R _ Q ( n )"
+      "R _ Q ( 20 ) \\approx 0 { , } 0208"
     ],
     [
       "formula",
-      "0 { , } 0208"
-    ],
-    [
-      "formula",
-      "n = 20"
-    ],
-    [
-      "formula",
-      "0 { , } 0119"
-    ],
-    [
-      "formula",
-      "n = 27"
-    ],
-    [
-      "formula",
-      "n"
+      "R _ Q ( 27 ) \\approx 0 { , } 0119"
     ],
     [
       "texto",
       "un"
+    ],
+    [
+      "texto",
+      "una"
     ],
     [
       "texto",
@@ -2520,27 +2508,67 @@
     ],
     [
       "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
       "K"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
+      "D _ K"
+    ],
+    [
+      "texto",
+      "dos"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
+      "\\nu ( F \\cap D _ K ) = O ( K ^ 4 / n )"
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\mu ( D _ K \\mid \\pi ) = O ( K ^ 4 / n )"
+    ],
+    [
+      "formula",
+      "\\pi"
+    ],
+    [
+      "formula",
+      "F \\cap D _ K ^ c"
     ],
     [
       "texto",
       "un"
     ],
     [
-      "texto",
-      "un"
+      "formula",
+      "| g ( B _ K ) | \\le \\theta _ K"
     ],
     [
       "formula",
-      "O ( K ^ 4 / n )"
+      "\\theta _ K \\to 0"
     ],
     [
       "formula",
-      "g"
-    ],
-    [
-      "formula",
-      "K"
+      "K \\to \\infty"
     ],
     [
       "formula",
@@ -3622,19 +3650,27 @@
   "secciones/04_cambio_ley.tex": [
     [
       "formula",
-      "\\nu"
+      "C _ { \\delta , \\varrho _ { \\rm mac } }"
     ],
     [
       "formula",
-      "C _ { \\delta , \\varrho _ { \\rm mac } } , c _ { \\delta , \\varrho _ { \\rm mac } } > 0"
+      "c _ { \\delta , \\varrho _ { \\rm mac } }"
     ],
     [
       "formula",
-      "1 - C _ { \\delta , \\varrho _ { \\rm mac } } \\exp ( - c _ { \\delta , \\varrho _ { \\rm mac } } n )"
+      "\\mathcal H _ M"
     ],
     [
       "formula",
-      "k = M"
+      "\\nu ( \\mathcal H _ M ) \\le C _ { \\delta , \\varrho _ { \\rm mac } } \\exp ( - c _ { \\delta , \\varrho _ { \\rm mac } } n ) ."
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M"
+    ],
+    [
+      "formula",
+      "M"
     ],
     [
       "texto",
@@ -3749,8 +3785,12 @@
       "2 C ' _ \\delta / k + 2 C ' ' _ \\delta / k ^ 2"
     ],
     [
-      "texto",
-      "una"
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
     ],
     [
       "formula",
@@ -3762,7 +3802,23 @@
     ],
     [
       "formula",
-      "\\varrho _ { \\rm mac }"
+      "M"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M"
+    ],
+    [
+      "formula",
+      "\\nu ( \\mathcal H _ M ) \\le e ^ { O _ \\delta ( 1 ) } P ^ { \\rm B } ( \\mathcal H _ M )"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M"
+    ],
+    [
+      "formula",
+      "M"
     ],
     [
       "formula",
@@ -3996,11 +4052,27 @@
     ],
     [
       "formula",
+      "\\mathcal H _ M"
+    ],
+    [
+      "formula",
+      "{ k \\ge M }"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
       "n"
     ],
     [
       "formula",
-      "P ^ { \\rm B } \\! \\left ( \\max _ { 0 \\le s \\le n - M } \\Delta ( s ) \\ge \\varrho _ { \\rm mac } \\right ) \\le C _ { \\delta , \\varrho _ { \\rm mac } } \\exp ( - c _ { \\delta , \\varrho _ { \\rm mac } } n ) ."
+      "P ^ { \\rm B } ( \\mathcal H _ M ) \\le C _ { \\delta , \\varrho _ { \\rm mac } } \\exp ( - c _ { \\delta , \\varrho _ { \\rm mac } } n ) ."
     ],
     [
       "texto",
@@ -4016,15 +4088,23 @@
     ],
     [
       "formula",
-      "\\Delta ( s ) \\ge \\varrho _ { \\rm mac }"
+      "M"
     ],
     [
       "formula",
-      "n - M"
+      "\\varrho _ { \\rm mac }"
     ],
     [
       "formula",
-      "\\tau"
+      "\\tau = n - M"
+    ],
+    [
+      "texto",
+      "una"
+    ],
+    [
+      "formula",
+      "\\tau \\le n - M"
     ],
     [
       "formula",
@@ -4033,6 +4113,26 @@
     [
       "formula",
       "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "P ^ { \\rm B }"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M = \\{ \\Delta ( \\tau ) \\ge \\varrho _ { \\rm mac } \\}"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "\\tau"
     ],
     [
       "formula",
@@ -4277,6 +4377,10 @@
     [
       "formula",
       "\\tau"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M \\subseteq \\{ \\mathcal M ^ * \\ge b \\}"
     ],
     [
       "formula",
@@ -11448,23 +11552,15 @@
     ],
     [
       "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
       "E _ { \\rm mac }"
     ],
     [
       "formula",
-      "2 ^ jK"
-    ],
-    [
-      "formula",
-      "E _ j"
-    ],
-    [
-      "formula",
-      "F"
-    ],
-    [
-      "texto",
-      "un"
+      "{ k \\ge M }"
     ],
     [
       "texto",
@@ -11476,7 +11572,27 @@
     ],
     [
       "formula",
-      "E _ { \\rm mac }"
+      "j \\ge 0"
+    ],
+    [
+      "formula",
+      "E _ j"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "{ 2 ^ jK \\le k < 2 ^ { j + 1 } K }"
+    ],
+    [
+      "formula",
+      "K < M"
     ],
     [
       "texto",
@@ -11484,11 +11600,19 @@
     ],
     [
       "formula",
-      "\\Lambda"
+      "K"
     ],
     [
       "formula",
-      "\\Lambda _ { \\rm mac } = C _ \\delta n ^ { 2 / 3 }"
+      "E _ 0"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "texto",
+      "una"
     ],
     [
       "formula",
@@ -11496,7 +11620,67 @@
     ],
     [
       "formula",
-      "\\Lambda _ j = C _ 0 + 2 \\beta ( \\varepsilon _ { \\rm out } ) 2 ^ jK"
+      "E _ j"
+    ],
+    [
+      "formula",
+      "B _ \\tau"
+    ],
+    [
+      "formula",
+      "E _ j"
+    ],
+    [
+      "formula",
+      "\\varepsilon _ { \\rm out }"
+    ],
+    [
+      "formula",
+      "E _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "k \\ge M \\ge \\delta n"
+    ],
+    [
+      "formula",
+      "N = 2 n - 1 = O _ \\delta ( k )"
+    ],
+    [
+      "formula",
+      "\\Lambda _ { \\rm mac } = C _ \\delta n ^ { 2 / 3 }"
+    ],
+    [
+      "formula",
+      "E _ j"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "g ( B _ \\tau ) \\le C _ 0 + \\beta ( \\varepsilon _ { \\rm out } ) k \\le C _ 0 + 2 \\beta ( \\varepsilon _ { \\rm out } ) 2 ^ jK = : \\Lambda _ j ."
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\Lambda"
+    ],
+    [
+      "formula",
+      "\\Lambda _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "E _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "\\Lambda _ j"
     ],
     [
       "formula",
@@ -11509,10 +11693,6 @@
     [
       "formula",
       "g ( B _ \\tau ) \\mathbf 1 _ { F ^ c } \\le \\Lambda"
-    ],
-    [
-      "formula",
-      "\\mu"
     ],
     [
       "texto",
@@ -11536,7 +11716,23 @@
     ],
     [
       "formula",
-      "C _ 1 \\exp ( - c _ 1 n + C _ \\delta n ^ { 2 / 3 } )"
+      "M"
+    ],
+    [
+      "formula",
+      "\\Delta < \\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( M ) \\ge \\alpha M"
+    ],
+    [
+      "formula",
+      "E _ { \\rm mac } \\subseteq \\mathcal H _ M \\cup \\bigl ( G _ M ^ - \\cap \\{ D _ { \\max } ( M ) \\ge \\alpha M \\} \\bigr ) ,"
+    ],
+    [
+      "formula",
+      "{ C _ 1 \\exp ( - c _ 1 n + C _ \\delta n ^ { 2 / 3 } ) }"
     ],
     [
       "formula",
@@ -11551,8 +11747,16 @@
       "\\varrho _ { \\rm mac }"
     ],
     [
-      "texto",
-      "una"
+      "formula",
+      "{ \\nu ( E _ j ) \\le C \\exp ( - c \\, 2 ^ jK ) }"
+    ],
+    [
+      "formula",
+      "2 ^ jK \\le M"
+    ],
+    [
+      "formula",
+      "E _ j"
     ],
     [
       "formula",
@@ -11560,11 +11764,11 @@
     ],
     [
       "formula",
-      "c '"
+      "0 < c ' < c - 2 \\beta ( \\varepsilon _ { \\rm out } )"
     ],
     [
       "formula",
-      "\\exp [ - ( c - 2 \\beta ( \\varepsilon _ { \\rm out } ) ) 2 ^ jK ]"
+      "\\nu ( E _ j ) ( e ^ { \\Lambda _ j } - 1 )"
     ],
     [
       "formula",
@@ -11588,7 +11792,11 @@
     ],
     [
       "formula",
-      "C _ K K ^ 4 / n"
+      "{ ( L _ K ^ { \\max } + \\log K ! ) \\, CK ^ 4 / n }"
+    ],
+    [
+      "formula",
+      "{ O ( K ^ 5 \\log ( K + 1 ) / n ) }"
     ],
     [
       "formula",
@@ -11624,7 +11832,7 @@
     ],
     [
       "formula",
-      "C _ Kd _ { n , K } / s"
+      "L _ K ^ { \\max } d _ { n , K } / s"
     ],
     [
       "formula",
@@ -11703,6 +11911,42 @@
     [
       "texto",
       "10.1"
+    ],
+    [
+      "formula",
+      "\\theta _ K"
+    ],
+    [
+      "formula",
+      "C / K + O _ \\delta ( 1 / n )"
+    ],
+    [
+      "formula",
+      "e ^ { - c ' K }"
+    ],
+    [
+      "formula",
+      "K ^ 5 \\log ( K + 1 ) / n"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "C / K = O ( 1 / n )"
+    ],
+    [
+      "formula",
+      "K \\ge cn"
+    ],
+    [
+      "formula",
+      "K ^ 5 \\log ( K + 1 ) / n"
     ],
     [
       "formula",

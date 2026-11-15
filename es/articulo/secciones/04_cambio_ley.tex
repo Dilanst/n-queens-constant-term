@@ -1,10 +1,12 @@
 \begin{corolario}[Cambio de ley hasta la primera salida]\label{macro:cambio}
-La conclusión de la Proposición~\ref{macro:parada} vale bajo la ley $\nu$ con otras constantes
-$C_{\delta,\varrho_{\rm mac}},c_{\delta,\varrho_{\rm mac}}>0$. En particular, con probabilidad al menos
-$1-C_{\delta,\varrho_{\rm mac}}\exp(-c_{\delta,\varrho_{\rm mac}}n)$, en todos los tableros hasta $k=M$,
-incluido ese
-extremo, el punto de
-Bethe es el máximo único y cumple cotas macroscópicas uniformes de difusión, vacancia y brecha.
+Con otras constantes positivas $C_{\delta,\varrho_{\rm mac}}$ y $c_{\delta,\varrho_{\rm mac}}$, el
+suceso $\mathcal H_M$ de la Proposición~\ref{macro:parada} cumple
+\[
+ \nu(\mathcal H_M)\le C_{\delta,\varrho_{\rm mac}}\exp(-c_{\delta,\varrho_{\rm mac}}n).
+\]
+Fuera de $\mathcal H_M$, en todos los tableros de la historia hasta el de tamaño $M$ inclusive, el
+punto de Bethe es el máximo único y cumple cotas macroscópicas uniformes de difusión, vacancia y
+brecha.
 \end{corolario}
 \begin{proof}
 Por \eqref{macro:predictor}, eligiendo los umbrales suficientemente pequeños se pueden fijar, por
@@ -36,11 +38,16 @@ $\sum_{e'\in i}p_{e'}(1+d_{e'})=1$, de modo que el denominador pertenece a
 $[e^{-C''_\delta/k^2},e^{C''_\delta/k^2}]$. El módulo del logaritmo del cociente es a lo sumo
 $2C'_\delta/k+2C''_\delta/k^2$.
 
-A lo largo de una trayectoria parada en la primera salida o al llegar a $M$, el módulo del logaritmo
-de la densidad relativa se acota por \[
-\sum_{k=M+1}^{n}\left(\frac{2C'_\delta}{k}+\frac{2C''_\delta}{k^2}\right) \le
-2C'_\delta\log(n/M)+2C''_\delta/M=O_\delta(1). \] La cota incluye la transición que produce la
-salida. Al sumar sobre las historias paradas en las que la discrepancia alcanza el radio
-$\varrho_{\rm mac}$ obtenemos, por la Proposición~\ref{macro:parada}, la cola exponencial afirmada.
-Fuera de ese suceso se aplica la reconstrucción determinista en todos los tableros hasta $M$.
+Paramos la historia en el primer tablero de tamaño al menos $M$ cuya discrepancia alcanza o supera
+$\varrho_{\rm mac}$ o, a más tardar, en el de tamaño $M$. El módulo del logaritmo de la densidad
+relativa se acota por
+\[
+ \sum_{k=M+1}^{n}\left(\frac{2C'_\delta}{k}+\frac{2C''_\delta}{k^2}\right)
+ \le 2C'_\delta\log(n/M)+2C''_\delta/M=O_\delta(1).
+\]
+La suma incluye el paso que llega al tablero de parada, también cuando éste tiene tamaño $M$.
+Sumando sobre las historias detenidas de $\mathcal H_M$ obtenemos
+$\nu(\mathcal H_M)\le e^{O_\delta(1)}P^{\rm B}(\mathcal H_M)$, y la Proposición~\ref{macro:parada}
+da la cola exponencial. Fuera de $\mathcal H_M$ se aplica la reconstrucción macroscópica hasta $M$
+inclusive. Las condiciones adicionales de entrada en $M$ se tratan en el Lema~\ref{meso:entrada}.
 \end{proof}

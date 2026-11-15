@@ -60,19 +60,23 @@ acotada para $x\ge\delta$, de modo que el error de Taylor integrado es $O_\delta
 \begin{proposicion}[Cota de parada bajo la ley auxiliar]\label{macro:parada}
 Sea $M=\lceil\delta n\rceil$. Para todo radio $\varrho_{\rm mac}>0$ suficientemente pequeño, se
 puede fijar una partición $\mathcal I$ de paso $a_{\rm mac}$ y constantes
-$c_{\delta,\varrho_{\rm mac}},C_{\delta,\varrho_{\rm mac}}>0$ de modo que, para $n$ suficientemente
-grande,
+$c_{\delta,\varrho_{\rm mac}},C_{\delta,\varrho_{\rm mac}}>0$ con la siguiente propiedad. Sea
+$\mathcal H_M$ el suceso de que, en algún tablero de la historia de tamaño ${k\ge M}$, incluido el de
+tamaño $M$, la discrepancia alcance o supere $\varrho_{\rm mac}$. Para $n$ suficientemente grande,
 \[
- P^{\rm B}\!\left(\max_{0\le s\le n-M}\Delta(s)\ge\varrho_{\rm mac}\right)
- \le C_{\delta,\varrho_{\rm mac}}\exp(-c_{\delta,\varrho_{\rm mac}}n).
+ P^{\rm B}(\mathcal H_M)\le C_{\delta,\varrho_{\rm mac}}\exp(-c_{\delta,\varrho_{\rm mac}}n).
 \]
 Se puede imponer el mismo control a una partición de observación fija pasando a un refinamiento suyo.
 \end{proposicion}
 \begin{proof}
-Sea $\tau$ el primer índice con $\Delta(s)\ge\varrho_{\rm mac}$, limitado por $n-M$. Paramos en
-$\tau$ las discrepancias y los incrementos centrados de cada observable menos su objetivo. El
-incremento que llega a $\tau$ se incluye si la historia hasta el padre seguía dentro del radio
-$\varrho_{\rm mac}$. Sea $\mathcal M^*$ la suma de los máximos temporales absolutos de esas
+Sea $\tau$ el índice del primer tablero de la historia de tamaño al menos $M$ cuya discrepancia
+alcanza o supera $\varrho_{\rm mac}$, y $\tau=n-M$ si no lo hay. Es una parada con $\tau\le n-M$, y
+todo tablero de índice menor que $\tau$ tiene discrepancia menor que $\varrho_{\rm mac}$ y, por la
+Proposición~\ref{macro:maximo}, punto de Bethe. Así la historia detenida en $\tau$ está definida
+bajo $P^{\rm B}$, y $\mathcal H_M=\{\Delta(\tau)\ge\varrho_{\rm mac}\}$ sólo depende de ella. Paramos
+en $\tau$ las discrepancias y los incrementos centrados de cada observable menos su objetivo.
+Incluimos el incremento del paso que llega a $\tau$, pues el tablero anterior sigue dentro del radio.
+Sea $\mathcal M^*$ la suma de los máximos temporales absolutos de esas
 martingalas para intervalos de filas y columnas y para cajas y subconjuntos, más el máximo sobre las
 líneas distinguidas de la suma de los máximos absolutos de sus intervalos.
 
@@ -127,8 +131,9 @@ uniformemente en la línea distinguida. Elegimos primero $\varrho_{\rm mac}$ den
 deterministas, después $a_{\rm mac}$ y $b$ con
 $e^{C_\delta}(b+C_\delta a_{\rm mac})<\varrho_{\rm mac}/3$, y finalmente $n$ grande a partición
 fija. Gronwall discreto en \eqref{macro:gronwall} da $\Delta(s\wedge\tau)<\varrho_{\rm mac}$ siempre
-que $\mathcal M^*<b$, también para el paso que llega a $\tau$. Esto excluye la primera salida y
-prueba la cota, absorbiendo $n+1$ en la exponencial. Al refinar una partición todas las masas y
+que $\mathcal M^*<b$, también para el paso que llega a $\tau$. Así
+$\mathcal H_M\subseteq\{\mathcal M^*\ge b\}$, lo que prueba la cota, absorbiendo $n+1$ en la
+exponencial. Al refinar una partición todas las masas y
 objetivos de una región gruesa se obtienen sumando los de las regiones finas, también para fibras
 congeladas. La desigualdad triangular transfiere la cota a la partición gruesa.
 \end{proof}

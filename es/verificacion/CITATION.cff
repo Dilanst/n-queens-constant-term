@@ -5,7 +5,7 @@ title: "El término constante del problema de las n reinas: verificación exacta
 authors:
   - family-names: "Mejia"
     given-names: "Dilan Steven"
-version: "0.3.3"
+version: "0.3.4"
 license: MIT
 references:
   - type: article
