@@ -1,0 +1,56 @@
+\begin{lema}[Cancellation of the sixteen terms and the gap]\label{macro:brecha}
+For $E=q-V$ we have
+\[
+ \|E\|_{\rm op}\le C_\delta(\Delta_R+a_{\rm mac}+C_{\mathcal I}/n)^{1/4}.
+\]
+If $\Delta$, $a_{\rm mac}$, and $C_{\mathcal I}/n$ are sufficiently small in terms of $\delta$ and
+the profile, then the row--column Laplacian with weights $q$ has gap at least $c_\nu/2$ on the
+orthogonal complement of the constant vector.
+\end{lema}
+\begin{proof}
+By the singular value bound and the trace expansion,
+\[
+ \|E\|_{\rm op}^4\le {\rm tr}((EE^T)^2)
+ =\sum_{i,i',j,j'}E_{ij}E_{i'j}E_{i'j'}E_{ij'} .
+\]
+From the summand we can factor out the indicator that all four row and column lines are available,
+together with $k^{-4}\prod_m\nu_1(e_m)$. The remaining factor is $\prod_{m=1}^4(B_m-1)$, where
+
+\[ B_m=\frac{X_{D(e_m)}X_{A(e_m)}}{U_{D(e_m)}U_{A(e_m)}}. \]
+Writing $B_T=\prod_{m\in T}B_m$ and listing the elements of each index set as subscripts, we obtain
+the full expansion
+\[
+ \begin{aligned}
+ 1
+ &-(B_1+B_2+B_3+B_4)\\
+ &+(B_{12}+B_{13}+B_{14}+B_{23}+B_{24}+B_{34})\\
+ &-(B_{123}+B_{124}+B_{134}+B_{234})+B_{1234}.
+ \end{aligned}
+\]
+The exceptional quadruples contribute $O_\delta(1/n)$ in total, since each product is
+$O_\delta(k^{-4})$. For each ordinary term, the weight multiplying the pattern of
+Definition~\ref{macro:rectangulos} in the sum normalized by $n^4$ is
+\[
+ W_T=x^{-4}\frac{\prod_m\nu_1(e_m)}
+                 {\prod_{m\in T}U_{D(e_m)}U_{A(e_m)}} .
+\]
+Its supremum norm and Lipschitz constant are bounded in terms of $\delta$ and the profile. Replacing
+it by a constant on each box incurs a total error of $O_\delta(a_{\rm mac})$, since for each $T$ the
+masses of all boxes sum to at most one. Replacing the discrete masses by their targets then incurs
+an error of $O_\delta(\Delta_R)$. Restoring the variable weight in the integral gives the same
+weighted target density $\prod_m\nu_1(e_m)$ for each of the sixteen terms. Its total coefficient is
+therefore $1-4+6-4+1=0$. This proves the norm estimate.
+
+Let $V'=V-c_\nu\mathbf1\mathbf1^T/k$. Its entries are nonnegative, and its row and column sums are
+at most $1-c_\nu+O_\delta(\zeta)$ by Lemma~\ref{macro:balances}. The Schur bound gives the same
+upper bound for $\|V'\|_{\rm op}$. If $(u,v)\perp\mathbf1_{2k}$, then $(\sum_i u_i)(\sum_j
+v_j)=-(\sum_i u_i)^2\le0$. The constant matrix thus contributes a nonnegative term to the quadratic
+form of the Laplacian. The degrees on the diagonal are $1+O_\delta(\zeta)$, and
+$2\|u\|_2\|v\|_2\le\|u\|_2^2+\|v\|_2^2$. The resulting lower bound for the quadratic form is
+\[
+ \bigl(c_\nu-O_\delta(\zeta)-\|E\|_{\rm op}\bigr)
+                   (\|u\|_2^2+\|v\|_2^2).
+\]
+Reducing the three thresholds gives the claimed gap. The exponent $1/4$ is used only to guarantee
+this gap.
+\end{proof}

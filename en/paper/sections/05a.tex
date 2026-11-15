@@ -1,0 +1,64 @@
+\section{Permanence from the cut-off down to a fixed number of rows}\label{meso}
+In this section we index by size, so $\mathcal F_k$ is the history up to the board of size $k$, whereas in
+Section~\ref{macro} the index of $\mathcal F_s$ was the number of steps. Let $M=\lceil\delta n\rceil$. For
+the board of size $k$, write $D_{\max}(k)$ for the maximum, over diagonals of both families of the initial
+board, of the number of empty crossings on the line, whether available or not. This quantity is
+nonincreasing along the history and bounds from above the number of available squares on any diagonal in
+either family. All probabilities in this section are under the adaptive law $\nu$ started at the initial
+board. Let $G_k^-$ denote the event that, upon reaching size $k$, all boards of strictly larger size have
+been regular (Definition~\ref{def:regular}). We include in $G_k^-$ the transition to the first-exit board.
+
+\subsection{Prescriptions and the diagonal budget}
+\begin{lema}[One-step bounds]\label{meso:paso}
+At a regular parent of size $k$, let $\nu_B(j\mid i)$ be the adaptive probability of choosing column $j$
+given that row $i$ is chosen, with $\nu_B(j\mid i)=0$ on unavailable squares. There are constants
+$C_q,C_{\rm c}$, which can be fixed before $\delta$ and the diagonal mass bound $\varepsilon$, such that,
+for all sufficiently large $n$ and all $k$ above a fixed threshold,
+\begin{align*}
+ \nu(i\text{ chosen}\mid\mathcal F_k)&=1/k,\\
+ \left|\nu(j\text{ chosen}\mid\mathcal F_k)-1/k\right|&\le C_{\rm c}/k^2,\\
+ \nu((i,j)\text{ chosen}\mid\mathcal F_k)&\le C_q/k^2 .
+\end{align*}
+\end{lema}
+\begin{proof}
+In the representation for each child in \cite[Theorems~7.1 and~8.1]{pred}, the relative perturbation of
+$p_e$ is $d_e+O(k^{-2})$, with $d_e=O(k^{-1})$ and $B(p\odot d)=0$ by \cite[Section~6.1]{pred}, where $B$
+here denotes the row--column incidence matrix rather than the board. Normalizing by the row preserves the
+relative remainder $O(k^{-2})$ because $\sum_jp_{ij}d_{ij}=0$. The linear part also vanishes when we sum
+over the column, since $\sum_i p_{ij}d_{ij}=0$. Thus $\sum_i \nu_B(j\mid i)=1+O(k^{-2})$. In the macroscopic
+range, the remainder in the probability of choosing the column is $O_\delta(k^{-3})$. For each fixed
+$\delta$, since $k\ge\delta n$, taking $n$ large bounds this remainder by $k^{-2}$ with coefficient one. In
+the same range, $\nu_B(j\mid i)\le 2p_{ij}$ for large $n$, and the diffusion constant for $p$ comes from the
+profile. In the mesoscopic range we use the diffusion, vacancy, and gap bounds of the outer class, whose
+constants are independent of both $\delta$ and $\varepsilon$. The representation requires a regular parent
+and the estimates for each child from the proof of the cited theorem, including for the first-exit board.
+\end{proof}
+
+\begin{lema}[Prescribed rows and columns]\label{meso:prescripciones}
+For any fixed $s$ rows and $t$ columns of the initial board,
+\begin{equation}\label{prescr}
+ \nu(\text{the $s$ rows and $t$ columns remain empty at size $m$},G_m^-)
+ \le (m/n)^{s+t}\exp\{C(st+s+t)/m\}.
+\end{equation}
+If the prescriptions cannot fit, the left-hand side is zero. The same constant $C$ applies to all values of
+$s,t$.
+\end{lema}
+\begin{proof}
+At a regular parent of size $k$ containing the prescribed indices, Lemma~\ref{meso:paso} gives probability
+$s/k$ of choosing a prescribed row, probability at least $t/k-C_{\rm c}t/k^2$ of choosing a prescribed
+column, and probability at most $C_qst/k^2$ for their intersection. Within each family the events are
+disjoint. The survival factor is thus at most $\exp[-(s+t)/k+C_1(st+s+t)/k^2]$. We iterate from $n$ down to
+$m+1$, discarding histories that already had a non-regular parent. The inequalities $\sum_{k=m+1}^n
+k^{-1}\ge\log(n/m)-1/m$ and $\sum_{k=m+1}^n k^{-2}\le1/m$ give \eqref{prescr}, even when $s,t$ depend on
+$m$.
+\end{proof}
+
+Fixing $s$ squares on a diagonal prescribes exactly $s$ distinct rows and $s$ distinct columns, regardless
+of availability. There are fewer than $4n$ diagonals, each allowing at most $\binom ns$ choices. By
+\eqref{prescr} and $\binom ns\le(en/s)^s$, there is a fixed $C_{\rm geo}<\infty$ such that, for $1\le s\le
+m/4$,
+\begin{equation}\label{geompres}
+ \nu(D_{\max}(m)\ge s,G_m^-)\le 4n\left(\frac{C_{\rm geo}m^2}{ns}\right)^s .
+\end{equation}
+Indeed, the factor $\exp[C(s^2+2s)/m]$ can be absorbed into a constant raised to the power $s$. For $s>m$
+the event is empty.

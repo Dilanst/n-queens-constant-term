@@ -1,0 +1,50 @@
+\begin{corolario}[Change of law up to the first exit]\label{macro:cambio}
+For some other positive constants $C_{\delta,\varrho_{\rm mac}}$ and $c_{\delta,\varrho_{\rm mac}}$,
+the event $\mathcal H_M$ of Proposition~\ref{macro:parada} satisfies
+\[
+ \nu(\mathcal H_M)\le C_{\delta,\varrho_{\rm mac}}\exp(-c_{\delta,\varrho_{\rm mac}}n).
+\]
+Outside $\mathcal H_M$, on every board in the history down to and including the board of size $M$,
+the Bethe point is the unique maximizer and satisfies uniform macroscopic diffusion, vacancy, and gap
+bounds.
+\end{corolario}
+\begin{proof}
+By \eqref{macro:predictor}, taking the thresholds sufficiently small allows us to choose, for
+example, an upper bound of $4C_\nu/\kappa_\nu^2$ for $k\max_e p_e$, a lower bound of $\kappa_\nu/4$
+for the vacancies, and a lower bound strictly less than $c_\nu/8$ for the gap. The weight comparison
+in Lemma~\ref{macro:brecha} and Proposition~\ref{macro:reequilibrado} justifies the last choice.
+These macroscopic bounds hold for every regular parent in the macroscopic range.
+
+For any such parent and any of its children, the one-step expansion in
+\cite[Theorem~7.1 and Corollary~7.2, with their proofs]{pred} gives
+\[
+ L(B+e)-L(B)=\log[p_e(1+d_e)]+r_e,\qquad
+ |d_e|\le C'_\delta/k,\qquad |r_e|\le C''_\delta/k^2,\qquad
+ \sum_{e\in i}p_ed_e=0
+\]
+in each available row $i$. Here $d_e$ is the relative correction $\delta_c$
+in~\cite[Theorem~7.1]{pred}, and $r_e$ is the remainder $r_c$ in its proof. The construction of the
+child by deletion in \cite[Section~6.5]{pred} also allows us to use the expansion for the first-exit
+board. Only control of the parent is required. Both laws choose the next row uniformly. Conditional on that
+row, the ratio of the column probability under $\nu$ to its probability $p_e$ under $P^{\rm B}$ is
+\[
+ \frac{(1+d_e)e^{r_e}}{\sum_{e'\in i}p_{e'}(1+d_{e'})e^{r_{e'}}} .
+\]
+For $k\ge2C'_\delta$ all factors $1+d_{e'}$ are positive. Cancellation within the row gives
+$\sum_{e'\in i}p_{e'}(1+d_{e'})=1$, so the denominator belongs to
+$[e^{-C''_\delta/k^2},e^{C''_\delta/k^2}]$. The absolute value of the logarithm of the ratio is at
+most $2C'_\delta/k+2C''_\delta/k^2$.
+
+We stop the history at the first board of size at least $M$ whose discrepancy reaches or exceeds
+$\varrho_{\rm mac}$, or at the board of size $M$ at the latest. The absolute value of the logarithm
+of the relative density is bounded by
+\[
+ \sum_{k=M+1}^{n}\left(\frac{2C'_\delta}{k}+\frac{2C''_\delta}{k^2}\right)
+ \le 2C'_\delta\log(n/M)+2C''_\delta/M=O_\delta(1).
+\]
+The sum includes the step that reaches the stopping board, even when that board has size $M$.
+Summing over the stopped histories in $\mathcal H_M$ gives
+$\nu(\mathcal H_M)\le e^{O_\delta(1)}P^{\rm B}(\mathcal H_M)$, and Proposition~\ref{macro:parada}
+gives the exponential tail bound. Outside $\mathcal H_M$ the macroscopic reconstruction applies down to
+and including size $M$. Lemma~\ref{meso:entrada} addresses the additional entry conditions at size $M$.
+\end{proof}

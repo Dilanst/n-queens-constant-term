@@ -1,0 +1,143 @@
+\section{The board and the laws on histories}\label{leyes}
+\begin{definicion}[Residual board]
+We number rows from top to bottom and columns from left to right, starting at one. The square $(i,j)$ lies
+on $R_i,C_j,D_{i-j},A_{i+j-1}$. In the coordinates of~\cite{perfil,ultimas}, this square is $(i-1,j-1)$,
+with the same difference and with sum $i+j-2$. A diagonal in either family is \emph{free} if it contains no
+queen. A line is \emph{available} if it is an empty row, an empty column, or a free diagonal. The residual
+board $B$ of a partial placement retains the original coordinates and the $k$ empty rows and $k$ empty
+columns. Its \emph{empty crossings}, as in~\cite{ultimas}, are the $k^2$ squares where an empty row meets an
+empty column. Its support $E(B)$ consists of the empty crossings whose two diagonals are free. These are the
+\emph{available squares}.
+\end{definicion}
+We write $Q(B)$ for the number of solutions extending the placement of $B$, and $B+e$ for the residual board
+obtained by inserting a queen at $e$. We call each $B+e$ with $e\in E(B)$ a \emph{child} of $B$ and call $B$
+the \emph{parent} of these children. The \emph{initial board} $B_0$ is the residual board of the empty
+placement, so $Q(B_0)=Q(n)$. For any fixed empty row $i$, each completion chooses exactly one of its
+available squares, hence
+\begin{equation}\label{particion}
+ Q(B)=\sum_{e\in R_i\cap E(B)}Q(B+e).
+\end{equation}
+The residual board with no empty rows has one completion. A child with a newly occupied square may have zero
+completions. Figure~\ref{fig:historia} illustrates the partition.
+\input{figures/history}
+
+\paragraph{Profile and normalization.}
+Theorem~1.1 of~\cite{perfil} gives the unique optimal profile of mass one, $\nu_1$, on the unit square. We
+denote its entropy by $s_1$ and write $\Phi=s_1+1$. As in~\cite{perfil,ultimas,pred}, $m_D$ and $m_A$ are
+the projections of $\nu_1$ onto the two diagonal families, and $u_D=1-m_D$, $u_A=1-m_A$ are their vacancies.
+For a diagonal line $f$, $m_f$ and $u_f$ denote the values at $f$ of the functions for its family.
+Theorems~1.2 and~1.3 and Proposition~5.2 of~\cite{perfil} identify the positive factors and the limit at
+mass one. Theorem~7.7 of the same work gives control up to the endpoint. We use the form given
+in~\cite[Section~2]{pred},
+\[
+ \nu_1(r,c)=b_0 r_R(r)r_C(c)u_D(r-c)u_A(r+c),\qquad
+ c_\nu\le\nu_1\le C_\nu,\quad \kappa_\nu\le u_D,u_A\le1.
+\]
+The row and column marginals of $\nu_1$ are equal to one, the factors are Lipschitz, and $L_\nu$ denotes a
+Lipschitz constant for $\nu_1$, as in~\cite{pred}. The continuous coordinates of the square $(i,j)$ are
+those of the center of its cell of side length $1/n$.
+
+\paragraph{Bethe point and predictor.}
+We use RC for rows and columns. As in~\cite{pred}, the \emph{Bethe point} of a residual board $B$ is the
+vector $p=(p_e)$, with one weight per square in $E(B)$, at which its predictor is evaluated. It is the
+stationary point of the Bethe entropy
+\begin{equation}\label{bethe}
+ H_B(p)=-\sum_e p_e\log p_e
+       +3\sum_e(1-p_e)\log(1-p_e)-\sum_fh_f\log h_f
+\end{equation}
+on the domain $0<p_e<1/4$, $h_f>0$, with row and column masses equal to one. Here the \emph{mass} of a
+diagonal $f$ is $\ell_f=\sum_{e\in f}p_e$, and its \emph{vacancy} is $h_f=1-\ell_f$. Physical availability
+is an indicator distinct from this vacancy. On this domain $-H_B$ is strictly convex, so there is at most
+one stationary point. We use the Bethe point only on the regular boards of Definition~\ref{def:regular} and
+on their children, where it exists.
+
+Suppose the row--column graph of the support is connected. Let $S_B$ be the line operator given in
+Section~\ref{costes:normalizador}, and let $\pdet$ denote the product of the nonzero eigenvalues. The
+predictor satisfies
+\[
+ L(B)=H_B(p)-\tfrac12\sum_e[\log(1-4p_e)-4\log(1-p_e)]
+             -\tfrac12\log\pdet S_B+\tfrac12\log(4\pi k).
+\]
+The zero mode of $S_B$ is proportional to $(\mathbf1_R,-\mathbf1_C,0)$; it is the gauge of~\cite{pred}.
+Deleting the row and column of $S_B$ for the same RC line gives a cofactor equal to $\pdet S_B/(2k)$, since
+the corresponding component of the unit zero-mode vector has square $1/(2k)$. Thus using this cofactor with
+$\tfrac12\log(2\pi)$, as in~\cite[Sections~6.1 and~7.1]{pred}, gives the same $L(B)$.
+
+As in~\cite{pred}, the \emph{row--column Laplacian} of $p$ is the Laplacian of the graph whose vertices are
+the empty rows and columns, with an edge of weight $p_e$ joining the row and column of each available square
+$e$. Its \emph{gap} is its second-smallest eigenvalue. We say that $p$ satisfies a \emph{diffusion bound} if
+$k\max_ep_e\le C$, a \emph{vacancy bound} if $h_f\ge\eta$ on every diagonal, and a \emph{gap bound} if the
+gap is at least $\gamma$. For fixed constants $C,\eta,\gamma>0$, these are the bounds required by
+Theorems~7.1 and~8.1 of~\cite{pred}. The former assumes $k\ge\delta n$, and the latter dispenses with that
+condition if each diagonal has mass at most a small $\varepsilon$.
+
+Some notation differs from that of~\cite{pred}. There the child is written $B+c$, the row is implicit in the
+ratio $\rho(B)$, which we write as $\rho(B,i)$, and the mass and vacancy of a diagonal are $m_d$ and $h_d$.
+We indicate other differences as they arise. In some sections, letters such as $B$, $E$, $J$, $S$, $T$, or
+$W$ denote objects defined locally. For example, in Section~\ref{permanente} the letter $B$ denotes the
+matrix $P-J_K$ rather than a board. Outside the abstract and introduction, $J$ does not denote the operator
+of~\cite{pred}.
+
+\paragraph{Laws for revealing and inserting queens.}
+We draw a uniformly random ordering $\sigma$ of the rows. Under the \emph{uniform law} $\mu$, we choose a
+uniform solution independently of $\sigma$ and reveal its queens in that order. Under the \emph{adaptive
+law} $\nu$, given the next row $i$, we choose $e$ with probability
+\[
+ \nu_B(e\mid i)=\frac{\exp L(B+e)}{\sum_{e'\in R_i\cap E(B)}\exp L(B+e')},\qquad
+ \rho(B,i)=\sum_{e'\in R_i\cap E(B)}\exp\{L(B+e')-L(B)\}.
+\]
+The \emph{auxiliary law} $P^{\rm B}$ uses the same uniformly chosen row and selects $e$ with
+probability $p_e$. In $P^{\rm B}$ and in its expectation $\E_{\rm B}$, the upright B stands for
+Bethe and does not denote a board. A \emph{history} is the resulting sequence of boards
+$B_0,B_1,\dots$ together with the row order. A board with $k$ empty rows has \emph{size} $k$.
+
+\begin{definicion}[Regular boards and first exit]\label{def:regular}
+Fix $0<\delta<1$, set $M=\lceil\delta n\rceil$, and take an integer $K$ with $K_0\le K\le M$. We choose the
+threshold $K_0$ and the constants and tolerances below in Section~\ref{meso:constantes}. Let $B$ be a board
+of size $k$ in a history.
+\begin{enumerate}[(a)]
+\item \emph{Macroscopic range}, $k\ge M$. The board is \emph{regular} if the discrepancy $\Delta$ of the
+history upon reaching that board is smaller than the radius $\varrho_{\rm mac}$ of
+Proposition~\ref{macro:parada}.
+Section~\ref{macro:observaciones} defines this discrepancy using the partition $\mathcal I$ of mesh $a_{\rm
+mac}$ from that proposition.
+\item \emph{Cut-off}, $k=M$. We also require that the observables of Section~\ref{meso:regularidad} lie
+within their entry tolerances and that $D_{\max}(M)<\alpha M$, in the notation of Section~\ref{meso}.
+\item \emph{Mesoscopic range}, $K\le k<M$. The board is regular if its Bethe point exists and belongs to the
+\emph{inner class}, meaning that it satisfies the diffusion, vacancy, and gap bounds fixed in
+Section~\ref{meso:constantes} and each diagonal has mass at most $\varepsilon$.
+\end{enumerate}
+The \emph{first exit} of a history is its first board that fails to be regular. We call it the
+\emph{first-exit board}. Its parent is regular. The history stops at the first exit or, if there is none,
+upon reaching size $K$. The \emph{permanence event} $F$ occurs when there is no exit, that is, when every
+board up to and including the one of size $K$ is regular.
+\end{definicion}
+For large $n$, the initial board is regular because its discrepancy is $O(1/n)$ (proof of
+Proposition~\ref{macro:parada}). The Bethe point of a regular board satisfies diffusion, vacancy, and gap
+bounds with fixed constants. This follows from Proposition~\ref{macro:maximo} and
+Corollary~\ref{macro:cambio} in the macroscopic range, and from the definition in the mesoscopic range. At
+the cut-off, the additional conditions already place it in the inner class by
+Proposition~\ref{meso:reconstruccion}. The children of a regular board, including the first-exit
+board, inherit bounds of the same type with weaker constants, which we call \emph{outer bounds}. In
+the mesoscopic range these bounds, together with a diagonal mass of at most $2\varepsilon$, define
+the \emph{outer class}. Every child of $B$ in row $i$ enters $\rho(B,i)$.
+
+\begin{table}[htbp]
+\centering\small
+\caption{How the estimates combine in the comparison of the counts.}
+\begin{tabular}{@{}p{.31\linewidth}p{.59\linewidth}@{}}
+\toprule Result & Estimates used \\ \midrule
+Identities \ref{hist:igualdad} and \ref{hist:inferior} & Partition by the next row and normalization of the
+two laws.\\
+Permanence \ref{macro:cambio} & Balances \ref{macro:balances}, gap \ref{macro:brecha}, reconstruction
+\ref{macro:maximo}, and stopping \ref{macro:parada}.\\
+Bands \ref{prop:salida-banda-meso} & Prescriptions \eqref{prescr}, budget \ref{lema:presupuesto-meso},
+concentration \ref{prop:concentracion-meso}, and reconstruction \ref{meso:reconstruccion}.\\
+Costs \ref{coste-macro} and \ref{coste-debil} & Comparison \ref{coste-comparacion} and, in the mesoscopic
+range, normalizers \ref{coste-normalizadores} and permanent \ref{terminal-permanente}.\\
+Last board \ref{terminal-error} & Geometry \ref{terminal-geometria}, pivots \ref{terminal-pivotes}, scaling
+\ref{terminal-escalado}, and Proposition~3.1 of~\cite{dw}.\\
+Theorem~\ref{princ} & Consistency \ref{hist:consistencia}, exit bounds, and the terminal estimate under the
+two laws.\\ \bottomrule
+\end{tabular}
+\end{table}

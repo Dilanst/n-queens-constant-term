@@ -1,0 +1,79 @@
+\begin{proposicion}[Concentration of the observables]\label{prop:concentracion-meso}
+For a fixed family of patterns and fiber types with bounded weights, fix $b_1>0$ and $\chi>0$. There exists
+$c_{\rm pat}>0$ such that, for each floor $K$, on histories with regular entry, except with probability $\le
+C e^{-c_{\rm pat}K}$, every observable reached before the first exit or on the transition to it differs from
+its value at $M$ by at most
+\[
+ C_H\{A(\delta+1/n)+\chi+1/K\}+b_1 .
+\]
+For fibers, we compare each tracked line that is still available with its own fiber at $M$. The rate depends
+on the constants of the outer class, the family of observables, $b_1$, and $\chi$.
+\end{proposicion}
+\begin{proof}
+We subtract from each increment its conditional expectation, which is predictable, and freeze the
+process upon reaching the first-exit board. For a pattern with no tracked line, the centered jump in
+the step from size $u$ is at most $2C_H/u$. Azuma's maximal inequality \eqref{macro:max-mart}, with
+$\sum_{u>k}u^{-2}\le1/k$, bounds by $2\exp(-c_H b_1^2k)$ the probability that the absolute value of
+the martingale reaches $b_1$ between $M$ and $k$.
+Lemma~\ref{lema:presupuesto-meso} and the sum of $u^{-2}$ bound the cumulative drift simultaneously for all
+prefixes.
+
+Fix an entry history and one of its tracked lines. At each regular parent, form an auxiliary kernel by
+restricting the original kernel to the children for which the tracked line remains available and dividing by
+its survival probability $y_u$. This kernel conditions only the next step. For any prefix that reaches size
+$k$ with the tracked line available, including one that ends at the first exit, the weight under $\nu$
+equals the auxiliary weight multiplied by
+\[
+ \prod_{u=k+1}^{M}y_u
+ =\prod_{u=k+1}^{M}\big(1-1/u+O(u^{-2})\big)
+ =(k/M)\exp(O(1/k)).
+\]
+For a row the product is exactly $k/M$. For a column the error is uniform even when the factors depend on
+the boards of the prefix. The same identity for the weights holds at a stopping time because it applies
+separately to each terminal prefix. Under the auxiliary kernel, we subtract the conditional drift of
+Lemma~\ref{lema:incrementos-meso} and freeze the process upon reaching the first-exit board. Azuma's
+maximal inequality holds in the same way starting from any history with regular entry.
+
+In the band $m\le k<2m$, with $m=2^jK$, stop at the first observation in the band at which the martingale
+for this tracked line has absolute value $\ge b_1$, if such an observation occurs. Transferring the stopped
+prefixes to $\nu$ introduces a factor of at most $(2m/M)e^{C/m}$. A conditional union bound over the $M$
+tracked lines of each family and the fixed weight types, followed by a sum over the bands, gives at most
+$\sum_m C m e^{-c_H b_1^2 m}\le C'e^{-c' b_1^2K}$. As long as the tracked line remains available,
+the drift subtracted along these trajectories is exactly that of the auxiliary kernel. The diagonal
+budget along the original trajectory controls the accumulated absolute value of this drift. After
+integrating over the entry history, we count failure of the budget bound just once under $\nu$ using
+Lemma~\ref{lema:presupuesto-meso}. Thus the tail bound for this failure has no factor $M$, and the
+tail bound for the fibers has no factor $n$.
+\end{proof}
+
+\subsection{Reconstruction of the regularity conditions}\label{meso:regularidad}
+Write $W_0=\nu_1/(u_Du_A)=b_0r_Rr_C$, the value at $x=0$ of the weight $W_x$ from
+Proposition~\ref{macro:trayectoria}, and set $q_{ij}=Y_{ij}W_{0,ij}/k$ and $V_{ij}=\nu_{1,ij}/k$, evaluated
+at the original coordinates of the square. The density bounds $c_\nu,C_\nu$, the minimum vacancy
+$\kappa_\nu$, and the Lipschitz constant $L_\nu$ are the fixed profile constants. Consider a fixed partition
+of $[0,1]$ into intervals of length at most $a_{\rm mes}$. The radius $\varrho_{\rm mac}$ and mesh $a_{\rm
+mac}$ of Section~\ref{macro} are chosen later, in item~5 of Section~\ref{meso:constantes}, as functions of
+this partition, the tolerances below, and $\delta$ (Lemma~\ref{meso:entrada}). For rows and columns we
+control the proportion of the remaining indices in each interval, with the interval length as target. Fix a
+tolerance $\varrho_{\rm mes}>0$ and individual tolerances whose sum is at most $\varrho_{\rm mes}$ per
+family, for example $\varrho_{\rm mes}|I|$ for $I$ in this partition. Each row or column fiber has weights
+$W_0$, target $1$, and tolerance at most $\varrho_{\rm mes}$.
+
+To describe the other patterns, write $T=\{1,2\}\times\{1,2\}$. For each $S\subseteq T$, take the pattern on
+two rows and two columns that requires an available square at the positions in $S$. Its weight is
+$\prod_{e\in S}W_{0,e}\prod_{e\in T\setminus S}\nu_{1,e}$. All sixteen patterns have the same target,
+\[
+ \int_{[0,1]^4}\nu_1(r,c)\nu_1(r,c')\nu_1(r',c)\nu_1(r',c')\,dr\,dr'\,dc\,dc' .
+\]
+The normalization for injective assignments is $(k)_2^2$. Using $k^4$ and including assignments that repeat
+a row or a column changes each pattern by $O(1/k)$, since the $O(k^3)$ extra assignments have bounded
+weight. With $E=q-V$, as in Lemma~\ref{macro:brecha}, the identity
+\[
+ \operatorname{tr}\big[(EE^{T})^2\big]
+ =\sum_{i,i',j,j'} E_{ij}E_{i'j}E_{i'j'}E_{ij'}
+\]
+produces the sixteen terms extended in this way with signs $(-1)^{4-|S|}$. The sixteen targets cancel since
+$(1-1)^4=0$. Choose the positive tolerances individually so that their sum, plus $O(1/K_0)$, is smaller than
+the fourth power of the required spectral bound. Then $\|q-V\|_{\rm op}\le\operatorname{tr}[(EE^T)^2]^{1/4}$
+is smaller than that bound. The expansion includes $S=\varnothing$ and permits repeated diagonals in every
+term.

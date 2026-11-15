@@ -1,0 +1,83 @@
+\section{Permanence while at least \texorpdfstring{$\delta n$}{δn} rows remain}\label{macro}
+
+\subsection{Exposure process and comparison trajectory}
+
+Fix $0<\delta<1$. After $s$ choices, write $k=n-s$, $x=k/n$, and $t=s/n$. Under $P^{\rm B}$, we
+reveal the uniform random permutation $\sigma$ of the rows one row at a time. Conditional on the
+history $\mathcal F_s$ of the choices and the rows already revealed, the next row is uniform among
+the $k$ empty rows. If $p$ is the Bethe point of the current board, the conditional probability of
+selecting a square $e$ is $p_e/k$. We set $p_e=0$ on squares outside the support. The discrete
+indices run from $1$ to $n$. The physical centers $r_i=(i-\tfrac12)/n$ and $c_j=(j-\tfrac12)/n$
+place the diagonal $D(e)=i-j$ at $r_i-c_j$ and the antidiagonal $A(e)=i+j-1$ at $r_i+c_j$.
+Let $X_f$ denote the availability indicator of a line and $Y_e=\prod_{f\ni e}X_f$ that of a square.
+As in Section~\ref{leyes}, $\ell_f$ and $h_f$ are the mass and vacancy of a diagonal or antidiagonal
+$f$ at the point $p$.
+
+\begin{lema}[Loss of a square]\label{macro:casilla}
+The conditional probability of occupying a given available row or column is $1/k$. The probability of
+occupying a given available diagonal $f$ is $\ell_f/k$. For $e=(i,j)$ we have
+\[
+ \E_{\rm B}[Y_e(s+1)-Y_e(s)\mid\mathcal F_s]
+ =-\frac{Y_e(s)}{k}\bigl(2+\ell_{D(e)}+\ell_{A(e)}-3p_e\bigr).
+\]
+\end{lema}
+\begin{proof}
+Summing $p_e/k$ over the corresponding line gives the first two formulas. If $Y_e=1$, the four
+lines through $e$ intersect only at that square. The sum of their masses counts $e$ four times, and
+it must be counted once. If $Y_e=0$, no choice can make the square available again.
+\end{proof}
+
+On the unit square we use the profile
+\[
+ \nu_1(r,c)=b_0r_R(r)r_C(c)u_D(r-c)u_A(r+c).
+\]
+Its row and column marginals are both one. For $d\in[-1,1]$ and $a'\in[0,2]$, its projections onto
+the two diagonal families, that is, the masses of its fibers, are
+\[
+ m_D(d)=\int_{\{0\le r,r-d\le1\}}\nu_1(r,r-d)\,dr,\qquad
+ m_A(a')=\int_{\{0\le r,a'-r\le1\}}\nu_1(r,a'-r)\,dr .
+\]
+Here and below, the notation under the integral sign requires both coordinates to belong to $[0,1]$.
+The vacancies are $u_f=1-m_f$. We use the bounds $c_\nu\le\nu_1\le C_\nu$ and $u_f\ge\kappa_\nu>0$
+and the Lipschitz regularity of the full-board profile \cite[Theorems~1.1--1.3, Proposition~5.2 and
+Theorem~7.7]{perfil}. The fiber masses are Lipschitz in their parameter. Indeed, shifting the
+parameter by $\epsilon$ moves each endpoint of integration by at most $|\epsilon|$ and changes the
+integrand on the overlap by at most $L_\nu|\epsilon|$.
+
+The following proposition gives the deterministic targets against which we compare the process when
+a fraction $x$ of the rows remain. For a diagonal $f$, $U_f(x)$ is the target for its availability
+indicator and $\ell_f^*(x)$ is the target for its mass. At a point $(r,c)$, $J_x$ is the target for
+the availability indicator of the square and $v_x/n$ is the target for the Bethe weight of an
+available square.
+
+\begin{proposicion}[Comparison trajectory]\label{macro:trayectoria}
+For a diagonal line $f$ and a point $(r,c)$, write
+\begin{gather*}
+ U_f(x)=u_f+xm_f,\qquad \ell_f^*(x)=\frac{xm_f}{U_f(x)},\\
+ J_x=x^2U_D(x)U_A(x),\qquad
+ W_x=\frac{\nu_1}{U_D(x)U_A(x)},\qquad v_x=\frac{W_x}{x}.
+\end{gather*}
+Subscripts $D,A$ without arguments indicate evaluation at $r-c,r+c$, respectively. Then $J_1=1$,
+$J_xv_x=x\nu_1$, both marginals of $J_xv_x$ are equal to $x$, and
+\begin{equation}\label{macro:derivadas}
+ \partial_t U_f=-\frac{\ell_f^*}{x}U_f,\qquad
+ \partial_t\log J_x=-\frac{2+\ell_D^*+\ell_A^*}{x},\qquad
+ 1-\ell_f^*=\frac{u_f}{U_f}\ge\kappa_\nu .
+\end{equation}
+In particular,
+\[
+ v_x=\frac{b_0}{x}\,r_Rr_C\frac{u_D}{U_D}\frac{u_A}{U_A},
+ \qquad xv_x\le C_\nu/\kappa_\nu^2 .
+\]
+\end{proposicion}
+\begin{proof}
+We have $U_f(1)=1$, $\kappa_\nu\le U_f(x)\le1$, and $dx/dt=-1$. Hence $\partial_t U_f=-m_f$.
+Differentiating the product defining $J_x$ gives the second identity in \eqref{macro:derivadas}.
+Substituting the factorization of $\nu_1$ gives the formula for $v_x$. The product identity and the
+claims about the marginals follow by integration.
+\end{proof}
+
+The comparison that follows requires products of availability indicators for several lines.
+Observing the two diagonal families separately gives only the means of the individual factors.
+We now define sums of products and prove their concentration without assuming independence of the
+lines.

@@ -1,0 +1,84 @@
+\section{The cost at the first-exit board}\label{costes}
+
+Let $B$ be the first-exit board of a history, and let $k$ be its size. When $Q(B)>0$, recall that
+$g(B)=\log Q(B)-L(B)$ and set $g^+(B)=\max\{g(B),0\}$. If $Q(B)=0$, set $g^+(B)=0$.
+We call $g^+(B)$ the \emph{exit cost}. All estimates in this section concern a fixed board.
+The diffusion, vacancy, and gap bounds we use are the outer bounds that the board inherits from its
+regular parent. We do not assume the regularity conditions that the board has just failed to satisfy.
+
+\subsection{The normalizer on a residual board}\label{costes:normalizador}
+
+Let $p=(p_e)$ be the Bethe point of $B$. Each square $e=(i,j)$
+lies on a row, a column, and two diagonals $D(e),A(e)$. As in Section~\ref{leyes},
+$\ell_f=\sum_{e\in f}p_e$ and $h_f=1-\ell_f$ are the mass and vacancy of each residual diagonal $f$.
+Write $\mathcal A=(A_R,D)$ for the incidence matrix with squares indexing the rows and lines indexing
+the columns. Its first columns correspond to the board rows and columns, and the remaining columns
+to the diagonals. Thus $D$ is the square--diagonal incidence matrix of
+Section~\ref{macro:reconstruccion}, and $A_R=B^T$ is the transpose of the row--column incidence
+matrix in that section. Here we reserve $B$ for the board. Define
+\[
+ \tau_d(p)=\frac{p(1-p)}{1-dp},\qquad
+ C_d=\sum_e\bigl[\log(1-dp_e)-d\log(1-p_e)\bigr],\qquad d=2,4 .
+\]
+In the asymptotic estimates we take $k$ large enough that $4p_{\max}\le1/2$.
+For $d=4$ the matrix in the normalizer is
+\[
+ S_4=\operatorname{diag}(0_{RC},h)+
+          \mathcal A^T\operatorname{diag}(\tau_4(p_e))\mathcal A .
+\]
+This is the line operator $S_B$ of Section~\ref{leyes}. Its zero mode is
+$(\mathbf1_R,-\mathbf1_C,0)$. The pseudodeterminant $\pdet$ is the product of the positive
+eigenvalues. In this notation the predictor takes the form
+\[
+ \Gamma_4=\frac{e^{-C_4/2}\sqrt{4\pi k}}{\sqrt{\pdet S_4}},
+ \qquad L(B)=H_B(p)+\log\Gamma_4 ,
+\]
+where $H_B$ is the Bethe entropy \eqref{bethe}. The hypotheses of the following lemma are the
+diffusion, vacancy, and gap bounds from Section~\ref{leyes}: the matrix
+$A_R^T\operatorname{diag}(p)A_R$ is the row--column Laplacian up to a sign change in the
+column coordinates.
+
+\begin{lema}[Estimate for the normalizer]\label{coste-estatico}
+Suppose that $p_{\max}\le C/k$, that $h_f\ge\eta>0$, and that
+$A_R^T\operatorname{diag}(p)A_R$ has a gap of at least $\gamma>0$ on the orthogonal complement
+of $(\mathbf1_R,-\mathbf1_C)$. Then
+\[
+ L(B)-H_B(p)=\tfrac12\log(4\pi k)+O_{C,\eta,\gamma}(1).
+\]
+\end{lema}
+\begin{proof}
+Write $\tau_e=\tau_4(p_e)$ and $E=S_4-I$. The sum of the incident $p_e$ is one on a row or column
+and $1-h_f$ on a diagonal. Hence, for every line $f$,
+\[
+ E_{ff}=\sum_{e\in f}(\tau_e-p_e),\qquad
+ \tau_e-p_e=\frac{3p_e^2}{1-4p_e}.
+\]
+Since $\sum_e p_e=k$ and $\sum_e p_e^2\le C$, we obtain
+$\operatorname{tr}E=4\sum_e(\tau_e-p_e)=O(1)$. Moreover, $0\le E_{ff}=O(1/k)$ because the mass of
+each line is at most one. Consequently $\sum_f E_{ff}^2=O(1/k)$. Two lines from different
+families intersect in at most one square. Each square gives twelve ordered pairs of distinct lines, so
+\[
+ \sum_{f\ne j}E_{fj}^2=12\sum_e\tau_e^2=O(1).
+\]
+
+Let $y\perp(\mathbf1_R,-\mathbf1_C)$, let $z$ be a vector indexed by diagonals, and set
+$P_0=\operatorname{diag}(p)$. Since $\tau_e\ge p_e$, the quadratic form of $S_4$ at $(y,z)$
+dominates $\|P_0^{1/2}(A_Ry+Dz)\|^2+\eta\|z\|^2$. Each square lies on two diagonals, so
+\[
+ \|P_0^{1/2}Dz\|^2
+ \le2\sum_f\ell_f z_f^2\le2\|z\|^2.
+\]
+For $0<\theta<1$, completing the square gives
+$\|a+b\|^2\ge\theta\|a\|^2-\theta\|b\|^2/(1-\theta)$. With $\theta=\eta/(\eta+4)$, the preceding
+quadratic form is at least $\theta\gamma\|y\|^2+(\eta/2)\|z\|^2$.
+This proves that the indicated mode is the only zero mode and that the positive eigenvalues are at least
+$c=\min\{\theta\gamma,\eta/2\}$. For these eigenvalues we have
+\[
+ \sum_{\lambda>0}(\lambda-1)=\operatorname{tr}E+1,\qquad
+ \sum_{\lambda>0}(\lambda-1)^2\le\operatorname{tr}E^2=O(1).
+\]
+The Taylor bound $|\log\lambda-(\lambda-1)|\le
+(\lambda-1)^2/(2\min\{1,c\}^2)$ gives $\log\pdet S_4=O(1)$.
+Finally, the linear terms in $C_4$ cancel, so $|C_4|\le C'\sum_e p_e^2=O(1)$.
+Substituting these two estimates into $\log\Gamma_4$ proves the formula.
+\end{proof}

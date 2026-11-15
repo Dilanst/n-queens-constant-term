@@ -1,0 +1,70 @@
+\section{Final comparison of the counts}\label{balance}
+\begin{proof}[Proof of Theorem~\ref{princ}]
+Fix the class constants, $a_{\rm mes}$, $\varrho_{\rm mes}$ and the tolerances, $\varepsilon$,
+$\delta$, $K_0$, $\varrho_{\rm mac}$ and $a_{\rm mac}$ in the order given in
+Section~\ref{meso:constantes}. Let $K\ge K_0$ be a fixed integer and let $\tau$ be the stopping
+time in Definition~\ref{def:regular}. Let $E_{\rm mac}$ be the event that the first-exit board has
+size ${k\ge M}$; this includes failure of entry at the cut-off $k=M$. For $j\ge0$, let $E_j$ be
+the event that the history has regular entry at $M$ and its first-exit board has size $k$ with
+${2^jK\le k<2^{j+1}K}$; this is the event in Proposition~\ref{prop:salida-banda-meso}. If $K<M$,
+an exit on the board of size $K$ belongs to $E_0$. These events and the permanence event $F$
+partition the stopped histories.
+
+On $E_{\rm mac}$ and on each $E_j$, the first-exit board $B_\tau$ inherits the outer bounds from
+its regular parent; on $E_j$ it also inherits diagonal mass at most $\varepsilon_{\rm out}$
+(Proposition~\ref{meso:reconstruccion}). On $E_{\rm mac}$ its size is $k\ge M\ge\delta n$, so
+$N=2n-1=O_\delta(k)$ and Proposition~\ref{coste-macro} bounds its exit cost by
+$\Lambda_{\rm mac}=C_\delta n^{2/3}$. On $E_j$, writing $k$ for its size,
+Corollary~\ref{coste-debil} gives
+\[
+ g(B_\tau)\le C_0+\beta(\varepsilon_{\rm out})k
+           \le C_0+2\beta(\varepsilon_{\rm out})2^jK=:\Lambda_j .
+\]
+Both bounds hold on histories of positive mass under $\mu$. Let $\Lambda$ be the function of the
+stopped history equal to $\Lambda_{\rm mac}$ on $E_{\rm mac}$, to $\Lambda_j$ on $E_j$, and to zero
+on $F$. Thus $g(B_\tau)\mathbf1_{F^c}\le\Lambda$ on these histories.
+
+We apply the Gibbs variational inequality~\cite[Ch.~2]{ct} to $\Lambda$ and to the laws of the
+stopped
+histories. On this finite space the inequality follows directly from Jensen's inequality by
+restricting the sum under $\nu$ to the support of $\mu$:
+\[
+ \E_\mu\Lambda-D(\mu^\tau\Vert\nu^\tau)\le\log\E_\nu e^\Lambda
+ =\log\!\left(1+\nu(E_{\rm mac})(e^{\Lambda_{\rm mac}}-1)
+              +\sum_{j\ge0}\nu(E_j)(e^{\Lambda_j}-1)\right).
+\]
+If the first exit occurs at $M$ with $\Delta<\varrho_{\rm mac}$, Lemma~\ref{meso:entrada} places
+the observables within their entry tolerances, so $D_{\max}(M)\ge\alpha M$. Thus
+\[
+ E_{\rm mac}\subseteq\mathcal H_M\cup\bigl(G_M^-\cap\{D_{\max}(M)\ge\alpha M\}\bigr),
+\]
+so Corollary~\ref{macro:cambio} and that lemma bound the macroscopic summand by
+${C_1\exp(-c_1n+C_\delta n^{2/3})}$, with $C_1,c_1>0$ depending on $\delta$ and $\varrho_{\rm mac}$.
+Proposition~\ref{prop:salida-banda-meso} gives ${\nu(E_j)\le C\exp(-c\,2^jK)}$ if $2^jK\le M$;
+otherwise $E_j$ is empty. Since $c>2\beta(\varepsilon_{\rm out})$, for
+$0<c'<c-2\beta(\varepsilon_{\rm out})$ the sum of $\nu(E_j)(e^{\Lambda_j}-1)$ is $O(e^{-c'K})$ for
+large $K$. Corollary~\ref{hist:consistencia}, \eqref{super}, and the terminal estimate
+under $\mu$ in Proposition~\ref{terminal-error} give
+\[
+ \limsup_{n\to\infty}g(B_0)\le C/K+\theta_K+Ce^{-c'K},\qquad\theta_K\to0 .
+\]
+Indeed, for fixed $K$ the exceptional cost on the last board is at most
+${(L_K^{\max}+\log K!)\,CK^4/n}$, which is ${O(K^5\log(K+1)/n)}$ and tends to zero before we take
+the limit in $K$.
+
+For the reverse inequality we use $G=F\cap\{Q(B_K)>0\}$. By the geometric estimate under $\nu$
+in Section~\ref{terminal}, $s=\nu(G)\ge1-Ce^{-cK}-o_n(1)-d_{n,K}$, where $d_{n,K}\to0$ for fixed
+$K$. For large $K$ this lower limit is positive. The negative part of the exceptional cost on the
+last board has expectation at most $L_K^{\max}d_{n,K}/s$ under $\nu(\cdot\mid G)$. On the remaining
+histories $\theta_K$ suffices. Taking the lower limit in \eqref{infer} and using
+$\log(1-z)\ge-2z$ for $0\le z\le1/2$ gives
+\[
+ \liminf_{n\to\infty}g(B_0)\ge-C/K-\theta_K-Ce^{-cK}.
+\]
+Now let $K$ tend to infinity in both inequalities. On the initial board $B_0$, the global maximizer
+in Proposition~\ref{macro:maximo} satisfies $p_{\max}<1/4$ for large $n$ and hence coincides with
+the canonical maximizer of~\cite{pred}. The relation between the cofactor and the pseudodeterminant
+in Section~\ref{leyes} gives $L(B_0)=\log Q_{\rm pred}(n)$. Thus
+$g(B_0)=\log Q(n)-\log Q_{\rm pred}(n)\to0$. Applying Theorem~1.1 of~\cite{pred} to the second
+logarithm identifies the constant in the statement.
+\end{proof}

@@ -1,0 +1,130 @@
+\subsection{Reconstruction of the Bethe point}\label{macro:reconstruccion}
+
+\begin{proposicion}[Row and column rebalancing]\label{macro:reequilibrado}
+Under the thresholds of Lemma~\ref{macro:brecha}, there exists a matrix $\bar p$ with the same
+support as $q$, with row and column sums exactly equal to one, and with
+\[
+ \max_{q_e>0}\left|\frac{\bar p_e}{q_e}-1\right|\le C_\delta\zeta .
+\]
+Its diagonal vacancies are at least $\kappa_\nu/2$, its entries are $O_\delta(1/k)$, and its
+row--column Laplacian retains a uniform positive gap.
+\end{proposicion}
+\begin{proof}
+Restrict the variables to the available squares, where $q_e>0$. Let $B$ be the incidence matrix
+with rows indexed by row and column lines and columns indexed by squares. As
+in~\cite[Section~6.1]{pred}, $B$ here denotes this matrix rather than a board. Let $J$ be the
+diagonal matrix that changes the sign of the column coordinates, and set $B_o=JB$. For
+$b=\mathbf1-Bq$ we have $\|b\|_\infty=O_\delta(\zeta)$ and $\mathbf1^TJb=0$, since the sum of the
+row masses equals the sum of the column masses. With $L_q$ the row--column Laplacian with weights
+$q$, define
+\[
+ L_q=B_o\operatorname{diag}(q)B_o^T,\qquad
+ \phi=L_q^+Jb,\qquad z=\operatorname{diag}(q)B_o^T\phi .
+\]
+The gap and the compatibility condition give $Bz=b$ and $\|\phi\|_2\le C_\delta\sqrt{k}\,\zeta$.
+At a graph vertex $\gamma$, that is, a row or column, the equation $L_q\phi=Jb$ and the degree
+$d_\gamma=1+O_\delta(\zeta)$ give
+\[
+ d_\gamma|\phi_\gamma|\le |b_\gamma|+
+ \left(\sum_{e\in\gamma}q_e^2\right)^{1/2}\|\phi\|_2,
+ \qquad \sum_{e\in\gamma}q_e^2\le \frac{C_\delta}{k}d_\gamma .
+\]
+Thus $\|\phi\|_\infty=O_\delta(\zeta)$ and $|z_e|/q_e\le2\|\phi\|_\infty$. Take $\bar p=q+z$. The
+multiplicative comparison of weights preserves a fixed fraction of the gap of $L_q$. It also changes
+each diagonal mass by $O_\delta(\zeta)$ by Lemma~\ref{macro:balances}. By \eqref{macro:derivadas},
+the target vacancies are at least $\kappa_\nu$, which gives the bounds in the proposition upon
+reducing the thresholds.
+\end{proof}
+
+\begin{lema}[Inverse on the tangent space at the feasible point]\label{macro:inversa}
+For $\bar p$ as in Proposition~\ref{macro:reequilibrado}, let $K_{\bar p}$ denote the negative
+Hessian of the Bethe entropy at $\bar p$, and let $Z$ be a matrix whose orthonormal columns span
+$\ker B$. For large $n$,
+\[
+ R=Z(Z^TK_{\bar p}Z)^{-1}Z^T,\qquad
+ \|\operatorname{diag}(\bar p)^{-1}R\|_{\infty\to\infty}\le C_\delta .
+\]
+\end{lema}
+\begin{proof}
+We give the matrix argument of \cite[Sections~6.3 and~7.2]{pred} at this feasible point. Let $D$ be
+the square--diagonal incidence matrix for both diagonal families, as in~\cite[Section~6.1]{pred}.
+The letter $D$ alone denotes this matrix, and $D(e)$ still denotes the diagonal of square $e$. Let
+$H=\operatorname{diag}(h_f(\bar p))$ and
+\[
+ w_e=\left(\frac1{\bar p_e}-\frac3{1-\bar p_e}\right)^{-1},
+ \qquad W=\operatorname{diag}(w_e),\qquad
+ K_{\bar p}=W^{-1}+DH^{-1}D^T .
+\]
+We have $w_e/\bar p_e=1+O_\delta(1/k)>0$. If $\Upsilon$ is formed by stacking $B_o$ and $D^T$, the
+system for $v=R\psi$ is equivalent to
+\begin{equation}\label{macro:sistema-inverso}
+ (\Upsilon W\Upsilon^T+\operatorname{diag}(0,H))\,y=\Upsilon W\psi,\qquad
+ v=W(\psi-\Upsilon^Ty).
+\end{equation}
+Indeed, the first block gives $B_ov=0$ and the second gives $D^Tv=Hy_D$, where $y_D$ collects both
+diagonal families. Thus $K_{\bar p}v=\psi-B_o^Ty_{RC}$.
+
+We solve \eqref{macro:sistema-inverso} with $y_{RC}\perp\mathbf1_{2k}$, a condition compatible with
+the first block. The quadratic form of the system matrix is
+\[
+ \|W^{1/2}(B_o^Ty_{RC}+Dy_D)\|_2^2+y_D^THy_D .
+\]
+Its second term dominates $\kappa_\nu\|y_D\|_2^2/2$. Moreover,
+$\|W^{1/2}Dy_D\|_2^2\le 2\max_f\sum_{e\in f}w_e\,\|y_D\|_2^2$,
+since each square is incident to two diagonals. The gap of $B_oWB_o^T$ and the triangle inequality
+then show that the form also dominates a positive constant times $\|y_{RC}\|_2^2$. The entries of
+$\Upsilon W\psi$ are bounded by $C_\delta\|\psi\|_\infty$, and there are at most $2k+4n$ lines.
+Coercivity gives $\|y\|_2\le C_\delta\sqrt{k}\|\psi\|_\infty$.
+
+Each main diagonal entry of the system matrix is bounded away from zero by the row and column sums
+or by $H$. Two distinct lines intersect in at most one square. Thus each off-diagonal entry has
+absolute value at most $\max_e w_e=O_\delta(1/k)$, and in each row the sum of their absolute values
+is at most three times the weighted degree of the line, which is $O_\delta(1)$. The Euclidean norm
+of the off-diagonal part of each row is therefore $O_\delta(k^{-1/2})$. Applying the equation
+coordinate by coordinate gives $\|y\|_\infty\le C_\delta\|\psi\|_\infty$. Since $\Upsilon^Ty$ sums
+four signed multipliers, the second formula in \eqref{macro:sistema-inverso} gives the claimed bound.
+\end{proof}
+
+\begin{proposicion}[Stationary point and unique maximizer]\label{macro:maximo}
+There are positive thresholds for $\Delta$, $a_{\rm mac}$, and $C_{\mathcal I}/n$, and a minimum
+value of $n$, depending on $\delta$ and the profile, such that the Bethe point $p$ of the board
+exists and is the unique global maximizer of the Bethe entropy over all feasible points. It satisfies
+\begin{equation}\label{macro:predictor}
+ \max_{q_e>0}|p_e/q_e-1|\le C_\delta(\zeta+k^{-1}),\qquad
+ \max_{f\ {\rm available\ diagonal}}|\ell_f(p)-\ell_f^*|
+                       \le C_\delta(\zeta+k^{-1}).
+\end{equation}
+The second bound includes both diagonal families.
+\end{proposicion}
+\begin{proof}
+Write the negative gradient, modulo row and column multipliers, as
+\[
+ \Xi_e(p)=\log p_e+3\log(1-p_e)-\log h_{D(e)}(p)-\log h_{A(e)}(p).
+\]
+At $q$, using the target vacancies gives exactly
+\[
+ \log q_e-\log(u_D/U_D)-\log(u_A/U_A)
+ =\log(b_0/k)+\log r_R(r_i)+\log r_C(c_j).
+\]
+Upon passing to $\bar p$, the differences between the logarithms of the vacancies are
+$O_\delta(\zeta)$, and $3\log(1-\bar p_e)=O_\delta(k^{-1})$. Also,
+$\log(\bar p_e/q_e)=(B_o^T\phi)_e+O_\delta(\zeta^2)$.
+Subtracting the displayed multipliers gives a representative $\psi$ of $\Xi(\bar p)$ modulo
+multipliers, with $\|\psi\|_\infty\le C_\delta(\zeta+k^{-1})$.
+
+Use the norm $\|v\|_{\rm rel}=\max_e|v_e|/\bar p_e$. On $\|v\|_{\rm rel}\le\vartheta$ we have
+$|(D^Tv)_f|\le\vartheta\ell_f(\bar p)\le\vartheta$. For small $\vartheta$, the square weights remain
+positive and the vacancies exceed $\kappa_\nu/4$. Taylor expansion for the three kinds of logarithms
+gives
+\[
+ \Xi(\bar p+v)=\Xi(\bar p)+K_{\bar p}v+N(v),\qquad
+ \|N(v)\|_\infty\le C_\delta\vartheta^2,\qquad
+ \|N(v)-N(w)\|_\infty\le C_\delta\vartheta\|v-w\|_{\rm rel}.
+\]
+For $\log p_e$, apply the expansion to $v_e/\bar p_e$. For $\log(1-p_e)$ and the logarithms of the
+vacancies, the denominators are bounded away from zero and the respective perturbations are bounded
+by $\vartheta$. The stationarity equation on $\ker B$ is $v=-R(\psi+N(v))$. By
+Lemma~\ref{macro:inversa}, this map preserves the ball of radius $2C_\delta\|\psi\|_\infty$ and has
+contraction constant less than $1/2$ upon reducing the thresholds. Its fixed point gives a feasible
+stationary point $p=\bar p+v$. Comparison with $q$ and Lemma~\ref{macro:balances} give
+\eqref{macro:predictor}.

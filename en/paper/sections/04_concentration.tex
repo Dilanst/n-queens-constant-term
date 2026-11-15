@@ -1,0 +1,132 @@
+\subsection{Drift by family and control up to the first exit}\label{macro:control}
+
+\begin{lema}[Conditional loss of a pattern]\label{macro:deriva}
+Suppose the parent satisfies the thresholds of Proposition~\ref{macro:maximo} and $k\ge\delta n$.
+For a set $\mathcal L$ of boundedly many distinct available lines, let $H^*(\mathcal L)$ be the sum
+of one for each row or column and $\ell_f^*$ for each diagonal or antidiagonal $f$. In one step,
+\[
+ P^{\rm B}(\text{some line in }\mathcal L\text{ becomes occupied}\mid\mathcal F_s)
+ =\frac{H^*(\mathcal L)}{k}
+       +O_\delta\!\left(\frac{\zeta+k^{-1}}{k}\right).
+\]
+The fiber rates are those of Definition~\ref{macro:fibras}, and the rate for the rectangle term $T$
+is
+\[
+ H_T^*=4+\sum_{m\in T}\bigl(\ell_{D(e_m)}^*+\ell_{A(e_m)}^*\bigr).
+\]
+\end{lema}
+\begin{proof}
+Lemma~\ref{macro:casilla} gives the sum of the individual probabilities. Replacing diagonal masses by
+their targets incurs the error in \eqref{macro:predictor} divided by $k$ and multiplied by the number
+of lines. The intersection of any two distinct lines has probability at most
+$\max_e p_e/k=O_\delta(k^{-2})$. The first two inclusion--exclusion inequalities bound the error for
+the union by the sum of these intersection probabilities.
+
+For an available tracked line $\lambda$, write $Y_{e|\lambda}=\prod_{f\ni e,\,f\ne\lambda}X_f$.
+If $Y_{e|\lambda}=1$, its contribution decreases when any of the other three lines is hit while
+$\lambda$ remains unoccupied. Excluding simultaneous occupation of $\lambda$ and one of the three
+lines changes the probability by $O_\delta(k^{-2})$. If $\lambda$ becomes occupied, the freezing
+rule preserves the observable. Thus, writing $\nabla_s$ for the one-step increment, we have
+\[
+ \E_{\rm B}[\nabla_s F_{\lambda,I}\mid\mathcal F_s]
+ =-\frac1{kn}\sum_{e\in\lambda_I}Y_{e|\lambda}H_\lambda^*(e)
+   +O_\delta\!\left(\frac{\zeta+k^{-1}}{k}F_{\lambda,I}\right).
+\]
+By \eqref{macro:derivadas}, the time derivative of each fiber density in the table is $-H^*_\lambda/x$
+times the density itself. Without freezing, the increment of its target is the integral of this
+derivative divided by $n$, with Taylor error $O_\delta(n^{-2}|\lambda_I|)$, where $|\lambda_I|$ is
+the length of its parameter interval. The probability of freezing is $O(1/k)$, and the ordinary
+increment of the target is $O_\delta(|\lambda_I|/n)$. Freezing the target at the step when the line
+becomes occupied therefore adds $O_\delta(|\lambda_I|/(kn))$ to its conditional drift. For a fiber
+that is already frozen, both drifts are zero.
+
+For row or column masses we have exactly $\E_{\rm B}[\nabla_s N_I\mid\mathcal F_s]=-N_I/k$, and the
+target decreases by $|I|/n$. For the rectangle, we apply the union formula to the four row and column
+lines and the $2|T|$ diagonal lines. These are distinct for ordinary quadruples. If $Y_{T}$ denotes
+the product of their indicators, then
+\[
+ \E_{\rm B}[\nabla_s P_{\Theta,T}\mid\mathcal F_s]
+ =-\frac1{kn^4}\sum_{(i,i',j,j')\in\Theta}^{\rm ord}Y_T H_T^*
+   +O_\delta\!\left(\frac{\zeta+k^{-1}}{k}P_{\Theta,T}\right).
+\]
+When $Y_T=0$, its contribution remains zero. The derivative of the target density is exactly
+$-H_T^*/x$ times the density itself. The second time derivative is uniformly bounded for $x\ge\delta$,
+so the integrated Taylor error is $O_\delta(|\Theta|/n^2)$.
+\end{proof}
+
+\begin{proposicion}[Stopping bound under the auxiliary law]\label{macro:parada}
+Let $M=\lceil\delta n\rceil$. For every sufficiently small radius $\varrho_{\rm mac}>0$, we can fix a
+partition $\mathcal I$ of mesh $a_{\rm mac}$ and constants
+$c_{\delta,\varrho_{\rm mac}},C_{\delta,\varrho_{\rm mac}}>0$ with the following property.
+Let $\mathcal H_M$ be the event that the discrepancy reaches or exceeds $\varrho_{\rm mac}$ at some
+board of size ${k\ge M}$ in the history, including the board of size $M$. For sufficiently large $n$,
+\[
+ P^{\rm B}(\mathcal H_M)\le C_{\delta,\varrho_{\rm mac}}\exp(-c_{\delta,\varrho_{\rm mac}}n).
+\]
+The same bound holds for a fixed observation partition by passing to a refinement of that partition.
+\end{proposicion}
+\begin{proof}
+Let $\tau$ be the index of the first board of size at least $M$ in the history whose discrepancy
+reaches or exceeds $\varrho_{\rm mac}$, and set $\tau=n-M$ if there is no such board. This is a
+stopping time with $\tau\le n-M$. Every board of index less than $\tau$ has discrepancy less than
+$\varrho_{\rm mac}$ and, by Proposition~\ref{macro:maximo}, has a Bethe point. Thus the history
+stopped at $\tau$ is defined under $P^{\rm B}$, and $\mathcal H_M=\{\Delta(\tau)\ge\varrho_{\rm mac}\}$
+depends only on that history. We stop the discrepancies and the centered increments of each
+observable minus its target at $\tau$. We include the increment of the step reaching $\tau$, since
+the preceding board is still within the radius. Let $\mathcal M^*$ be the sum of the maxima over
+time of the absolute values of these martingales for row and column intervals and for boxes and
+subsets, plus the maximum over tracked lines of the sum of these absolute maxima for their intervals.
+
+In a box or interval, we subtract from the empirical and target drifts the contributions of the same
+rate $H^*$, evaluated at a point in that region. The constant-rate term is at most $C_\delta/n$ times
+the absolute mass discrepancy in the region. The oscillation of $H^*$ is $O_\delta(a_{\rm mac})$ by
+spatial regularity and multiplies the sum of the empirical and target masses. Over all subfibers of a
+line these masses sum to at most two. For each of the sixteen types they likewise sum to at most two
+over all boxes. In the Taylor errors, the lengths or volumes sum to at most one per family or type.
+These facts yield, with a constant $C_\delta$ independent of the number of intervals,
+\begin{equation}\label{macro:gronwall}
+ \Delta(s\wedge\tau)\le \Delta(0)+\mathcal M^*
+ +\frac{C_\delta}{n}\sum_{j<s\wedge\tau}\Delta(j)
+ +C_\delta(a_{\rm mac}+C_{\mathcal I}/n),\qquad 0\le s\le n-M .
+\end{equation}
+For the fibers, we first sum the absolute errors over their intervals and then take the maximum over
+lines. Each fiber ceases to contribute once it freezes. In estimating the drift,
+Lemma~\ref{macro:deriva} uses only $\zeta$, which is linear in $\Delta_0+\Delta_F$. The exponent
+$1/4$ in Lemma~\ref{macro:brecha} does not affect the coefficient in \eqref{macro:gronwall}.
+
+There are $O_{\mathcal I}(n)$ scalar martingales. For a fiber that remains available, each newly
+occupied line affects at most one square of the fiber, since distinct lines intersect at most once.
+The step that occupies the tracked line freezes the entire observation for that line. For a
+rectangle, requiring one of the occupied lines to pass through a given position in the rectangle
+imposes a nontrivial linear relation and allows $O(n^3)$ quadruples. Each increment of a normalized
+mass, including the target increment, therefore has absolute value at most $C_\delta/n$. The same
+bound, with a different constant, holds after centering and stopping the increments.
+
+If $(\xi_j)$ are martingale differences with $|\xi_j|\le d_j$, then for $\theta>0$ convexity of the
+exponential between $-d_j$ and $d_j$ and the zero conditional mean give
+$\E[\exp(\theta\xi_j)\mid\mathcal F_{j-1}]\le\cosh(\theta d_j)\le\exp(\theta^2d_j^2/2)$. The
+compensated product is a positive supermartingale. Stopping it at the first $h$ with
+$\sum_{j\le h}\xi_j\ge u$, applying the same calculation to $-\xi_j$, and optimizing over $\theta$ give
+\begin{equation}\label{macro:max-mart}
+ P\left(\max_{h\le m}\left|\sum_{j\le h}\xi_j\right|\ge u\right)
+ \le 2\exp\!\left(-\frac{u^2}{2\sum_{j\le m}d_j^2}\right).
+\end{equation}
+For the fixed partition $\mathcal I$, there is a $C'_{\mathcal I}$ such that if all the scalar
+martingales have absolute maximum less than $b/C'_{\mathcal I}$, then $\mathcal M^*<b$. The factor
+$C'_{\mathcal I}$ counts the intervals on a single fiber and the interval and rectangle observations.
+The number of tracked lines enters only when we take the union of events. From \eqref{macro:max-mart},
+\[
+ P^{\rm B}(\mathcal M^*\ge b)\le C_{\mathcal I}(n+1)\exp(-c_{\delta,\mathcal I}b^2 n).
+\]
+
+Initially $x=U_f=1$. The lattice sums over intervals and boxes, the approximation of the fiber
+endpoints, and the $O(n^3)$ exceptional quadruples give $\Delta(0)\le C_{\mathcal I}/n$, uniformly in
+the tracked line. We first choose $\varrho_{\rm mac}$ within the deterministic thresholds, then
+$a_{\rm mac}$ and $b$ with $e^{C_\delta}(b+C_\delta a_{\rm mac})<\varrho_{\rm mac}/3$, and finally
+take $n$ large with the partition fixed. The discrete Gronwall inequality applied to
+\eqref{macro:gronwall} gives $\Delta(s\wedge\tau)<\varrho_{\rm mac}$ whenever $\mathcal M^*<b$,
+including the step reaching $\tau$. Thus $\mathcal H_M\subseteq\{\mathcal M^*\ge b\}$, which proves
+the bound after absorbing $n+1$ into the exponential. Upon refining a partition, all masses and
+targets of a coarse region are sums of those of the finer regions, including for frozen fibers. The
+triangle inequality transfers the bound to the coarse partition.
+\end{proof}

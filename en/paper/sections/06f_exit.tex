@@ -1,0 +1,28 @@
+\begin{corolario}[Exit cost in the mesoscopic range]\label{coste-debil}
+For a first-exit board in the mesoscopic range satisfying the outer class bounds, with
+$\max_f\ell_f\le\varepsilon_{\rm out}<1$, we have for all sufficiently large $k$
+\[
+ g^+(B)\le C_0+\beta(\varepsilon_{\rm out})k,\qquad
+ \beta(v)=\frac{2v}{1-v},
+\]
+where $\beta$ is the function from Section~\ref{meso:constantes}. The constant $C_0$ can be
+chosen uniformly for these bounds.
+\end{corolario}
+\begin{proof}
+For $0\le x<1$ we have $-\log(1-x)-x=\int_0^x t/(1-t)\,dt\le x^2/(2(1-x))$. For the factor of
+$F$ common to all permutations, we use $\log(1-\ell_f)\le-\ell_f$ to obtain
+\[
+ \sum_f\log h_f-2\sum_e\log(1-p_e)
+ \le-\sum_f\ell_f+2\sum_ep_e+
+       \frac{\sum_ep_e^2}{1-p_{\max}}
+ =O_C(1).
+\]
+For legal permutations, the numerator $(1-p_e)^2$ of each square factor is at most one.
+Moreover, $-\log h_f\le\ell_f/(1-\ell_f)\le\varepsilon_{\rm out}/(1-\varepsilon_{\rm out})$.
+There are two such logarithms for each of the $k$ chosen squares. It follows that
+$F(\sigma)\le\exp(C'+\beta(\varepsilon_{\rm out})k)$, which also holds if the indicator of
+legality is zero. Lemma~\ref{coste-factor} and Proposition~\ref{coste-normalizadores} give the
+bound on $g$ when $Q(B)>0$. Absorb the uniform bound on $\log(\Gamma_4/\Gamma_2)$ and the uniform
+$o(1)$ term into a positive constant $C_0$. This gives the bound on $g^+$ and also covers
+the case $Q(B)=0$.
+\end{proof}

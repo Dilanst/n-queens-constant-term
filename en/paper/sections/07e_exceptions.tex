@@ -1,0 +1,53 @@
+\begin{proposicion}[Error on the last board]\label{terminal-error}
+There is a sequence $\theta_K\to0$, depending only on the outer bounds, such that on $F\cap D_K^c$,
+\[
+ |\log Q(B_K)-L(B_K)|\le\theta_K .
+\]
+If $G=F\cap\{Q(B_K)>0\}$, then $\nu(G)\ge\nu(F)-d_{n,K}$. For $L_K^{\max}=C K\log(K+1)$
+and $\nu(G)>0$, we have
+\[
+ \begin{aligned}
+ \E_\mu\!\left[|g(B_K)|\mathbf1_F\right]
+ &\le\theta_K+(L_K^{\max}+\log K!)\, CK^4/n,\\
+ \E_{\nu(\cdot\mid G)}[g(B_K)^-]
+ &\le\theta_K+L_K^{\max}\,d_{n,K}/\nu(G).
+ \end{aligned}
+\]
+Here $u^-=\max\{-u,0\}$.
+\end{proposicion}
+\begin{proof}
+On $F\cap D_K^c$ take $P=(p_{ij})$ to be the Bethe point, extended by zero off the support of
+$A$. Lemma~\ref{terminal-pivotes} gives $H_B=H_T$, $L=H_T+\log\Gamma_2$, and $Q(B_K)=\per A>0$.
+The rook stationarity equation gives $W_{ij}=a_i b_j$ on the entire support of $A$. Let
+$\mathcal K_T=\prod_i a_i\prod_j b_j$. Multiplying the weights along each permutation and summing
+gives $\per W=\mathcal K_T\,\per A$. Use $P_{ij}$ to weight the logarithms of
+$P_{ij}(1-P_{ij})=a_i b_j$ on the available squares. Since the row
+and column masses equal one, this gives
+\[
+ H_T(P)=-\log\mathcal K_T+\sum_{ij}\log(1-P_{ij}).
+\]
+Consequently,
+\[
+ \log\per A-H_T(P)
+ =\log\frac{\per W}{\prod_{ij}(1-P_{ij})}.
+\]
+Lemma~\ref{terminal-normalizador} gives the first conclusion by uniformity over the possible boards
+on $F$. In particular, $F\cap D_K^c\subseteq G$, so $\nu(G)\ge\nu(F)-d_{n,K}$ by
+Lemma~\ref{terminal-geometria}.
+
+On the remainder of $F$ we use the entropy of the full predictor directly. In each row,
+$-\sum_j p_{ij}\log p_{ij}\le\log K$, while $0\le -(1-y)\log(1-y)\le y$ for $0\le y\le1$.
+Summing over squares and diagonals, with $\sum_e p_e=K$ and $\sum_f\ell_f=2K$, gives
+\[
+ -3K\le H_B(p)\le K\log K+2K .
+\]
+Lemma~\ref{coste-estatico} then gives $|L(B_K)|\le L_K^{\max}$ for all sufficiently large $K$.
+For a history that can be completed, $1\le Q(B_K)\le K!$, so $|g(B_K)|\le L_K^{\max}+\log K!$
+and $g(B_K)^-\le L_K^{\max}$.
+
+Under $\mu$ the histories can always be completed. We apply the first conclusion on $F\cap D_K^c$
+and the last absolute bound on $F\cap D_K$, whose probability is at most $CK^4/n$ by averaging
+Lemma~\ref{terminal-geometria} over $\pi$. Under $\nu(\cdot\mid G)$ the history can also be
+completed, and the probability of $D_K$ is at most $\nu(F\cap D_K)/\nu(G)\le d_{n,K}/\nu(G)$.
+The first conclusion on $D_K^c$ and the bound on $g^-$ on $D_K$ give the second inequality.
+\end{proof}

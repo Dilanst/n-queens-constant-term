@@ -1,0 +1,10921 @@
+{
+  "figures/history.tex": [
+    [
+      "texto",
+      "4"
+    ],
+    [
+      "texto",
+      "4"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "0,2"
+    ],
+    [
+      "texto",
+      "9.2"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "texto",
+      "26"
+    ],
+    [
+      "texto",
+      "0,6"
+    ],
+    [
+      "texto",
+      "7,7"
+    ],
+    [
+      "texto",
+      "17"
+    ],
+    [
+      "texto",
+      "0,0"
+    ],
+    [
+      "texto",
+      "1,7"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "26"
+    ],
+    [
+      "texto",
+      "0,5"
+    ],
+    [
+      "texto",
+      "7,6"
+    ],
+    [
+      "texto",
+      "17"
+    ],
+    [
+      "texto",
+      "2,0"
+    ],
+    [
+      "texto",
+      "3,7"
+    ],
+    [
+      "texto",
+      "0,0"
+    ],
+    [
+      "texto",
+      "7,7"
+    ],
+    [
+      "texto",
+      "75"
+    ],
+    [
+      "texto",
+      "5,6.5"
+    ],
+    [
+      "texto",
+      "-7,7"
+    ],
+    [
+      "texto",
+      "14"
+    ],
+    [
+      "texto",
+      "-14"
+    ],
+    [
+      "texto",
+      "70"
+    ],
+    [
+      "texto",
+      "5,6.5"
+    ],
+    [
+      "texto",
+      "-7"
+    ],
+    [
+      "texto",
+      "-7"
+    ],
+    [
+      "texto",
+      "14,14"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "75"
+    ],
+    [
+      "texto",
+      "2.5,5.5"
+    ],
+    [
+      "texto",
+      "-7,7"
+    ],
+    [
+      "texto",
+      "14"
+    ],
+    [
+      "texto",
+      "-14"
+    ],
+    [
+      "texto",
+      "70"
+    ],
+    [
+      "texto",
+      "2.5,5.5"
+    ],
+    [
+      "texto",
+      "-7"
+    ],
+    [
+      "texto",
+      "-7"
+    ],
+    [
+      "texto",
+      "14,14"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "2.5,5.5"
+    ],
+    [
+      "texto",
+      "28"
+    ],
+    [
+      "texto",
+      "3.5"
+    ],
+    [
+      "texto",
+      "-1.1"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "3.5"
+    ],
+    [
+      "texto",
+      "-1.1"
+    ],
+    [
+      "formula",
+      "B + ( 2 , 3 )"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "seven"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "2"
+    ],
+    [
+      "formula",
+      "3 , 4 , 5 , 6 , 7"
+    ],
+    [
+      "formula",
+      "1 , 1 , 1 , 1 , 0"
+    ],
+    [
+      "formula",
+      "Q ( B ) = 4"
+    ],
+    [
+      "formula",
+      "( 2 , 3 )"
+    ]
+  ],
+  "figures/last_board.tex": [
+    [
+      "texto",
+      "4"
+    ],
+    [
+      "texto",
+      "4"
+    ],
+    [
+      "texto",
+      "11"
+    ],
+    [
+      "texto",
+      "1,3,9,11"
+    ],
+    [
+      "texto",
+      "20"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "11"
+    ],
+    [
+      "texto",
+      "11"
+    ],
+    [
+      "texto",
+      "12"
+    ],
+    [
+      "texto",
+      "1,5,6,10"
+    ],
+    [
+      "texto",
+      "13"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "11"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1,3"
+    ],
+    [
+      "texto",
+      "5,3"
+    ],
+    [
+      "texto",
+      "10,9"
+    ],
+    [
+      "texto",
+      "1,9"
+    ],
+    [
+      "texto",
+      "6,11"
+    ],
+    [
+      "texto",
+      "5,11"
+    ],
+    [
+      "texto",
+      "10"
+    ],
+    [
+      "texto",
+      "11"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "11.5"
+    ],
+    [
+      "texto",
+      "22"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "3,4"
+    ],
+    [
+      "texto",
+      "7,5"
+    ],
+    [
+      "texto",
+      "9,6"
+    ],
+    [
+      "texto",
+      "11,7"
+    ],
+    [
+      "texto",
+      "2,8"
+    ],
+    [
+      "texto",
+      "4,10"
+    ],
+    [
+      "texto",
+      "8"
+    ],
+    [
+      "texto",
+      "11"
+    ],
+    [
+      "texto",
+      "13,3.2"
+    ],
+    [
+      "texto",
+      "1.2"
+    ],
+    [
+      "texto",
+      "2,5.15"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1,2"
+    ],
+    [
+      "texto",
+      "5,3"
+    ],
+    [
+      "texto",
+      "6,4"
+    ],
+    [
+      "texto",
+      "10"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "4.35"
+    ],
+    [
+      "formula",
+      "\\original"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1,2"
+    ],
+    [
+      "texto",
+      "3,3"
+    ],
+    [
+      "texto",
+      "9,4"
+    ],
+    [
+      "texto",
+      "11"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "4.5"
+    ],
+    [
+      "formula",
+      "\\original"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1,2"
+    ],
+    [
+      "texto",
+      "2,2"
+    ],
+    [
+      "texto",
+      "4,3"
+    ],
+    [
+      "texto",
+      "1,3"
+    ],
+    [
+      "texto",
+      "3,4"
+    ],
+    [
+      "texto",
+      "2,4"
+    ],
+    [
+      "texto",
+      "4"
+    ],
+    [
+      "texto",
+      "16"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "4"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "4"
+    ],
+    [
+      "texto",
+      "0,0"
+    ],
+    [
+      "texto",
+      "4,4"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1,0,0,0"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "0,1,0,1"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "1,0,1,0"
+    ],
+    [
+      "texto",
+      "4"
+    ],
+    [
+      "texto",
+      "0,1,0,1"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "4.5"
+    ],
+    [
+      "formula",
+      "\\valor"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "formula",
+      "\\operatorname { per } = 2"
+    ],
+    [
+      "texto",
+      "eleven"
+    ],
+    [
+      "formula",
+      "\\pi = ( 1 , 3 , 5 , 7 , 9 , 11 , 2 , 4 , 6 , 8 , 10 )"
+    ],
+    [
+      "formula",
+      "1 , 3 , 9 , 11"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "seven"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "1 , 5 , 6 , 10"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "1"
+    ],
+    [
+      "formula",
+      "1"
+    ],
+    [
+      "formula",
+      "9"
+    ],
+    [
+      "formula",
+      "6"
+    ],
+    [
+      "formula",
+      "3"
+    ],
+    [
+      "formula",
+      "11"
+    ],
+    [
+      "formula",
+      "5"
+    ],
+    [
+      "formula",
+      "10"
+    ],
+    [
+      "formula",
+      "2"
+    ],
+    [
+      "formula",
+      "2 , 6 , 8 , 10"
+    ],
+    [
+      "formula",
+      "1 , 4 , 5 , 9"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "two"
+    ]
+  ],
+  "figures/rectangle.tex": [
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "8"
+    ],
+    [
+      "texto",
+      "0,0"
+    ],
+    [
+      "texto",
+      "8,8"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "2,5"
+    ],
+    [
+      "texto",
+      "2,5"
+    ],
+    [
+      "texto",
+      "6,2"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "75"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "8.5"
+    ],
+    [
+      "texto",
+      "-8,8"
+    ],
+    [
+      "texto",
+      "16"
+    ],
+    [
+      "texto",
+      "-16"
+    ],
+    [
+      "texto",
+      "70"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "8.5"
+    ],
+    [
+      "texto",
+      "-8"
+    ],
+    [
+      "texto",
+      "-8"
+    ],
+    [
+      "texto",
+      "16,16"
+    ],
+    [
+      "texto",
+      "1.5,6.5"
+    ],
+    [
+      "texto",
+      "5.5,3.5"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "2,5"
+    ],
+    [
+      "texto",
+      "2,5"
+    ],
+    [
+      "texto",
+      "6,2"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "8"
+    ],
+    [
+      "texto",
+      "1.2"
+    ],
+    [
+      "texto",
+      "1.5,6.5"
+    ],
+    [
+      "texto",
+      "32"
+    ],
+    [
+      "texto",
+      "1.2"
+    ],
+    [
+      "texto",
+      "5.5,3.5"
+    ],
+    [
+      "texto",
+      "32"
+    ],
+    [
+      "texto",
+      "eight"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "e _ 1 = ( 2 , 2 )"
+    ],
+    [
+      "formula",
+      "e _ 2 = ( 5 , 2 )"
+    ],
+    [
+      "formula",
+      "e _ 3 = ( 5 , 6 )"
+    ],
+    [
+      "formula",
+      "e _ 4 = ( 2 , 6 )"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "i - j"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "i + j - 1"
+    ],
+    [
+      "formula",
+      "e _ 1 , e _ 3"
+    ],
+    [
+      "formula",
+      "T = \\{ 1 , 3 \\}"
+    ],
+    [
+      "formula",
+      "( - 1 ) ^ { 4 - 2 } = + 1"
+    ]
+  ],
+  "figures/symbols.tex": [
+    [
+      "definicion",
+      "\\newcommand { \\bcuadricula } [ 1 ] {"
+    ],
+    [
+      "definicion",
+      "\\newcommand { \\breina } [ 3 ] {"
+    ],
+    [
+      "definicion",
+      "\\newcommand { \\bmarca } [ 3 ] { \\fill [ btinta ! 62 ] ( # 3 - . 5 , # 1 - # 2 + . 50 ) circle [ radius = . 055 ] ; }"
+    ],
+    [
+      "texto",
+      "22"
+    ],
+    [
+      "texto",
+      "9"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "0,0"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "10"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "06"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "45"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "0,0"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "50"
+    ],
+    [
+      "texto",
+      "0,0"
+    ],
+    [
+      "texto",
+      "36"
+    ],
+    [
+      "texto",
+      "29"
+    ],
+    [
+      "texto",
+      "15"
+    ],
+    [
+      "texto",
+      "13"
+    ],
+    [
+      "texto",
+      "04"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "30"
+    ],
+    [
+      "texto",
+      "13"
+    ],
+    [
+      "texto",
+      "04"
+    ],
+    [
+      "texto",
+      "29"
+    ],
+    [
+      "texto",
+      "15"
+    ],
+    [
+      "texto",
+      "18"
+    ],
+    [
+      "texto",
+      "15"
+    ],
+    [
+      "texto",
+      "18"
+    ],
+    [
+      "texto",
+      "15"
+    ],
+    [
+      "texto",
+      "21"
+    ],
+    [
+      "texto",
+      "22"
+    ],
+    [
+      "texto",
+      "21"
+    ],
+    [
+      "texto",
+      "18"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "62"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "50"
+    ],
+    [
+      "texto",
+      "055"
+    ]
+  ],
+  "figures/witnesses.tex": [
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "1,4"
+    ],
+    [
+      "texto",
+      "8.3"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "75"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "5.5"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "4.5"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "75"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "5.5"
+    ],
+    [
+      "texto",
+      "45"
+    ],
+    [
+      "texto",
+      "75"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "4.5"
+    ],
+    [
+      "texto",
+      "45"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "2,2"
+    ],
+    [
+      "texto",
+      "4,3"
+    ],
+    [
+      "texto",
+      "6,4"
+    ],
+    [
+      "texto",
+      "1,5"
+    ],
+    [
+      "texto",
+      "3,6"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "-1.1"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "-1.1"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "six"
+    ],
+    [
+      "formula",
+      "\\pi = ( 2 , 4 , 6 , 1 , 3 , 5 )"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\pi"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "( i , \\pi ( j ) )"
+    ],
+    [
+      "formula",
+      "( i ' , \\pi ( j ' ) )"
+    ],
+    [
+      "formula",
+      "( i , i ' , j , j ' ) = ( 1 , 2 , 1 , 4 )"
+    ],
+    [
+      "formula",
+      "( 1 , 2 )"
+    ],
+    [
+      "formula",
+      "( 2 , 1 )"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "( 1 , 2 , 3 , 6 )"
+    ],
+    [
+      "formula",
+      "( 1 , 6 )"
+    ],
+    [
+      "formula",
+      "( 2 , 5 )"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\{ i , i ' \\} = \\{ j , j ' \\}"
+    ],
+    [
+      "formula",
+      "| i - i ' | = | \\pi ( i ) - \\pi ( i ' ) | > 0"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "one"
+    ]
+  ],
+  "main.tex": [
+    [
+      "inclusion",
+      "preamble"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "texto",
+      "2020"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "9"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "inclusion",
+      "sections/00_abstract"
+    ],
+    [
+      "inclusion",
+      "sections/01_introduction"
+    ],
+    [
+      "inclusion",
+      "sections/02_preliminaries"
+    ],
+    [
+      "inclusion",
+      "sections/03_histories"
+    ],
+    [
+      "inclusion",
+      "sections/04_flow"
+    ],
+    [
+      "inclusion",
+      "sections/04_patterns"
+    ],
+    [
+      "inclusion",
+      "sections/04_patterns_2"
+    ],
+    [
+      "inclusion",
+      "sections/04_reconstruction"
+    ],
+    [
+      "inclusion",
+      "sections/04_reconstruction_2"
+    ],
+    [
+      "inclusion",
+      "sections/04_concentration"
+    ],
+    [
+      "inclusion",
+      "sections/04_change_of_law"
+    ],
+    [
+      "inclusion",
+      "sections/05a"
+    ],
+    [
+      "inclusion",
+      "sections/05b"
+    ],
+    [
+      "inclusion",
+      "sections/05c"
+    ],
+    [
+      "inclusion",
+      "sections/05d"
+    ],
+    [
+      "inclusion",
+      "sections/05e"
+    ],
+    [
+      "inclusion",
+      "sections/06a_static"
+    ],
+    [
+      "inclusion",
+      "sections/06b_enlargement"
+    ],
+    [
+      "inclusion",
+      "sections/06c_revelation"
+    ],
+    [
+      "inclusion",
+      "sections/06d_reduction"
+    ],
+    [
+      "inclusion",
+      "sections/06e_normalizers"
+    ],
+    [
+      "inclusion",
+      "sections/06f_exit"
+    ],
+    [
+      "inclusion",
+      "sections/07a_geometry"
+    ],
+    [
+      "inclusion",
+      "sections/07b_pivots"
+    ],
+    [
+      "inclusion",
+      "sections/07c_scaling"
+    ],
+    [
+      "inclusion",
+      "sections/07d_permanent"
+    ],
+    [
+      "inclusion",
+      "sections/07e_exceptions"
+    ],
+    [
+      "inclusion",
+      "sections/08_final_comparison"
+    ],
+    [
+      "inclusion",
+      "sections/09_discussion"
+    ],
+    [
+      "inclusion",
+      "sections/10_ai_use"
+    ],
+    [
+      "inclusion",
+      "sections/references"
+    ]
+  ],
+  "preamble.tex": [
+    [
+      "definicion",
+      "\\renewcommand { \\bottomtitlespace } { . 12 \\textheight } } { }"
+    ],
+    [
+      "definicion",
+      "\\newtheorem { teorema } { Theorem } [ section ]"
+    ],
+    [
+      "definicion",
+      "\\newtheorem { proposicion } [ teorema ] { Proposition }"
+    ],
+    [
+      "definicion",
+      "\\newtheorem { lema } [ teorema ] { Lemma }"
+    ],
+    [
+      "definicion",
+      "\\newtheorem { corolario } [ teorema ] { Corollary }"
+    ],
+    [
+      "definicion",
+      "\\newtheorem { definicion } [ teorema ] { Definition }"
+    ],
+    [
+      "definicion",
+      "\\newtheorem { conjetura } [ teorema ] { Conjecture }"
+    ],
+    [
+      "definicion",
+      "\\newtheorem { observacion } [ teorema ] { Remark }"
+    ],
+    [
+      "definicion",
+      "\\newcommand { \\eps } { \\varepsilon }"
+    ],
+    [
+      "definicion",
+      "\\newcommand { \\ind } { \\mathbf { 1 } }"
+    ],
+    [
+      "definicion",
+      "\\DeclareMathOperator { \\pdet } { pdet }"
+    ],
+    [
+      "definicion",
+      "\\DeclareMathOperator { \\diag } { diag }"
+    ],
+    [
+      "definicion",
+      "\\DeclareMathOperator { \\tr } { tr }"
+    ],
+    [
+      "definicion",
+      "\\newcommand { \\Cpred } { C _ { \\rm pred } }"
+    ],
+    [
+      "definicion",
+      "\\newcommand { \\Qpred } { Q _ { \\rm pred } }"
+    ],
+    [
+      "definicion",
+      "\\newcommand { \\E } { \\mathbb { E } }"
+    ],
+    [
+      "definicion",
+      "\\newcommand { \\Prob } { \\mathbb { P } }"
+    ],
+    [
+      "definicion",
+      "\\DeclareMathOperator { \\per } { per }"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1.05"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "12"
+    ],
+    [
+      "texto",
+      "45"
+    ],
+    [
+      "texto",
+      "35"
+    ],
+    [
+      "texto",
+      "55"
+    ],
+    [
+      "texto",
+      "1.1"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "7000"
+    ],
+    [
+      "texto",
+      "7000"
+    ],
+    [
+      "texto",
+      "3000"
+    ],
+    [
+      "inclusion",
+      "figures/symbols"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "texto",
+      "1"
+    ]
+  ],
+  "sections/00_abstract.tex": [
+    [
+      "formula",
+      "Q ( n )"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "n \\times n"
+    ],
+    [
+      "formula",
+      "\\log Q ( n )"
+    ],
+    [
+      "formula",
+      "o ( n )"
+    ],
+    [
+      "formula",
+      "Q _ { \\rm pred } ( n )"
+    ],
+    [
+      "formula",
+      "C _ { \\rm pred }"
+    ],
+    [
+      "formula",
+      "\\begin { aligned } \\log Q ( n ) - \\log n ! - n \\Phi & \\longrightarrow C _ { \\rm pred } , \\\\ C _ { \\rm pred } & = \\tfrac 12 \\log 2 - \\tfrac 12 - \\tfrac 32 I _ 2 - \\tfrac 12 \\log { \\det } _ 2 ( I + J ) . \\end { aligned }"
+    ],
+    [
+      "formula",
+      "\\Phi = s _ 1 + 1"
+    ],
+    [
+      "formula",
+      "s _ 1"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "I _ 2"
+    ],
+    [
+      "formula",
+      "J"
+    ],
+    [
+      "formula",
+      "Q ( n ) \\sim e ^ { C _ { \\rm pred } } \\, n ! \\, e ^ { n \\Phi }"
+    ],
+    [
+      "formula",
+      "\\log Q ( n ) - \\log Q _ { \\rm pred } ( n ) \\to 0"
+    ],
+    [
+      "formula",
+      "O ( 1 / n )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "e ^ { O ( k ^ { - 2 } ) }"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "O ( e ^ { - cK } ) + o ( 1 )"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "O ( K ^ 4 / n )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "C _ { \\rm pred } \\approx 0 . 9401"
+    ],
+    [
+      "formula",
+      "{ 16 \\le n \\le 27 }"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "texto",
+      "2020"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "0"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "texto",
+      "9"
+    ],
+    [
+      "texto",
+      "7"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "5"
+    ]
+  ],
+  "sections/01_introduction.tex": [
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "n \\times n"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "Q ( n )"
+    ],
+    [
+      "formula",
+      "n !"
+    ],
+    [
+      "texto",
+      "1.1"
+    ],
+    [
+      "formula",
+      "\\log Q ( n )"
+    ],
+    [
+      "formula",
+      "Q _ { \\rm pred } ( n )"
+    ],
+    [
+      "formula",
+      "R _ Q ( n ) = \\log Q ( n ) - \\log Q _ { \\rm pred } ( n )"
+    ],
+    [
+      "formula",
+      "R _ Q ( n ) \\to 0"
+    ],
+    [
+      "texto",
+      "10.1"
+    ],
+    [
+      "formula",
+      "n \\to \\infty"
+    ],
+    [
+      "formula",
+      "\\log Q ( n ) - \\log n ! - n \\Phi \\longrightarrow \\tfrac 12 \\log 2 - \\tfrac 12 - \\tfrac 32 I _ 2 - \\tfrac 12 \\log { \\det } _ 2 ( I + J ) = C _ { \\rm pred } ."
+    ],
+    [
+      "formula",
+      "\\nu _ 1"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\Phi = s _ 1 + 1"
+    ],
+    [
+      "formula",
+      "s _ 1"
+    ],
+    [
+      "formula",
+      "I _ 2 = \\int _ { [ 0 , 1 ] ^ 2 } \\nu _ 1 ^ 2"
+    ],
+    [
+      "formula",
+      "J"
+    ],
+    [
+      "texto",
+      "6"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "| R _ Q ( n ) | \\le C / n"
+    ],
+    [
+      "texto",
+      "9"
+    ],
+    [
+      "formula",
+      "C _ { \\rm pred } \\approx 0 . 9401"
+    ],
+    [
+      "formula",
+      "0 . 940144"
+    ],
+    [
+      "formula",
+      "\\Phi _ 0 = 1 - 1 . 944001"
+    ],
+    [
+      "formula",
+      "16 \\le n \\le 27"
+    ],
+    [
+      "formula",
+      "\\log Q ( n ) - \\log n ! - n \\Phi _ 0"
+    ],
+    [
+      "formula",
+      "0 . 913"
+    ],
+    [
+      "formula",
+      "0 . 941"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "formula",
+      "R _ Q ( 20 ) \\approx 0 . 0208"
+    ],
+    [
+      "formula",
+      "R _ Q ( 27 ) \\approx 0 . 0119"
+    ],
+    [
+      "texto",
+      "10"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "g ( B ) = \\log Q ( B ) - L ( B )"
+    ],
+    [
+      "formula",
+      "L ( B )"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "g ( B _ 0 ) \\to 0"
+    ],
+    [
+      "formula",
+      "B _ 0"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "\\exp L ( B + e )"
+    ],
+    [
+      "formula",
+      "g ( B _ 0 )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "\\delta > 0"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "M = \\lceil \\delta n \\rceil"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "O ( e ^ { - cK } ) + o ( 1 )"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "g"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
+      "D _ K"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
+      "\\nu ( F \\cap D _ K ) = O ( K ^ 4 / n )"
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\mu ( D _ K \\mid \\pi ) = O ( K ^ 4 / n )"
+    ],
+    [
+      "formula",
+      "\\pi"
+    ],
+    [
+      "formula",
+      "F \\cap D _ K ^ c"
+    ],
+    [
+      "formula",
+      "| g ( B _ K ) | \\le \\theta _ K"
+    ],
+    [
+      "formula",
+      "\\theta _ K \\to 0"
+    ],
+    [
+      "formula",
+      "K \\to \\infty"
+    ],
+    [
+      "formula",
+      "n \\to \\infty"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "K \\to \\infty"
+    ],
+    [
+      "texto",
+      "1.1"
+    ],
+    [
+      "texto",
+      "-1.3"
+    ],
+    [
+      "texto",
+      "5.2"
+    ],
+    [
+      "texto",
+      "7.7"
+    ],
+    [
+      "texto",
+      "3.6"
+    ],
+    [
+      "texto",
+      "7.1"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "texto",
+      "7.2"
+    ],
+    [
+      "texto",
+      "1.1"
+    ],
+    [
+      "texto",
+      "5.7"
+    ],
+    [
+      "texto",
+      "3.1"
+    ],
+    [
+      "texto",
+      "2.1"
+    ]
+  ],
+  "sections/02_preliminaries.tex": [
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "( i , j )"
+    ],
+    [
+      "formula",
+      "R _ i , C _ j , D _ { i - j } , A _ { i + j - 1 }"
+    ],
+    [
+      "formula",
+      "( i - 1 , j - 1 )"
+    ],
+    [
+      "formula",
+      "i + j - 2"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "k ^ 2"
+    ],
+    [
+      "formula",
+      "E ( B )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "Q ( B )"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "B + e"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "B + e"
+    ],
+    [
+      "formula",
+      "e \\in E ( B )"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "B _ 0"
+    ],
+    [
+      "formula",
+      "Q ( B _ 0 ) = Q ( n )"
+    ],
+    [
+      "formula",
+      "i"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\label { particion } Q ( B ) = \\sum _ { e \\in R _ i \\cap E ( B ) } Q ( B + e ) ."
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "inclusion",
+      "figures/history"
+    ],
+    [
+      "texto",
+      "1.1"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\nu _ 1"
+    ],
+    [
+      "formula",
+      "s _ 1"
+    ],
+    [
+      "formula",
+      "\\Phi = s _ 1 + 1"
+    ],
+    [
+      "formula",
+      "m _ D"
+    ],
+    [
+      "formula",
+      "m _ A"
+    ],
+    [
+      "formula",
+      "\\nu _ 1"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "u _ D = 1 - m _ D"
+    ],
+    [
+      "formula",
+      "u _ A = 1 - m _ A"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "formula",
+      "m _ f"
+    ],
+    [
+      "formula",
+      "u _ f"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "texto",
+      "1.2"
+    ],
+    [
+      "texto",
+      "1.3"
+    ],
+    [
+      "texto",
+      "5.2"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "7.7"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "formula",
+      "\\nu _ 1 ( r , c ) = b _ 0 r _ R ( r ) r _ C ( c ) u _ D ( r - c ) u _ A ( r + c ) , \\qquad c _ \\nu \\le \\nu _ 1 \\le C _ \\nu , \\quad \\kappa _ \\nu \\le u _ D , u _ A \\le 1 ."
+    ],
+    [
+      "formula",
+      "\\nu _ 1"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "L _ \\nu"
+    ],
+    [
+      "formula",
+      "\\nu _ 1"
+    ],
+    [
+      "formula",
+      "( i , j )"
+    ],
+    [
+      "formula",
+      "1 / n"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "p = ( p _ e )"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "E ( B )"
+    ],
+    [
+      "formula",
+      "\\label { bethe } H _ B ( p ) = - \\sum _ e p _ e \\log p _ e + 3 \\sum _ e ( 1 - p _ e ) \\log ( 1 - p _ e ) - \\sum _ fh _ f \\log h _ f"
+    ],
+    [
+      "formula",
+      "0 < p _ e < 1 / 4"
+    ],
+    [
+      "formula",
+      "h _ f > 0"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "formula",
+      "\\ell _ f = \\sum _ { e \\in f } p _ e"
+    ],
+    [
+      "formula",
+      "h _ f = 1 - \\ell _ f"
+    ],
+    [
+      "formula",
+      "- H _ B"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "S _ B"
+    ],
+    [
+      "formula",
+      "\\pdet"
+    ],
+    [
+      "formula",
+      "L ( B ) = H _ B ( p ) - \\tfrac 12 \\sum _ e [ \\log ( 1 - 4 p _ e ) - 4 \\log ( 1 - p _ e ) ] - \\tfrac 12 \\log \\pdet S _ B + \\tfrac 12 \\log ( 4 \\pi k ) ."
+    ],
+    [
+      "formula",
+      "S _ B"
+    ],
+    [
+      "formula",
+      "( \\mathbf 1 _ R , - \\mathbf 1 _ C , 0 )"
+    ],
+    [
+      "formula",
+      "S _ B"
+    ],
+    [
+      "formula",
+      "\\pdet S _ B / ( 2 k )"
+    ],
+    [
+      "formula",
+      "1 / ( 2 k )"
+    ],
+    [
+      "formula",
+      "\\tfrac 12 \\log ( 2 \\pi )"
+    ],
+    [
+      "texto",
+      "6.1"
+    ],
+    [
+      "texto",
+      "7.1"
+    ],
+    [
+      "formula",
+      "L ( B )"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "p _ e"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "k \\max _ ep _ e \\le C"
+    ],
+    [
+      "formula",
+      "h _ f \\ge \\eta"
+    ],
+    [
+      "formula",
+      "\\gamma"
+    ],
+    [
+      "formula",
+      "C , \\eta , \\gamma > 0"
+    ],
+    [
+      "texto",
+      "7.1"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "formula",
+      "k \\ge \\delta n"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "B + c"
+    ],
+    [
+      "formula",
+      "\\rho ( B )"
+    ],
+    [
+      "formula",
+      "\\rho ( B , i )"
+    ],
+    [
+      "formula",
+      "m _ d"
+    ],
+    [
+      "formula",
+      "h _ d"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "E"
+    ],
+    [
+      "formula",
+      "J"
+    ],
+    [
+      "formula",
+      "S"
+    ],
+    [
+      "formula",
+      "T"
+    ],
+    [
+      "formula",
+      "W"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "P - J _ K"
+    ],
+    [
+      "formula",
+      "J"
+    ],
+    [
+      "formula",
+      "\\sigma"
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\sigma"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "i"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "\\nu _ B ( e \\mid i ) = \\frac { \\exp L ( B + e ) } { \\sum _ { e ' \\in R _ i \\cap E ( B ) } \\exp L ( B + e ' ) } , \\qquad \\rho ( B , i ) = \\sum _ { e ' \\in R _ i \\cap E ( B ) } \\exp \\{ L ( B + e ' ) - L ( B ) \\} ."
+    ],
+    [
+      "formula",
+      "P ^ { \\rm B }"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "p _ e"
+    ],
+    [
+      "formula",
+      "P ^ { \\rm B }"
+    ],
+    [
+      "formula",
+      "\\E _ { \\rm B }"
+    ],
+    [
+      "formula",
+      "B _ 0 , B _ 1 , \\dots"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "0 < \\delta < 1"
+    ],
+    [
+      "formula",
+      "M = \\lceil \\delta n \\rceil"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "K _ 0 \\le K \\le M"
+    ],
+    [
+      "formula",
+      "K _ 0"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "k \\ge M"
+    ],
+    [
+      "formula",
+      "\\Delta"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "\\mathcal I"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "k = M"
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( M ) < \\alpha M"
+    ],
+    [
+      "formula",
+      "K \\le k < M"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "O ( 1 / n )"
+    ],
+    [
+      "formula",
+      "2 \\varepsilon"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "i"
+    ],
+    [
+      "formula",
+      "\\rho ( B , i )"
+    ],
+    [
+      "texto",
+      "31"
+    ],
+    [
+      "texto",
+      "59"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "3.1"
+    ],
+    [
+      "texto",
+      "two"
+    ]
+  ],
+  "sections/03_histories.tex": [
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "B _ t"
+    ],
+    [
+      "formula",
+      "t"
+    ],
+    [
+      "formula",
+      "i _ t"
+    ],
+    [
+      "formula",
+      "\\omega"
+    ],
+    [
+      "formula",
+      "B _ \\tau"
+    ],
+    [
+      "formula",
+      "\\mu ^ \\tau , \\nu ^ \\tau"
+    ],
+    [
+      "formula",
+      "A _ \\tau = \\sum _ { t < \\tau } \\log \\rho ( B _ t , i _ t ) , \\qquad g ( B ) = \\log Q ( B ) - L ( B ) \\quad ( Q ( B ) > 0 ) ."
+    ],
+    [
+      "formula",
+      "Q ( B _ 0 ) > 0"
+    ],
+    [
+      "formula",
+      "\\mu ^ \\tau \\ll \\nu ^ \\tau"
+    ],
+    [
+      "formula",
+      "\\label { super } g ( B _ 0 ) = \\E _ \\mu [ A _ \\tau + g ( B _ \\tau ) ] - D ( \\mu ^ \\tau \\Vert \\nu ^ \\tau ) ."
+    ],
+    [
+      "formula",
+      "D"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\sigma"
+    ],
+    [
+      "formula",
+      "Q ( B _ \\tau )"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\mu ^ \\tau ( \\sigma , \\omega ) = \\frac { Q ( B _ \\tau ) } { n ! \\, Q ( B _ 0 ) } , \\qquad \\nu ^ \\tau ( \\sigma , \\omega ) = \\frac { \\exp \\{ L ( B _ \\tau ) - L ( B _ 0 ) - A _ \\tau \\} } { n ! } ."
+    ],
+    [
+      "formula",
+      "\\mu ^ \\tau / \\nu ^ \\tau"
+    ],
+    [
+      "formula",
+      "A _ \\tau + g ( B _ \\tau ) - g ( B _ 0 )"
+    ],
+    [
+      "formula",
+      "\\mu ^ \\tau"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "B _ K = B _ \\tau"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
+      "G = F \\cap \\{ Q ( B _ K ) > 0 \\}"
+    ],
+    [
+      "formula",
+      "s = \\nu ( G ) > 0"
+    ],
+    [
+      "formula",
+      "\\label { infer } g ( B _ 0 ) \\ge \\E _ { \\nu ( \\cdot \\mid G ) } [ A _ \\tau + g ( B _ K ) ] + \\log s ."
+    ],
+    [
+      "formula",
+      "G"
+    ],
+    [
+      "formula",
+      "\\nu ^ \\tau"
+    ],
+    [
+      "formula",
+      "\\exp \\{ A _ \\tau + g ( B _ K ) \\}"
+    ],
+    [
+      "formula",
+      "Q ( B _ K ) e ^ { - L ( B _ 0 ) } / n !"
+    ],
+    [
+      "formula",
+      "\\int _ G \\exp \\{ A _ \\tau + g ( B _ K ) \\} \\, d \\nu ^ \\tau \\le Q ( B _ 0 ) e ^ { - L ( B _ 0 ) } ."
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "texto",
+      "7.1"
+    ],
+    [
+      "texto",
+      "7.2"
+    ],
+    [
+      "formula",
+      "k > M = \\lceil \\delta n \\rceil"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "formula",
+      "K < k \\le M"
+    ],
+    [
+      "formula",
+      "| A _ \\tau | \\le C / K + O _ \\delta ( n ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "| \\log \\rho ( B , i ) | \\le C _ * / k ^ 2"
+    ],
+    [
+      "formula",
+      "\\rho"
+    ],
+    [
+      "formula",
+      "k > M"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "K < k \\le M"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "formula",
+      "k < M"
+    ],
+    [
+      "formula",
+      "k = M"
+    ],
+    [
+      "formula",
+      "k ^ { - 2 }"
+    ],
+    [
+      "formula",
+      "k > m"
+    ],
+    [
+      "formula",
+      "\\int _ m ^ \\infty t ^ { - 2 } \\, dt = 1 / m"
+    ]
+  ],
+  "sections/04_change_of_law.tex": [
+    [
+      "formula",
+      "C _ { \\delta , \\varrho _ { \\rm mac } }"
+    ],
+    [
+      "formula",
+      "c _ { \\delta , \\varrho _ { \\rm mac } }"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M"
+    ],
+    [
+      "formula",
+      "\\nu ( \\mathcal H _ M ) \\le C _ { \\delta , \\varrho _ { \\rm mac } } \\exp ( - c _ { \\delta , \\varrho _ { \\rm mac } } n ) ."
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "4 C _ \\nu / \\kappa _ \\nu ^ 2"
+    ],
+    [
+      "formula",
+      "k \\max _ e p _ e"
+    ],
+    [
+      "formula",
+      "\\kappa _ \\nu / 4"
+    ],
+    [
+      "formula",
+      "c _ \\nu / 8"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "7.1"
+    ],
+    [
+      "texto",
+      "7.2"
+    ],
+    [
+      "formula",
+      "L ( B + e ) - L ( B ) = \\log [ p _ e ( 1 + d _ e ) ] + r _ e , \\qquad | d _ e | \\le C ' _ \\delta / k , \\qquad | r _ e | \\le C ' ' _ \\delta / k ^ 2 , \\qquad \\sum _ { e \\in i } p _ ed _ e = 0"
+    ],
+    [
+      "formula",
+      "i"
+    ],
+    [
+      "formula",
+      "d _ e"
+    ],
+    [
+      "formula",
+      "\\delta _ c"
+    ],
+    [
+      "texto",
+      "7.1"
+    ],
+    [
+      "formula",
+      "r _ e"
+    ],
+    [
+      "formula",
+      "r _ c"
+    ],
+    [
+      "texto",
+      "6.5"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "p _ e"
+    ],
+    [
+      "formula",
+      "P ^ { \\rm B }"
+    ],
+    [
+      "formula",
+      "\\frac { ( 1 + d _ e ) e ^ { r _ e } } { \\sum _ { e ' \\in i } p _ { e ' } ( 1 + d _ { e ' } ) e ^ { r _ { e ' } } } ."
+    ],
+    [
+      "formula",
+      "k \\ge 2 C ' _ \\delta"
+    ],
+    [
+      "formula",
+      "1 + d _ { e ' }"
+    ],
+    [
+      "formula",
+      "\\sum _ { e ' \\in i } p _ { e ' } ( 1 + d _ { e ' } ) = 1"
+    ],
+    [
+      "formula",
+      "[ e ^ { - C ' ' _ \\delta / k ^ 2 } , e ^ { C ' ' _ \\delta / k ^ 2 } ]"
+    ],
+    [
+      "formula",
+      "2 C ' _ \\delta / k + 2 C ' ' _ \\delta / k ^ 2"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\sum _ { k = M + 1 } ^ { n } \\left ( \\frac { 2 C ' _ \\delta } { k } + \\frac { 2 C ' ' _ \\delta } { k ^ 2 } \\right ) \\le 2 C ' _ \\delta \\log ( n / M ) + 2 C ' ' _ \\delta / M = O _ \\delta ( 1 ) ."
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M"
+    ],
+    [
+      "formula",
+      "\\nu ( \\mathcal H _ M ) \\le e ^ { O _ \\delta ( 1 ) } P ^ { \\rm B } ( \\mathcal H _ M )"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "M"
+    ]
+  ],
+  "sections/04_concentration.tex": [
+    [
+      "formula",
+      "k \\ge \\delta n"
+    ],
+    [
+      "formula",
+      "\\mathcal L"
+    ],
+    [
+      "formula",
+      "H ^ * ( \\mathcal L )"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\ell _ f ^ *"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "P ^ { \\rm B } ( \\text { some line in } \\mathcal L \\text { becomes occupied } \\mid \\mathcal F _ s ) = \\frac { H ^ * ( \\mathcal L ) } { k } + O _ \\delta \\! \\left ( \\frac { \\zeta + k ^ { - 1 } } { k } \\right ) ."
+    ],
+    [
+      "formula",
+      "T"
+    ],
+    [
+      "formula",
+      "H _ T ^ * = 4 + \\sum _ { m \\in T } \\bigl ( \\ell _ { D ( e _ m ) } ^ * + \\ell _ { A ( e _ m ) } ^ * \\bigr ) ."
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\max _ e p _ e / k = O _ \\delta ( k ^ { - 2 } )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\lambda"
+    ],
+    [
+      "formula",
+      "Y _ { e | \\lambda } = \\prod _ { f \\ni e , \\, f \\ne \\lambda } X _ f"
+    ],
+    [
+      "formula",
+      "Y _ { e | \\lambda } = 1"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "\\lambda"
+    ],
+    [
+      "formula",
+      "\\lambda"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( k ^ { - 2 } )"
+    ],
+    [
+      "formula",
+      "\\lambda"
+    ],
+    [
+      "formula",
+      "\\nabla _ s"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\E _ { \\rm B } [ \\nabla _ s F _ { \\lambda , I } \\mid \\mathcal F _ s ] = - \\frac 1 { kn } \\sum _ { e \\in \\lambda _ I } Y _ { e | \\lambda } H _ \\lambda ^ * ( e ) + O _ \\delta \\! \\left ( \\frac { \\zeta + k ^ { - 1 } } { k } F _ { \\lambda , I } \\right ) ."
+    ],
+    [
+      "formula",
+      "- H ^ * _ \\lambda / x"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( n ^ { - 2 } | \\lambda _ I | )"
+    ],
+    [
+      "formula",
+      "| \\lambda _ I |"
+    ],
+    [
+      "formula",
+      "O ( 1 / k )"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( | \\lambda _ I | / n )"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( | \\lambda _ I | / ( kn ) )"
+    ],
+    [
+      "formula",
+      "\\E _ { \\rm B } [ \\nabla _ s N _ I \\mid \\mathcal F _ s ] = - N _ I / k"
+    ],
+    [
+      "formula",
+      "| I | / n"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "2 | T |"
+    ],
+    [
+      "formula",
+      "Y _ { T }"
+    ],
+    [
+      "formula",
+      "\\E _ { \\rm B } [ \\nabla _ s P _ { \\Theta , T } \\mid \\mathcal F _ s ] = - \\frac 1 { kn ^ 4 } \\sum _ { ( i , i ' , j , j ' ) \\in \\Theta } ^ { \\rm ord } Y _ T H _ T ^ * + O _ \\delta \\! \\left ( \\frac { \\zeta + k ^ { - 1 } } { k } P _ { \\Theta , T } \\right ) ."
+    ],
+    [
+      "formula",
+      "Y _ T = 0"
+    ],
+    [
+      "formula",
+      "- H _ T ^ * / x"
+    ],
+    [
+      "formula",
+      "x \\ge \\delta"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( | \\Theta | / n ^ 2 )"
+    ],
+    [
+      "formula",
+      "M = \\lceil \\delta n \\rceil"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac } > 0"
+    ],
+    [
+      "formula",
+      "\\mathcal I"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "c _ { \\delta , \\varrho _ { \\rm mac } } , C _ { \\delta , \\varrho _ { \\rm mac } } > 0"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "{ k \\ge M }"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "P ^ { \\rm B } ( \\mathcal H _ M ) \\le C _ { \\delta , \\varrho _ { \\rm mac } } \\exp ( - c _ { \\delta , \\varrho _ { \\rm mac } } n ) ."
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "\\tau = n - M"
+    ],
+    [
+      "formula",
+      "\\tau \\le n - M"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "P ^ { \\rm B }"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M = \\{ \\Delta ( \\tau ) \\ge \\varrho _ { \\rm mac } \\}"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "\\mathcal M ^ *"
+    ],
+    [
+      "formula",
+      "H ^ *"
+    ],
+    [
+      "formula",
+      "C _ \\delta / n"
+    ],
+    [
+      "formula",
+      "H ^ *"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( a _ { \\rm mac } )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "sixteen"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "C _ \\delta"
+    ],
+    [
+      "formula",
+      "\\label { macro : gronwall } \\Delta ( s \\wedge \\tau ) \\le \\Delta ( 0 ) + \\mathcal M ^ * + \\frac { C _ \\delta } { n } \\sum _ { j < s \\wedge \\tau } \\Delta ( j ) + C _ \\delta ( a _ { \\rm mac } + C _ { \\mathcal I } / n ) , \\qquad 0 \\le s \\le n - M ."
+    ],
+    [
+      "formula",
+      "\\zeta"
+    ],
+    [
+      "formula",
+      "\\Delta _ 0 + \\Delta _ F"
+    ],
+    [
+      "formula",
+      "1 / 4"
+    ],
+    [
+      "formula",
+      "O _ { \\mathcal I } ( n )"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "O ( n ^ 3 )"
+    ],
+    [
+      "formula",
+      "C _ \\delta / n"
+    ],
+    [
+      "formula",
+      "( \\xi _ j )"
+    ],
+    [
+      "formula",
+      "| \\xi _ j | \\le d _ j"
+    ],
+    [
+      "formula",
+      "\\theta > 0"
+    ],
+    [
+      "formula",
+      "- d _ j"
+    ],
+    [
+      "formula",
+      "d _ j"
+    ],
+    [
+      "formula",
+      "\\E [ \\exp ( \\theta \\xi _ j ) \\mid \\mathcal F _ { j - 1 } ] \\le \\cosh ( \\theta d _ j ) \\le \\exp ( \\theta ^ 2 d _ j ^ 2 / 2 )"
+    ],
+    [
+      "formula",
+      "h"
+    ],
+    [
+      "formula",
+      "\\sum _ { j \\le h } \\xi _ j \\ge u"
+    ],
+    [
+      "formula",
+      "- \\xi _ j"
+    ],
+    [
+      "formula",
+      "\\theta"
+    ],
+    [
+      "formula",
+      "\\label { macro : max - mart } P \\left ( \\max _ { h \\le m } \\left | \\sum _ { j \\le h } \\xi _ j \\right | \\ge u \\right ) \\le 2 \\exp \\! \\left ( - \\frac { u ^ 2 } { 2 \\sum _ { j \\le m } d _ j ^ 2 } \\right ) ."
+    ],
+    [
+      "formula",
+      "\\mathcal I"
+    ],
+    [
+      "formula",
+      "C ' _ { \\mathcal I }"
+    ],
+    [
+      "formula",
+      "b / C ' _ { \\mathcal I }"
+    ],
+    [
+      "formula",
+      "\\mathcal M ^ * < b"
+    ],
+    [
+      "formula",
+      "C ' _ { \\mathcal I }"
+    ],
+    [
+      "formula",
+      "P ^ { \\rm B } ( \\mathcal M ^ * \\ge b ) \\le C _ { \\mathcal I } ( n + 1 ) \\exp ( - c _ { \\delta , \\mathcal I } b ^ 2 n ) ."
+    ],
+    [
+      "formula",
+      "x = U _ f = 1"
+    ],
+    [
+      "formula",
+      "O ( n ^ 3 )"
+    ],
+    [
+      "formula",
+      "\\Delta ( 0 ) \\le C _ { \\mathcal I } / n"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "e ^ { C _ \\delta } ( b + C _ \\delta a _ { \\rm mac } ) < \\varrho _ { \\rm mac } / 3"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "\\Delta ( s \\wedge \\tau ) < \\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "\\mathcal M ^ * < b"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "\\mathcal H _ M \\subseteq \\{ \\mathcal M ^ * \\ge b \\}"
+    ],
+    [
+      "formula",
+      "n + 1"
+    ]
+  ],
+  "sections/04_flow.tex": [
+    [
+      "formula",
+      "\\delta n"
+    ],
+    [
+      "formula",
+      "0 < \\delta < 1"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "k = n - s"
+    ],
+    [
+      "formula",
+      "x = k / n"
+    ],
+    [
+      "formula",
+      "t = s / n"
+    ],
+    [
+      "formula",
+      "P ^ { \\rm B }"
+    ],
+    [
+      "formula",
+      "\\sigma"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\mathcal F _ s"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "p _ e / k"
+    ],
+    [
+      "formula",
+      "p _ e = 0"
+    ],
+    [
+      "formula",
+      "1"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "r _ i = ( i - \\tfrac 12 ) / n"
+    ],
+    [
+      "formula",
+      "c _ j = ( j - \\tfrac 12 ) / n"
+    ],
+    [
+      "formula",
+      "D ( e ) = i - j"
+    ],
+    [
+      "formula",
+      "r _ i - c _ j"
+    ],
+    [
+      "formula",
+      "A ( e ) = i + j - 1"
+    ],
+    [
+      "formula",
+      "r _ i + c _ j"
+    ],
+    [
+      "formula",
+      "X _ f"
+    ],
+    [
+      "formula",
+      "Y _ e = \\prod _ { f \\ni e } X _ f"
+    ],
+    [
+      "formula",
+      "\\ell _ f"
+    ],
+    [
+      "formula",
+      "h _ f"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "1 / k"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "formula",
+      "\\ell _ f / k"
+    ],
+    [
+      "formula",
+      "e = ( i , j )"
+    ],
+    [
+      "formula",
+      "\\E _ { \\rm B } [ Y _ e ( s + 1 ) - Y _ e ( s ) \\mid \\mathcal F _ s ] = - \\frac { Y _ e ( s ) } { k } \\bigl ( 2 + \\ell _ { D ( e ) } + \\ell _ { A ( e ) } - 3 p _ e \\bigr ) ."
+    ],
+    [
+      "formula",
+      "p _ e / k"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "Y _ e = 1"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "Y _ e = 0"
+    ],
+    [
+      "formula",
+      "\\nu _ 1 ( r , c ) = b _ 0 r _ R ( r ) r _ C ( c ) u _ D ( r - c ) u _ A ( r + c ) ."
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "d \\in [ - 1 , 1 ]"
+    ],
+    [
+      "formula",
+      "a ' \\in [ 0 , 2 ]"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "m _ D ( d ) = \\int _ { \\{ 0 \\le r , r - d \\le 1 \\} } \\nu _ 1 ( r , r - d ) \\, dr , \\qquad m _ A ( a ' ) = \\int _ { \\{ 0 \\le r , a ' - r \\le 1 \\} } \\nu _ 1 ( r , a ' - r ) \\, dr ."
+    ],
+    [
+      "formula",
+      "[ 0 , 1 ]"
+    ],
+    [
+      "formula",
+      "u _ f = 1 - m _ f"
+    ],
+    [
+      "formula",
+      "c _ \\nu \\le \\nu _ 1 \\le C _ \\nu"
+    ],
+    [
+      "formula",
+      "u _ f \\ge \\kappa _ \\nu > 0"
+    ],
+    [
+      "texto",
+      "1.1"
+    ],
+    [
+      "texto",
+      "-1.3"
+    ],
+    [
+      "texto",
+      "5.2"
+    ],
+    [
+      "texto",
+      "7.7"
+    ],
+    [
+      "formula",
+      "\\epsilon"
+    ],
+    [
+      "formula",
+      "| \\epsilon |"
+    ],
+    [
+      "formula",
+      "L _ \\nu | \\epsilon |"
+    ],
+    [
+      "formula",
+      "x"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "formula",
+      "U _ f ( x )"
+    ],
+    [
+      "formula",
+      "\\ell _ f ^ * ( x )"
+    ],
+    [
+      "formula",
+      "( r , c )"
+    ],
+    [
+      "formula",
+      "J _ x"
+    ],
+    [
+      "formula",
+      "v _ x / n"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "formula",
+      "( r , c )"
+    ],
+    [
+      "formula",
+      "U _ f ( x ) = u _ f + xm _ f , \\qquad \\ell _ f ^ * ( x ) = \\frac { xm _ f } { U _ f ( x ) } , \\\\ J _ x = x ^ 2 U _ D ( x ) U _ A ( x ) , \\qquad W _ x = \\frac { \\nu _ 1 } { U _ D ( x ) U _ A ( x ) } , \\qquad v _ x = \\frac { W _ x } { x } ."
+    ],
+    [
+      "formula",
+      "D , A"
+    ],
+    [
+      "formula",
+      "r - c , r + c"
+    ],
+    [
+      "formula",
+      "J _ 1 = 1"
+    ],
+    [
+      "formula",
+      "J _ xv _ x = x \\nu _ 1"
+    ],
+    [
+      "formula",
+      "J _ xv _ x"
+    ],
+    [
+      "formula",
+      "x"
+    ],
+    [
+      "formula",
+      "\\label { macro : derivadas } \\partial _ t U _ f = - \\frac { \\ell _ f ^ * } { x } U _ f , \\qquad \\partial _ t \\log J _ x = - \\frac { 2 + \\ell _ D ^ * + \\ell _ A ^ * } { x } , \\qquad 1 - \\ell _ f ^ * = \\frac { u _ f } { U _ f } \\ge \\kappa _ \\nu ."
+    ],
+    [
+      "formula",
+      "v _ x = \\frac { b _ 0 } { x } \\, r _ Rr _ C \\frac { u _ D } { U _ D } \\frac { u _ A } { U _ A } , \\qquad xv _ x \\le C _ \\nu / \\kappa _ \\nu ^ 2 ."
+    ],
+    [
+      "formula",
+      "U _ f ( 1 ) = 1"
+    ],
+    [
+      "formula",
+      "\\kappa _ \\nu \\le U _ f ( x ) \\le 1"
+    ],
+    [
+      "formula",
+      "dx / dt = - 1"
+    ],
+    [
+      "formula",
+      "\\partial _ t U _ f = - m _ f"
+    ],
+    [
+      "formula",
+      "J _ x"
+    ],
+    [
+      "formula",
+      "\\nu _ 1"
+    ],
+    [
+      "formula",
+      "v _ x"
+    ],
+    [
+      "texto",
+      "two"
+    ]
+  ],
+  "sections/04_patterns.tex": [
+    [
+      "formula",
+      "\\mathcal I"
+    ],
+    [
+      "formula",
+      "[ 0 , 1 ]"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "N ^ R _ I = \\frac 1 n \\sum _ { r _ i \\in I } X _ { R _ i } , \\qquad N ^ C _ I = \\frac 1 n \\sum _ { c _ j \\in I } X _ { C _ j } , \\qquad N ^ { R , * } _ I = N ^ { C , * } _ I = x | I | ."
+    ],
+    [
+      "formula",
+      "c"
+    ],
+    [
+      "formula",
+      "r"
+    ],
+    [
+      "formula",
+      "\\lambda"
+    ],
+    [
+      "formula",
+      "I"
+    ],
+    [
+      "formula",
+      "\\lambda _ I"
+    ],
+    [
+      "formula",
+      "I"
+    ],
+    [
+      "formula",
+      "dz"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "r"
+    ],
+    [
+      "formula",
+      "\\lambda"
+    ],
+    [
+      "formula",
+      "F _ { \\lambda , I } = \\frac 1 n \\sum _ { e \\in \\lambda _ I } \\prod _ { f \\ni e , \\  f \\ne \\lambda } X _ f ."
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "F ^ * _ { \\lambda , I }"
+    ],
+    [
+      "formula",
+      "\\lambda _ I"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "x"
+    ],
+    [
+      "formula",
+      "\\begin { array } { c | c | c } \\lambda & \\text { target density } & H ^ * _ { \\lambda } ( e ) \\\\ \\hline R _ i & xU _ DU _ A & 1 + \\ell _ D ^ * + \\ell _ A ^ * \\\\ C _ j & xU _ DU _ A & 1 + \\ell _ D ^ * + \\ell _ A ^ * \\\\ D _ d & x ^ 2 U _ A & 2 + \\ell _ A ^ * \\\\ A _ { a ' } & x ^ 2 U _ D & 2 + \\ell _ D ^ * \\end { array }"
+    ],
+    [
+      "formula",
+      "\\lambda"
+    ],
+    [
+      "formula",
+      "F _ { \\lambda , I }"
+    ],
+    [
+      "formula",
+      "F ^ * _ { \\lambda , I }"
+    ],
+    [
+      "formula",
+      "e _ 1 = ( i , j )"
+    ],
+    [
+      "formula",
+      "e _ 2 = ( i ' , j )"
+    ],
+    [
+      "formula",
+      "e _ 3 = ( i ' , j ' )"
+    ],
+    [
+      "formula",
+      "e _ 4 = ( i , j ' )"
+    ],
+    [
+      "formula",
+      "( i , i ' , j , j ' )"
+    ],
+    [
+      "formula",
+      "i \\ne i '"
+    ],
+    [
+      "formula",
+      "j \\ne j '"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "O ( n ^ 3 )"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "T \\subseteq \\{ 1 , 2 , 3 , 4 \\}"
+    ],
+    [
+      "formula",
+      "\\Theta \\in \\mathcal I ^ 4"
+    ],
+    [
+      "formula",
+      "P _ { \\Theta , T } & = \\frac 1 { n ^ 4 } \\sum _ { ( i , i ' , j , j ' ) \\in \\Theta } ^ { \\rm ord } X _ { R _ i } X _ { R _ { i ' } } X _ { C _ j } X _ { C _ { j ' } } \\prod _ { m \\in T } X _ { D ( e _ m ) } X _ { A ( e _ m ) } , \\\\ P ^ * _ { \\Theta , T } & = \\int _ \\Theta x ^ 4 \\prod _ { m \\in T } U _ { D ( e _ m ) } U _ { A ( e _ m ) } \\, dr \\, dr ' \\, dc \\, dc ' ."
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "T = \\varnothing"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\Delta _ 0 & = \\sum _ { I \\in \\mathcal I } ( \\bigl | N ^ R _ I - x | I | \\bigr | + \\bigl | N ^ C _ I - x | I | \\bigr | ) , \\\\ \\Delta _ F & = \\max _ { \\lambda } \\sum _ { I \\in \\mathcal I } | F _ { \\lambda , I } - F ^ * _ { \\lambda , I } | , \\\\ \\Delta _ R & = \\sum _ { \\Theta \\in \\mathcal I ^ 4 } \\  \\sum _ { T \\subseteq \\{ 1 , 2 , 3 , 4 \\} } | P _ { \\Theta , T } - P ^ * _ { \\Theta , T } | , \\qquad \\Delta = \\Delta _ 0 + \\Delta _ F + \\Delta _ R ."
+    ],
+    [
+      "formula",
+      "x | I |"
+    ],
+    [
+      "formula",
+      "C _ { \\mathcal I }"
+    ],
+    [
+      "formula",
+      "\\mathcal I"
+    ],
+    [
+      "formula",
+      "\\zeta = \\Delta _ 0 + \\Delta _ F + a _ { \\rm mac } + C _ { \\mathcal I } / n ."
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "q _ { ij } = \\frac { Y _ { ij } \\nu _ 1 ( r _ i , c _ j ) } { kU _ { D ( i , j ) } U _ { A ( i , j ) } } , \\qquad V _ { ij } = \\frac { \\nu _ 1 ( r _ i , c _ j ) } k ."
+    ],
+    [
+      "formula",
+      "U"
+    ],
+    [
+      "formula",
+      "x"
+    ],
+    [
+      "formula",
+      "q _ { ij } = Y _ { ij } W _ x ( r _ i , c _ j ) / k = Y _ { ij } v _ x ( r _ i , c _ j ) / n"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "p _ e / q _ e"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "Y _ { ij }"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "U _ DU _ A"
+    ],
+    [
+      "formula",
+      "V"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "inclusion",
+      "figures/rectangle"
+    ],
+    [
+      "formula",
+      "k \\ge \\delta n"
+    ],
+    [
+      "formula",
+      "V"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( \\Delta _ 0 + a _ { \\rm mac } + C _ { \\mathcal I } / n )"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\ell _ f ^ *"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( \\Delta _ F + a _ { \\rm mac } + C _ { \\mathcal I } / n )"
+    ],
+    [
+      "formula",
+      "\\nu _ 1"
+    ],
+    [
+      "formula",
+      "W _ x = \\nu _ 1 / ( U _ DU _ A )"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( a _ { \\rm mac } )"
+    ],
+    [
+      "formula",
+      "1 / n"
+    ],
+    [
+      "formula",
+      "1 / k"
+    ],
+    [
+      "formula",
+      "1 / x"
+    ],
+    [
+      "formula",
+      "V"
+    ],
+    [
+      "formula",
+      "x ^ { - 1 } \\int \\nu _ 1 ( r , c ) x \\, dc = 1"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "Y _ { ij }"
+    ],
+    [
+      "formula",
+      "\\frac 1 x \\int _ 0 ^ 1 \\frac { \\nu _ 1 } { U _ DU _ A } \\, xU _ DU _ A \\, dc = 1 ."
+    ],
+    [
+      "formula",
+      "dr"
+    ],
+    [
+      "formula",
+      "d"
+    ],
+    [
+      "formula",
+      "\\frac 1 x \\int _ { D _ d } \\frac { \\nu _ 1 } { U _ DU _ A } \\, x ^ 2 U _ A \\, dr = \\frac { xm _ D ( d ) } { U _ D ( d ) } ."
+    ],
+    [
+      "formula",
+      "D"
+    ],
+    [
+      "formula",
+      "A"
+    ],
+    [
+      "formula",
+      "xm _ A / U _ A"
+    ],
+    [
+      "formula",
+      "C _ { \\mathcal I } / n"
+    ]
+  ],
+  "sections/04_patterns_2.tex": [
+    [
+      "texto",
+      "sixteen"
+    ],
+    [
+      "formula",
+      "E = q - V"
+    ],
+    [
+      "formula",
+      "\\| E \\| _ { \\rm op } \\le C _ \\delta ( \\Delta _ R + a _ { \\rm mac } + C _ { \\mathcal I } / n ) ^ { 1 / 4 } ."
+    ],
+    [
+      "formula",
+      "\\Delta"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "C _ { \\mathcal I } / n"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "c _ \\nu / 2"
+    ],
+    [
+      "formula",
+      "\\| E \\| _ { \\rm op } ^ 4 \\le { \\rm tr } ( ( EE ^ T ) ^ 2 ) = \\sum _ { i , i ' , j , j ' } E _ { ij } E _ { i ' j } E _ { i ' j ' } E _ { ij ' } ."
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "k ^ { - 4 } \\prod _ m \\nu _ 1 ( e _ m )"
+    ],
+    [
+      "formula",
+      "\\prod _ { m = 1 } ^ 4 ( B _ m - 1 )"
+    ],
+    [
+      "formula",
+      "B _ m = \\frac { X _ { D ( e _ m ) } X _ { A ( e _ m ) } } { U _ { D ( e _ m ) } U _ { A ( e _ m ) } } ."
+    ],
+    [
+      "formula",
+      "B _ T = \\prod _ { m \\in T } B _ m"
+    ],
+    [
+      "formula",
+      "\\begin { aligned } 1 & - ( B _ 1 + B _ 2 + B _ 3 + B _ 4 ) \\\\ & + ( B _ { 12 } + B _ { 13 } + B _ { 14 } + B _ { 23 } + B _ { 24 } + B _ { 34 } ) \\\\ & - ( B _ { 123 } + B _ { 124 } + B _ { 134 } + B _ { 234 } ) + B _ { 1234 } . \\end { aligned }"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( 1 / n )"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( k ^ { - 4 } )"
+    ],
+    [
+      "formula",
+      "n ^ 4"
+    ],
+    [
+      "formula",
+      "W _ T = x ^ { - 4 } \\frac { \\prod _ m \\nu _ 1 ( e _ m ) } { \\prod _ { m \\in T } U _ { D ( e _ m ) } U _ { A ( e _ m ) } } ."
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( a _ { \\rm mac } )"
+    ],
+    [
+      "formula",
+      "T"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( \\Delta _ R )"
+    ],
+    [
+      "formula",
+      "\\prod _ m \\nu _ 1 ( e _ m )"
+    ],
+    [
+      "texto",
+      "sixteen"
+    ],
+    [
+      "formula",
+      "1 - 4 + 6 - 4 + 1 = 0"
+    ],
+    [
+      "formula",
+      "V ' = V - c _ \\nu \\mathbf 1 \\mathbf 1 ^ T / k"
+    ],
+    [
+      "formula",
+      "1 - c _ \\nu + O _ \\delta ( \\zeta )"
+    ],
+    [
+      "formula",
+      "\\| V ' \\| _ { \\rm op }"
+    ],
+    [
+      "formula",
+      "( u , v ) \\perp \\mathbf 1 _ { 2 k }"
+    ],
+    [
+      "formula",
+      "( \\sum _ i u _ i ) ( \\sum _ j v _ j ) = - ( \\sum _ i u _ i ) ^ 2 \\le 0"
+    ],
+    [
+      "formula",
+      "1 + O _ \\delta ( \\zeta )"
+    ],
+    [
+      "formula",
+      "2 \\| u \\| _ 2 \\| v \\| _ 2 \\le \\| u \\| _ 2 ^ 2 + \\| v \\| _ 2 ^ 2"
+    ],
+    [
+      "formula",
+      "\\bigl ( c _ \\nu - O _ \\delta ( \\zeta ) - \\| E \\| _ { \\rm op } \\bigr ) ( \\| u \\| _ 2 ^ 2 + \\| v \\| _ 2 ^ 2 ) ."
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "1 / 4"
+    ]
+  ],
+  "sections/04_reconstruction.tex": [
+    [
+      "formula",
+      "\\bar p"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\max _ { q _ e > 0 } \\left | \\frac { \\bar p _ e } { q _ e } - 1 \\right | \\le C _ \\delta \\zeta ."
+    ],
+    [
+      "formula",
+      "\\kappa _ \\nu / 2"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( 1 / k )"
+    ],
+    [
+      "formula",
+      "q _ e > 0"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "texto",
+      "6.1"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "J"
+    ],
+    [
+      "formula",
+      "B _ o = JB"
+    ],
+    [
+      "formula",
+      "b = \\mathbf 1 - Bq"
+    ],
+    [
+      "formula",
+      "\\| b \\| _ \\infty = O _ \\delta ( \\zeta )"
+    ],
+    [
+      "formula",
+      "\\mathbf 1 ^ TJb = 0"
+    ],
+    [
+      "formula",
+      "L _ q"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "L _ q = B _ o \\operatorname { diag } ( q ) B _ o ^ T , \\qquad \\phi = L _ q ^ + Jb , \\qquad z = \\operatorname { diag } ( q ) B _ o ^ T \\phi ."
+    ],
+    [
+      "formula",
+      "Bz = b"
+    ],
+    [
+      "formula",
+      "\\| \\phi \\| _ 2 \\le C _ \\delta \\sqrt { k } \\, \\zeta"
+    ],
+    [
+      "formula",
+      "\\gamma"
+    ],
+    [
+      "formula",
+      "L _ q \\phi = Jb"
+    ],
+    [
+      "formula",
+      "d _ \\gamma = 1 + O _ \\delta ( \\zeta )"
+    ],
+    [
+      "formula",
+      "d _ \\gamma | \\phi _ \\gamma | \\le | b _ \\gamma | + \\left ( \\sum _ { e \\in \\gamma } q _ e ^ 2 \\right ) ^ { 1 / 2 } \\| \\phi \\| _ 2 , \\qquad \\sum _ { e \\in \\gamma } q _ e ^ 2 \\le \\frac { C _ \\delta } { k } d _ \\gamma ."
+    ],
+    [
+      "formula",
+      "\\| \\phi \\| _ \\infty = O _ \\delta ( \\zeta )"
+    ],
+    [
+      "formula",
+      "| z _ e | / q _ e \\le 2 \\| \\phi \\| _ \\infty"
+    ],
+    [
+      "formula",
+      "\\bar p = q + z"
+    ],
+    [
+      "formula",
+      "L _ q"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( \\zeta )"
+    ],
+    [
+      "formula",
+      "\\kappa _ \\nu"
+    ],
+    [
+      "formula",
+      "\\bar p"
+    ],
+    [
+      "formula",
+      "K _ { \\bar p }"
+    ],
+    [
+      "formula",
+      "\\bar p"
+    ],
+    [
+      "formula",
+      "Z"
+    ],
+    [
+      "formula",
+      "\\ker B"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "R = Z ( Z ^ TK _ { \\bar p } Z ) ^ { - 1 } Z ^ T , \\qquad \\| \\operatorname { diag } ( \\bar p ) ^ { - 1 } R \\| _ { \\infty \\to \\infty } \\le C _ \\delta ."
+    ],
+    [
+      "texto",
+      "6.3"
+    ],
+    [
+      "texto",
+      "7.2"
+    ],
+    [
+      "formula",
+      "D"
+    ],
+    [
+      "texto",
+      "6.1"
+    ],
+    [
+      "formula",
+      "D"
+    ],
+    [
+      "formula",
+      "D ( e )"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "H = \\operatorname { diag } ( h _ f ( \\bar p ) )"
+    ],
+    [
+      "formula",
+      "w _ e = \\left ( \\frac 1 { \\bar p _ e } - \\frac 3 { 1 - \\bar p _ e } \\right ) ^ { - 1 } , \\qquad W = \\operatorname { diag } ( w _ e ) , \\qquad K _ { \\bar p } = W ^ { - 1 } + DH ^ { - 1 } D ^ T ."
+    ],
+    [
+      "formula",
+      "w _ e / \\bar p _ e = 1 + O _ \\delta ( 1 / k ) > 0"
+    ],
+    [
+      "formula",
+      "\\Upsilon"
+    ],
+    [
+      "formula",
+      "B _ o"
+    ],
+    [
+      "formula",
+      "D ^ T"
+    ],
+    [
+      "formula",
+      "v = R \\psi"
+    ],
+    [
+      "formula",
+      "\\label { macro : sistema - inverso } ( \\Upsilon W \\Upsilon ^ T + \\operatorname { diag } ( 0 , H ) ) \\, y = \\Upsilon W \\psi , \\qquad v = W ( \\psi - \\Upsilon ^ Ty ) ."
+    ],
+    [
+      "formula",
+      "B _ ov = 0"
+    ],
+    [
+      "formula",
+      "D ^ Tv = Hy _ D"
+    ],
+    [
+      "formula",
+      "y _ D"
+    ],
+    [
+      "formula",
+      "K _ { \\bar p } v = \\psi - B _ o ^ Ty _ { RC }"
+    ],
+    [
+      "formula",
+      "y _ { RC } \\perp \\mathbf 1 _ { 2 k }"
+    ],
+    [
+      "formula",
+      "\\| W ^ { 1 / 2 } ( B _ o ^ Ty _ { RC } + Dy _ D ) \\| _ 2 ^ 2 + y _ D ^ THy _ D ."
+    ],
+    [
+      "formula",
+      "\\kappa _ \\nu \\| y _ D \\| _ 2 ^ 2 / 2"
+    ],
+    [
+      "formula",
+      "\\| W ^ { 1 / 2 } Dy _ D \\| _ 2 ^ 2 \\le 2 \\max _ f \\sum _ { e \\in f } w _ e \\, \\| y _ D \\| _ 2 ^ 2"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "B _ oWB _ o ^ T"
+    ],
+    [
+      "formula",
+      "\\| y _ { RC } \\| _ 2 ^ 2"
+    ],
+    [
+      "formula",
+      "\\Upsilon W \\psi"
+    ],
+    [
+      "formula",
+      "C _ \\delta \\| \\psi \\| _ \\infty"
+    ],
+    [
+      "formula",
+      "2 k + 4 n"
+    ],
+    [
+      "formula",
+      "\\| y \\| _ 2 \\le C _ \\delta \\sqrt { k } \\| \\psi \\| _ \\infty"
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\max _ e w _ e = O _ \\delta ( 1 / k )"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( 1 )"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( k ^ { - 1 / 2 } )"
+    ],
+    [
+      "formula",
+      "\\| y \\| _ \\infty \\le C _ \\delta \\| \\psi \\| _ \\infty"
+    ],
+    [
+      "formula",
+      "\\Upsilon ^ Ty"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "\\Delta"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "C _ { \\mathcal I } / n"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "\\label { macro : predictor } \\max _ { q _ e > 0 } | p _ e / q _ e - 1 | \\le C _ \\delta ( \\zeta + k ^ { - 1 } ) , \\qquad \\max _ { f \\  { \\rm available \\  diagonal } } | \\ell _ f ( p ) - \\ell _ f ^ * | \\le C _ \\delta ( \\zeta + k ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "\\Xi _ e ( p ) = \\log p _ e + 3 \\log ( 1 - p _ e ) - \\log h _ { D ( e ) } ( p ) - \\log h _ { A ( e ) } ( p ) ."
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "\\log q _ e - \\log ( u _ D / U _ D ) - \\log ( u _ A / U _ A ) = \\log ( b _ 0 / k ) + \\log r _ R ( r _ i ) + \\log r _ C ( c _ j ) ."
+    ],
+    [
+      "formula",
+      "\\bar p"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( \\zeta )"
+    ],
+    [
+      "formula",
+      "3 \\log ( 1 - \\bar p _ e ) = O _ \\delta ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\log ( \\bar p _ e / q _ e ) = ( B _ o ^ T \\phi ) _ e + O _ \\delta ( \\zeta ^ 2 )"
+    ],
+    [
+      "formula",
+      "\\psi"
+    ],
+    [
+      "formula",
+      "\\Xi ( \\bar p )"
+    ],
+    [
+      "formula",
+      "\\| \\psi \\| _ \\infty \\le C _ \\delta ( \\zeta + k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\| v \\| _ { \\rm rel } = \\max _ e | v _ e | / \\bar p _ e"
+    ],
+    [
+      "formula",
+      "\\| v \\| _ { \\rm rel } \\le \\vartheta"
+    ],
+    [
+      "formula",
+      "| ( D ^ Tv ) _ f | \\le \\vartheta \\ell _ f ( \\bar p ) \\le \\vartheta"
+    ],
+    [
+      "formula",
+      "\\vartheta"
+    ],
+    [
+      "formula",
+      "\\kappa _ \\nu / 4"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "\\Xi ( \\bar p + v ) = \\Xi ( \\bar p ) + K _ { \\bar p } v + N ( v ) , \\qquad \\| N ( v ) \\| _ \\infty \\le C _ \\delta \\vartheta ^ 2 , \\qquad \\| N ( v ) - N ( w ) \\| _ \\infty \\le C _ \\delta \\vartheta \\| v - w \\| _ { \\rm rel } ."
+    ],
+    [
+      "formula",
+      "\\log p _ e"
+    ],
+    [
+      "formula",
+      "v _ e / \\bar p _ e"
+    ],
+    [
+      "formula",
+      "\\log ( 1 - p _ e )"
+    ],
+    [
+      "formula",
+      "\\vartheta"
+    ],
+    [
+      "formula",
+      "\\ker B"
+    ],
+    [
+      "formula",
+      "v = - R ( \\psi + N ( v ) )"
+    ],
+    [
+      "formula",
+      "2 C _ \\delta \\| \\psi \\| _ \\infty"
+    ],
+    [
+      "formula",
+      "1 / 2"
+    ],
+    [
+      "formula",
+      "p = \\bar p + v"
+    ],
+    [
+      "formula",
+      "q"
+    ]
+  ],
+  "sections/04_reconstruction_2.tex": [
+    [
+      "formula",
+      "d ( a , b ) = a \\log ( a / b ) - a + b"
+    ],
+    [
+      "formula",
+      "a = 0"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "- \\sum _ e \\bigl [ d ( s _ e , p _ e ) - 3 d ( 1 - s _ e , 1 - p _ e ) \\bigr ] - \\sum _ f d ( h _ f ( s ) , h _ f ( p ) ) ."
+    ],
+    [
+      "formula",
+      "0 < b \\le e ^ { - 4 }"
+    ],
+    [
+      "formula",
+      "\\tilde d _ b ( a ) = d ( a , b ) - 3 d ( 1 - a , 1 - b )"
+    ],
+    [
+      "formula",
+      "\\tilde d _ b ( b ) = \\tilde d _ b ' ( b ) = 0 , \\qquad \\tilde d _ b ' ' ( a ) = \\frac { 1 - 4 a } { a ( 1 - a ) } , \\qquad \\tilde d _ b ( 1 ) = \\log ( 1 / b ) - 4 + 4 b > 0 ."
+    ],
+    [
+      "formula",
+      "1 / 4"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "[ 1 / 4 , 1 ]"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "p _ e = O _ \\delta ( 1 / k ) \\le e ^ { - 4 }"
+    ],
+    [
+      "formula",
+      "s _ e \\ne p _ e"
+    ],
+    [
+      "formula",
+      "p"
+    ]
+  ],
+  "sections/05a.tex": [
+    [
+      "formula",
+      "\\mathcal F _ k"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "\\mathcal F _ s"
+    ],
+    [
+      "formula",
+      "M = \\lceil \\delta n \\rceil"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( k )"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "G _ k ^ -"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "G _ k ^ -"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "\\nu _ B ( j \\mid i )"
+    ],
+    [
+      "formula",
+      "j"
+    ],
+    [
+      "formula",
+      "i"
+    ],
+    [
+      "formula",
+      "\\nu _ B ( j \\mid i ) = 0"
+    ],
+    [
+      "formula",
+      "C _ q , C _ { \\rm c }"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "\\nu ( i \\text { chosen } \\mid \\mathcal F _ k ) & = 1 / k , \\\\ \\left | \\nu ( j \\text { chosen } \\mid \\mathcal F _ k ) - 1 / k \\right | & \\le C _ { \\rm c } / k ^ 2 , \\\\ \\nu ( ( i , j ) \\text { chosen } \\mid \\mathcal F _ k ) & \\le C _ q / k ^ 2 ."
+    ],
+    [
+      "texto",
+      "7.1"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "formula",
+      "p _ e"
+    ],
+    [
+      "formula",
+      "d _ e + O ( k ^ { - 2 } )"
+    ],
+    [
+      "formula",
+      "d _ e = O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "B ( p \\odot d ) = 0"
+    ],
+    [
+      "texto",
+      "6.1"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "O ( k ^ { - 2 } )"
+    ],
+    [
+      "formula",
+      "\\sum _ jp _ { ij } d _ { ij } = 0"
+    ],
+    [
+      "formula",
+      "\\sum _ i p _ { ij } d _ { ij } = 0"
+    ],
+    [
+      "formula",
+      "\\sum _ i \\nu _ B ( j \\mid i ) = 1 + O ( k ^ { - 2 } )"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( k ^ { - 3 } )"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "k \\ge \\delta n"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "k ^ { - 2 }"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\nu _ B ( j \\mid i ) \\le 2 p _ { ij }"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "t"
+    ],
+    [
+      "formula",
+      "\\label { prescr } \\nu ( \\text { the $ s $ rows and $ t $ columns remain empty at size $ m $ } , G _ m ^ - ) \\le ( m / n ) ^ { s + t } \\exp \\{ C ( st + s + t ) / m \\} ."
+    ],
+    [
+      "formula",
+      "C"
+    ],
+    [
+      "formula",
+      "s , t"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "s / k"
+    ],
+    [
+      "formula",
+      "t / k - C _ { \\rm c } t / k ^ 2"
+    ],
+    [
+      "formula",
+      "C _ qst / k ^ 2"
+    ],
+    [
+      "formula",
+      "\\exp [ - ( s + t ) / k + C _ 1 ( st + s + t ) / k ^ 2 ]"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "m + 1"
+    ],
+    [
+      "formula",
+      "\\sum _ { k = m + 1 } ^ n k ^ { - 1 } \\ge \\log ( n / m ) - 1 / m"
+    ],
+    [
+      "formula",
+      "\\sum _ { k = m + 1 } ^ n k ^ { - 2 } \\le 1 / m"
+    ],
+    [
+      "formula",
+      "s , t"
+    ],
+    [
+      "formula",
+      "m"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "4 n"
+    ],
+    [
+      "formula",
+      "\\binom ns"
+    ],
+    [
+      "formula",
+      "\\binom ns \\le ( en / s ) ^ s"
+    ],
+    [
+      "formula",
+      "C _ { \\rm geo } < \\infty"
+    ],
+    [
+      "formula",
+      "1 \\le s \\le m / 4"
+    ],
+    [
+      "formula",
+      "\\label { geompres } \\nu ( D _ { \\max } ( m ) \\ge s , G _ m ^ - ) \\le 4 n \\left ( \\frac { C _ { \\rm geo } m ^ 2 } { ns } \\right ) ^ s ."
+    ],
+    [
+      "formula",
+      "\\exp [ C ( s ^ 2 + 2 s ) / m ]"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "s > m"
+    ]
+  ],
+  "sections/05b.tex": [
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "A \\ge 4 C _ { \\rm geo }"
+    ],
+    [
+      "formula",
+      "\\chi > 0"
+    ],
+    [
+      "formula",
+      "K _ 0 \\le K \\le M"
+    ],
+    [
+      "formula",
+      "\\le C _ \\chi e ^ { - c _ \\chi K }"
+    ],
+    [
+      "formula",
+      "\\sum _ { \\substack { K < k \\le M \\\\ \\text { regular parents reached } } } \\frac { ( D _ { \\max } ( k ) - 1 ) _ + } { k ^ 2 } \\le C \\{ A ( \\delta + 1 / n ) + \\chi + 1 / K \\} ."
+    ],
+    [
+      "formula",
+      "A ( \\delta + 1 / n ) + \\chi + 1 / K < 1 / 4"
+    ],
+    [
+      "formula",
+      "0 < \\alpha < 1 / 4"
+    ],
+    [
+      "formula",
+      "\\lambda > 0"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\delta > 0"
+    ],
+    [
+      "formula",
+      "K _ 0 , n"
+    ],
+    [
+      "formula",
+      "\\nu \\big ( \\exists \\, K \\le k \\le M : \\  G _ k ^ - , \\  D _ { \\max } ( k ) \\ge \\alpha k \\big ) \\le C _ \\lambda e ^ { - \\lambda K } , \\qquad \\nu ( G _ M ^ - , D _ { \\max } ( M ) \\ge \\alpha M ) \\le C _ \\lambda e ^ { - \\lambda M } ."
+    ],
+    [
+      "formula",
+      "m"
+    ],
+    [
+      "formula",
+      "[ 2 ^ jK , \\min ( 2 ^ { j + 1 } K , M ) ]"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "s _ m = \\lceil Am ^ 2 / n + \\chi \\sqrt { Km } \\rceil"
+    ],
+    [
+      "formula",
+      "s _ m / m \\le 1 / 4"
+    ],
+    [
+      "formula",
+      "v = C _ { \\rm geo } m ^ 2 / ( ns _ m ) \\le 1 / 4"
+    ],
+    [
+      "formula",
+      "4 nv ^ { s _ m } = 4 C _ { \\rm geo } m ^ 2 v ^ { s _ m - 1 } / s _ m \\le C m ^ 2 e ^ { - c s _ m }"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "C _ \\chi e ^ { - c _ \\chi K }"
+    ],
+    [
+      "formula",
+      "m ^ 2 e ^ { - c \\chi \\sqrt { Km } }"
+    ],
+    [
+      "formula",
+      "m \\ge K"
+    ],
+    [
+      "formula",
+      "2 ^ jK \\le m < 2 ^ { j + 1 } K"
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( m ) < s _ m"
+    ],
+    [
+      "formula",
+      "s _ m - 1 \\le Am ^ 2 / n + \\chi \\sqrt { Km }"
+    ],
+    [
+      "formula",
+      "C ( Am / n + \\chi \\sqrt { K / m } )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "s = \\lceil \\alpha k \\rceil \\le k / 4"
+    ],
+    [
+      "formula",
+      "v \\le 2 C _ { \\rm geo } \\delta / \\alpha"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "4 nv ^ s \\le 4 C _ { \\rm geo } k ^ 2 v ^ { s - 1 } / s"
+    ],
+    [
+      "formula",
+      "\\alpha \\log ( \\alpha / ( 2 C _ { \\rm geo } \\delta ) ) > \\lambda"
+    ],
+    [
+      "formula",
+      "k \\ge K"
+    ],
+    [
+      "formula",
+      "K _ 0"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "k = M"
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "t"
+    ],
+    [
+      "formula",
+      "S"
+    ],
+    [
+      "formula",
+      "w"
+    ],
+    [
+      "formula",
+      "w"
+    ],
+    [
+      "formula",
+      "Z _ H"
+    ],
+    [
+      "formula",
+      "( k ) _ s ( k ) _ t"
+    ],
+    [
+      "formula",
+      "( k ) _ s = k ( k - 1 ) \\cdots ( k - s + 1 )"
+    ],
+    [
+      "formula",
+      "K _ 0"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "\\Delta Z _ H = Z _ H ( k - 1 ) - Z _ H ( k )"
+    ],
+    [
+      "formula",
+      "| \\mathbb E _ \\nu ( \\Delta Z _ H \\mid \\mathcal F _ k ) | \\le C _ H \\frac { 1 + ( D _ { \\max } ( k ) - 1 ) _ + } { k ^ 2 } , \\qquad | \\Delta Z _ H | \\le C _ H / k ."
+    ],
+    [
+      "formula",
+      "F _ i ( k ) / k"
+    ],
+    [
+      "formula",
+      "i"
+    ],
+    [
+      "formula",
+      "F _ i ( k ) = \\sum _ { j \\  { \\rm available } } Y _ { ij } w _ { ij }"
+    ],
+    [
+      "formula",
+      "i"
+    ],
+    [
+      "formula",
+      "Y _ { ij }"
+    ],
+    [
+      "formula",
+      "( s + t ) / k + O _ H ( k ^ { - 2 } )"
+    ],
+    [
+      "formula",
+      "( 1 - s / k ) ( 1 - t / k )"
+    ],
+    [
+      "formula",
+      "e \\in S"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "( D _ { \\max } ( k ) - 1 ) _ +"
+    ],
+    [
+      "formula",
+      "\\le C _ q / k ^ 2"
+    ],
+    [
+      "formula",
+      "S"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "O _ H ( k ^ { s + t - 1 } )"
+    ],
+    [
+      "formula",
+      "S \\ne \\varnothing"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "2 k"
+    ],
+    [
+      "formula",
+      "S"
+    ],
+    [
+      "formula",
+      "O _ H ( k ^ { s + t - 2 } )"
+    ],
+    [
+      "formula",
+      "O _ H ( 1 / k )"
+    ],
+    [
+      "formula",
+      "i"
+    ],
+    [
+      "formula",
+      "j"
+    ],
+    [
+      "formula",
+      "\\frac { \\nu ( j \\  { \\rm chosen } \\mid \\mathcal F _ k ) - \\nu ( ( i , j ) \\  { \\rm chosen } \\mid \\mathcal F _ k ) } { 1 - 1 / k } = 1 / k + O ( k ^ { - 2 } )"
+    ],
+    [
+      "formula",
+      "1 - 1 / k + O ( k ^ { - 2 } )"
+    ],
+    [
+      "formula",
+      "F _ i / k + O ( 1 / k )"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "k - 1"
+    ],
+    [
+      "formula",
+      "O ( k ^ { - 2 } )"
+    ],
+    [
+      "formula",
+      "2 C _ q ( D _ { \\max } ( k ) - 1 ) _ + / k ^ 2"
+    ],
+    [
+      "formula",
+      "k - 1"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "O ( 1 / k )"
+    ]
+  ],
+  "sections/05c.tex": [
+    [
+      "formula",
+      "b _ 1 > 0"
+    ],
+    [
+      "formula",
+      "\\chi > 0"
+    ],
+    [
+      "formula",
+      "c _ { \\rm pat } > 0"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "\\le C e ^ { - c _ { \\rm pat } K }"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "C _ H \\{ A ( \\delta + 1 / n ) + \\chi + 1 / K \\} + b _ 1 ."
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "b _ 1"
+    ],
+    [
+      "formula",
+      "\\chi"
+    ],
+    [
+      "formula",
+      "u"
+    ],
+    [
+      "formula",
+      "2 C _ H / u"
+    ],
+    [
+      "formula",
+      "\\sum _ { u > k } u ^ { - 2 } \\le 1 / k"
+    ],
+    [
+      "formula",
+      "2 \\exp ( - c _ H b _ 1 ^ 2 k )"
+    ],
+    [
+      "formula",
+      "b _ 1"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "u ^ { - 2 }"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "y _ u"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "\\prod _ { u = k + 1 } ^ { M } y _ u = \\prod _ { u = k + 1 } ^ { M } \\big ( 1 - 1 / u + O ( u ^ { - 2 } ) \\big ) = ( k / M ) \\exp ( O ( 1 / k ) ) ."
+    ],
+    [
+      "formula",
+      "k / M"
+    ],
+    [
+      "formula",
+      "m \\le k < 2 m"
+    ],
+    [
+      "formula",
+      "m = 2 ^ jK"
+    ],
+    [
+      "formula",
+      "\\ge b _ 1"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "( 2 m / M ) e ^ { C / m }"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\sum _ m C m e ^ { - c _ H b _ 1 ^ 2 m } \\le C ' e ^ { - c ' b _ 1 ^ 2 K }"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "W _ 0 = \\nu _ 1 / ( u _ Du _ A ) = b _ 0 r _ Rr _ C"
+    ],
+    [
+      "formula",
+      "x = 0"
+    ],
+    [
+      "formula",
+      "W _ x"
+    ],
+    [
+      "formula",
+      "q _ { ij } = Y _ { ij } W _ { 0 , ij } / k"
+    ],
+    [
+      "formula",
+      "V _ { ij } = \\nu _ { 1 , ij } / k"
+    ],
+    [
+      "formula",
+      "c _ \\nu , C _ \\nu"
+    ],
+    [
+      "formula",
+      "\\kappa _ \\nu"
+    ],
+    [
+      "formula",
+      "L _ \\nu"
+    ],
+    [
+      "formula",
+      "[ 0 , 1 ]"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mes }"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "texto",
+      "5"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mes } > 0"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mes }"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mes } | I |"
+    ],
+    [
+      "formula",
+      "I"
+    ],
+    [
+      "formula",
+      "W _ 0"
+    ],
+    [
+      "formula",
+      "1"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mes }"
+    ],
+    [
+      "formula",
+      "T = \\{ 1 , 2 \\} \\times \\{ 1 , 2 \\}"
+    ],
+    [
+      "formula",
+      "S \\subseteq T"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "S"
+    ],
+    [
+      "formula",
+      "\\prod _ { e \\in S } W _ { 0 , e } \\prod _ { e \\in T \\setminus S } \\nu _ { 1 , e }"
+    ],
+    [
+      "texto",
+      "sixteen"
+    ],
+    [
+      "formula",
+      "\\int _ { [ 0 , 1 ] ^ 4 } \\nu _ 1 ( r , c ) \\nu _ 1 ( r , c ' ) \\nu _ 1 ( r ' , c ) \\nu _ 1 ( r ' , c ' ) \\, dr \\, dr ' \\, dc \\, dc ' ."
+    ],
+    [
+      "formula",
+      "( k ) _ 2 ^ 2"
+    ],
+    [
+      "formula",
+      "k ^ 4"
+    ],
+    [
+      "formula",
+      "O ( 1 / k )"
+    ],
+    [
+      "formula",
+      "O ( k ^ 3 )"
+    ],
+    [
+      "formula",
+      "E = q - V"
+    ],
+    [
+      "formula",
+      "\\operatorname { tr } \\big [ ( EE ^ { T } ) ^ 2 \\big ] = \\sum _ { i , i ' , j , j ' } E _ { ij } E _ { i ' j } E _ { i ' j ' } E _ { ij ' }"
+    ],
+    [
+      "texto",
+      "sixteen"
+    ],
+    [
+      "formula",
+      "( - 1 ) ^ { 4 - | S | }"
+    ],
+    [
+      "texto",
+      "sixteen"
+    ],
+    [
+      "formula",
+      "( 1 - 1 ) ^ 4 = 0"
+    ],
+    [
+      "formula",
+      "O ( 1 / K _ 0 )"
+    ],
+    [
+      "formula",
+      "\\| q - V \\| _ { \\rm op } \\le \\operatorname { tr } [ ( EE ^ T ) ^ 2 ] ^ { 1 / 4 }"
+    ],
+    [
+      "formula",
+      "S = \\varnothing"
+    ]
+  ],
+  "sections/05d.tex": [
+    [
+      "formula",
+      "C _ { \\rm in } , \\eta _ { \\rm in } , \\gamma _ { \\rm in } > 0"
+    ],
+    [
+      "texto",
+      "sixteen"
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( k ) < \\alpha k"
+    ],
+    [
+      "formula",
+      "\\alpha = \\varepsilon / ( 4 \\| W _ 0 \\| _ \\infty )"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mes }"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mes }"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "p _ e / q _ e = 1 + O ( \\varrho _ { \\rm mes } + \\varepsilon + 1 / k )"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "\\varepsilon _ { \\rm out } = 2 \\varepsilon"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "1 + O ( \\varrho _ { \\rm mes } )"
+    ],
+    [
+      "formula",
+      "V"
+    ],
+    [
+      "formula",
+      "\\nu _ 1 ( r , \\cdot )"
+    ],
+    [
+      "formula",
+      "\\nu _ 1 ( \\cdot , c )"
+    ],
+    [
+      "formula",
+      "1 + O ( a _ { \\rm mes } + \\varrho _ { \\rm mes } )"
+    ],
+    [
+      "formula",
+      "{ 0 < \\theta < \\min ( c _ \\nu , 1 ) / 2 }"
+    ],
+    [
+      "formula",
+      "V - \\theta \\mathbf 1 \\mathbf 1 ^ T / k"
+    ],
+    [
+      "formula",
+      "{ \\le 1 - \\theta + O ( a _ { \\rm mes } + \\varrho _ { \\rm mes } ) }"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "q - V"
+    ],
+    [
+      "formula",
+      "\\sigma _ 2 ( q ) \\le 1 - \\theta + O ( a _ { \\rm mes } + \\varrho _ { \\rm mes } ) + \\| q - V \\| _ { \\rm op } ."
+    ],
+    [
+      "formula",
+      "D _ R , D _ C"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "D _ R ^ { - 1 / 2 } qD _ C ^ { - 1 / 2 }"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "O ( \\varrho _ { \\rm mes } )"
+    ],
+    [
+      "formula",
+      "\\le 1 - \\theta / 2"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "P _ q = \\operatorname { diag } ( q _ e )"
+    ],
+    [
+      "formula",
+      "( BP _ qB ^ T ) z = \\mathbf 1 - Bq"
+    ],
+    [
+      "formula",
+      "( \\mathbf 1 , - \\mathbf 1 )"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "\\| z \\| _ 2 / \\sqrt { k } = O ( \\varrho _ { \\rm mes } )"
+    ],
+    [
+      "formula",
+      "( \\sum _ j q _ { ij } ^ 2 ) ^ { 1 / 2 } \\| z \\| _ 2 = O ( \\varrho _ { \\rm mes } )"
+    ],
+    [
+      "formula",
+      "q _ { ij } \\le \\| W _ 0 \\| _ \\infty / k"
+    ],
+    [
+      "formula",
+      "\\| z \\| _ \\infty = O ( \\varrho _ { \\rm mes } )"
+    ],
+    [
+      "formula",
+      "\\bar q = q + P _ qB ^ Tz , \\qquad B \\bar q = \\mathbf 1 , \\qquad \\bar q _ e / q _ e = 1 + O ( \\varrho _ { \\rm mes } ) ."
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( k ) \\le \\alpha k"
+    ],
+    [
+      "formula",
+      "\\alpha = \\varepsilon / ( 4 \\| W _ 0 \\| _ \\infty )"
+    ],
+    [
+      "formula",
+      "q"
+    ],
+    [
+      "formula",
+      "\\varepsilon / 4"
+    ],
+    [
+      "formula",
+      "\\bar q"
+    ],
+    [
+      "formula",
+      "\\varepsilon / 2"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mes }"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "P = \\operatorname { diag } ( \\bar q )"
+    ],
+    [
+      "formula",
+      "\\mathcal T = \\{ x : BPx = 0 \\} , \\qquad \\Pi = I - B ^ T ( BPB ^ T ) ^ + BP ,"
+    ],
+    [
+      "formula",
+      "+"
+    ],
+    [
+      "formula",
+      "\\mathcal T"
+    ],
+    [
+      "formula",
+      "\\operatorname { im } B ^ T"
+    ],
+    [
+      "formula",
+      "\\ell ^ \\infty"
+    ],
+    [
+      "formula",
+      "BPv"
+    ],
+    [
+      "formula",
+      "\\le \\| v \\| _ \\infty"
+    ],
+    [
+      "formula",
+      "B \\bar q = \\mathbf 1"
+    ],
+    [
+      "formula",
+      "{ p = \\bar q \\odot ( 1 + x ) }"
+    ],
+    [
+      "formula",
+      "x \\in \\mathcal T"
+    ],
+    [
+      "formula",
+      "F ( x ) = - \\Pi \\nabla H _ B ( p ) = 0"
+    ],
+    [
+      "formula",
+      "H _ B"
+    ],
+    [
+      "formula",
+      "- \\log p _ e - 3 \\log ( 1 - p _ e ) + \\log h _ { D ( e ) } + \\log h _ { A ( e ) }"
+    ],
+    [
+      "formula",
+      "\\bar q"
+    ],
+    [
+      "formula",
+      "\\log q \\in \\operatorname { im } B ^ T"
+    ],
+    [
+      "formula",
+      "W _ 0 = b _ 0 r _ Rr _ C"
+    ],
+    [
+      "formula",
+      "\\log ( \\bar q / q ) = B ^ Tz + O ( \\varrho _ { \\rm mes } ^ 2 )"
+    ],
+    [
+      "formula",
+      "1 - \\bar q _ e"
+    ],
+    [
+      "formula",
+      "O ( \\varepsilon + 1 / k )"
+    ],
+    [
+      "formula",
+      "\\| F ( 0 ) \\| _ \\infty \\le C ( \\varrho _ { \\rm mes } ^ 2 + \\varepsilon + 1 / k )"
+    ],
+    [
+      "formula",
+      "\\| x \\| _ \\infty \\le t < 1 / 2"
+    ],
+    [
+      "formula",
+      "\\log p"
+    ],
+    [
+      "formula",
+      "1 / ( 1 + x _ e )"
+    ],
+    [
+      "formula",
+      "O ( t )"
+    ],
+    [
+      "formula",
+      "\\log ( 1 - p _ e )"
+    ],
+    [
+      "formula",
+      "O ( 1 / k )"
+    ],
+    [
+      "formula",
+      "\\log h _ f"
+    ],
+    [
+      "formula",
+      "\\le \\sum _ { e \\in f } \\bar q _ e / h _ f = O ( \\varepsilon )"
+    ],
+    [
+      "formula",
+      "\\mathcal T"
+    ],
+    [
+      "formula",
+      "\\| DF ( x ) - I \\| _ { \\infty , \\mathcal T } \\le C ( t + \\varepsilon + 1 / k )"
+    ],
+    [
+      "formula",
+      "t"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mes } , \\varepsilon , 1 / K _ 0"
+    ],
+    [
+      "formula",
+      "x \\mapsto x - F ( x )"
+    ],
+    [
+      "formula",
+      "\\le 1 / 2"
+    ],
+    [
+      "formula",
+      "2 \\| F ( 0 ) \\| _ \\infty \\le t"
+    ],
+    [
+      "formula",
+      "\\| p / \\bar q - 1 \\| _ \\infty \\le 2 \\| F ( 0 ) \\| _ \\infty , \\qquad p _ e / q _ e = 1 + O ( \\varrho _ { \\rm mes } + \\varepsilon + 1 / k ) ."
+    ],
+    [
+      "formula",
+      "0 < p _ e < 1 / 4"
+    ],
+    [
+      "formula",
+      "h _ f > 0"
+    ],
+    [
+      "formula",
+      "1 / p _ e - 3 / ( 1 - p _ e )"
+    ],
+    [
+      "formula",
+      "p _ { \\max } \\le C / k \\le e ^ { - 4 }"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "formula",
+      "< \\varepsilon"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "8.2"
+    ],
+    [
+      "texto",
+      "-8.3"
+    ],
+    [
+      "formula",
+      "1 + O ( 1 / k )"
+    ],
+    [
+      "formula",
+      "( 1 + O ( 1 / k ) ) \\varepsilon \\le \\varepsilon _ { \\rm out } = 2 \\varepsilon"
+    ],
+    [
+      "formula",
+      "K _ 0"
+    ]
+  ],
+  "sections/05e.tex": [
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "0 < \\alpha < 1 / 4"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "O ( \\delta + 1 / n )"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\lambda"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\Delta"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( M ) \\ge \\alpha M"
+    ],
+    [
+      "formula",
+      "\\nu ( G _ M ^ - , D _ { \\max } ( M ) \\ge \\alpha M ) \\le C _ \\lambda e ^ { - \\lambda M }"
+    ],
+    [
+      "formula",
+      "M = \\lceil \\delta n \\rceil"
+    ],
+    [
+      "formula",
+      "U _ f = u _ f + O ( \\delta + 1 / n )"
+    ],
+    [
+      "formula",
+      "u _ f \\ge \\kappa _ \\nu"
+    ],
+    [
+      "formula",
+      "W _ x"
+    ],
+    [
+      "formula",
+      "x = M / n"
+    ],
+    [
+      "formula",
+      "W _ 0"
+    ],
+    [
+      "formula",
+      "O ( \\delta + 1 / n )"
+    ],
+    [
+      "formula",
+      "S"
+    ],
+    [
+      "formula",
+      "\\prod _ { e \\in S } U _ { D ( e ) } U _ { A ( e ) }"
+    ],
+    [
+      "formula",
+      "\\prod _ { e \\in S } W _ { 0 , e } \\prod _ { e \\notin S } \\nu _ { 1 , e }"
+    ],
+    [
+      "formula",
+      "\\prod _ { e \\in T } \\nu _ { 1 , e } ( 1 + O ( \\delta + 1 / n ) )"
+    ],
+    [
+      "formula",
+      "O ( n ^ 3 )"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( 1 / n )"
+    ],
+    [
+      "formula",
+      "1 + O ( \\delta + 1 / n )"
+    ],
+    [
+      "formula",
+      "\\nu _ 1"
+    ],
+    [
+      "formula",
+      "1"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "( M / n )"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "\\mathcal I"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mes }"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "O _ \\delta ( 1 / n )"
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( M )"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "C _ \\lambda e ^ { - \\lambda M }"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "formula",
+      "C _ { \\rm in } , \\eta _ { \\rm in } , \\gamma _ { \\rm in }"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "C _ { \\rm out } , \\eta _ { \\rm out } , \\gamma _ { \\rm out }"
+    ],
+    [
+      "formula",
+      "\\varepsilon _ { \\rm out } = 2 \\varepsilon"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "texto",
+      "4"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mes } , \\varrho _ { \\rm mes }"
+    ],
+    [
+      "texto",
+      "sixteen"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\chi , b _ 1 > 0"
+    ],
+    [
+      "formula",
+      "C _ H \\chi + b _ 1"
+    ],
+    [
+      "formula",
+      "c _ { \\rm pat } > 0"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "\\varepsilon > 0"
+    ],
+    [
+      "formula",
+      "\\varepsilon _ { \\rm out } = 2 \\varepsilon"
+    ],
+    [
+      "formula",
+      "\\varepsilon _ 0 ( C _ { \\rm out } , \\eta _ { \\rm out } , \\gamma _ { \\rm out } )"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "formula",
+      "2 \\beta ( \\varepsilon _ { \\rm out } ) < c _ { \\rm pat } / 4"
+    ],
+    [
+      "formula",
+      "{ \\beta ( v ) = 2 v / ( 1 - v ) }"
+    ],
+    [
+      "formula",
+      "\\alpha = \\varepsilon / ( 4 \\| W _ 0 \\| _ \\infty ) < 1 / 4"
+    ],
+    [
+      "formula",
+      "\\delta > 0"
+    ],
+    [
+      "formula",
+      "C _ HA \\delta"
+    ],
+    [
+      "formula",
+      "A ( \\delta + 1 / n ) + \\chi + 1 / K < 1 / 4"
+    ],
+    [
+      "formula",
+      "\\lambda"
+    ],
+    [
+      "formula",
+      "c _ { \\rm pat }"
+    ],
+    [
+      "formula",
+      "K _ 0 \\ge k _ 0 ( C _ { \\rm out } , \\eta _ { \\rm out } , \\gamma _ { \\rm out } )"
+    ],
+    [
+      "formula",
+      "k _ 0"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "O ( 1 / K _ 0 )"
+    ],
+    [
+      "formula",
+      "\\le \\varepsilon"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "C < \\infty"
+    ],
+    [
+      "formula",
+      "c > 2 \\beta ( \\varepsilon _ { \\rm out } )"
+    ],
+    [
+      "formula",
+      "K _ 0 \\le K \\le M"
+    ],
+    [
+      "formula",
+      "j \\ge 0"
+    ],
+    [
+      "formula",
+      "2 ^ jK \\le M"
+    ],
+    [
+      "formula",
+      "\\nu \\big ( \\text { regular entry at $ M $ and first exit at a size } k \\in [ 2 ^ jK , 2 ^ { j + 1 } K ) \\big ) \\le C e ^ { - c \\, 2 ^ jK } ."
+    ],
+    [
+      "formula",
+      "K '"
+    ],
+    [
+      "formula",
+      "K _ 0"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "k \\ge K '"
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( k ) < \\alpha k"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\le Ce ^ { - cK ' }"
+    ],
+    [
+      "formula",
+      "c = c _ { \\rm pat } / 2"
+    ],
+    [
+      "formula",
+      "K ' = 2 ^ jK"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "K"
+    ]
+  ],
+  "sections/06a_static.tex": [
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "Q ( B ) > 0"
+    ],
+    [
+      "formula",
+      "g ( B ) = \\log Q ( B ) - L ( B )"
+    ],
+    [
+      "formula",
+      "g ^ + ( B ) = \\max \\{ g ( B ) , 0 \\}"
+    ],
+    [
+      "formula",
+      "Q ( B ) = 0"
+    ],
+    [
+      "formula",
+      "g ^ + ( B ) = 0"
+    ],
+    [
+      "formula",
+      "g ^ + ( B )"
+    ],
+    [
+      "formula",
+      "p = ( p _ e )"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "e = ( i , j )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "D ( e ) , A ( e )"
+    ],
+    [
+      "formula",
+      "\\ell _ f = \\sum _ { e \\in f } p _ e"
+    ],
+    [
+      "formula",
+      "h _ f = 1 - \\ell _ f"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "formula",
+      "\\mathcal A = ( A _ R , D )"
+    ],
+    [
+      "formula",
+      "D"
+    ],
+    [
+      "formula",
+      "A _ R = B ^ T"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "\\tau _ d ( p ) = \\frac { p ( 1 - p ) } { 1 - dp } , \\qquad C _ d = \\sum _ e \\bigl [ \\log ( 1 - dp _ e ) - d \\log ( 1 - p _ e ) \\bigr ] , \\qquad d = 2 , 4 ."
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "4 p _ { \\max } \\le 1 / 2"
+    ],
+    [
+      "formula",
+      "d = 4"
+    ],
+    [
+      "formula",
+      "S _ 4 = \\operatorname { diag } ( 0 _ { RC } , h ) + \\mathcal A ^ T \\operatorname { diag } ( \\tau _ 4 ( p _ e ) ) \\mathcal A ."
+    ],
+    [
+      "formula",
+      "S _ B"
+    ],
+    [
+      "formula",
+      "( \\mathbf 1 _ R , - \\mathbf 1 _ C , 0 )"
+    ],
+    [
+      "formula",
+      "\\pdet"
+    ],
+    [
+      "formula",
+      "\\Gamma _ 4 = \\frac { e ^ { - C _ 4 / 2 } \\sqrt { 4 \\pi k } } { \\sqrt { \\pdet S _ 4 } } , \\qquad L ( B ) = H _ B ( p ) + \\log \\Gamma _ 4 ,"
+    ],
+    [
+      "formula",
+      "H _ B"
+    ],
+    [
+      "formula",
+      "A _ R ^ T \\operatorname { diag } ( p ) A _ R"
+    ],
+    [
+      "formula",
+      "p _ { \\max } \\le C / k"
+    ],
+    [
+      "formula",
+      "h _ f \\ge \\eta > 0"
+    ],
+    [
+      "formula",
+      "A _ R ^ T \\operatorname { diag } ( p ) A _ R"
+    ],
+    [
+      "formula",
+      "\\gamma > 0"
+    ],
+    [
+      "formula",
+      "( \\mathbf 1 _ R , - \\mathbf 1 _ C )"
+    ],
+    [
+      "formula",
+      "L ( B ) - H _ B ( p ) = \\tfrac 12 \\log ( 4 \\pi k ) + O _ { C , \\eta , \\gamma } ( 1 ) ."
+    ],
+    [
+      "formula",
+      "\\tau _ e = \\tau _ 4 ( p _ e )"
+    ],
+    [
+      "formula",
+      "E = S _ 4 - I"
+    ],
+    [
+      "formula",
+      "p _ e"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "1 - h _ f"
+    ],
+    [
+      "formula",
+      "f"
+    ],
+    [
+      "formula",
+      "E _ { ff } = \\sum _ { e \\in f } ( \\tau _ e - p _ e ) , \\qquad \\tau _ e - p _ e = \\frac { 3 p _ e ^ 2 } { 1 - 4 p _ e } ."
+    ],
+    [
+      "formula",
+      "\\sum _ e p _ e = k"
+    ],
+    [
+      "formula",
+      "\\sum _ e p _ e ^ 2 \\le C"
+    ],
+    [
+      "formula",
+      "\\operatorname { tr } E = 4 \\sum _ e ( \\tau _ e - p _ e ) = O ( 1 )"
+    ],
+    [
+      "formula",
+      "0 \\le E _ { ff } = O ( 1 / k )"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\sum _ f E _ { ff } ^ 2 = O ( 1 / k )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "twelve"
+    ],
+    [
+      "formula",
+      "\\sum _ { f \\ne j } E _ { fj } ^ 2 = 12 \\sum _ e \\tau _ e ^ 2 = O ( 1 ) ."
+    ],
+    [
+      "formula",
+      "y \\perp ( \\mathbf 1 _ R , - \\mathbf 1 _ C )"
+    ],
+    [
+      "formula",
+      "z"
+    ],
+    [
+      "formula",
+      "P _ 0 = \\operatorname { diag } ( p )"
+    ],
+    [
+      "formula",
+      "\\tau _ e \\ge p _ e"
+    ],
+    [
+      "formula",
+      "S _ 4"
+    ],
+    [
+      "formula",
+      "( y , z )"
+    ],
+    [
+      "formula",
+      "\\| P _ 0 ^ { 1 / 2 } ( A _ Ry + Dz ) \\| ^ 2 + \\eta \\| z \\| ^ 2"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\| P _ 0 ^ { 1 / 2 } Dz \\| ^ 2 \\le 2 \\sum _ f \\ell _ f z _ f ^ 2 \\le 2 \\| z \\| ^ 2 ."
+    ],
+    [
+      "formula",
+      "0 < \\theta < 1"
+    ],
+    [
+      "formula",
+      "\\| a + b \\| ^ 2 \\ge \\theta \\| a \\| ^ 2 - \\theta \\| b \\| ^ 2 / ( 1 - \\theta )"
+    ],
+    [
+      "formula",
+      "\\theta = \\eta / ( \\eta + 4 )"
+    ],
+    [
+      "formula",
+      "\\theta \\gamma \\| y \\| ^ 2 + ( \\eta / 2 ) \\| z \\| ^ 2"
+    ],
+    [
+      "formula",
+      "c = \\min \\{ \\theta \\gamma , \\eta / 2 \\}"
+    ],
+    [
+      "formula",
+      "\\sum _ { \\lambda > 0 } ( \\lambda - 1 ) = \\operatorname { tr } E + 1 , \\qquad \\sum _ { \\lambda > 0 } ( \\lambda - 1 ) ^ 2 \\le \\operatorname { tr } E ^ 2 = O ( 1 ) ."
+    ],
+    [
+      "formula",
+      "| \\log \\lambda - ( \\lambda - 1 ) | \\le ( \\lambda - 1 ) ^ 2 / ( 2 \\min \\{ 1 , c \\} ^ 2 )"
+    ],
+    [
+      "formula",
+      "\\log \\pdet S _ 4 = O ( 1 )"
+    ],
+    [
+      "formula",
+      "C _ 4"
+    ],
+    [
+      "formula",
+      "| C _ 4 | \\le C ' \\sum _ e p _ e ^ 2 = O ( 1 )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\log \\Gamma _ 4"
+    ]
+  ],
+  "sections/06b_enlargement.tex": [
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "H _ B"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "h _ f > 0"
+    ],
+    [
+      "formula",
+      "a _ i , b _ j"
+    ],
+    [
+      "formula",
+      "v _ e : = p _ e ( 1 - p _ e ) ^ 3 = a _ i b _ j h _ { D ( e ) } h _ { A ( e ) } ."
+    ],
+    [
+      "formula",
+      "p _ { \\max } \\le C / k"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "\\mathcal K = \\prod _ i a _ i \\prod _ j b _ j \\prod _ f h _ f"
+    ],
+    [
+      "formula",
+      "W = \\sum _ e v _ e"
+    ],
+    [
+      "formula",
+      "W = k + O _ C ( 1 ) , \\qquad H _ B ( p ) = - \\log \\mathcal K + 3 \\sum _ e \\log ( 1 - p _ e ) = - \\log \\mathcal K - 3 k + O _ C ( 1 ) ."
+    ],
+    [
+      "formula",
+      "H _ B"
+    ],
+    [
+      "formula",
+      "p _ e"
+    ],
+    [
+      "formula",
+      "- \\log p _ e - 3 \\log ( 1 - p _ e ) + \\log h _ { D ( e ) } + \\log h _ { A ( e ) } - 2"
+    ],
+    [
+      "formula",
+      "p _ e"
+    ],
+    [
+      "formula",
+      "\\sum _ i \\log a _ i + \\sum _ j \\log b _ j"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\sum _ f \\ell _ f \\log h _ f"
+    ],
+    [
+      "formula",
+      "H _ B"
+    ],
+    [
+      "formula",
+      "\\ell _ f + h _ f = 1"
+    ],
+    [
+      "formula",
+      "0 \\le p _ e - v _ e \\le 3 p _ e ^ 2"
+    ],
+    [
+      "formula",
+      "| \\log ( 1 - p _ e ) + p _ e | \\le p _ e ^ 2 / ( 1 - p _ { \\max } )"
+    ],
+    [
+      "formula",
+      "\\sum _ e p _ e ^ 2 \\le C"
+    ],
+    [
+      "formula",
+      "Q ( B ) > 0"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "N = 2 n - 1"
+    ],
+    [
+      "formula",
+      "H = N - k"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "formula",
+      "\\log Q ( B ) \\le \\E \\sum _ { s = 1 } ^ N \\log W _ { T _ s } ( s ) - \\log \\mathcal K - \\log k ! - 4 \\log H ! ."
+    ],
+    [
+      "formula",
+      "T _ s"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "W _ { T _ s } ( s )"
+    ],
+    [
+      "texto",
+      "3.6"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "N"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "formula",
+      "N"
+    ],
+    [
+      "formula",
+      "h _ f = 1"
+    ],
+    [
+      "formula",
+      "\\mathcal K"
+    ],
+    [
+      "formula",
+      "v _ e"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "h _ f"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "\\sum _ { f \\text { in one diagonal family } } h _ f = N - \\sum _ e p _ e = H ."
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "H ^ 4"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "( H ! ) ^ 3"
+    ],
+    [
+      "formula",
+      "h _ f \\ge \\eta"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "Q ( B )"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "N !"
+    ],
+    [
+      "formula",
+      "\\mathcal K"
+    ],
+    [
+      "formula",
+      "a _ i"
+    ],
+    [
+      "formula",
+      "b _ j"
+    ],
+    [
+      "formula",
+      "h _ f"
+    ],
+    [
+      "texto",
+      "3"
+    ],
+    [
+      "formula",
+      "\\mathbb P"
+    ],
+    [
+      "formula",
+      "\\mathbb Q"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "formula",
+      "\\omega"
+    ],
+    [
+      "formula",
+      "\\mathbb P ( \\omega ) = \\frac { 1 } { Q ( B ) ( H ! ) ^ 3 N ! } , \\qquad \\mathbb Q ( \\omega ) = \\frac { k ! H ! } { N ! } \\, \\frac { \\mathcal K } { \\prod _ { s = 1 } ^ N W _ { T _ s } ( s ) } ."
+    ],
+    [
+      "formula",
+      "\\mathbb Q ( \\omega ) > 0"
+    ],
+    [
+      "formula",
+      "\\E _ { \\mathbb P } \\log ( \\mathbb Q / \\mathbb P ) \\le \\log \\sum _ { \\omega : \\mathbb P ( \\omega ) > 0 } \\mathbb Q ( \\omega ) \\le 0 ."
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\mathbb P"
+    ],
+    [
+      "formula",
+      "B"
+    ]
+  ],
+  "sections/06c_revelation.tex": [
+    [
+      "formula",
+      "N = O _ \\delta ( k )"
+    ],
+    [
+      "formula",
+      "g ^ + ( B ) \\le C _ \\delta k ^ { 2 / 3 } ,"
+    ],
+    [
+      "formula",
+      "Q ( B ) > 0"
+    ],
+    [
+      "formula",
+      "[ 0 , 1 ]"
+    ],
+    [
+      "formula",
+      "N"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "t"
+    ],
+    [
+      "formula",
+      "z = 1 - t"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "texto",
+      "four"
+    ],
+    [
+      "formula",
+      "j"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "t"
+    ],
+    [
+      "formula",
+      "z ^ j"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "j = 4"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "six"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "6 N"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "4 k"
+    ],
+    [
+      "formula",
+      "j = 0"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "v _ e \\le C / k"
+    ],
+    [
+      "formula",
+      "\\E [ W _ R \\mid b , t ] \\le W z ^ 4 + ( 6 N + 4 k ) ( C / k ) z + C / k \\le W z ^ 4 + C _ \\delta z + C / k ."
+    ],
+    [
+      "formula",
+      "N ^ 2"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "N ^ 3"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "6 N ^ 3"
+    ],
+    [
+      "formula",
+      "4 N ^ 3"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "j = 0"
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "\\E [ W _ V \\mid b , t ] \\le H ^ 4 z ^ 4 + 10 N ^ 3 z + 1 ."
+    ],
+    [
+      "formula",
+      "b"
+    ],
+    [
+      "formula",
+      "t"
+    ],
+    [
+      "formula",
+      "a > 0"
+    ],
+    [
+      "formula",
+      "r > 1"
+    ],
+    [
+      "formula",
+      "\\int _ 0 ^ 1 \\log ( 1 + a z ^ { - r } ) \\, dz \\le a ^ { 1 / r } \\int _ 0 ^ \\infty \\log ( 1 + u ^ { - r } ) \\, du \\le C _ r a ^ { 1 / r } ."
+    ],
+    [
+      "formula",
+      "\\log 2 - r \\log u"
+    ],
+    [
+      "formula",
+      "0 < u < 1"
+    ],
+    [
+      "formula",
+      "u ^ { - r }"
+    ],
+    [
+      "formula",
+      "u \\ge 1"
+    ],
+    [
+      "formula",
+      "Wz ^ 4"
+    ],
+    [
+      "formula",
+      "\\log ( 1 + x + y ) \\le \\log ( 1 + x ) + \\log ( 1 + y )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "C _ \\delta / W = O _ \\delta ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "z ^ { - 3 }"
+    ],
+    [
+      "formula",
+      "C / ( kW ) = O ( k ^ { - 2 } )"
+    ],
+    [
+      "formula",
+      "z ^ { - 4 }"
+    ],
+    [
+      "formula",
+      "W = k + O ( 1 )"
+    ],
+    [
+      "formula",
+      "\\int _ 0 ^ 1 \\log z \\, dz = - 1"
+    ],
+    [
+      "formula",
+      "\\log W - 4 + O _ \\delta ( k ^ { - 1 / 3 } + k ^ { - 1 / 2 } ) ."
+    ],
+    [
+      "formula",
+      "H ^ 4 z ^ 4"
+    ],
+    [
+      "formula",
+      "k \\le n"
+    ],
+    [
+      "formula",
+      "N = 2 n - 1"
+    ],
+    [
+      "formula",
+      "H \\ge n - 1"
+    ],
+    [
+      "formula",
+      "H \\asymp N"
+    ],
+    [
+      "formula",
+      "n \\ge 2"
+    ],
+    [
+      "formula",
+      "10 N ^ 3 / H ^ 4 = O ( N ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "1 / H ^ 4 = O ( N ^ { - 4 } )"
+    ],
+    [
+      "formula",
+      "4 \\log H - 4 + O ( N ^ { - 1 / 3 } + N ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "formula",
+      "N = O _ \\delta ( k )"
+    ],
+    [
+      "formula",
+      "\\begin { split } \\log Q ( B ) \\le { } & k \\log W - 4 k + 4 H \\log H - 4 H \\\\ & - \\log \\mathcal K - \\log k ! - 4 \\log H ! + O _ \\delta ( k ^ { 2 / 3 } ) . \\end { split }"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "k \\log ( W / k ) = O ( 1 )"
+    ],
+    [
+      "formula",
+      "- \\log \\mathcal K - 3 k + O _ \\delta ( k ^ { 2 / 3 } )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "H _ B ( p ) + O ( 1 )"
+    ],
+    [
+      "formula",
+      "L ( B )"
+    ],
+    [
+      "formula",
+      "Q ( B ) = 0"
+    ],
+    [
+      "formula",
+      "g ^ +"
+    ]
+  ],
+  "sections/06d_reduction.tex": [
+    [
+      "formula",
+      "\\varepsilon _ { \\rm out } \\ge \\max _ f \\ell _ f"
+    ],
+    [
+      "formula",
+      "\\varepsilon _ { \\rm out } < 1"
+    ],
+    [
+      "formula",
+      "P = ( p _ { ij } )"
+    ],
+    [
+      "formula",
+      "W _ { ij } = p _ { ij } ( 1 - p _ { ij } )"
+    ],
+    [
+      "formula",
+      "W"
+    ],
+    [
+      "formula",
+      "S _ { R , d } = A _ R ^ T \\operatorname { diag } ( \\tau _ d ( p _ e ) ) A _ R , \\qquad S _ 2 = S _ { R , 2 } , \\qquad \\Gamma _ 2 = \\frac { e ^ { - C _ 2 / 2 } \\sqrt { 4 \\pi k } } { \\sqrt { \\pdet S _ 2 } } ."
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\mu _ W ( \\sigma ) = \\prod _ { e \\in \\sigma } W _ e / \\per W"
+    ],
+    [
+      "formula",
+      "W"
+    ],
+    [
+      "formula",
+      "F ( \\sigma ) = \\frac { \\prod _ f h _ f } { \\prod _ e ( 1 - p _ e ) ^ 2 } \\, \\mathbf 1 _ { \\{ \\sigma \\  { \\rm legal } \\} } \\prod _ { e \\in \\sigma } \\frac { ( 1 - p _ e ) ^ 2 } { h _ { D ( e ) } h _ { A ( e ) } } ."
+    ],
+    [
+      "formula",
+      "Q ( B ) e ^ { - H _ B ( p ) } = \\frac { \\per W } { \\prod _ e ( 1 - p _ e ) } \\, \\E _ { \\mu _ W } F ."
+    ],
+    [
+      "formula",
+      "Q ( B ) > 0"
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "formula",
+      "K = k"
+    ],
+    [
+      "formula",
+      "g ( B ) = \\log \\E _ { \\mu _ W } F - \\log ( \\Gamma _ 4 / \\Gamma _ 2 ) + o ( 1 ) \\qquad ( k \\longrightarrow \\infty ) ."
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\per W > 0"
+    ],
+    [
+      "formula",
+      "W _ e"
+    ],
+    [
+      "formula",
+      "\\frac { p _ e ( 1 - p _ e ) ^ 3 } { h _ { D ( e ) } h _ { A ( e ) } } = a _ i b _ j"
+    ],
+    [
+      "formula",
+      "\\prod _ i a _ i \\prod _ j b _ j"
+    ],
+    [
+      "formula",
+      "Q ( B )"
+    ],
+    [
+      "formula",
+      "Q ( B ) \\mathcal K / \\prod _ e ( 1 - p _ e ) ^ 3"
+    ],
+    [
+      "formula",
+      "Q ( B ) e ^ { - H _ B ( p ) }"
+    ],
+    [
+      "formula",
+      "\\log ( \\per W / \\prod _ e ( 1 - p _ e ) ) = \\log \\Gamma _ 2 + o ( 1 )"
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "formula",
+      "W = P \\circ ( 1 - P )"
+    ],
+    [
+      "formula",
+      "S _ 2"
+    ],
+    [
+      "formula",
+      "C _ 2"
+    ],
+    [
+      "formula",
+      "\\Gamma _ 2"
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "formula",
+      "p _ e ( 1 - p _ e ) = W _ e"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "L ( B ) = H _ B ( p ) + \\log \\Gamma _ 4"
+    ],
+    [
+      "formula",
+      "\\mu _ W"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "S _ 0 = A _ R ^ T \\operatorname { diag } ( p ) A _ R"
+    ],
+    [
+      "formula",
+      "\\iota _ e"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "0 \\le s \\le 1"
+    ],
+    [
+      "formula",
+      "S ( s ) = ( 1 - s ) S _ { R , 2 } + sS _ { R , 4 }"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "u , v"
+    ],
+    [
+      "formula",
+      "( S ( s ) ^ + ) _ { uv } = \\mathbf 1 _ { \\{ u = v \\} } + O ( k ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "\\iota _ e ^ TS ( s ) ^ + \\iota _ { e ' }"
+    ],
+    [
+      "formula",
+      "e , e '"
+    ],
+    [
+      "formula",
+      "O ( k ^ { - 1 } )"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "S _ 0 = \\begin { pmatrix } I & P \\\\ P ^ T & I \\end { pmatrix } ."
+    ],
+    [
+      "formula",
+      "\\Pi _ + , \\Pi _ -"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "( \\mathbf 1 _ R , \\mathbf 1 _ C )"
+    ],
+    [
+      "formula",
+      "( \\mathbf 1 _ R , - \\mathbf 1 _ C )"
+    ],
+    [
+      "formula",
+      "1 / ( 2 k )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "N _ 0"
+    ],
+    [
+      "formula",
+      "P - \\mathbf 1 \\mathbf 1 ^ T / k"
+    ],
+    [
+      "formula",
+      "S _ 0 = I + N _ 0"
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "formula",
+      "O ( k ^ { - 1 / 2 } )"
+    ],
+    [
+      "formula",
+      "\\sum _ jp _ { ij } ^ 2 \\le C / k"
+    ],
+    [
+      "formula",
+      "N _ 0"
+    ],
+    [
+      "formula",
+      "O ( 1 / k )"
+    ],
+    [
+      "formula",
+      "\\| ( I + N _ 0 ) ^ { - 1 } \\| _ { \\rm op } \\le 1 / \\min \\{ 1 , \\gamma \\}"
+    ],
+    [
+      "formula",
+      "( I + N _ 0 ) ^ { - 1 } = I - N _ 0 + N _ 0 ( I + N _ 0 ) ^ { - 1 } N _ 0"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "N _ 0"
+    ],
+    [
+      "formula",
+      "I"
+    ],
+    [
+      "formula",
+      "O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "S _ 0 ^ +"
+    ],
+    [
+      "formula",
+      "\\Pi _ - + \\tfrac 12 \\Pi _ +"
+    ],
+    [
+      "formula",
+      "d = 2 , 4"
+    ],
+    [
+      "formula",
+      "0 \\le \\tau _ d ( p _ e ) - p _ e = O ( p _ e ^ 2 )"
+    ],
+    [
+      "formula",
+      "S _ { R , d } - S _ 0"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "S ( s ) - S _ 0"
+    ],
+    [
+      "formula",
+      "S _ 0"
+    ],
+    [
+      "formula",
+      "\\| S ( s ) ^ + - S _ 0 ^ + \\| _ { \\rm op } \\le \\gamma ^ { - 2 } \\| S ( s ) - S _ 0 \\| _ { \\rm op } = O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\iota _ e , \\iota _ { e ' }"
+    ],
+    [
+      "texto",
+      "four"
+    ]
+  ],
+  "sections/06e_normalizers.tex": [
+    [
+      "formula",
+      "\\log ( \\Gamma _ 4 / \\Gamma _ 2 ) = O _ { C , \\eta , \\gamma } ( \\varepsilon _ { \\rm out } + k ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "a _ 2 = \\sum _ e p _ e ^ 2"
+    ],
+    [
+      "formula",
+      "\\log \\det"
+    ],
+    [
+      "formula",
+      "\\tau _ 4 ( p ) - \\tau _ 2 ( p ) = 2 p ^ 2 + O ( p ^ 3 )"
+    ],
+    [
+      "formula",
+      "\\begin { split } \\log \\frac { \\pdet S _ { R , 4 } } { \\pdet S _ { R , 2 } } & = \\int _ 0 ^ 1 \\sum _ e ( \\tau _ 4 ( p _ e ) - \\tau _ 2 ( p _ e ) ) \\, \\iota _ e ^ TS ( s ) ^ + \\iota _ e \\, ds \\\\ & = 4 a _ 2 + O ( k ^ { - 1 } ) . \\end { split }"
+    ],
+    [
+      "formula",
+      "\\iota _ e ^ TS ( s ) ^ + \\iota _ e = 2 + O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "a _ 2 = O ( 1 )"
+    ],
+    [
+      "formula",
+      "\\sum _ e p _ e ^ 3 \\le p _ { \\max } a _ 2 = O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\tau _ e = \\tau _ 4 ( p _ e )"
+    ],
+    [
+      "formula",
+      "G = S _ { R , 4 } ^ +"
+    ],
+    [
+      "formula",
+      "V = A _ R ^ T \\operatorname { diag } ( \\tau ) D , \\qquad S _ D = \\operatorname { diag } ( h ) + D ^ T \\operatorname { diag } ( \\tau ) D , \\qquad U = S _ D - V ^ TGV ."
+    ],
+    [
+      "formula",
+      "\\iota _ e"
+    ],
+    [
+      "formula",
+      "V"
+    ],
+    [
+      "formula",
+      "\\pdet S _ 4 = ( \\pdet S _ { R , 4 } ) \\det U"
+    ],
+    [
+      "formula",
+      "z"
+    ],
+    [
+      "formula",
+      "z ^ TU z"
+    ],
+    [
+      "formula",
+      "S _ 4"
+    ],
+    [
+      "formula",
+      "( y , z )"
+    ],
+    [
+      "formula",
+      "y"
+    ],
+    [
+      "formula",
+      "- GVz"
+    ],
+    [
+      "formula",
+      "U \\ge cI"
+    ],
+    [
+      "formula",
+      "c > 0"
+    ],
+    [
+      "formula",
+      "A = S _ D - I"
+    ],
+    [
+      "formula",
+      "T = V ^ TGV"
+    ],
+    [
+      "formula",
+      "U = I + A - T"
+    ],
+    [
+      "formula",
+      "A _ { ff } = \\sum _ { e \\in f } ( \\tau _ e - p _ e )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\tau _ e"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "\\| A \\| _ { \\rm op } = O ( \\varepsilon _ { \\rm out } ) , \\qquad \\operatorname { tr } A = 6 a _ 2 + O ( k ^ { - 1 } ) , \\qquad \\operatorname { tr } A ^ 2 = 2 a _ 2 + O ( k ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "O ( \\ell _ f )"
+    ],
+    [
+      "formula",
+      "\\tau _ e - p _ e = 3 p _ e ^ 2 + O ( p _ e ^ 3 )"
+    ],
+    [
+      "formula",
+      "2 \\sum _ e \\tau _ e ^ 2 = 2 a _ 2 + O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\max _ f A _ { ff } = O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\sum _ f A _ { ff } = O ( 1 )"
+    ],
+    [
+      "formula",
+      "V"
+    ],
+    [
+      "formula",
+      "\\tau _ e"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "V"
+    ],
+    [
+      "formula",
+      "2 \\max _ u \\sum _ { e \\in u } \\tau _ e = O ( 1 )"
+    ],
+    [
+      "formula",
+      "u"
+    ],
+    [
+      "formula",
+      "2 \\max _ f \\sum _ { e \\in f } \\tau _ e = O ( \\varepsilon _ { \\rm out } )"
+    ],
+    [
+      "formula",
+      "\\| V \\| _ { \\rm op } ^ 2 = O ( \\varepsilon _ { \\rm out } )"
+    ],
+    [
+      "formula",
+      "\\| V \\| _ { \\rm HS } ^ 2 = 4 \\sum _ e \\tau _ e ^ 2 = O ( 1 )"
+    ],
+    [
+      "formula",
+      "G"
+    ],
+    [
+      "formula",
+      "\\gamma ^ { - 1 }"
+    ],
+    [
+      "formula",
+      "T \\ge 0 , \\qquad \\| T \\| _ { \\rm op } = O ( \\varepsilon _ { \\rm out } ) , \\qquad \\operatorname { tr } T = O ( 1 ) , \\qquad \\operatorname { tr } T ^ 2 \\le \\| T \\| _ { \\rm op } \\operatorname { tr } T = O ( \\varepsilon _ { \\rm out } ) ."
+    ],
+    [
+      "formula",
+      "T"
+    ],
+    [
+      "formula",
+      "\\operatorname { tr } T = \\sum _ f \\sum _ { e , e ' \\in f } \\tau _ e \\tau _ { e ' } \\iota _ e ^ TG \\iota _ { e ' } = 4 a _ 2 + O ( \\varepsilon _ { \\rm out } + k ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "e = e '"
+    ],
+    [
+      "formula",
+      "2 \\sum _ e \\tau _ e ^ 2 ( 2 + O ( k ^ { - 1 } ) )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\frac { C ' } k \\sum _ f \\Bigl ( \\sum _ { e \\in f } \\tau _ e \\Bigr ) ^ 2 \\le \\frac { C ' ' } k \\sum _ f \\ell _ f ^ 2 \\le \\frac { C ' ' } k \\, \\varepsilon _ { \\rm out } \\sum _ f \\ell _ f = O ( \\varepsilon _ { \\rm out } ) ,"
+    ],
+    [
+      "formula",
+      "\\sum _ f \\ell _ f = 2 k"
+    ],
+    [
+      "formula",
+      "E = A - T"
+    ],
+    [
+      "formula",
+      "\\| E \\| _ { \\rm op } = O ( \\varepsilon _ { \\rm out } )"
+    ],
+    [
+      "formula",
+      "\\operatorname { tr } E ^ 2 = O ( 1 )"
+    ],
+    [
+      "formula",
+      "| \\operatorname { tr } ( AT ) | \\le \\| A \\| _ { \\rm op } \\operatorname { tr } T = O ( \\varepsilon _ { \\rm out } )"
+    ],
+    [
+      "formula",
+      "T"
+    ],
+    [
+      "formula",
+      "\\operatorname { tr } E = 2 a _ 2 + O ( \\varepsilon _ { \\rm out } + k ^ { - 1 } ) , \\qquad \\operatorname { tr } E ^ 2 = 2 a _ 2 + O ( \\varepsilon _ { \\rm out } + k ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "\\xi"
+    ],
+    [
+      "formula",
+      "E"
+    ],
+    [
+      "formula",
+      "1 + \\xi \\ge c"
+    ],
+    [
+      "formula",
+      "| \\log ( 1 + \\xi ) - \\xi + \\xi ^ 2 / 2 | \\le | \\xi | ^ 3 / ( 3 \\min \\{ c , 1 \\} ^ 3 )"
+    ],
+    [
+      "formula",
+      "O ( \\| E \\| _ { \\rm op } \\operatorname { tr } E ^ 2 ) = O ( \\varepsilon _ { \\rm out } )"
+    ],
+    [
+      "formula",
+      "\\log \\det U = a _ 2 + O ( \\varepsilon _ { \\rm out } + k ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "\\log ( 1 - dp ) - d \\log ( 1 - p )"
+    ],
+    [
+      "formula",
+      "- d ( d - 1 ) / 2"
+    ],
+    [
+      "formula",
+      "O ( p ^ 3 )"
+    ],
+    [
+      "formula",
+      "d = 2 , 4"
+    ],
+    [
+      "formula",
+      "C _ 4 - C _ 2 = - 5 a _ 2 + O ( k ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\sqrt { 4 \\pi k }"
+    ],
+    [
+      "formula",
+      "\\Gamma _ 4"
+    ],
+    [
+      "formula",
+      "\\Gamma _ 2"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "\\log ( \\Gamma _ 4 / \\Gamma _ 2 ) = - \\tfrac 12 \\bigl ( ( - 5 + 4 + 1 ) a _ 2 \\bigr ) + O ( \\varepsilon _ { \\rm out } + k ^ { - 1 } ) ,"
+    ]
+  ],
+  "sections/06f_exit.tex": [
+    [
+      "formula",
+      "\\max _ f \\ell _ f \\le \\varepsilon _ { \\rm out } < 1"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "g ^ + ( B ) \\le C _ 0 + \\beta ( \\varepsilon _ { \\rm out } ) k , \\qquad \\beta ( v ) = \\frac { 2 v } { 1 - v } ,"
+    ],
+    [
+      "formula",
+      "\\beta"
+    ],
+    [
+      "formula",
+      "C _ 0"
+    ],
+    [
+      "formula",
+      "0 \\le x < 1"
+    ],
+    [
+      "formula",
+      "- \\log ( 1 - x ) - x = \\int _ 0 ^ x t / ( 1 - t ) \\, dt \\le x ^ 2 / ( 2 ( 1 - x ) )"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "\\log ( 1 - \\ell _ f ) \\le - \\ell _ f"
+    ],
+    [
+      "formula",
+      "\\sum _ f \\log h _ f - 2 \\sum _ e \\log ( 1 - p _ e ) \\le - \\sum _ f \\ell _ f + 2 \\sum _ ep _ e + \\frac { \\sum _ ep _ e ^ 2 } { 1 - p _ { \\max } } = O _ C ( 1 ) ."
+    ],
+    [
+      "formula",
+      "( 1 - p _ e ) ^ 2"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "- \\log h _ f \\le \\ell _ f / ( 1 - \\ell _ f ) \\le \\varepsilon _ { \\rm out } / ( 1 - \\varepsilon _ { \\rm out } )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "F ( \\sigma ) \\le \\exp ( C ' + \\beta ( \\varepsilon _ { \\rm out } ) k )"
+    ],
+    [
+      "formula",
+      "g"
+    ],
+    [
+      "formula",
+      "Q ( B ) > 0"
+    ],
+    [
+      "formula",
+      "\\log ( \\Gamma _ 4 / \\Gamma _ 2 )"
+    ],
+    [
+      "formula",
+      "o ( 1 )"
+    ],
+    [
+      "formula",
+      "C _ 0"
+    ],
+    [
+      "formula",
+      "g ^ +"
+    ],
+    [
+      "formula",
+      "Q ( B ) = 0"
+    ]
+  ],
+  "sections/07a_geometry.tex": [
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "K ^ 2"
+    ],
+    [
+      "formula",
+      "A = ( Y _ { ij } )"
+    ],
+    [
+      "inclusion",
+      "figures/last_board"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "formula",
+      "( 9 , 1 )"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "D _ K"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "m \\ge 1"
+    ],
+    [
+      "formula",
+      "( u ) _ m = u ( u - 1 ) \\cdots ( u - m + 1 )"
+    ],
+    [
+      "formula",
+      "u \\ge m"
+    ],
+    [
+      "formula",
+      "( u ) _ m = 0"
+    ],
+    [
+      "formula",
+      "0 \\le u < m"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\nu ( F \\cap D _ K ) \\le d _ { n , K } : = \\frac { C K ^ 4 } { n } \\, e ^ { C ' / K } , \\qquad \\mu ( D _ K \\mid \\pi ) \\le \\frac { C K ^ 4 } { n }"
+    ],
+    [
+      "formula",
+      "\\pi"
+    ],
+    [
+      "formula",
+      "Cn ^ 3"
+    ],
+    [
+      "formula",
+      "n ^ 2"
+    ],
+    [
+      "formula",
+      "2 ( n - 1 )"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "s = t = 2"
+    ],
+    [
+      "formula",
+      "( K / n ) ^ 4 e ^ { C ' / K }"
+    ],
+    [
+      "formula",
+      "\\pi"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "I"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "\\pi ( I )"
+    ],
+    [
+      "formula",
+      "I \\times \\pi ( I )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "inclusion",
+      "figures/witnesses"
+    ],
+    [
+      "formula",
+      "( i , \\pi ( j ) ) , ( i ' , \\pi ( j ' ) )"
+    ],
+    [
+      "formula",
+      "| i - i ' | = | \\pi ( j ) - \\pi ( j ' ) | > 0 , \\qquad i , i ' , j , j ' \\in I ."
+    ],
+    [
+      "formula",
+      "( i , i ' , j , j ' )"
+    ],
+    [
+      "formula",
+      "I"
+    ],
+    [
+      "formula",
+      "m = | \\{ i , i ' , j , j ' \\} |"
+    ],
+    [
+      "formula",
+      "m = 2"
+    ],
+    [
+      "formula",
+      "\\{ i , i ' \\}"
+    ],
+    [
+      "formula",
+      "\\{ j , j ' \\}"
+    ],
+    [
+      "formula",
+      "\\pi"
+    ],
+    [
+      "formula",
+      "i , i '"
+    ],
+    [
+      "formula",
+      "m = 3"
+    ],
+    [
+      "formula",
+      "i , i '"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "j , j '"
+    ],
+    [
+      "formula",
+      "\\pi"
+    ],
+    [
+      "formula",
+      "| i - i ' |"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\pi ^ { - 1 }"
+    ],
+    [
+      "formula",
+      "O ( n ^ 2 )"
+    ],
+    [
+      "texto",
+      "three"
+    ],
+    [
+      "formula",
+      "m = 4"
+    ],
+    [
+      "formula",
+      "i , i ' , j"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\pi ( j ' )"
+    ],
+    [
+      "formula",
+      "O ( n ^ 3 )"
+    ],
+    [
+      "formula",
+      "I"
+    ],
+    [
+      "formula",
+      "m"
+    ],
+    [
+      "formula",
+      "( K ) _ m / ( n ) _ m \\le ( K / n ) ^ m"
+    ],
+    [
+      "formula",
+      "n \\ge m"
+    ],
+    [
+      "formula",
+      "n \\ge 4"
+    ],
+    [
+      "formula",
+      "\\mu ( D _ K \\mid \\pi ) \\le C \\left [ n ^ 2 ( K / n ) ^ 3 + n ^ 3 ( K / n ) ^ 4 \\right ] \\le CK ^ 4 / n ."
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "F \\cap D _ K \\subseteq D _ K"
+    ],
+    [
+      "formula",
+      "\\pi"
+    ],
+    [
+      "formula",
+      "\\mu ( F \\cap D _ K ) \\le CK ^ 4 / n"
+    ]
+  ],
+  "sections/07b_pivots.tex": [
+    [
+      "formula",
+      "A"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
+      "F \\cap D _ K ^ c"
+    ],
+    [
+      "formula",
+      "Q ( B _ K ) = \\per A , \\qquad L ( B _ K ) = L _ T ( A ) ,"
+    ],
+    [
+      "formula",
+      "L _ T ( A ) = H _ T ( p ) + \\log \\Gamma _ 2"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "texto",
+      "8.5"
+    ],
+    [
+      "formula",
+      "H _ T ( p ) = - \\sum _ e p _ e \\log p _ e + \\sum _ e ( 1 - p _ e ) \\log ( 1 - p _ e )"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\Gamma _ 2"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "I"
+    ],
+    [
+      "formula",
+      "| I |"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "| \\mathcal N ( I ) | \\ge | I |"
+    ],
+    [
+      "formula",
+      "\\per A > 0"
+    ],
+    [
+      "formula",
+      "D _ K ^ c"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "A"
+    ],
+    [
+      "formula",
+      "B _ K"
+    ],
+    [
+      "formula",
+      "Q ( B _ K ) = \\per A"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "h _ f = 1 - p _ e = : q _ e"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "h _ f = 1"
+    ],
+    [
+      "formula",
+      "H _ B"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\sum _ e q _ e \\log q _ e"
+    ],
+    [
+      "formula",
+      "H _ T ( p ) = - \\sum _ e p _ e \\log p _ e + \\sum _ e q _ e \\log q _ e ."
+    ],
+    [
+      "formula",
+      "p _ eq _ e = a _ ib _ j"
+    ],
+    [
+      "formula",
+      "a _ i , b _ j"
+    ],
+    [
+      "formula",
+      "H _ B = H _ T"
+    ],
+    [
+      "texto",
+      "8.1"
+    ],
+    [
+      "formula",
+      "p"
+    ],
+    [
+      "formula",
+      "q = 1 - p"
+    ],
+    [
+      "formula",
+      "\\tau _ d = pq / ( 1 - dp )"
+    ],
+    [
+      "formula",
+      "b _ d = ( 1 - dp ) / q ^ d"
+    ],
+    [
+      "formula",
+      "S _ 4"
+    ],
+    [
+      "formula",
+      "q + \\tau _ 4"
+    ],
+    [
+      "formula",
+      "r"
+    ],
+    [
+      "formula",
+      "\\tau _ 4 rr ^ T"
+    ],
+    [
+      "formula",
+      "( \\tau _ 4 - \\tau _ 4 ^ 2 / ( q + \\tau _ 4 ) ) rr ^ T"
+    ],
+    [
+      "formula",
+      "d = 3"
+    ],
+    [
+      "formula",
+      "q + \\tau _ d = \\frac { q ( 1 - ( d - 1 ) p ) } { 1 - dp } , \\qquad \\tau _ d - \\frac { \\tau _ d ^ 2 } { q + \\tau _ d } = \\tau _ { d - 1 } , \\qquad b _ d ( q + \\tau _ d ) = b _ { d - 1 } ."
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "( \\mathbf 1 _ R , - \\mathbf 1 _ C , 0 )"
+    ],
+    [
+      "formula",
+      "\\sqrt { 2 K }"
+    ],
+    [
+      "formula",
+      "\\sqrt { 2 \\pi } \\sqrt { 2 K } = \\sqrt { 4 \\pi K }"
+    ],
+    [
+      "formula",
+      "e ^ { C _ d } = \\prod _ e b _ d ( p _ e )"
+    ],
+    [
+      "formula",
+      "e ^ { C _ 4 } \\pdet S _ 4 = e ^ { C _ 2 } \\pdet S _ 2"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\Gamma _ 4 = \\Gamma _ 2"
+    ],
+    [
+      "formula",
+      "L ( B _ K ) = H _ T ( p ) + \\log \\Gamma _ 2 = L _ T ( A )"
+    ]
+  ],
+  "sections/07c_scaling.tex": [
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "formula",
+      "J _ K = \\mathbf 1 \\mathbf 1 ^ T / K"
+    ],
+    [
+      "formula",
+      "K = k"
+    ],
+    [
+      "formula",
+      "M _ 0"
+    ],
+    [
+      "formula",
+      "\\rho _ * < 1"
+    ],
+    [
+      "formula",
+      "\\label { terminal - hipotesis - matriz } 0 \\le P _ { ij } \\le M _ 0 / K , \\qquad \\| P - J _ K \\| _ { \\rm op } \\le \\rho _ * ."
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "formula",
+      "\\left ( \\begin { smallmatrix } I & P \\\\ P ^ T & I \\end { smallmatrix } \\right )"
+    ],
+    [
+      "formula",
+      "1 \\pm \\sigma _ j ( P )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\gamma > 0"
+    ],
+    [
+      "formula",
+      "1 - \\gamma"
+    ],
+    [
+      "formula",
+      "P - J _ K"
+    ],
+    [
+      "formula",
+      "W _ { ij } = P _ { ij } ( 1 - P _ { ij } )"
+    ],
+    [
+      "formula",
+      "a _ K = \\sum _ { ij } P _ { ij } ^ 2"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "\\alpha , \\beta"
+    ],
+    [
+      "formula",
+      "\\sum _ i \\alpha _ i = \\sum _ j \\beta _ j"
+    ],
+    [
+      "formula",
+      "D _ { ij } = e ^ { \\alpha _ i + \\beta _ j } W _ { ij }"
+    ],
+    [
+      "formula",
+      "\\max \\{ \\| \\alpha \\| _ \\infty , \\| \\beta \\| _ \\infty \\} = O ( K ^ { - 1 } ) , \\qquad \\sum _ i \\alpha _ i + \\sum _ j \\beta _ j = a _ K + O ( K ^ { - 1 } ) , \\qquad \\| D - P \\| _ { \\rm HS } = O ( K ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "M _ 0 , \\rho _ *"
+    ],
+    [
+      "formula",
+      "D"
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "formula",
+      "S = PP ^ T"
+    ],
+    [
+      "formula",
+      "S _ { ij } \\le M _ 0 / K"
+    ],
+    [
+      "formula",
+      "\\| S - J _ K \\| _ { \\rm op } \\le \\rho _ * ^ 2"
+    ],
+    [
+      "formula",
+      "S - J _ K = ( P - J _ K ) ( P - J _ K ) ^ T"
+    ],
+    [
+      "formula",
+      "S - J _ K"
+    ],
+    [
+      "formula",
+      "\\sum _ j S _ { ij } ^ 2 - 1 / K \\le ( M _ 0 - 1 ) / K"
+    ],
+    [
+      "formula",
+      "S ^ t - J _ K = ( S - J _ K ) ^ t"
+    ],
+    [
+      "formula",
+      "t \\ge 1"
+    ],
+    [
+      "formula",
+      "S - J _ K"
+    ],
+    [
+      "formula",
+      "( S - J _ K ) ^ { t - 1 }"
+    ],
+    [
+      "formula",
+      "\\| S ^ t - J _ K \\| _ { \\infty \\to \\infty } \\le \\sqrt { M _ 0 - 1 } \\, \\rho _ * ^ { \\, 2 ( t - 1 ) } ."
+    ],
+    [
+      "formula",
+      "\\sum _ { t \\ge 0 } S ^ t"
+    ],
+    [
+      "formula",
+      "I - S"
+    ],
+    [
+      "formula",
+      "\\infty \\to \\infty"
+    ],
+    [
+      "formula",
+      "P ^ TP"
+    ],
+    [
+      "formula",
+      "( I - P ^ TP ) ^ { - 1 }"
+    ],
+    [
+      "formula",
+      "S _ 0 = \\left ( \\begin { smallmatrix } I & P \\\\ P ^ T & I \\end { smallmatrix } \\right )"
+    ],
+    [
+      "formula",
+      "\\sum x = \\sum y"
+    ],
+    [
+      "formula",
+      "S _ 0 ( x , y ) = ( f , g )"
+    ],
+    [
+      "formula",
+      "\\sum f = \\sum g"
+    ],
+    [
+      "formula",
+      "s = K ^ { - 1 } \\sum f"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "\\begin { aligned } x & = \\tfrac 12 s \\mathbf 1 + ( I - PP ^ T ) ^ { - 1 } ( f - Pg ) , \\\\ y & = \\tfrac 12 s \\mathbf 1 + ( I - P ^ TP ) ^ { - 1 } ( g - P ^ Tf ) . \\end { aligned }"
+    ],
+    [
+      "formula",
+      "x + Py = f"
+    ],
+    [
+      "formula",
+      "y + P ^ Tx = g"
+    ],
+    [
+      "formula",
+      "s"
+    ],
+    [
+      "formula",
+      "x , y"
+    ],
+    [
+      "formula",
+      "\\| P \\| _ { \\infty \\to \\infty } = \\| P ^ T \\| _ { \\infty \\to \\infty } = 1"
+    ],
+    [
+      "formula",
+      "T"
+    ],
+    [
+      "formula",
+      "S _ 0"
+    ],
+    [
+      "formula",
+      "\\| T \\| _ { \\infty \\to \\infty } \\le C _ 1 ( M _ 0 , \\rho _ * )"
+    ],
+    [
+      "formula",
+      "\\Psi ( \\alpha , \\beta )"
+    ],
+    [
+      "formula",
+      "( e ^ { \\alpha _ i + \\beta _ j } W _ { ij } )"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "M _ 0 / K"
+    ],
+    [
+      "formula",
+      "\\sum _ jP _ { ij } ^ 2 \\le M _ 0 / K"
+    ],
+    [
+      "formula",
+      "r \\le 1"
+    ],
+    [
+      "formula",
+      "\\Psi"
+    ],
+    [
+      "formula",
+      "\\sum _ j \\big | e ^ { \\alpha _ i + \\beta _ j } W _ { ij } - P _ { ij } \\big | \\le C _ 2 ( r + K ^ { - 1 } ) \\sum _ jP _ { ij } = C _ 2 ( r + K ^ { - 1 } ) ,"
+    ],
+    [
+      "formula",
+      "i"
+    ],
+    [
+      "formula",
+      "| \\alpha _ i + \\beta _ j | \\le 2 r"
+    ],
+    [
+      "formula",
+      "P _ { ij } \\le M _ 0 / K"
+    ],
+    [
+      "formula",
+      "\\| \\Psi ' - S _ 0 \\| _ { \\infty \\to \\infty } \\le 2 C _ 2 ( r + K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "u \\mapsto u - T \\Psi ( u )"
+    ],
+    [
+      "formula",
+      "C _ 1 M _ 0 / K"
+    ],
+    [
+      "formula",
+      "r = 2 C _ 1 M _ 0 / K"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "2 C _ 1 C _ 2 ( r + K ^ { - 1 } ) \\le 1 / 2"
+    ],
+    [
+      "formula",
+      "\\Psi = 0"
+    ],
+    [
+      "formula",
+      "O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "P _ { ij } < 1"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "( 1 - P _ { ij } ) e ^ { \\alpha _ i + \\beta _ j }"
+    ],
+    [
+      "formula",
+      "D _ { ij } = P _ { ij } \\bigl ( 1 + \\alpha _ i + \\beta _ j - P _ { ij } + O ( K ^ { - 2 } ) \\bigr ) ."
+    ],
+    [
+      "formula",
+      "i , j"
+    ],
+    [
+      "formula",
+      "D"
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\sum _ i \\alpha _ i + \\sum _ j \\beta _ j - a _ K = O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "| D _ { ij } - P _ { ij } | \\le C _ 3 P _ { ij } / K"
+    ],
+    [
+      "formula",
+      "a _ K \\le M _ 0"
+    ]
+  ],
+  "sections/07d_permanent.tex": [
+    [
+      "formula",
+      "B = P - J _ K"
+    ],
+    [
+      "formula",
+      "\\log \\frac { \\per W } { \\prod _ { ij } ( 1 - P _ { ij } ) } = \\tfrac 12 \\log ( 2 \\pi K ) - \\tfrac 12 a _ K - \\tfrac 12 \\log \\det ( I - B ^ TB ) + o ( 1 ) ."
+    ],
+    [
+      "texto",
+      "3.1"
+    ],
+    [
+      "formula",
+      "D = J _ K + B _ D"
+    ],
+    [
+      "formula",
+      "\\max _ { ij } | B _ { D , ij } | \\le A _ 0 / K"
+    ],
+    [
+      "formula",
+      "\\| B _ D \\| _ { \\rm op } \\le \\rho _ 0 < 1"
+    ],
+    [
+      "formula",
+      "\\frac { K ^ K \\per D } { K ! } = ( 1 + o ( 1 ) ) \\det ( I - B _ D ^ TB _ D ) ^ { - 1 / 2 } ."
+    ],
+    [
+      "texto",
+      "2.1"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "A _ 0 , \\rho _ 0"
+    ],
+    [
+      "texto",
+      "2.1"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "\\epsilon > 0"
+    ],
+    [
+      "formula",
+      "K _ j"
+    ],
+    [
+      "formula",
+      "\\epsilon"
+    ],
+    [
+      "formula",
+      "J _ K"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "D"
+    ],
+    [
+      "formula",
+      "D _ { ij } = P _ { ij } ( 1 + O ( K ^ { - 1 } ) )"
+    ],
+    [
+      "formula",
+      "C / K"
+    ],
+    [
+      "formula",
+      "\\max | B _ { D , ij } | \\le A _ 0 / K"
+    ],
+    [
+      "formula",
+      "\\rho _ * < \\rho _ 0 < 1"
+    ],
+    [
+      "formula",
+      "\\| B _ D \\| _ { \\rm op } \\le \\| P - J _ K \\| _ { \\rm op } + \\| D - P \\| _ { \\rm HS } \\le \\rho _ 0"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "\\| B \\| _ { \\rm HS } ^ 2 = a _ K - 1 = O ( 1 )"
+    ],
+    [
+      "formula",
+      "\\| B _ D \\| _ { \\rm HS } = O ( 1 )"
+    ],
+    [
+      "formula",
+      "\\| X ^ TY \\| _ 1 \\le \\| X \\| _ { \\rm HS } \\| Y \\| _ { \\rm HS }"
+    ],
+    [
+      "formula",
+      "\\| B _ D ^ TB _ D - B ^ TB \\| _ 1 \\le ( \\| B _ D \\| _ { \\rm HS } + \\| B \\| _ { \\rm HS } ) \\| D - P \\| _ { \\rm HS } = O ( K ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "H"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "0 \\le H \\le \\rho _ 0 ^ 2 I"
+    ],
+    [
+      "formula",
+      "\\log \\det ( I - H )"
+    ],
+    [
+      "formula",
+      "U"
+    ],
+    [
+      "formula",
+      "- \\operatorname { tr } ( ( I - H ) ^ { - 1 } U )"
+    ],
+    [
+      "formula",
+      "\\| U \\| _ 1 / ( 1 - \\rho _ 0 ^ 2 )"
+    ],
+    [
+      "formula",
+      "B _ D"
+    ],
+    [
+      "formula",
+      "B"
+    ],
+    [
+      "formula",
+      "O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\exp ( \\sum \\alpha + \\sum \\beta )"
+    ],
+    [
+      "formula",
+      "\\log \\per W = \\log \\per D - a _ K + O ( K ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "\\sum _ { ij } P _ { ij } = K"
+    ],
+    [
+      "formula",
+      "\\sum _ { ij } P _ { ij } ^ 3 = O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "- \\sum _ { ij } \\log ( 1 - P _ { ij } ) = K + a _ K / 2 + O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "D"
+    ],
+    [
+      "formula",
+      "\\log ( K ! / K ^ K ) = - K + \\tfrac 12 \\log ( 2 \\pi K ) + O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "A _ 0 , \\rho _ 0"
+    ],
+    [
+      "formula",
+      "\\log \\frac { \\per W } { \\prod _ { ij } ( 1 - P _ { ij } ) } = \\log \\Gamma _ 2 + o ( 1 )"
+    ],
+    [
+      "formula",
+      "S _ 0 = \\left ( \\begin { smallmatrix } I & P \\\\ P ^ T & I \\end { smallmatrix } \\right )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "P - J _ K"
+    ],
+    [
+      "formula",
+      "( 1 - \\sigma ) ( 1 + \\sigma )"
+    ],
+    [
+      "formula",
+      "\\pdet S _ 0 = 2 \\det ( I - B ^ TB ) ."
+    ],
+    [
+      "formula",
+      "S _ 2 = S _ 0 + \\Delta"
+    ],
+    [
+      "formula",
+      "\\iota _ e"
+    ],
+    [
+      "formula",
+      "e"
+    ],
+    [
+      "formula",
+      "\\Delta = \\sum _ e \\bigl ( \\tau _ 2 ( P _ e ) - P _ e \\bigr ) \\iota _ e \\iota _ e ^ T , \\qquad \\tau _ 2 ( P _ e ) - P _ e = \\frac { P _ e ^ 2 } { 1 - 2 P _ e } ."
+    ],
+    [
+      "formula",
+      "\\Delta"
+    ],
+    [
+      "formula",
+      "\\Delta"
+    ],
+    [
+      "formula",
+      "O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "P"
+    ],
+    [
+      "formula",
+      "P _ { ij } \\le M _ 0 / K"
+    ],
+    [
+      "formula",
+      "\\| \\Delta \\| _ { \\rm op } = O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\operatorname { tr } \\Delta = 2 \\sum _ e P _ e ^ 2 / ( 1 - 2 P _ e ) = 2 a _ K + O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\| \\Delta \\| _ { \\rm HS } ^ 2 \\le \\| \\Delta \\| _ { \\rm op } \\operatorname { tr } \\Delta = O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "S _ 0"
+    ],
+    [
+      "formula",
+      "1 - \\rho _ *"
+    ],
+    [
+      "formula",
+      "X = S _ 0 ^ { - 1 / 2 } \\Delta S _ 0 ^ { - 1 / 2 }"
+    ],
+    [
+      "formula",
+      "X \\ge 0"
+    ],
+    [
+      "formula",
+      "\\| X \\| _ { \\rm HS } ^ 2 = O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "| \\log ( 1 + x ) - x | \\le x ^ 2 / 2"
+    ],
+    [
+      "formula",
+      "x \\ge 0"
+    ],
+    [
+      "formula",
+      "\\log \\pdet S _ 2 - \\log \\pdet S _ 0 = \\operatorname { tr } ( S _ 0 ^ + \\Delta ) + O ( K ^ { - 1 } ) ."
+    ],
+    [
+      "formula",
+      "\\| S _ 0 ^ + - I \\| _ { \\rm HS } = O ( 1 )"
+    ],
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "S _ 0 - I"
+    ],
+    [
+      "formula",
+      "B , B ^ T"
+    ],
+    [
+      "formula",
+      "O ( 1 )"
+    ],
+    [
+      "formula",
+      "- S _ 0 ^ { - 1 }"
+    ],
+    [
+      "formula",
+      "S _ 0 ^ { - 1 } - I"
+    ],
+    [
+      "formula",
+      "| \\operatorname { tr } ( ( S _ 0 ^ + - I ) \\Delta ) | \\le \\| S _ 0 ^ + - I \\| _ { \\rm HS } \\| \\Delta \\| _ { \\rm HS } = O ( K ^ { - 1 / 2 } ) ."
+    ],
+    [
+      "formula",
+      "\\log \\pdet S _ 2 = \\log 2 + \\log \\det ( I - B ^ TB ) + 2 a _ K + O ( K ^ { - 1 / 2 } ) ."
+    ],
+    [
+      "formula",
+      "C _ 2 = \\sum _ { ij } ( \\log ( 1 - 2 P _ { ij } ) - 2 \\log ( 1 - P _ { ij } ) ) = - a _ K + O ( K ^ { - 1 } )"
+    ],
+    [
+      "formula",
+      "\\log \\Gamma _ 2 = ( \\log ( 4 \\pi K ) - C _ 2 - \\log \\pdet S _ 2 ) / 2"
+    ],
+    [
+      "formula",
+      "o ( 1 )"
+    ]
+  ],
+  "sections/07e_exceptions.tex": [
+    [
+      "formula",
+      "\\theta _ K \\to 0"
+    ],
+    [
+      "formula",
+      "F \\cap D _ K ^ c"
+    ],
+    [
+      "formula",
+      "| \\log Q ( B _ K ) - L ( B _ K ) | \\le \\theta _ K ."
+    ],
+    [
+      "formula",
+      "G = F \\cap \\{ Q ( B _ K ) > 0 \\}"
+    ],
+    [
+      "formula",
+      "\\nu ( G ) \\ge \\nu ( F ) - d _ { n , K }"
+    ],
+    [
+      "formula",
+      "L _ K ^ { \\max } = C K \\log ( K + 1 )"
+    ],
+    [
+      "formula",
+      "\\nu ( G ) > 0"
+    ],
+    [
+      "formula",
+      "\\begin { aligned } \\E _ \\mu \\! \\left [ | g ( B _ K ) | \\mathbf 1 _ F \\right ] & \\le \\theta _ K + ( L _ K ^ { \\max } + \\log K ! ) \\, CK ^ 4 / n , \\\\ \\E _ { \\nu ( \\cdot \\mid G ) } [ g ( B _ K ) ^ - ] & \\le \\theta _ K + L _ K ^ { \\max } \\, d _ { n , K } / \\nu ( G ) . \\end { aligned }"
+    ],
+    [
+      "formula",
+      "u ^ - = \\max \\{ - u , 0 \\}"
+    ],
+    [
+      "formula",
+      "F \\cap D _ K ^ c"
+    ],
+    [
+      "formula",
+      "P = ( p _ { ij } )"
+    ],
+    [
+      "formula",
+      "A"
+    ],
+    [
+      "formula",
+      "H _ B = H _ T"
+    ],
+    [
+      "formula",
+      "L = H _ T + \\log \\Gamma _ 2"
+    ],
+    [
+      "formula",
+      "Q ( B _ K ) = \\per A > 0"
+    ],
+    [
+      "formula",
+      "W _ { ij } = a _ i b _ j"
+    ],
+    [
+      "formula",
+      "A"
+    ],
+    [
+      "formula",
+      "\\mathcal K _ T = \\prod _ i a _ i \\prod _ j b _ j"
+    ],
+    [
+      "formula",
+      "\\per W = \\mathcal K _ T \\, \\per A"
+    ],
+    [
+      "formula",
+      "P _ { ij }"
+    ],
+    [
+      "formula",
+      "P _ { ij } ( 1 - P _ { ij } ) = a _ i b _ j"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "H _ T ( P ) = - \\log \\mathcal K _ T + \\sum _ { ij } \\log ( 1 - P _ { ij } ) ."
+    ],
+    [
+      "formula",
+      "\\log \\per A - H _ T ( P ) = \\log \\frac { \\per W } { \\prod _ { ij } ( 1 - P _ { ij } ) } ."
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "F \\cap D _ K ^ c \\subseteq G"
+    ],
+    [
+      "formula",
+      "\\nu ( G ) \\ge \\nu ( F ) - d _ { n , K }"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "- \\sum _ j p _ { ij } \\log p _ { ij } \\le \\log K"
+    ],
+    [
+      "formula",
+      "0 \\le - ( 1 - y ) \\log ( 1 - y ) \\le y"
+    ],
+    [
+      "formula",
+      "0 \\le y \\le 1"
+    ],
+    [
+      "formula",
+      "\\sum _ e p _ e = K"
+    ],
+    [
+      "formula",
+      "\\sum _ f \\ell _ f = 2 K"
+    ],
+    [
+      "formula",
+      "- 3 K \\le H _ B ( p ) \\le K \\log K + 2 K ."
+    ],
+    [
+      "formula",
+      "| L ( B _ K ) | \\le L _ K ^ { \\max }"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "1 \\le Q ( B _ K ) \\le K !"
+    ],
+    [
+      "formula",
+      "| g ( B _ K ) | \\le L _ K ^ { \\max } + \\log K !"
+    ],
+    [
+      "formula",
+      "g ( B _ K ) ^ - \\le L _ K ^ { \\max }"
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "F \\cap D _ K ^ c"
+    ],
+    [
+      "formula",
+      "F \\cap D _ K"
+    ],
+    [
+      "formula",
+      "CK ^ 4 / n"
+    ],
+    [
+      "formula",
+      "\\pi"
+    ],
+    [
+      "formula",
+      "\\nu ( \\cdot \\mid G )"
+    ],
+    [
+      "formula",
+      "D _ K"
+    ],
+    [
+      "formula",
+      "\\nu ( F \\cap D _ K ) / \\nu ( G ) \\le d _ { n , K } / \\nu ( G )"
+    ],
+    [
+      "formula",
+      "D _ K ^ c"
+    ],
+    [
+      "formula",
+      "g ^ -"
+    ],
+    [
+      "formula",
+      "D _ K"
+    ]
+  ],
+  "sections/08_final_comparison.tex": [
+    [
+      "formula",
+      "a _ { \\rm mes }"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mes }"
+    ],
+    [
+      "formula",
+      "\\varepsilon"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "K _ 0"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "a _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "K \\ge K _ 0"
+    ],
+    [
+      "formula",
+      "\\tau"
+    ],
+    [
+      "formula",
+      "E _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "{ k \\ge M }"
+    ],
+    [
+      "formula",
+      "k = M"
+    ],
+    [
+      "formula",
+      "j \\ge 0"
+    ],
+    [
+      "formula",
+      "E _ j"
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "{ 2 ^ jK \\le k < 2 ^ { j + 1 } K }"
+    ],
+    [
+      "formula",
+      "K < M"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "E _ 0"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "E _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "E _ j"
+    ],
+    [
+      "formula",
+      "B _ \\tau"
+    ],
+    [
+      "formula",
+      "E _ j"
+    ],
+    [
+      "formula",
+      "\\varepsilon _ { \\rm out }"
+    ],
+    [
+      "formula",
+      "E _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "k \\ge M \\ge \\delta n"
+    ],
+    [
+      "formula",
+      "N = 2 n - 1 = O _ \\delta ( k )"
+    ],
+    [
+      "formula",
+      "\\Lambda _ { \\rm mac } = C _ \\delta n ^ { 2 / 3 }"
+    ],
+    [
+      "formula",
+      "E _ j"
+    ],
+    [
+      "formula",
+      "k"
+    ],
+    [
+      "formula",
+      "g ( B _ \\tau ) \\le C _ 0 + \\beta ( \\varepsilon _ { \\rm out } ) k \\le C _ 0 + 2 \\beta ( \\varepsilon _ { \\rm out } ) 2 ^ jK = : \\Lambda _ j ."
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\Lambda"
+    ],
+    [
+      "formula",
+      "\\Lambda _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "E _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "\\Lambda _ j"
+    ],
+    [
+      "formula",
+      "E _ j"
+    ],
+    [
+      "formula",
+      "F"
+    ],
+    [
+      "formula",
+      "g ( B _ \\tau ) \\mathbf 1 _ { F ^ c } \\le \\Lambda"
+    ],
+    [
+      "texto",
+      "2"
+    ],
+    [
+      "formula",
+      "\\Lambda"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\E _ \\mu \\Lambda - D ( \\mu ^ \\tau \\Vert \\nu ^ \\tau ) \\le \\log \\E _ \\nu e ^ \\Lambda = \\log \\! \\left ( 1 + \\nu ( E _ { \\rm mac } ) ( e ^ { \\Lambda _ { \\rm mac } } - 1 ) + \\sum _ { j \\ge 0 } \\nu ( E _ j ) ( e ^ { \\Lambda _ j } - 1 ) \\right ) ."
+    ],
+    [
+      "formula",
+      "M"
+    ],
+    [
+      "formula",
+      "\\Delta < \\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "D _ { \\max } ( M ) \\ge \\alpha M"
+    ],
+    [
+      "formula",
+      "E _ { \\rm mac } \\subseteq \\mathcal H _ M \\cup \\bigl ( G _ M ^ - \\cap \\{ D _ { \\max } ( M ) \\ge \\alpha M \\} \\bigr ) ,"
+    ],
+    [
+      "formula",
+      "{ C _ 1 \\exp ( - c _ 1 n + C _ \\delta n ^ { 2 / 3 } ) }"
+    ],
+    [
+      "formula",
+      "C _ 1 , c _ 1 > 0"
+    ],
+    [
+      "formula",
+      "\\delta"
+    ],
+    [
+      "formula",
+      "\\varrho _ { \\rm mac }"
+    ],
+    [
+      "formula",
+      "{ \\nu ( E _ j ) \\le C \\exp ( - c \\, 2 ^ jK ) }"
+    ],
+    [
+      "formula",
+      "2 ^ jK \\le M"
+    ],
+    [
+      "formula",
+      "E _ j"
+    ],
+    [
+      "formula",
+      "c > 2 \\beta ( \\varepsilon _ { \\rm out } )"
+    ],
+    [
+      "formula",
+      "0 < c ' < c - 2 \\beta ( \\varepsilon _ { \\rm out } )"
+    ],
+    [
+      "formula",
+      "\\nu ( E _ j ) ( e ^ { \\Lambda _ j } - 1 )"
+    ],
+    [
+      "formula",
+      "O ( e ^ { - c ' K } )"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "\\mu"
+    ],
+    [
+      "formula",
+      "\\limsup _ { n \\to \\infty } g ( B _ 0 ) \\le C / K + \\theta _ K + Ce ^ { - c ' K } , \\qquad \\theta _ K \\to 0 ."
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "{ ( L _ K ^ { \\max } + \\log K ! ) \\, CK ^ 4 / n }"
+    ],
+    [
+      "formula",
+      "{ O ( K ^ 5 \\log ( K + 1 ) / n ) }"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "G = F \\cap \\{ Q ( B _ K ) > 0 \\}"
+    ],
+    [
+      "formula",
+      "\\nu"
+    ],
+    [
+      "formula",
+      "s = \\nu ( G ) \\ge 1 - Ce ^ { - cK } - o _ n ( 1 ) - d _ { n , K }"
+    ],
+    [
+      "formula",
+      "d _ { n , K } \\to 0"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "L _ K ^ { \\max } d _ { n , K } / s"
+    ],
+    [
+      "formula",
+      "\\nu ( \\cdot \\mid G )"
+    ],
+    [
+      "formula",
+      "\\theta _ K"
+    ],
+    [
+      "formula",
+      "\\log ( 1 - z ) \\ge - 2 z"
+    ],
+    [
+      "formula",
+      "0 \\le z \\le 1 / 2"
+    ],
+    [
+      "formula",
+      "\\liminf _ { n \\to \\infty } g ( B _ 0 ) \\ge - C / K - \\theta _ K - Ce ^ { - cK } ."
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "B _ 0"
+    ],
+    [
+      "formula",
+      "p _ { \\max } < 1 / 4"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "L ( B _ 0 ) = \\log Q _ { \\rm pred } ( n )"
+    ],
+    [
+      "formula",
+      "g ( B _ 0 ) = \\log Q ( n ) - \\log Q _ { \\rm pred } ( n ) \\to 0"
+    ],
+    [
+      "texto",
+      "1.1"
+    ]
+  ],
+  "sections/09_discussion.tex": [
+    [
+      "texto",
+      "two"
+    ],
+    [
+      "formula",
+      "O ( 1 / n )"
+    ],
+    [
+      "texto",
+      "10.1"
+    ],
+    [
+      "formula",
+      "\\theta _ K"
+    ],
+    [
+      "formula",
+      "C / K + O _ \\delta ( 1 / n )"
+    ],
+    [
+      "formula",
+      "e ^ { - c ' K }"
+    ],
+    [
+      "formula",
+      "K ^ 5 \\log ( K + 1 ) / n"
+    ],
+    [
+      "formula",
+      "K"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "formula",
+      "C / K = O ( 1 / n )"
+    ],
+    [
+      "formula",
+      "K \\ge cn"
+    ],
+    [
+      "formula",
+      "K ^ 5 \\log ( K + 1 ) / n"
+    ],
+    [
+      "texto",
+      "one"
+    ],
+    [
+      "formula",
+      "K"
+    ]
+  ],
+  "sections/10_ai_use.tex": [],
+  "sections/references.tex": [
+    [
+      "texto",
+      "99"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "texto",
+      "2109.0808"
+    ],
+    [
+      "texto",
+      "2021"
+    ],
+    [
+      "texto",
+      "10.48550"
+    ],
+    [
+      "texto",
+      "2109.08083"
+    ],
+    [
+      "texto",
+      "10.48550"
+    ],
+    [
+      "texto",
+      "2109.08083"
+    ],
+    [
+      "texto",
+      "2006"
+    ],
+    [
+      "texto",
+      "10.1002"
+    ],
+    [
+      "texto",
+      "04717488"
+    ],
+    [
+      "texto",
+      "10.1002"
+    ],
+    [
+      "texto",
+      "04717488"
+    ],
+    [
+      "texto",
+      "2610.2375"
+    ],
+    [
+      "texto",
+      "2026"
+    ],
+    [
+      "texto",
+      "10.48550"
+    ],
+    [
+      "texto",
+      "2610.23755"
+    ],
+    [
+      "texto",
+      "10.48550"
+    ],
+    [
+      "texto",
+      "2610.23755"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "texto",
+      "2022"
+    ],
+    [
+      "texto",
+      "2022"
+    ],
+    [
+      "texto",
+      "2185"
+    ],
+    [
+      "texto",
+      "-2197"
+    ],
+    [
+      "texto",
+      "10.1137"
+    ],
+    [
+      "texto",
+      "1.9781611977073.86"
+    ],
+    [
+      "texto",
+      "10.1137"
+    ],
+    [
+      "texto",
+      "1.9781611977073.86"
+    ],
+    [
+      "texto",
+      "2105.11431"
+    ],
+    [
+      "texto",
+      "84"
+    ],
+    [
+      "texto",
+      "2014"
+    ],
+    [
+      "texto",
+      "404"
+    ],
+    [
+      "texto",
+      "-414"
+    ],
+    [
+      "texto",
+      "10.1080"
+    ],
+    [
+      "texto",
+      "00949655.2012.712122"
+    ],
+    [
+      "texto",
+      "10.1080"
+    ],
+    [
+      "texto",
+      "00949655.2012.712122"
+    ],
+    [
+      "texto",
+      "1205.5723"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "texto",
+      "2026"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "10.5281"
+    ],
+    [
+      "texto",
+      "24221374"
+    ],
+    [
+      "texto",
+      "10.5281"
+    ],
+    [
+      "texto",
+      "24221374"
+    ],
+    [
+      "texto",
+      "2026"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "10.5281"
+    ],
+    [
+      "texto",
+      "24220042"
+    ],
+    [
+      "texto",
+      "10.5281"
+    ],
+    [
+      "texto",
+      "24220042"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "texto",
+      "2026"
+    ],
+    [
+      "texto",
+      "1"
+    ],
+    [
+      "texto",
+      "10.5281"
+    ],
+    [
+      "texto",
+      "24241043"
+    ],
+    [
+      "texto",
+      "10.5281"
+    ],
+    [
+      "texto",
+      "24241043"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "texto",
+      "17"
+    ],
+    [
+      "texto",
+      "2023"
+    ],
+    [
+      "texto",
+      "1229"
+    ],
+    [
+      "texto",
+      "-1240"
+    ],
+    [
+      "texto",
+      "10.1007"
+    ],
+    [
+      "texto",
+      "1590"
+    ],
+    [
+      "texto",
+      "-022"
+    ],
+    [
+      "texto",
+      "-01933"
+    ],
+    [
+      "texto",
+      "-2"
+    ],
+    [
+      "texto",
+      "10.1007"
+    ],
+    [
+      "texto",
+      "1590"
+    ],
+    [
+      "texto",
+      "-022"
+    ],
+    [
+      "texto",
+      "-01933"
+    ],
+    [
+      "texto",
+      "-2"
+    ],
+    [
+      "formula",
+      "n"
+    ],
+    [
+      "texto",
+      "427"
+    ],
+    [
+      "texto",
+      "2023"
+    ],
+    [
+      "texto",
+      "109127"
+    ],
+    [
+      "texto",
+      "10.1016"
+    ],
+    [
+      "texto",
+      "2023.109127"
+    ],
+    [
+      "texto",
+      "10.1016"
+    ],
+    [
+      "texto",
+      "2023.109127"
+    ],
+    [
+      "texto",
+      "2107.1346"
+    ],
+    [
+      "texto",
+      "21"
+    ],
+    [
+      "texto",
+      "1967"
+    ],
+    [
+      "texto",
+      "343"
+    ],
+    [
+      "texto",
+      "-348"
+    ],
+    [
+      "texto",
+      "10.2140"
+    ],
+    [
+      "texto",
+      "1967.21.343"
+    ],
+    [
+      "texto",
+      "10.2140"
+    ],
+    [
+      "texto",
+      "1967.21.343"
+    ]
+  ]
+}

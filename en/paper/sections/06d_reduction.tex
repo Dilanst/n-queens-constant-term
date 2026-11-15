@@ -1,0 +1,96 @@
+\subsection{Reduction to an auxiliary permanent}\label{costes:permanente}
+
+Let $\varepsilon_{\rm out}\ge\max_f\ell_f$ be the common outer bound, with $\varepsilon_{\rm out}<1$.
+Let $P=(p_{ij})$, with zeros off the support, and put
+$W_{ij}=p_{ij}(1-p_{ij})$. In what follows $W$ denotes this auxiliary matrix. Write
+\[
+ S_{R,d}=A_R^T\operatorname{diag}(\tau_d(p_e))A_R,\qquad
+ S_2=S_{R,2},\qquad
+ \Gamma_2=\frac{e^{-C_2/2}\sqrt{4\pi k}}{\sqrt{\pdet S_2}} .
+\]
+A permutation on the support uses one square in each row and each column. We call it legal
+if it also uses each diagonal at most once.
+
+\begin{lema}[Reduction to a permanent]\label{coste-factor}
+Let $\mu_W(\sigma)=\prod_{e\in\sigma}W_e/\per W$ be the probability that $W$ assigns to a
+permutation on the support, and let
+\[
+ F(\sigma)=
+ \frac{\prod_f h_f}{\prod_e(1-p_e)^2}\,
+ \mathbf1_{\{\sigma\ {\rm legal}\}}
+ \prod_{e\in\sigma}\frac{(1-p_e)^2}{h_{D(e)}h_{A(e)}} .
+\]
+Then
+\[
+ Q(B)e^{-H_B(p)}
+   =\frac{\per W}{\prod_e(1-p_e)}\,\E_{\mu_W}F.
+\]
+For $Q(B)>0$, if $P$ satisfies the hypotheses \eqref{terminal-hipotesis-matriz} of
+Section~\ref{permanente} with $K=k$, then uniformly
+\[
+ g(B)=\log\E_{\mu_W}F-\log(\Gamma_4/\Gamma_2)+o(1)
+ \qquad (k\longrightarrow\infty).
+\]
+\end{lema}
+\begin{proof}
+The rows and columns of $P$ sum to one. The mass of any set of rows is contained in its
+neighboring columns, each of capacity one. Hall's theorem gives a permutation on the support,
+so $\per W>0$. On a legal permutation, multiplying $W_e$ by the fraction in the last product gives
+\[
+ \frac{p_e(1-p_e)^3}{h_{D(e)}h_{A(e)}}=a_i b_j
+\]
+by Lemma~\ref{coste-vacancias}. The product over the permutation is therefore $\prod_i a_i\prod_j b_j$,
+independently of the placement. After summing over the $Q(B)$ legal permutations, the right-hand
+side of the first equality is $Q(B)\mathcal K/\prod_e(1-p_e)^3$, which equals $Q(B)e^{-H_B(p)}$
+by the same lemma.
+
+Lemma~\ref{terminal-normalizador} gives
+$\log(\per W/\prod_e(1-p_e))=\log\Gamma_2+o(1)$ for the doubly stochastic matrix $P$ and the
+weights $W=P\circ(1-P)$. Its proof, like that of Proposition~\ref{terminal-permanente}, takes from
+this section only the definitions of $S_2$, $C_2$, and $\Gamma_2$. The weights are constructed from
+this same $P$ on the same board, so the multipliers in the weighted rook stationarity equation
+$p_e(1-p_e)=W_e$ can all be taken equal to one. Taking logarithms in the first equality and using
+$L(B)=H_B(p)+\log\Gamma_4$ proves the second. We use the law $\mu_W$ only for counting on $B$.
+\end{proof}
+
+\subsection{Terms in the ratio of normalizers}
+
+\begin{lema}[Inverses of the row and column matrices]\label{coste-inversa}
+Under the hypotheses of Lemma~\ref{coste-estatico}, write $S_0=A_R^T\operatorname{diag}(p)A_R$
+and let $\iota_e$ be the indicator vector of the row and column of $e$.
+For $0\le s\le1$ put $S(s)=(1-s)S_{R,2}+sS_{R,4}$. Uniformly in $s$ and in the physical indices
+$u,v$,
+\[
+ (S(s)^+)_{uv}=\mathbf1_{\{u=v\}}+O(k^{-1}).
+\]
+Consequently $\iota_e^TS(s)^+\iota_{e'}$ equals the number of row and column vertices shared
+by $e,e'$, up to an error of $O(k^{-1})$.
+\end{lema}
+\begin{proof}
+Since the row and column masses equal one,
+\[
+ S_0=\begin{pmatrix}I&P\\P^T&I\end{pmatrix}.
+\]
+Let $\Pi_+,\Pi_-$ denote the orthogonal projections onto the two lines spanned by
+$(\mathbf1_R,\mathbf1_C)$ and $(\mathbf1_R,-\mathbf1_C)$, respectively. Their entries have absolute
+value $1/(2k)$. The corresponding eigenvalues are two and zero. Let $N_0$ be the symmetric matrix
+with zero diagonal blocks and off-diagonal blocks $P-\mathbf1\mathbf1^T/k$ and its transpose.
+It annihilates both lines of constant vectors, and on their orthogonal complement $S_0=I+N_0$.
+The rows and columns of $P$ have Euclidean norm $O(k^{-1/2})$ by $\sum_jp_{ij}^2\le C/k$ and its
+column analogue. The same holds for the rows of $N_0$. Its entries are $O(1/k)$, and
+$\|(I+N_0)^{-1}\|_{\rm op}\le1/\min\{1,\gamma\}$. The exact identity
+\[
+ (I+N_0)^{-1}= I-N_0+N_0(I+N_0)^{-1}N_0
+\]
+and Cauchy--Schwarz applied to two rows of $N_0$ show that the entries of the inverse differ from
+those of $I$ by $O(k^{-1})$. To recover $S_0^+$, subtract $\Pi_-+\tfrac12\Pi_+$. This preserves the
+same estimate.
+
+For $d=2,4$ we have $0\le\tau_d(p_e)-p_e=O(p_e^2)$. In each row of $S_{R,d}-S_0$ the sum of
+absolute values is twice the sum of these differences along one physical line and is $O(k^{-1})$.
+By symmetry the same bound holds for the operator norm, also for $S(s)-S_0$. All these matrices
+have the same kernel and dominate $S_0$ on its orthogonal complement. On this complement, the
+resolvent identity gives
+$\|S(s)^+-S_0^+\|_{\rm op}\le\gamma^{-2}\|S(s)-S_0\|_{\rm op}=O(k^{-1})$.
+Contracting with $\iota_e,\iota_{e'}$ involves only four entries. This gives the remaining claim.
+\end{proof}

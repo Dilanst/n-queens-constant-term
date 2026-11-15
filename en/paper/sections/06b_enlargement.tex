@@ -1,0 +1,90 @@
+\subsection{The entropy comparison in the macroscopic range}
+
+\begin{lema}[Factorization at a stationary point]\label{coste-vacancias}
+Let $p$ be an interior stationary point of the Bethe entropy $H_B$, with row and column masses
+equal to one and $h_f>0$. There are positive numbers $a_i,b_j$ such that, on every available square,
+\[
+ v_e:=p_e(1-p_e)^3=a_i b_j h_{D(e)}h_{A(e)} .
+\]
+Suppose also that $p_{\max}\le C/k$. Then for sufficiently large $k$, writing
+$\mathcal K=\prod_i a_i\prod_j b_j\prod_f h_f$ and $W=\sum_e v_e$, we have
+\[
+ W=k+O_C(1),\qquad H_B(p)=-\log\mathcal K+3\sum_e\log(1-p_e)
+             =-\log\mathcal K-3k+O_C(1).
+\]
+\end{lema}
+\begin{proof}
+The derivative of $H_B$ with respect to $p_e$ is
+$-\log p_e-3\log(1-p_e)+\log h_{D(e)}+\log h_{A(e)}-2$.
+At the interior stationary point, the gradient has zero inner product with every variation
+preserving the row and column sums. By orthogonality to the kernel of the map giving these sums,
+the derivative is the sum of a row multiplier and a column multiplier. Exponentiating and
+absorbing the constant gives the factorization. Taking logarithms, multiplying by $p_e$, and
+summing over the squares, we obtain $\sum_i\log a_i+\sum_j\log b_j$ from the two sets of
+multipliers and $\sum_f\ell_f\log h_f$ from the diagonals.
+The identity for $H_B$ follows from $\ell_f+h_f=1$. Moreover, $0\le p_e-v_e\le3p_e^2$ and
+$|\log(1-p_e)+p_e|\le p_e^2/(1-p_{\max})$. Both bounds can be summed because $\sum_e p_e^2\le C$.
+\end{proof}
+
+\begin{lema}[Comparison with augmented placements]\label{coste-comparacion}
+Suppose that $Q(B)>0$ and that $n$ is the order of the initial board. Put $N=2n-1$ and $H=N-k$.
+There is a comparison law, uniform on ordered augmented placements with $k$ real pieces and $H$
+virtual pieces, for which
+\[
+ \log Q(B)\le
+ \E\sum_{s=1}^N\log W_{T_s}(s)
+       -\log\mathcal K-\log k!-4\log H! .
+\]
+Here $T_s$ is the type of the piece in position $s$, and $W_{T_s}(s)$ is the available mass
+of that type just before the piece is revealed.
+\end{lema}
+\begin{proof}
+We adapt the count of augmented placements in \cite[Theorem~3.6]{ultimas} to the support of $B$.
+Take $N$ vertices in each of the four families. In the first two families, retain the $k$ physical
+rows and $k$ physical columns of $B$ and add $H$ dummy vertices to each family. In each diagonal
+family, use the $N$ labels of the initial board. A residual diagonal retains its physical line.
+In place of a diagonal already occupied, put a dummy vertex with the same label, incident to no
+residual square. A line with no available squares also has real degree zero. In both cases the
+residual mass is zero and we extend the vacancy to this label by setting $h_f=1$. This extension enters
+only the auxiliary count. It preserves the stationarity identity on every available square and
+the value of $\mathcal K$.
+
+The real pieces are the available squares, with weights $v_e$. For the virtual pieces we assign
+vertex weight zero to physical rows and columns, one to dummy rows and columns, and $h_f$ to
+diagonal labels. A virtual piece consists of one vertex from each family and has weight equal to
+the product of the four vertex weights. We use only pieces with positive weight. In a diagonal
+family each square contributes its mass exactly once. Hence
+\[
+ \sum_{f\text{ in one diagonal family}}h_f=N-\sum_e p_e=H.
+\]
+The vertex weights sum to $H$ in each of the other two families as well. Thus the initial virtual
+mass is $H^4$, even if some diagonals were occupied before reaching $B$.
+
+A complete real placement leaves $H$ vertices uncovered in each family. To complete it, use the
+$H$ dummy rows as indices and independently choose three bijections from them to the uncovered
+vertices of the other three families. This gives exactly $(H!)^3$ virtual completions, all of
+positive weight since $h_f\ge\eta$. Conversely, in an augmented placement covering every vertex,
+real pieces must cover the physical rows and virtual pieces must cover the dummy rows. The real
+pieces thus form one of the $Q(B)$ completions of $B$. Each augmented placement admits $N!$
+orderings. In every ordering the product of the weights of all the pieces is $\mathcal K$.
+Indeed, the real pieces contribute each $a_i$ and $b_j$ once, and the real and virtual pieces
+together use the factor $h_f$ of each diagonal label once.
+
+As in~\cite[Section~3]{ultimas}, let $\mathbb P$ be the comparison law, uniform on these successful
+histories, and let $\mathbb Q$ be the following reference process. First choose a uniformly random
+color word with $k$ real and $H$ virtual colors. At each position choose an available piece of the
+prescribed type with probability proportional to its weight. A piece is available if all its
+vertices are still uncovered. If the mass of that type is zero, the process terminates in the
+failure state, which retains the corresponding probability. For a successful history $\omega$,
+\[
+ \mathbb P(\omega)=\frac{1}{Q(B)(H!)^3N!},\qquad
+ \mathbb Q(\omega)=\frac{k!H!}{N!}\,
+             \frac{\mathcal K}{\prod_{s=1}^N W_{T_s}(s)} .
+\]
+In particular, $\mathbb Q(\omega)>0$. Jensen's inequality for the logarithm gives
+\[
+ \E_{\mathbb P}\log(\mathbb Q/\mathbb P)\le\log\sum_{\omega:\mathbb P(\omega)>0}\mathbb Q(\omega)\le0 .
+\]
+Substituting the two probabilities gives the asserted inequality. The expectation is under
+$\mathbb P$ on the single board $B$ whose completions we are counting.
+\end{proof}

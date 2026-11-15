@@ -1,0 +1,25 @@
+{
+  "determinantes_y_escalado": [
+    {
+      "K": 5,
+      "determinante": "3721/6400"
+    },
+    {
+      "K": 6,
+      "determinante": "5928216/9765625"
+    },
+    {
+      "K": 7,
+      "determinante": "16248961/26040609"
+    }
+  ],
+  "generador": {
+    "casillas_comprobadas": 2819,
+    "residuales": 554
+  },
+  "multiplicidades_virtuales": [
+    1,
+    8,
+    216
+  ]
+}

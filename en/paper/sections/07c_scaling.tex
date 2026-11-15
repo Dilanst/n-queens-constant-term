@@ -1,0 +1,83 @@
+\subsection{Diffusion, scaling, and the determinant}\label{permanente}
+
+In this subsection $K$ is the order of a doubly stochastic matrix $P$, and
+$J_K=\mathbf1\mathbf1^T/K$. The estimates also apply with $K=k$ in Section~\ref{costes}.
+The outer bounds give constants $M_0$ and $\rho_*<1$ such that
+\begin{equation}\label{terminal-hipotesis-matriz}
+ 0\le P_{ij}\le M_0/K,\qquad \|P-J_K\|_{\rm op}\le\rho_* .
+\end{equation}
+Indeed, for a doubly stochastic matrix, the row and column block with weights $P$ is
+$\left(\begin{smallmatrix}I&P\\P^T&I\end{smallmatrix}\right)$, with eigenvalues $1\pm\sigma_j(P)$.
+The two lines of constant vectors correspond to the singular value one. A gap $\gamma>0$ off
+the zero mode implies that the remaining singular values are at most $1-\gamma$, which is
+precisely the required bound for $P-J_K$.
+
+\begin{lema}[Doubly stochastic scaling]\label{terminal-escalado}
+Suppose \eqref{terminal-hipotesis-matriz} holds, and write
+$W_{ij}=P_{ij}(1-P_{ij})$ and $a_K=\sum_{ij}P_{ij}^2$. For all sufficiently large $K$, there are
+vectors $\alpha,\beta$ with $\sum_i\alpha_i=\sum_j\beta_j$ such that the matrix with entries
+$D_{ij}=e^{\alpha_i+\beta_j}W_{ij}$ is doubly stochastic. Moreover,
+\[
+ \max\{\|\alpha\|_\infty,\|\beta\|_\infty\}=O(K^{-1}),\qquad
+ \sum_i\alpha_i+\sum_j\beta_j=a_K+O(K^{-1}),\qquad
+ \|D-P\|_{\rm HS}=O(K^{-1}).
+\]
+The constants depend only on $M_0,\rho_*$. The support of $D$ coincides with that of $P$.
+\end{lema}
+\begin{proof}
+To control the accuracy of the scaling, treated in general in \cite{sk}, consider $S=PP^T$.
+It is symmetric and doubly stochastic, with $S_{ij}\le M_0/K$ and $\|S-J_K\|_{\rm op}\le\rho_*^2$,
+since $S-J_K=(P-J_K)(P-J_K)^T$. Each row of $S-J_K$ has squared Euclidean norm
+$\sum_j S_{ij}^2-1/K\le (M_0-1)/K$. Since $S^t-J_K=(S-J_K)^t$ for every integer $t\ge1$,
+multiplying a row of $S-J_K$ by $(S-J_K)^{t-1}$ and passing from the Euclidean norm to the sum
+of absolute values gives
+\[
+ \|S^t-J_K\|_{\infty\to\infty}
+ \le \sqrt{M_0-1}\,\rho_*^{\,2(t-1)} .
+\]
+On mean-zero vectors, the series $\sum_{t\ge0}S^t$ is therefore the inverse of $I-S$, with
+uniformly bounded $\infty\to\infty$ norm. The same proof with $P^TP$ gives the bound for
+$(I-P^TP)^{-1}$ on this subspace.
+
+Put $S_0=\left(\begin{smallmatrix}I&P\\P^T&I\end{smallmatrix}\right)$.
+On the subspace $\sum x=\sum y$, consider the equation $S_0(x,y)=(f,g)$ for $\sum f=\sum g$.
+If $s=K^{-1}\sum f$, elimination in the two blocks gives
+\[
+ \begin{aligned}
+ x&=\tfrac12s\mathbf1+(I-PP^T)^{-1}(f-Pg),\\
+ y&=\tfrac12s\mathbf1+(I-P^TP)^{-1}(g-P^Tf).
+ \end{aligned}
+\]
+The arguments of both inverses have mean zero. The constant part comes from the fact that $x+Py=f$ and
+$y+P^Tx=g$ both have mean $s$ and the means of $x,y$ agree. Since
+$\|P\|_{\infty\to\infty}=\|P^T\|_{\infty\to\infty}=1$, the inverse $T$ of $S_0$ in this gauge
+satisfies $\|T\|_{\infty\to\infty}\le C_1(M_0,\rho_*)$.
+
+Let $\Psi(\alpha,\beta)$ be the vector of row and column sums of
+$(e^{\alpha_i+\beta_j}W_{ij})$ minus one in each coordinate. The sums of its two blocks are
+equal. At zero the defect is at most $M_0/K$ by $\sum_jP_{ij}^2\le M_0/K$ and its column
+analogue. On a ball of radius $r\le1$, the diagonal blocks of the derivative of $\Psi$
+contain the row and column sums of the matrix scaled at the point in question. The off-diagonal
+blocks are that matrix and its transpose. In each row and column we have
+\[
+ \sum_j\big|e^{\alpha_i+\beta_j}W_{ij}-P_{ij}\big|
+ \le C_2(r+K^{-1})\sum_jP_{ij}=C_2(r+K^{-1}),
+\]
+with the same inequality on summing over $i$. Here we used $|\alpha_i+\beta_j|\le2r$ and
+$P_{ij}\le M_0/K$. Thus $\|\Psi'-S_0\|_{\infty\to\infty}\le 2C_2(r+K^{-1})$.
+
+With the gauge fixed, the map $u\mapsto u-T\Psi(u)$ moves the origin by at most $C_1M_0/K$.
+Take the closed ball of radius $r=2C_1M_0/K$. For large $K$ the derivative of the map has norm
+at most $2C_1C_2(r+K^{-1})\le1/2$. The map therefore preserves this ball and is a contraction.
+Its fixed point solves $\Psi=0$ and has norm $O(K^{-1})$. Since $P_{ij}<1$ for large $K$, the
+factor $(1-P_{ij})e^{\alpha_i+\beta_j}$ is positive and preserves the support.
+
+Uniformly in the indices, we now have
+\[
+ D_{ij}=P_{ij}\bigl(1+\alpha_i+\beta_j-P_{ij}+O(K^{-2})\bigr).
+\]
+Sum over $i,j$. Since both $D$ and $P$ have total mass $K$ and the rows and columns of $P$ sum
+to one, we obtain $\sum_i\alpha_i+\sum_j\beta_j-a_K=O(K^{-1})$. Also,
+$|D_{ij}-P_{ij}|\le C_3P_{ij}/K$ and $a_K\le M_0$. Squaring and summing proves the claim in
+Hilbert--Schmidt norm.
+\end{proof}

@@ -1,0 +1,105 @@
+\begin{proposicion}[Permanent of the auxiliary matrix]\label{terminal-permanente}
+For the matrices of Lemma~\ref{terminal-escalado}, put $B=P-J_K$. Uniformly under
+\eqref{terminal-hipotesis-matriz}, we have
+\[
+ \log\frac{\per W}{\prod_{ij}(1-P_{ij})}
+ =\tfrac12\log(2\pi K)-\tfrac12a_K
+   -\tfrac12\log\det(I-B^TB)+o(1).
+\]
+\end{proposicion}
+\begin{proof}
+We use McCullagh's estimate~\cite{mccullagh} in the form of \cite[Proposition~3.1]{dw}. If
+$D=J_K+B_D$ is doubly stochastic, $\max_{ij}|B_{D,ij}|\le A_0/K$, and $\|B_D\|_{\rm op}\le\rho_0<1$,
+then
+\[
+ \frac{K^K\per D}{K!}=(1+o(1))\det(I-B_D^TB_D)^{-1/2}.
+\]
+In \cite[Section~2.1]{dw} a doubly stochastic matrix is nonnegative with row and column sums
+equal to one, so zero entries are allowed. Divoux and Wang prove the estimate with a relative
+error tending to zero uniformly over the class of matrices with fixed bounds $A_0,\rho_0$
+\cite[Remark~2.1]{dw}, which is the form we need. Uniformity also follows from the statement
+for sequences with one matrix of each order. If uniformity failed, there would be an $\epsilon>0$
+and increasing orders $K_j$ with matrices in this class having relative error at least $\epsilon$.
+Taking $J_K$ at each remaining order $K$ would give a sequence with the same two bounds for which
+the cited proposition would fail.
+
+Let $D$ be the scaling from Lemma~\ref{terminal-escalado}. Since $D_{ij}=P_{ij}(1+O(K^{-1}))$,
+its entries are bounded by $C/K$, and $\max|B_{D,ij}|\le A_0/K$. Fix $\rho_*<\rho_0<1$. Then
+\[
+ \|B_D\|_{\rm op}\le\|P-J_K\|_{\rm op}+\|D-P\|_{\rm HS}
+       \le\rho_0
+\]
+uniformly for all sufficiently large $K$. Moreover, $\|B\|_{\rm HS}^2=a_K-1=O(1)$ and
+$\|B_D\|_{\rm HS}=O(1)$. Using $\|X^TY\|_1\le\|X\|_{\rm HS}\|Y\|_{\rm HS}$ for the trace norm gives
+\[
+ \|B_D^TB_D-B^TB\|_1
+ \le(\|B_D\|_{\rm HS}+\|B\|_{\rm HS})\|D-P\|_{\rm HS}
+ =O(K^{-1}).
+\]
+For every point $H$ on the segment between the two Gram matrices, $0\le H\le\rho_0^2I$. The
+derivative of $\log\det(I-H)$ in direction $U$ is $-\operatorname{tr}((I-H)^{-1}U)$, whose
+absolute value is at most $\|U\|_1/(1-\rho_0^2)$. Integrating along the segment allows us to
+replace $B_D$ by $B$ in the logarithm of the determinant, with error $O(K^{-1})$.
+
+Scaling multiplies the product for each permutation by the same factor $\exp(\sum\alpha+\sum\beta)$.
+Hence
+\[
+ \log\per W=\log\per D-a_K+O(K^{-1}).
+\]
+Finally, $\sum_{ij}P_{ij}=K$, $\sum_{ij}P_{ij}^3=O(K^{-1})$, and Taylor's formula gives
+$-\sum_{ij}\log(1-P_{ij})=K+a_K/2+O(K^{-1})$. Applying the cited estimate to $D$ and using
+$\log(K!/K^K)=-K+\tfrac12\log(2\pi K)+O(K^{-1})$ gives the asserted formula. All perturbations
+and the choice of $A_0,\rho_0$ are uniform for the parameters in \eqref{terminal-hipotesis-matriz}.
+\end{proof}
+
+\begin{lema}[Identification with the rook factor]\label{terminal-normalizador}
+With the weights of Lemma~\ref{terminal-escalado},
+\[
+ \log\frac{\per W}{\prod_{ij}(1-P_{ij})}=\log\Gamma_2+o(1)
+\]
+uniformly under \eqref{terminal-hipotesis-matriz}.
+\end{lema}
+\begin{proof}
+For $S_0=\left(\begin{smallmatrix}I&P\\P^T&I\end{smallmatrix}\right)$, the eigenvalues on the
+two lines of constant vectors are two and zero. On their orthogonal complement the singular values
+of $P-J_K$ give the factors $(1-\sigma)(1+\sigma)$. Hence
+\[
+ \pdet S_0=2\det(I-B^TB).
+\]
+The rook incidence block is $S_2=S_0+\Delta$, where, writing $\iota_e$ for the indicator vector
+of the row and column of square $e$, we have
+\[
+ \Delta=\sum_e\bigl(\tau_2(P_e)-P_e\bigr)\iota_e\iota_e^T,\qquad
+ \tau_2(P_e)-P_e=\frac{P_e^2}{1-2P_e}.
+\]
+The matrix $\Delta$ is positive semidefinite and annihilates the zero mode. The absolute row sums
+of $\Delta$ are $O(K^{-1})$ because $P$ is doubly stochastic and $P_{ij}\le M_0/K$, so
+$\|\Delta\|_{\rm op}=O(K^{-1})$. Moreover,
+$\operatorname{tr}\Delta=2\sum_e P_e^2/(1-2P_e)=2a_K+O(K^{-1})$ and
+$\|\Delta\|_{\rm HS}^2\le\|\Delta\|_{\rm op}\operatorname{tr}\Delta=O(K^{-1})$.
+
+On the orthogonal complement of its zero mode, $S_0$ has a gap of at least $1-\rho_*$. On this
+subspace put $X=S_0^{-1/2}\Delta S_0^{-1/2}$. We have $X\ge0$ and $\|X\|_{\rm HS}^2=O(K^{-1})$.
+Applying $|\log(1+x)-x|\le x^2/2$ for $x\ge0$ gives
+\[
+ \log\pdet S_2-\log\pdet S_0
+ =\operatorname{tr}(S_0^+\Delta)+O(K^{-1}).
+\]
+To estimate the trace, observe that $\|S_0^+-I\|_{\rm HS}=O(1)$. This is immediate on the
+two lines of constant vectors. On their orthogonal complement, $S_0-I$ has off-diagonal blocks
+$B,B^T$ and hence Hilbert--Schmidt norm $O(1)$. Multiplication by the bounded inverse $-S_0^{-1}$
+gives $S_0^{-1}-I$ on that subspace. The Cauchy--Schwarz inequality for the trace now gives
+\[
+ |\operatorname{tr}((S_0^+-I)\Delta)|\le
+ \|S_0^+-I\|_{\rm HS}\|\Delta\|_{\rm HS}=O(K^{-1/2}).
+\]
+In conclusion,
+\[
+ \log\pdet S_2=\log 2+\log\det(I-B^TB)+2a_K+O(K^{-1/2}).
+\]
+The local term is
+$C_2=\sum_{ij}(\log(1-2P_{ij})-2\log(1-P_{ij}))=-a_K+O(K^{-1})$.
+Substituting both expansions into
+$\log\Gamma_2=(\log(4\pi K)-C_2-\log\pdet S_2)/2$
+recovers the right-hand side of Proposition~\ref{terminal-permanente} up to a uniform $o(1)$ error.
+\end{proof}

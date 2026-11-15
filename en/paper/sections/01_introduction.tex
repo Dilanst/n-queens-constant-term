@@ -1,0 +1,73 @@
+\section{Introduction}
+The $n$-queens problem asks in how many ways $n$ queens can be placed on an $n\times n$ board so
+that no two attack one another. We denote this number by $Q(n)$ and count solutions related by
+symmetry separately. Reading the column of each queen in row order identifies each solution with a
+permutation. The diagonal constraints determine which of the $n!$ permutations qualify.
+
+Simkin~\cite[Theorem~1.1]{simkin} obtained the leading order of $\log Q(n)$ from a variational
+problem. Luria and Simkin~\cite{ls} and Bowtell and Keevash~\cite{bk} studied the count by
+combinatorial methods. Nobel, Agrawal and Boyd~\cite{nab} bounded the first-order constant. A
+sharper estimate is needed to determine the multiplicative factor that remains in the count after
+the leading term is extracted.
+
+Let $Q_{\rm pred}(n)$ be the canonical predictor of~\cite{pred} and write
+$R_Q(n)=\log Q(n)-\log Q_{\rm pred}(n)$. The following result establishes that $R_Q(n)\to0$, the
+qualitative form of Conjecture~10.1 of~\cite{pred}.
+\begin{teorema}[Constant term of the count]\label{princ}
+On the ordinary board, as $n\to\infty$,
+\[
+ \log Q(n)-\log n!-n\Phi\longrightarrow
+ \tfrac12\log2-\tfrac12-\tfrac32 I_2-\tfrac12\log{\det}_2(I+J)=C_{\rm pred}.
+\]
+\end{teorema}
+Here $\nu_1$ is the optimal profile of mass one from~\cite{perfil}, $\Phi=s_1+1$ with $s_1$ its
+entropy, and $I_2=\int_{[0,1]^2}\nu_1^2$. The operator $J$ is given by (D3.6) of~\cite{pred}, and
+its regularized determinant is described in (D4.1) there. An error tending to zero in the logarithm
+is equivalent to a ratio of counts tending to one. The quantitative estimate $|R_Q(n)|\le C/n$ in
+the same conjecture remains open.
+
+Section~9 of~\cite{pred} gives the estimate $C_{\rm pred}\approx0.9401$, and direct evaluation of
+the formula gives $0.940144$. Neither value has a certified error bound. With the reference value
+$\Phi_0=1-1.944001$ from that section, the exact counts for $16\le n\le27$ give values of
+$\log Q(n)-\log n!-n\Phi_0$ between $0.913$ and $0.941$ \cite[Table~2]{pred}. Using numerical
+values of the predictor, the same section gives $R_Q(20)\approx0.0208$ and $R_Q(27)\approx0.0119$.
+These values are consistent with Theorem~\ref{princ}, which establishes a limit without giving a
+rate of convergence.
+
+Section~10 of~\cite{pred} identifies three questions. The first concerns the regularity of the
+residual boards along the random process. The second concerns the effect of the last few rows, when
+few insertion choices remain. The third is how to combine the errors from successive insertions
+when comparing the two counts.
+
+\paragraph{Outline of the proof.}
+Write $g(B)=\log Q(B)-L(B)$, where $L(B)$ is the predictor for a residual board $B$
+(Section~\ref{leyes}). We must prove that $g(B_0)\to0$ on the initial board $B_0$. We compare two
+laws on histories that insert one queen per row in a uniform row order. The uniform law
+$\mu$ reveals a uniform solution. The adaptive law $\nu$ chooses each square $e$ with probability
+proportional to $\exp L(B+e)$, the prediction for the resulting board. Section~\ref{historias}
+expresses $g(B_0)$ in terms of the two laws on a stopped history: an identity involving the relative
+entropy of $\mu$ with respect to $\nu$ and a lower bound under $\nu$. The accumulated term in these
+formulas is small by the consistency result of~\cite{pred}.
+
+Fix a small $\delta>0$ and a large integer $K$, and set $M=\lceil\delta n\rceil$.
+Section~\ref{meso:constantes} specifies the order in which the constants are chosen.
+Sections~\ref{macro} and~\ref{meso} prove that, under $\nu$, the boards in the history are regular
+(Definition~\ref{def:regular}) until $K$ empty rows remain, except with probability
+$O(e^{-cK})+o(1)$: first while at least $M$ rows remain, and then between $M$ and $K$.
+Section~\ref{costes} bounds $g$ from above on the first board that ceases to be regular. Let $B_K$
+be the board with $K$ empty rows (the subscript counts empty rows rather than steps), and let $F$
+be the permanence event: all boards up to and including $B_K$ are regular. Let $D_K$ be the event
+that two empty crossings of $B_K$ share a diagonal. Section~\ref{terminal} proves that
+$\nu(F\cap D_K)=O(K^4/n)$ and that, under $\mu$, the uniform row order gives
+$\mu(D_K\mid\pi)=O(K^4/n)$ for every fixed solution $\pi$. On $F\cap D_K^c$ the count is a
+permanent and $|g(B_K)|\le\theta_K$, with $\theta_K\to0$ as $K\to\infty$. In Section~\ref{balance}
+we first let $n\to\infty$ with $\delta$ and $K$ fixed, and then let $K\to\infty$.
+
+Theorems~1.1--1.3, Proposition~5.2 and Theorem~7.7 of~\cite{perfil} give the continuous profile
+and its bounds. The entropy comparison in Theorem~3.6 of~\cite{ultimas} motivates the argument in
+Section~\ref{costes}, where we verify the estimates on the support of each residual board. We use
+Theorems~7.1 and~8.1 and Corollary~7.2 of~\cite{pred} for insertions, and Theorems~1.1 and~5.7 of
+that work for the constant. The only asymptotic estimate for permanents that we use is that of
+McCullagh~\cite{mccullagh}, in the uniform form proved by Divoux and
+Wang~\cite[Proposition~3.1 and Remark~2.1]{dw}. In Section~\ref{permanente} we verify its
+hypotheses after scaling the matrix of the residual board.

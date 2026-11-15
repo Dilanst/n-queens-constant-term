@@ -1,0 +1,18 @@
+\section{Discussion}
+The reduction to a permanent takes place after the last rows are chosen. The uniform order gives
+the geometric bound even for a fixed solution. Under the adaptive law, the same phenomenon follows
+from the survival probabilities of prescribed rows and columns. This distinction explains why the
+two bounds on the count can use the same last board even though their histories have different
+distributions.
+
+The permanent estimate is uniform over a class with fixed diffusion and gap bounds. Its remainder
+tends to zero as the size of the last board grows. The order of limits in Section~\ref{balance}
+allows us to use precisely this information. The $O(1/n)$ rate in Conjecture~10.1 of~\cite{pred}
+remains open. In addition to the permanent error $\theta_K$, the final comparison involves the bound
+$C/K+O_\delta(1/n)$ from cumulative consistency (Corollary~\ref{hist:consistencia}), the cost of exits
+by band, of order $e^{-c'K}$, and the exceptional contribution of the last board, of order
+$K^5\log(K+1)/n$ (Proposition~\ref{terminal-error}). With these bounds, no choice of $K$ as a
+function of $n$ gives the rate: $C/K=O(1/n)$ requires $K\ge cn$, in which case
+$K^5\log(K+1)/n$ does not tend to zero. To obtain the rate by this method one would have to improve
+these bounds and control the permanent error when choosing the floor $K$, or justify cancellations
+among the contributions.

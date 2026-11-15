@@ -1,0 +1,28 @@
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=.53cm,y=.53cm]
+ \foreach \tipo/\dx/\uno/\dos in {3/0/2/1,4/8.3/6/5}{
+  \begin{scope}[shift={(\dx,0)}]
+   \bcuadricula{6}
+   \draw[red!75!black,line width=1.3pt] ({\uno-.5},5.5) -- ({\dos-.5},4.5);
+   \bmarca{6}{1}{\uno}
+   \bmarca{6}{2}{\dos}
+   \draw[red!75!black,line width=1.2pt] ({\uno-.5},5.5) circle[radius=.45];
+   \draw[red!75!black,line width=1.2pt] ({\dos-.5},4.5) circle[radius=.45];
+   \foreach \rr/\cc in {1/2,2/4,3/6,4/1,5/3,6/5}{\breina{6}{\rr}{\cc}}
+   \ifnum\tipo=3
+    \node at (3,-1.1) {Three labels};
+   \else
+    \node at (3,-1.1) {Four labels};
+   \fi
+  \end{scope}
+ }
+\end{tikzpicture}
+\caption{Two witnesses on the board of order six for the solution $\pi=(2,4,6,1,3,5)$. Rows
+are numbered from one, top to bottom, and columns from one, left to right. The crowns are the
+queens of $\pi$. Two circles joined by a line mark the squares $(i,\pi(j))$ and $(i',\pi(j'))$
+that share a diagonal. On the left, $(i,i',j,j')=(1,2,1,4)$ marks $(1,2)$ and $(2,1)$ and uses
+three distinct labels. On the right, $(1,2,3,6)$ marks $(1,6)$ and $(2,5)$ and uses four. With
+only two labels we would have $\{i,i'\}=\{j,j'\}$ and $|i-i'|=|\pi(i)-\pi(i')|>0$, in which
+case two queens of the solution would attack one another.}\label{fig:testigos}
+\end{figure}

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please use the following information to cite this verification software."
+type: software
+title: "The Constant Term of the n-Queens Problem: Exact Verification"
+authors:
+  - family-names: "Mejia"
+    given-names: "Dilan Steven"
+version: "0.3.4"
+license: MIT
+references:
+  - type: article
+    title: "The Constant Term of the n-Queens Problem"
+    authors:
+      - family-names: "Mejia"
+        given-names: "Dilan Steven"
+    year: 2026
+    doi: "10.5281/zenodo.24248206"
+    url: "https://github.com/Dilanst/n-queens-constant-term"
+  - type: article
+    title: "The Canonical Predictor for the n-Queens Problem: Constant Term and Consistency"
+    authors:
+      - family-names: "Mejia"
+        given-names: "Dilan Steven"
+    year: 2026
+    doi: "10.5281/zenodo.24241043"
+    url: "https://github.com/Dilanst/n-queens-canonical-predictor"

@@ -1,0 +1,19 @@
+To identify the global maximizer, let $d(a,b)=a\log(a/b)-a+b$, extended continuously to $a=0$.
+For any feasible competitor $s$, subtract the linear term of the entropy at $p$. This term vanishes
+by stationarity and equality of the row and column sums. The entropy difference between $s$ and $p$
+is
+\[
+ -\sum_e\bigl[d(s_e,p_e)-3d(1-s_e,1-p_e)\bigr]
+ -\sum_f d(h_f(s),h_f(p)).
+\]
+For $0<b\le e^{-4}$, the function $\tilde d_b(a)=d(a,b)-3d(1-a,1-b)$ satisfies
+\[
+ \tilde d_b(b)=\tilde d_b'(b)=0,\qquad
+ \tilde d_b''(a)=\frac{1-4a}{a(1-a)},\qquad
+ \tilde d_b(1)=\log(1/b)-4+4b>0 .
+\]
+It is strictly convex up to $1/4$ and hence positive there except at $b$. On $[1/4,1]$, concavity
+places it above the chord joining two positive values. For large $n$,
+$p_e=O_\delta(1/k)\le e^{-4}$. Each square where $s_e\ne p_e$ gives a strict loss, and each vacancy
+divergence is nonnegative. Thus $p$ is the unique maximizer.
+\end{proof}

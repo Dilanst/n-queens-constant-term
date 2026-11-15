@@ -1,0 +1,63 @@
+\section{The last board}\label{terminal}
+
+\subsection{Geometry under the two laws}
+
+When $K$ rows and $K$ columns are empty, the residual board is obtained from their $K^2$ empty
+crossings by removing the unavailable ones, namely those that share a diagonal with a queen
+already placed. Figure~\ref{fig:terminal} distinguishes the empty crossings from the \emph{mask},
+the matrix $A=(Y_{ij})$ of their availability indicators.
+\input{figures/last_board}
+
+Recall that $F$ is the permanence event of Definition~\ref{def:regular}: the history reaches size
+$K$, and all its boards, including the arrival board $B_K$, are regular. The figure illustrates the
+geometry. In it, row 1 forces column 1, so every doubly stochastic matrix supported on the mask
+assigns
+zero mass to the available square $(9,1)$. The example lies outside $F$. Let $D_K$ be the event
+that two distinct empty crossings of the board of size $K$ lie on the same diagonal of the initial
+board. For $m\ge 1$, write $(u)_m=u(u-1)\cdots(u-m+1)$ if $u\ge m$, and $(u)_m=0$ if $0\le u<m$.
+
+\begin{lema}[Shared diagonals on the last board]\label{terminal-geometria}
+Under $\nu$ and under the law $\mu$ of a uniform solution revealed in an independent uniform order,
+respectively, we have
+\[
+ \nu(F\cap D_K)\le d_{n,K}:=\frac{C K^4}{n}\,e^{C'/K},
+ \qquad \mu(D_K\mid\pi)\le \frac{C K^4}{n}
+\]
+for every solution $\pi$. The second probability is taken over the order in which the rows
+are revealed.
+\end{lema}
+\begin{proof}
+The initial board has at most $Cn^3$ pairs of distinct squares sharing a diagonal. There are
+$n^2$ choices for the first square and at most $2(n-1)$ choices for the second on its diagonals.
+For both squares of a pair to be empty crossings at size $K$, two distinct rows and two distinct
+columns must remain empty. On $F$ there was no earlier exit, so \eqref{prescr} with $s=t=2$
+bounds the probability for each pair by $(K/n)^4e^{C'/K}$. A union bound gives the first claim.
+
+For the second claim, fix $\pi$. The last $K$ rows in the uniform order form a uniform subset $I$
+of size $K$. The corresponding columns are $\pi(I)$, and the empty crossings form $I\times\pi(I)$.
+Figure~\ref{fig:testigos} shows how the row labels enter two such crossings.
+\input{figures/witnesses}
+
+A pair sharing a diagonal has the form $(i,\pi(j)),(i',\pi(j'))$, with
+\[
+ |i-i'|=|\pi(j)-\pi(j')|>0,\qquad i,i',j,j'\in I.
+\]
+We call a quadruple of labels $(i,i',j,j')$ satisfying this equality of distances a \emph{witness},
+whether or not its labels belong to $I$. Put $m=|\{i,i',j,j'\}|$. If $m=2$, the label pairs
+$\{i,i'\}$ and $\{j,j'\}$ coincide. The equality of distances would imply that the queens of
+$\pi$ in rows $i,i'$ attack each other, which is impossible. If $m=3$, fix $i,i'$ and specify
+which of the two labels repeats and in which position $j,j'$ it occurs. The image of that label
+under $\pi$ is known. The other image must be at distance $|i-i'|$ from it and hence has at most
+two possible values. Each value determines its label via $\pi^{-1}$. Thus there are $O(n^2)$
+three-label witnesses. For $m=4$, fixing $i,i',j$ leaves at most two possible values of $\pi(j')$,
+giving $O(n^3)$ witnesses.
+
+The subset $I$ contains $m$ fixed labels with probability $(K)_m/(n)_m\le(K/n)^m$ when $n\ge m$.
+For $n\ge4$ a union bound gives
+\[
+ \mu(D_K\mid\pi)\le C\left[n^2(K/n)^3+n^3(K/n)^4\right]\le CK^4/n.
+\]
+Under $\mu$ the solution and the order can also be completed for histories that have already
+stopped. Since $F\cap D_K\subseteq D_K$, integrating the estimate over $\pi$ also gives
+$\mu(F\cap D_K)\le CK^4/n$.
+\end{proof}

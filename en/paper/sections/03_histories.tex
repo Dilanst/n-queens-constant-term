@@ -1,0 +1,63 @@
+\section{Two comparisons on stopped histories}\label{historias}
+Let $\tau$ be a stopping time that uses only the row order and the information revealed through the current
+step. Suppose every parent before the stopping time and each of its children have a finite predictor. Write
+$B_t$ for the board in the history after $t$ insertions and $i_t$ for the next row to be revealed. Write
+$\omega$ for the prefix of squares, including the last insertion, $B_\tau$ for its residual board, and
+$\mu^\tau,\nu^\tau$ for the joint laws of the order and the prefix. Define
+\[
+ A_\tau=\sum_{t<\tau}\log\rho(B_t,i_t),\qquad g(B)=\log Q(B)-L(B)\quad(Q(B)>0).
+\]
+
+\begin{lema}[Comparison at the first stopping time]\label{hist:igualdad}
+If $Q(B_0)>0$, then $\mu^\tau\ll\nu^\tau$ and
+\begin{equation}\label{super}
+ g(B_0)=\E_\mu[A_\tau+g(B_\tau)]-D(\mu^\tau\Vert\nu^\tau).
+\end{equation}
+Here $D$ is the relative entropy of the two discrete laws.
+\end{lema}
+\begin{proof}
+For a fixed order $\sigma$, each of the $Q(B_\tau)$ completions extends the prefix in exactly one way. Under
+$\nu$ we multiply the probabilities of choosing the successive squares. The differences of the predictors
+telescope. Thus the two masses at the same atom are
+\[
+ \mu^\tau(\sigma,\omega)=\frac{Q(B_\tau)}{n!\,Q(B_0)},\qquad
+ \nu^\tau(\sigma,\omega)=\frac{\exp\{L(B_\tau)-L(B_0)-A_\tau\}}{n!}.
+\]
+The second mass is positive on the support of the first. Taking the logarithm of their ratio in the order
+$\mu^\tau/\nu^\tau$ gives $A_\tau+g(B_\tau)-g(B_0)$. By definition, its mean under $\mu^\tau$ is the
+relative entropy in \eqref{super}.
+\end{proof}
+
+\begin{proposicion}[Lower bound from permanence]\label{hist:inferior}
+Let $\tau$ be the stopping time of Definition~\ref{def:regular}, namely the first exit or, if there is none,
+the time at which the board reaches size $K$. Let $F$ be the permanence event and $B_K$ the board of size
+$K$, so that $B_K=B_\tau$ on $F$. The subscript of $B_K$ counts empty rows rather than steps. Let
+$G=F\cap\{Q(B_K)>0\}$. If $s=\nu(G)>0$, then
+\begin{equation}\label{infer}
+ g(B_0)\ge \E_{\nu(\cdot\mid G)}[A_\tau+g(B_K)]+\log s.
+\end{equation}
+\end{proposicion}
+\begin{proof}
+For each order, distinct stopped prefixes have disjoint sets of completions. For each history in $G$,
+multiplying its mass under $\nu^\tau$ by $\exp\{A_\tau+g(B_K)\}$ gives $Q(B_K)e^{-L(B_0)}/n!$. Summing first
+over prefixes and then over orders gives
+\[
+ \int_G\exp\{A_\tau+g(B_K)\}\,d\nu^\tau\le Q(B_0)e^{-L(B_0)} .
+\]
+The integral is $s$ times the conditional expectation of the exponential. Concavity of the logarithm gives
+\eqref{infer}, even when conditioning changes the distribution of the order.
+\end{proof}
+
+\begin{corolario}[Cumulative consistency]\label{hist:consistencia}
+Suppose each parent before the stopping time satisfies the hypotheses of Theorem~7.1 and Corollary~7.2
+of~\cite{pred} for $k>M=\lceil\delta n\rceil$, and those of Theorem~8.1 of the same work for $K<k\le M$.
+Then $|A_\tau|\le C/K+O_\delta(n^{-1})$ uniformly over histories.
+\end{corolario}
+\begin{proof}
+These results give $|\log\rho(B,i)|\le C_*/k^2$ in each row, with all the children in that row included in
+$\rho$. For parents with $k>M$, the constant depends on $\delta$ and the diffusion, vacancy, and gap bounds.
+For parents with $K<k\le M$, it depends on the constants of the weak class of~\cite[Section~8.1]{pred}. A
+regular parent in the sense of Definition~\ref{def:regular} belongs to the inner class, by definition if
+$k<M$ and by Proposition~\ref{meso:reconstruccion} if $k=M$. The sum of $k^{-2}$ over $k>m$ is at most
+$\int_m^\infty t^{-2}\,dt=1/m$. A history that stops earlier uses a subset of these summands.
+\end{proof}
