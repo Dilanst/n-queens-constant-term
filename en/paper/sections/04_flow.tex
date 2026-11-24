@@ -51,13 +51,15 @@ the availability indicator of the square and $v_x/n$ is the target for the Bethe
 available square.
 
 \begin{proposicion}[Comparison trajectory]\label{macro:trayectoria}
-For a diagonal line $f$ and a point $(r,c)$, write
+For a diagonal line $f$, a point $(r,c)$, and $0\le x\le1$, write
 \begin{gather*}
  U_f(x)=u_f+xm_f,\qquad \ell_f^*(x)=\frac{xm_f}{U_f(x)},\\
  J_x=x^2U_D(x)U_A(x),\qquad
- W_x=\frac{\nu_1}{U_D(x)U_A(x)},\qquad v_x=\frac{W_x}{x}.
+ W_x=\frac{\nu_1}{U_D(x)U_A(x)}.
 \end{gather*}
-Subscripts $D,A$ without arguments indicate evaluation at $r-c,r+c$, respectively. Then $J_1=1$,
+Subscripts $D,A$ without arguments indicate evaluation at $r-c,r+c$, respectively. Since $u_f\ge
+\kappa_\nu$, $W_x$ is continuous down to $W_0=\nu_1/(u_Du_A)=b_0r_Rr_C$, the weight used in
+Section~\ref{meso:regularidad}. We have $J_1=1$. For $0<x\le1$, set $v_x=W_x/x$. Then
 $J_xv_x=x\nu_1$, both marginals of $J_xv_x$ are equal to $x$, and
 \begin{equation}\label{macro:derivadas}
  \partial_t U_f=-\frac{\ell_f^*}{x}U_f,\qquad

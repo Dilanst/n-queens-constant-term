@@ -24,10 +24,11 @@ tableros con $k$ filas vacías. Con esa consistencia, una identidad entrópica r
 de los conteos al tablero en que se detiene el proceso. Bajo la ley adaptativa, los tableros
 satisfacen hasta que quedan $K$ filas vacías unas condiciones que los mantienen en esas clases,
 salvo probabilidad $O(e^{-cK})+o(1)$, y acotamos el coste en el primer tablero que deja de
-satisfacerlas. En el tablero con $K$ filas vacías, salvo probabilidad $O(K^4/n)$, ninguna diagonal
-contiene dos de sus cruces vacíos, las intersecciones de las filas y las columnas vacías, y el
-conteo es un permanente, al que aplicamos la estimación de McCullagh en la forma uniforme probada
-por Divoux y Wang.
+satisfacerlas. Bajo la ley adaptativa, la probabilidad de llegar a $K$ filas vacías sin una salida
+y de que dos cruces vacíos compartan diagonal es $O(K^4/n)$. Un cruce vacío es la intersección de
+una fila vacía y una columna vacía. Cuando el proceso llega a $K$ sin una salida y ningún par de
+cruces vacíos comparte diagonal, el conteo es un permanente, al que aplicamos la estimación de
+McCullagh en la forma uniforme probada por Divoux y Wang.
 
 \smallskip\noindent Numéricamente, $C_{\rm pred}\approx0{,}9401$, sin cota de error certificada; los
 conteos exactos para ${16\le n\le27}$ son compatibles con el teorema, que no da velocidad de

@@ -1,12 +1,18 @@
 \begin{proposicion}[Exit cost in the macroscopic range]\label{coste-macro}
-If $N=O_\delta(k)$ and the hypotheses of Lemma~\ref{coste-estatico} hold, then the exit cost satisfies
+Let $B$ be a residual board with an interior stationary Bethe point $p$ whose row and column masses
+are one. If $N=O_\delta(k)$ and the hypotheses of Lemma~\ref{coste-estatico} hold, then
 \[
  g^+(B)\le C_\delta k^{2/3},
 \]
 where the constant also depends on the outer bounds.
 \end{proposicion}
 \begin{proof}
-For $Q(B)>0$, fix an augmented placement as in Lemma~\ref{coste-comparacion}. Assign independent
+At a macroscopic first exit the child of the regular parent has the interior stationary point
+and the outer diffusion, vacancy, and gap bounds of Section~\ref{leyes}. Its row and column masses
+are one, and $k\ge M$ gives $N=2n-1\le2k/\delta$. On any board under the stated hypotheses,
+$g^+(B)=0$ if $Q(B)=0$.
+Otherwise $h_f\ge\eta>0$ by the vacancy bound, so Lemma~\ref{coste-comparacion} applies.
+Fix an augmented placement and assign independent
 uniform times in $[0,1]$ to its $N$ pieces to obtain a uniform ordering. Fix one piece $b$ in the
 placement and condition on its time being $t$. The times of the other pieces remain independent.
 Write $z=1-t$. For a candidate of the same type as $b$, each of its four vertices belongs to a
@@ -63,5 +69,4 @@ pieces and using $N=O_\delta(k)$, we obtain from Lemma~\ref{coste-comparacion}
 Stirling's formula for the two factorials and $k\log(W/k)=O(1)$ reduce the right-hand side to
 $-\log\mathcal K-3k+O_\delta(k^{2/3})$. By Lemma~\ref{coste-vacancias}, the first two terms sum
 to $H_B(p)+O(1)$, and Lemma~\ref{coste-estatico} gives the asserted bound after subtracting $L(B)$.
-When $Q(B)=0$ the conclusion follows from the definition of $g^+$.
 \end{proof}

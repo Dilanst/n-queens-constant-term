@@ -1,8 +1,8 @@
 \begin{lema}[Reduction to rooks on the last board]\label{terminal-pivotes}
-Let $A$ be the mask of the board $B_K$. On $F\cap D_K^c$ there is a placement completing the
+Let $A$ be the mask of the board $B^{(K)}$. On $F\cap D_K^c$ there is a placement completing the
 board, and
 \[
- Q(B_K)=\per A,\qquad L(B_K)=L_T(A),
+ Q(B^{(K)})=\per A,\qquad L(B^{(K)})=L_T(A),
 \]
 where $L_T(A)=H_T(p)+\log\Gamma_2$ is the rook predictor on the same support, as in the
 masked rook model of~\cite[Sections~8.1 and~8.5]{pred}. Here
@@ -11,7 +11,7 @@ stationary point with row and column masses equal to one, and $\Gamma_2$ is the 
 Section~\ref{costes:permanente}.
 \end{lema}
 \begin{proof}
-On $F$ the Bethe point $p$ of $B_K$ has row and column masses equal to one and is positive on all
+On $F$ the Bethe point $p$ of $B^{(K)}$ has row and column masses equal to one and is positive on all
 available squares. For any set $I$ of rows, its entire mass $|I|$ goes to the set of neighboring
 columns, which admits at most one unit per column. Consequently $|\mathcal N(I)|\ge|I|$.
 To see directly that every row can be covered, take a matching of maximum cardinality. If it
@@ -25,7 +25,7 @@ entered, if any. This contradicts the inequality for the set of reachable rows. 
 On $D_K^c$ each diagonal contains at most one empty crossing. Every permutation on the support
 therefore satisfies the constraints from both diagonal families. Moreover, squares on occupied
 diagonals were already excluded when forming $A$, so every permutation on the support gives a
-legal completion of $B_K$. The construction is reversible and proves $Q(B_K)=\per A$.
+legal completion of $B^{(K)}$. The construction is reversible and proves $Q(B^{(K)})=\per A$.
 
 On a free diagonal with one available square $e$, the vacancy is $h_f=1-p_e=:q_e$. Each square
 lies on two such diagonals, and a free diagonal with no squares has $h_f=1$. Thus in $H_B$ the
@@ -60,5 +60,5 @@ factorization using the pivots is exact, and the row and column mode retains its
 $\sqrt{2K}$. The corresponding factor in the normalizer is $\sqrt{2\pi}\sqrt{2K}=\sqrt{4\pi K}$
 both before and after elimination. Since $e^{C_d}=\prod_e b_d(p_e)$, the identities prove
 $e^{C_4}\pdet S_4=e^{C_2}\pdet S_2$ after the two eliminations per square. In particular,
-$\Gamma_4=\Gamma_2$. This gives $L(B_K)=H_T(p)+\log\Gamma_2=L_T(A)$.
+$\Gamma_4=\Gamma_2$. This gives $L(B^{(K)})=H_T(p)+\log\Gamma_2=L_T(A)$.
 \end{proof}

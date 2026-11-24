@@ -49,7 +49,7 @@ usados.
 \begin{lema}[Incrementos de un patrón]\label{lema:incrementos-meso}
 Para un padre regular de tamaño $k$ y $\Delta Z_H=Z_H(k-1)-Z_H(k)$,
 \[
- |\mathbb E_\nu(\Delta Z_H\mid\mathcal F_k)|
+ |\mathbb E_\nu(\Delta Z_H\mid\mathcal F^{(k)})|
  \le C_H\frac{1+(D_{\max}(k)-1)_+}{k^2},\qquad
  |\Delta Z_H|\le C_H/k .
 \]
@@ -74,8 +74,8 @@ restricción de diagonal distinta a las posiciones de un patrón.
 Condicionemos ahora sólo el siguiente paso a que sobreviva $i$. La probabilidad de borrar una columna
 $j$ es
 \[
- \frac{\nu(j\ {\rm elegida}\mid\mathcal F_k)-
-       \nu((i,j)\ {\rm elegida}\mid\mathcal F_k)}{1-1/k}
+ \frac{\nu(j\ {\rm elegida}\mid\mathcal F^{(k)})-
+       \nu((i,j)\ {\rm elegida}\mid\mathcal F^{(k)})}{1-1/k}
    =1/k+O(k^{-2})
 \]
 uniformemente. Para una columna distinguida se intercambian familias y el denominador es

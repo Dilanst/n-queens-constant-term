@@ -27,9 +27,8 @@ El Teorema~1.1 de~\cite{perfil} da el único perfil óptimo de masa uno, $\nu_1$
 cuadrado unidad. Denotamos su entropía por $s_1$ y escribimos $\Phi=s_1+1$. Como
 en~\cite{perfil,ultimas,pred}, $m_D$ y $m_A$ son las proyecciones de $\nu_1$ sobre las dos familias
 diagonales y $u_D=1-m_D$, $u_A=1-m_A$ sus vacancias. Si $f$ es una línea diagonal, $m_f$ y $u_f$
-denotan los valores en $f$ de las funciones de su familia. Los Teoremas~1.2 y~1.3 y la
-Proposición~5.2 de~\cite{perfil}
-identifican los factores positivos y el límite en masa uno. El Teorema~7.7 del mismo
+denotan los valores en $f$ de las funciones de su familia. Los Teoremas~1.2 y~1.3 y la Proposición~5.2
+de~\cite{perfil} identifican los factores positivos y el límite en masa uno. El Teorema~7.7 del mismo
 trabajo da el control hasta el extremo. Usamos la forma de~\cite[Sección~2]{pred},
 \[
  \nu_1(r,c)=b_0 r_R(r)r_C(c)u_D(r-c)u_A(r+c),\qquad
@@ -44,8 +43,7 @@ Escribimos RC por «filas y columnas». Como en~\cite{pred}, el \emph{punto de B
 $B$ es el vector $p=(p_e)$, con un peso por casilla de $E(B)$, en el que se evalúa su predictor. Es
 el punto estacionario de la entropía de Bethe
 \begin{equation}\label{bethe}
- H_B(p)=-\sum_e p_e\log p_e
-       +3\sum_e(1-p_e)\log(1-p_e)-\sum_fh_f\log h_f
+ H_B(p)=-\sum_e p_e\log p_e+3\sum_e(1-p_e)\log(1-p_e)-\sum_fh_f\log h_f
 \end{equation}
 en el dominio $0<p_e<1/4$, $h_f>0$, con masas de fila y de columna iguales a uno. Aquí la
 \emph{masa} de una diagonal $f$ es $\ell_f=\sum_{e\in f}p_e$ y su \emph{vacancia} es $h_f=1-\ell_f$.
@@ -78,10 +76,9 @@ diagonal es a lo sumo un $\varepsilon$ pequeño.
 Respecto de~\cite{pred} cambian algunas notaciones. Allí el hijo se escribe $B+c$, la fila se
 sobreentiende en el cociente $\rho(B)$, que aquí es $\rho(B,i)$, y la masa y la vacancia de una
 diagonal son $m_d$ y $h_d$; las demás diferencias se indican donde aparecen. Algunas letras, como $B$,
-$E$, $J$, $S$, $T$ o $W$, designan en ciertas
-secciones objetos locales, que se definen donde aparecen; por ejemplo, en la
-Sección~\ref{permanente} la letra $B$ denota la matriz $P-J_K$ y no un tablero. Fuera del resumen y
-de la introducción, la letra $J$ no denota el operador de~\cite{pred}.
+$E$, $J$, $S$, $T$ o $W$, designan en ciertas secciones objetos locales, que se definen donde aparecen;
+por ejemplo, en la Sección~\ref{permanente} la letra $B$ denota la matriz $P-J_K$ y no un tablero.
+Fuera del resumen y de la introducción, la letra $J$ no denota el operador de~\cite{pred}.
 
 \paragraph{Leyes de revelado e inserción.}
 Sorteamos uniformemente un orden $\sigma$ de las filas. Bajo la \emph{ley uniforme} $\mu$ elegimos,
@@ -94,7 +91,11 @@ Bajo la \emph{ley adaptativa} $\nu$, dada la siguiente fila $i$, elegimos $e$ co
 La \emph{ley auxiliar} $P^{\rm B}$ usa la misma fila uniforme y elige $e$ con probabilidad $p_e$. La
 letra redonda de $P^{\rm B}$ y de su esperanza $\E_{\rm B}$ es de Bethe y no designa un tablero. Una
 \emph{historia} es la sucesión de tableros $B_0,B_1,\dots$ que resulta, junto con el orden de las
-filas. Decimos que un tablero con $k$ filas vacías tiene \emph{tamaño} $k$.
+filas. Decimos que un tablero con $k$ filas vacías tiene \emph{tamaño} $k$. En $B_t$ y en la historia
+revelada $\mathcal F_t$, el índice $t$ cuenta inserciones. Al indexar por tamaño escribimos
+$B^{(k)}=B_{n-k}$ y $\mathcal F^{(k)}=\mathcal F_{n-k}$. Esta última contiene las filas reveladas
+hasta ese momento y sus casillas elegidas, antes de revelar la fila siguiente. En una historia
+detenida, estos símbolos sólo se refieren a los niveles alcanzados.
 
 \begin{definicion}[Tableros regulares y primera salida]\label{def:regular}
 Fijamos $0<\delta<1$, $M=\lceil\delta n\rceil$ y un entero $K$ con $K_0\le K\le M$. El umbral $K_0$,
@@ -102,9 +103,9 @@ las constantes y las tolerancias que siguen se eligen en la Sección~\ref{meso:c
 tablero de una historia, de tamaño $k$.
 \begin{enumerate}[(a)]
 \item \emph{Tramo macroscópico}, $k\ge M$. El tablero es \emph{regular} si la discrepancia $\Delta$
-de la historia al llegar a él, definida en la Sección~\ref{macro:observaciones} con la partición
-$\mathcal I$, de paso $a_{\rm mac}$, de la Proposición~\ref{macro:parada}, es menor que el radio
-$\varrho_{\rm mac}$ de esa proposición.
+de la historia al llegar a él es menor que el radio $\varrho_{\rm mac}$ de la
+Proposición~\ref{macro:parada}. La Sección~\ref{macro:observaciones} define esta discrepancia
+con la partición $\mathcal I$, de paso $a_{\rm mac}$, de esa proposición.
 \item \emph{Corte}, $k=M$. Se exige además que los observables de la
 Sección~\ref{meso:regularidad} estén dentro de sus tolerancias de entrada y que
 $D_{\max}(M)<\alpha M$, con la notación de la Sección~\ref{meso}.
@@ -127,8 +128,7 @@ débiles, que llamamos \emph{cotas exteriores}; en el tramo mesoscópico, junto 
 lo sumo $2\varepsilon$, definen la \emph{clase exterior}. En $\rho(B,i)$ intervienen todos los hijos
 de $B$ en la fila $i$.
 
-\begin{table}[htbp]
-\centering\small
+\begin{table}[htbp]\centering\small
 \caption{Cómo se combinan las estimaciones en la comparación de los conteos.}
 \begin{tabular}{@{}p{.31\linewidth}p{.59\linewidth}@{}}
 \toprule Resultado & Estimaciones que utiliza \\ \midrule
@@ -140,10 +140,11 @@ Bandas \ref{prop:salida-banda-meso} & Prescripciones \eqref{prescr}, presupuesto
 \ref{lema:presupuesto-meso}, concentración \ref{prop:concentracion-meso} y reconstrucción
 \ref{meso:reconstruccion}.\\
 Costes \ref{coste-macro} y \ref{coste-debil} & Comparación \ref{coste-comparacion} y, en el tramo
-mesoscópico, normalizadores \ref{coste-normalizadores} y permanente \ref{terminal-permanente}.\\
+mesoscópico, normalizadores \ref{coste-normalizadores} y estimaciones del permanente
+\ref{terminal-permanente} y \ref{terminal-normalizador}.\\
 Último tablero \ref{terminal-error} & Geometría \ref{terminal-geometria}, pivotes
 \ref{terminal-pivotes}, escalado \ref{terminal-escalado} y Proposición~3.1 de~\cite{dw}.\\
 Teorema~\ref{princ} & Consistencia \ref{hist:consistencia}, cotas de salida y estimación
 terminal bajo las dos leyes.\\ \bottomrule
 \end{tabular}
-\end{table}
+\end{table}\input{secciones/02_tabla_notacion}

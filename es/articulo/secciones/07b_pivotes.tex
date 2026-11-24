@@ -1,8 +1,8 @@
 \begin{lema}[Reducción a torres en el último tablero]\label{terminal-pivotes}
-Sea $A$ la máscara del tablero $B_K$. En $F\cap D_K^c$ hay una
+Sea $A$ la máscara del tablero $B^{(K)}$. En $F\cap D_K^c$ hay una
 colocación que completa el tablero y
 \[
- Q(B_K)=\per A,\qquad L(B_K)=L_T(A),
+ Q(B^{(K)})=\per A,\qquad L(B^{(K)})=L_T(A),
 \]
 donde $L_T(A)=H_T(p)+\log\Gamma_2$ es el predictor de torres en el mismo soporte, como en el modelo
 de torres con máscara de~\cite[Secciones~8.1 y~8.5]{pred}. Aquí $H_T(p)=-\sum_e p_e\log p_e
@@ -11,7 +11,7 @@ de fila y de columna iguales a uno, y $\Gamma_2$ es el factor de la
 Sección~\ref{costes:permanente}.
 \end{lema}
 \begin{proof}
-En $F$ el punto de Bethe $p$ de $B_K$ tiene masas de fila y de columna iguales a uno y es positivo en
+En $F$ el punto de Bethe $p$ de $B^{(K)}$ tiene masas de fila y de columna iguales a uno y es positivo en
 todas las casillas disponibles. Para un conjunto cualquiera $I$ de filas, toda su masa $|I|$ llega al
 conjunto
 de columnas vecinas, que admite a lo sumo una unidad por columna. En consecuencia $|\mathcal
@@ -27,7 +27,7 @@ desigualdad para el conjunto de filas alcanzables. Así $\per A>0$.
 En $D_K^c$, cada diagonal contiene a lo sumo un cruce vacío. Toda permutación del
 soporte respeta por ello las dos restricciones diagonales. Además, las casillas de diagonales ocupadas
 ya se excluyeron al formar $A$, por lo que cualquier permutación del soporte da una completación legal
-de $B_K$. La construcción es reversible y prueba $Q(B_K)=\per A$.
+de $B^{(K)}$. La construcción es reversible y prueba $Q(B^{(K)})=\per A$.
 
 En una diagonal libre con una casilla disponible $e$, la vacancia es $h_f=1-p_e=:q_e$. Cada casilla
 tiene dos de estas diagonales y una diagonal libre sin casillas tiene $h_f=1$. Así en $H_B$ los
@@ -62,5 +62,5 @@ columnas conserva su longitud $\sqrt{2K}$. El factor correspondiente del normali
 $\sqrt{2\pi}\sqrt{2K}=\sqrt{4\pi K}$ tanto antes como después. Como $e^{C_d}=\prod_e b_d(p_e)$, las
 identidades prueban
 $e^{C_4}\pdet S_4=e^{C_2}\pdet S_2$ tras completar las dos eliminaciones por casilla. En particular
-$\Gamma_4=\Gamma_2$. Esto da $L(B_K)=H_T(p)+\log\Gamma_2=L_T(A)$.
+$\Gamma_4=\Gamma_2$. Esto da $L(B^{(K)})=H_T(p)+\log\Gamma_2=L_T(A)$.
 \end{proof}

@@ -31,19 +31,18 @@ es, por definición, la entropía relativa que figura en \eqref{super}.
 
 \begin{proposicion}[Cota inferior por permanencia]\label{hist:inferior}
 Sea $\tau$ la parada de la Definición~\ref{def:regular}: la primera salida o, si no la hay, la
-llegada al tamaño $K$. Sean $F$ el suceso de permanencia y $B_K$ el tablero de tamaño $K$, de modo
-que $B_K=B_\tau$ en $F$. El subíndice de $B_K$ cuenta filas vacías y no pasos. Sea
-$G=F\cap\{Q(B_K)>0\}$. Si $s=\nu(G)>0$, entonces
+llegada al tamaño $K$. Sea $F$ el suceso de permanencia. En $F$ se tiene $B^{(K)}=B_\tau$.
+Sea $G$ el conjunto de las historias de $F$ con $Q(B^{(K)})>0$. Si $s=\nu(G)>0$, entonces
 \begin{equation}\label{infer}
- g(B_0)\ge \E_{\nu(\cdot\mid G)}[A_\tau+g(B_K)]+\log s.
+ g(B_0)\ge \E_{\nu(\cdot\mid G)}[A_\tau+g(B^{(K)})]+\log s.
 \end{equation}
 \end{proposicion}
 \begin{proof}
 Para cada orden, los prefijos detenidos distintos tienen conjuntos disjuntos de completaciones.
-En cada historia de $G$, multiplicar su masa bajo $\nu^\tau$ por $\exp\{A_\tau+g(B_K)\}$
-deja $Q(B_K)e^{-L(B_0)}/n!$. Sumando primero en los prefijos y después en los órdenes obtenemos
+En cada historia de $G$, multiplicar su masa bajo $\nu^\tau$ por $\exp\{A_\tau+g(B^{(K)})\}$
+deja $Q(B^{(K)})e^{-L(B_0)}/n!$. Sumando primero en los prefijos y después en los órdenes obtenemos
 \[
- \int_G\exp\{A_\tau+g(B_K)\}\,d\nu^\tau\le Q(B_0)e^{-L(B_0)} .
+ \int_G\exp\{A_\tau+g(B^{(K)})\}\,d\nu^\tau\le Q(B_0)e^{-L(B_0)} .
 \]
 La integral es $s$ veces la esperanza condicional del exponencial. La concavidad del logaritmo
 da \eqref{infer}, también cuando el condicionamiento modifica la distribución del orden.
@@ -58,9 +57,9 @@ $K<k\le M$. Entonces $|A_\tau|\le C/K+O_\delta(n^{-1})$ uniformemente en las his
 Esos resultados dan $|\log\rho(B,i)|\le C_*/k^2$ en cada fila, incluyendo en $\rho$ todos los
 hijos de esa fila. Para los padres con $k>M$ la constante depende de $\delta$ y de las cotas de
 difusión, vacancia y brecha. Para los padres con $K<k\le M$ depende de las constantes de la clase
-débil de~\cite[Sección~8.1]{pred}. Un padre regular de la Definición~\ref{def:regular} está en la
-clase interior, por definición si $k<M$ y por la Proposición~\ref{meso:reconstruccion} si $k=M$. La
-suma de $k^{-2}$ para $k>m$
-es a lo sumo $\int_m^\infty t^{-2}\,dt=1/m$. Una historia que termina antes usa un
+débil de~\cite[Sección~8.1]{pred}. En este rango, un padre regular de la Definición~\ref{def:regular}
+está en la clase interior, por definición si $k<M$ y por la Proposición~\ref{meso:reconstruccion}
+si $k=M$. La suma de $k^{-2}$ para $k>m$ es a lo sumo $\int_m^\infty t^{-2}\,dt=1/m$.
+Una historia que termina antes usa un
 subconjunto de estos sumandos.
 \end{proof}

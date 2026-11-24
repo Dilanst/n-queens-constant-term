@@ -1,13 +1,15 @@
 \subsection{Reduction to an auxiliary permanent}\label{costes:permanente}
 
 Let $\varepsilon_{\rm out}\ge\max_f\ell_f$ be the common outer bound, with $\varepsilon_{\rm out}<1$.
-Let $P=(p_{ij})$, with zeros off the support, and put
+Let $P=(p_{ij})$ be the matrix of the interior stationary Bethe point, with zeros off the support, and put
 $W_{ij}=p_{ij}(1-p_{ij})$. In what follows $W$ denotes this auxiliary matrix. Write
-\[
- S_{R,d}=A_R^T\operatorname{diag}(\tau_d(p_e))A_R,\qquad
- S_2=S_{R,2},\qquad
+\begin{equation}\label{coste:rook-def}
+ \begin{gathered}
+ S_{R,d}=A_R^T\operatorname{diag}(\tau_d(p_e))A_R,\qquad S_2=S_{R,2},\\
+ C_2=\sum_{ij}\bigl[\log(1-2p_{ij})-2\log(1-p_{ij})\bigr],\qquad
  \Gamma_2=\frac{e^{-C_2/2}\sqrt{4\pi k}}{\sqrt{\pdet S_2}} .
-\]
+ \end{gathered}
+\end{equation}
 A permutation on the support uses one square in each row and each column. We call it legal
 if it also uses each diagonal at most once.
 
@@ -25,8 +27,9 @@ Then
  Q(B)e^{-H_B(p)}
    =\frac{\per W}{\prod_e(1-p_e)}\,\E_{\mu_W}F.
 \]
-For $Q(B)>0$, if $P$ satisfies the hypotheses \eqref{terminal-hipotesis-matriz} of
-Section~\ref{permanente} with $K=k$, then uniformly
+For $Q(B)>0$, suppose the doubly stochastic matrix $P$ satisfies the bounds
+in \eqref{terminal-hipotesis-matriz} with $K=k$, namely $p_{ij}\le M_0/k$ and
+$\|P-\mathbf1\mathbf1^T/k\|_{\rm op}\le\rho_*<1$. Then uniformly for fixed $M_0,\rho_*$,
 \[
  g(B)=\log\E_{\mu_W}F-\log(\Gamma_4/\Gamma_2)+o(1)
  \qquad (k\longrightarrow\infty).
@@ -44,11 +47,10 @@ independently of the placement. After summing over the $Q(B)$ legal permutations
 side of the first equality is $Q(B)\mathcal K/\prod_e(1-p_e)^3$, which equals $Q(B)e^{-H_B(p)}$
 by the same lemma.
 
-Lemma~\ref{terminal-normalizador} gives
-$\log(\per W/\prod_e(1-p_e))=\log\Gamma_2+o(1)$ for the doubly stochastic matrix $P$ and the
-weights $W=P\circ(1-P)$. Its proof, like that of Proposition~\ref{terminal-permanente}, takes from
-this section only the definitions of $S_2$, $C_2$, and $\Gamma_2$. The weights are constructed from
-this same $P$ on the same board, so the multipliers in the weighted rook stationarity equation
+For the asymptotic formula apply the matrix estimate of Lemma~\ref{terminal-normalizador} to this
+$P$, with $K=k$, $W_{ij}=p_{ij}(1-p_{ij})$, and the rook factor \eqref{coste:rook-def}. It gives
+$\log(\per W/\prod_e(1-p_e))=\log\Gamma_2+o(1)$. Its proof uses the scaling and permanent
+estimates of Section~\ref{permanente}. The multipliers in the weighted rook stationarity equation
 $p_e(1-p_e)=W_e$ can all be taken equal to one. Taking logarithms in the first equality and using
 $L(B)=H_B(p)+\log\Gamma_4$ proves the second. We use the law $\mu_W$ only for counting on $B$.
 \end{proof}

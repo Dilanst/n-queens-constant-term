@@ -1,13 +1,18 @@
 \begin{proposicion}[Coste de salida en el tramo macroscópico]\label{coste-macro}
-Si $N=O_\delta(k)$ y se cumplen las hipótesis del Lema~\ref{coste-estatico}, entonces el coste de
-salida satisface
+Sea $B$ un tablero residual con un punto estacionario interior de Bethe $p$ cuyas masas de fila y de
+columna son iguales a uno. Si $N=O_\delta(k)$ y se cumplen las hipótesis del Lema~\ref{coste-estatico},
+entonces
 \[
  g^+(B)\le C_\delta k^{2/3},
 \]
 con una constante que depende también de las cotas exteriores.
 \end{proposicion}
 \begin{proof}
-Para $Q(B)>0$ fijemos la colocación aumentada del Lema~\ref{coste-comparacion}. Asignar tiempos
+En una primera salida macroscópica, el hijo del padre regular tiene el punto estacionario interior y
+las cotas exteriores de difusión, vacancia y brecha de la Sección~\ref{leyes}. Sus masas de fila y de
+columna valen uno, y $k\ge M$ da $N=2n-1\le2k/\delta$. En todo tablero que cumpla las hipótesis del
+enunciado, $g^+(B)=0$ si $Q(B)=0$. En otro caso, $h_f\ge\eta>0$ por la cota de vacancia, por lo que
+se aplica el Lema~\ref{coste-comparacion}. Fijemos una colocación aumentada. Asignar tiempos
 uniformes independientes en $[0,1]$ a sus $N$ piezas induce el orden uniforme. Distinguimos una pieza
 $b$ de la colocación y condicionamos a que su tiempo sea $t$. Los tiempos de las otras piezas siguen
 siendo independientes. Escribamos $z=1-t$. Para una candidata del tipo de $b$, cada uno de sus cuatro
@@ -64,5 +69,5 @@ reales y las $H$ virtuales, y usando $N=O_\delta(k)$, el Lema~\ref{coste-compara
 La fórmula de Stirling para los dos factoriales y $k\log(W/k)=O(1)$ reducen el lado derecho a
 $-\log\mathcal K-3k+O_\delta(k^{2/3})$. El Lema~\ref{coste-vacancias} identifica los dos primeros
 términos con $H_B(p)+O(1)$, y el Lema~\ref{coste-estatico} proporciona la cota anunciada tras restar
-$L(B)$. Cuando $Q(B)=0$ la conclusión se sigue de la definición de $g^+$.
+$L(B)$.
 \end{proof}

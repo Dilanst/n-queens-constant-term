@@ -1,0 +1,32 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Notation used in the proof.}
+\label{tab:proof-notation}
+\begin{tabular}{@{}p{.29\linewidth}>{\raggedright\arraybackslash}p{.65\linewidth}@{}}
+\toprule
+Symbol & Meaning \\
+\midrule
+$n,k$ & Order of the original board and number of empty rows in the residual board. \\
+$M,K$ & Cut-off $M=\lceil\delta n\rceil$ between the two ranges and terminal size $K$. \\
+$B_t,B^{(k)},B_\tau$ & Board after $t$ insertions, board with $k$ empty rows
+($B^{(k)}=B_{n-k}$), and board at the stopping time. \\
+$\mathcal F_t,\mathcal F^{(k)}$ & Revealed history indexed by insertions or by
+remaining rows, with $\mathcal F^{(k)}=\mathcal F_{n-k}$. \\
+\addlinespace[.22em]
+$Q(B),L(B),g(B)$ & Completion count, log predictor, and difference
+$g(B)=\log Q(B)-L(B)$ when $Q(B)>0$. \\
+$p_e,\ell_f,h_f$ & Bethe weight of square $e$, mass on diagonal $f$, and its vacancy
+$h_f=1-\ell_f$. \\
+\addlinespace[.22em]
+$\mu,\nu,P^{\rm B}$ & Uniform reveal law, adaptive law based on the predictor,
+and auxiliary Bethe law. \\
+$\tau,\rho(B,i),A_\tau$ & Time of the first exit or arrival at size $K$, whichever
+comes first, row normalization ratio, and accumulated log ratio
+$A_\tau=\sum_{t<\tau}\log\rho(B_t,i_t)$. \\
+\addlinespace[.22em]
+$F,G$ & Arrival at size $K$ with regularity through that board, and the
+subevent $G=F\cap\{Q(B^{(K)})>0\}$. \\
+$D_K$ & Event that two distinct empty crossings at size $K$ share a diagonal. \\
+\bottomrule
+\end{tabular}
+\end{table}

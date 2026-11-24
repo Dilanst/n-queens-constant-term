@@ -45,7 +45,7 @@ $K_0$ greater than twice the order of every pattern used.
 \begin{lema}[Pattern increments]\label{lema:incrementos-meso}
 For a regular parent of size $k$ and $\Delta Z_H=Z_H(k-1)-Z_H(k)$,
 \[
- |\mathbb E_\nu(\Delta Z_H\mid\mathcal F_k)|
+ |\mathbb E_\nu(\Delta Z_H\mid\mathcal F^{(k)})|
  \le C_H\frac{1+(D_{\max}(k)-1)_+}{k^2},\qquad
  |\Delta Z_H|\le C_H/k .
 \]
@@ -68,8 +68,8 @@ distinct diagonals.
 
 Now condition only the next step on the survival of $i$. The probability of deleting a column $j$ is
 \[
- \frac{\nu(j\ {\rm chosen}\mid\mathcal F_k)-
-       \nu((i,j)\ {\rm chosen}\mid\mathcal F_k)}{1-1/k}
+ \frac{\nu(j\ {\rm chosen}\mid\mathcal F^{(k)})-
+       \nu((i,j)\ {\rm chosen}\mid\mathcal F^{(k)})}{1-1/k}
    =1/k+O(k^{-2})
 \]
 uniformly. For a tracked column the families exchange roles and the denominator is $1-1/k+O(k^{-2})$. In

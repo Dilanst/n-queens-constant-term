@@ -1,15 +1,15 @@
 \begin{proposicion}[Concentración de los observables]\label{prop:concentracion-meso}
 Para una familia fija de patrones y tipos de fibras de pesos acotados, fijemos $b_1>0$ y $\chi>0$.
-Existe $c_{\rm pat}>0$ tal que, para cada suelo $K$, en las historias de entrada regular, salvo
-probabilidad $\le C e^{-c_{\rm pat}K}$, cada observable alcanzado antes de la primera salida o en la
-transición que
-llega a ella difiere de su valor en $M$ en a lo sumo
+Existe una tasa $c_{\rm pat}>0$ tal que, para cada suelo $K$, el siguiente suceso tiene probabilidad
+a lo sumo $C e^{-c_{\rm pat}K}$ bajo $\nu$. La historia tiene entrada regular en $M$ y, en algún
+tamaño $k\ge K$ alcanzado hasta el tablero de primera salida inclusive, la desviación de algún
+observable es mayor que
 \[
  C_H\{A(\delta+1/n)+\chi+1/K\}+b_1 .
 \]
-Para las fibras se compara cada línea distinguida todavía disponible con su propia fibra en $M$. La
-tasa depende de las constantes de la clase exterior, de la familia de observables, de $b_1$ y de
-$\chi$.
+Medimos las desviaciones respecto del valor en $M$ y comparamos cada línea distinguida que
+sobrevive con su propia fibra. La tasa depende de las constantes de la clase exterior, de la
+familia de observables, de $b_1$ y de $\chi$.
 \end{proposicion}
 \begin{proof}
 Restamos a cada incremento su esperanza predecible y congelamos el proceso a partir del tablero de
@@ -20,33 +20,40 @@ en módulo $b_1$ desde $M$ hasta $k$. El
 Lema~\ref{lema:presupuesto-meso} y la suma de $u^{-2}$ acotan la deriva acumulada en todos los
 prefijos a la vez.
 
-Fijada la historia de entrada y una de sus líneas distinguidas, usemos el núcleo auxiliar que en cada
-padre regular divide el núcleo original restringido a los hijos que mantienen disponible la línea
-distinguida por su probabilidad de supervivencia $y_u$. Este núcleo sólo condiciona el paso siguiente.
-En cualquier prefijo que llega con la línea distinguida disponible al tamaño $k$, incluido el que
-termina en la primera salida, el peso bajo $\nu$ es el peso auxiliar multiplicado por
+Fijemos una historia de entrada regular, de modo que el orden de las filas aún no revelado siga
+siendo aleatorio, y fijemos una de sus líneas distinguidas. En un padre regular de tamaño $u$
+restringimos la transición original a los hijos en que sobrevive la línea y dividimos por su
+probabilidad total $y_u$. Así se condiciona sólo el paso siguiente. Detenemos esta ley auxiliar en la
+primera salida o al llegar al suelo. En cada prefijo de $M$ a $k$ en el que sobrevive la línea,
+las probabilidades de transición auxiliares son las originales divididas por $y_u$ en cada padre
+sucesivo. Por tanto, dada esta historia de entrada, el peso original del prefijo es su peso auxiliar
+multiplicado por
 \[
  \prod_{u=k+1}^{M}y_u
  =\prod_{u=k+1}^{M}\big(1-1/u+O(u^{-2})\big)
  =(k/M)\exp(O(1/k)).
 \]
-Para la fila el producto es exactamente $k/M$. Para la columna el error es uniforme aun cuando los
-factores dependan de los tableros del prefijo. La misma identidad de pesos vale en un instante de
-parada porque se aplica por separado a cada prefijo terminal. Bajo el núcleo auxiliar restamos la
+Para la fila el producto es exactamente $k/M$. Para la columna, al dividir cada factor por $1-1/u$
+y sumar los logaritmos se obtiene un error $O(\sum_{u>k}u^{-2})=O(1/k)$, uniforme en el prefijo.
+La misma identidad de pesos vale prefijo por prefijo en un instante de parada, incluido el paso en que
+se produce la primera salida. Bajo el núcleo auxiliar restamos la
 deriva condicional del Lema~\ref{lema:incrementos-meso} y congelamos al llegar al tablero de primera
 salida. La
 misma desigualdad maximal de Azuma vale desde cualquier historia de entrada regular.
 
-En la banda $m\le k<2m$, con $m=2^jK$, paremos en la primera observación de la banda en que la martingala
-de esta línea distinguida tenga módulo $\ge b_1$, si existe. Al transferir los prefijos de parada a
-$\nu$, el factor cuesta a lo sumo $(2m/M)e^{C/m}$. La unión condicional sobre las $M$ líneas
-distinguidas de cada familia y los tipos fijos de pesos, y después la suma sobre las bandas, cuestan a
-lo sumo $\sum_m C m e^{-c_H b_1^2 m}\le C'e^{-c' b_1^2K}$. Mientras la línea distinguida siga disponible,
-la resta de deriva en estas trayectorias es exactamente la del núcleo auxiliar; su módulo acumulado
-queda controlado por el presupuesto en la trayectoria original. El fallo del presupuesto se cuenta una
-sola vez bajo $\nu$, mediante el Lema~\ref{lema:presupuesto-meso}, después de integrar sobre la
-historia de entrada. Así no aparece un factor $M$ en la cola de ese fallo ni un factor $n$ en la cola
-de las fibras.
+En la banda $m\le k<2m$, con $m=2^jK$, paremos en el primer tablero alcanzado en la banda en que la
+martingala de esta línea distinguida tenga módulo $\ge b_1$, si existe. Estos prefijos son disjuntos
+y la desigualdad maximal hasta el tamaño $m$ acota su probabilidad bajo la ley auxiliar. Al
+transferirlos a $\nu$ se introduce un factor a lo sumo $(2m/M)e^{C/m}$. La cota de la unión sobre las
+$M$ líneas distinguidas de cada familia y los tipos fijos de pesos, seguida de la suma sobre las
+bandas, da a lo sumo $\sum_m C m e^{-c_H b_1^2 m}\le C'e^{-c' b_1^2K}$. Mientras la línea distinguida
+siga disponible, la deriva que se resta en estas trayectorias es exactamente la del núcleo auxiliar.
+El presupuesto diagonal en la trayectoria original controla el valor absoluto acumulado de esta
+deriva. Tras integrar sobre la historia de entrada, contamos el fallo del presupuesto una sola vez
+bajo la ley original $\nu$, mediante la \emph{primera} estimación del Lema~\ref{lema:presupuesto-meso}.
+Tras sumar las bandas, tomamos $c_{\rm pat}$ menor que la tasa $c_\chi$ de esa estimación y que todas
+las tasas de concentración anteriores. La tasa geométrica $\lambda$ de la segunda estimación de ese
+lema se elige por separado.
 \end{proof}
 
 \subsection{Reconstrucción de las condiciones de regularidad}\label{meso:regularidad}

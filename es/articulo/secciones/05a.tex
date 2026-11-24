@@ -1,7 +1,6 @@
 \section{Permanencia desde el corte hasta un número fijo de filas}\label{meso}
-En esta sección indexamos por el tamaño: $\mathcal F_k$ es la historia hasta el tablero de tamaño $k$,
-mientras que en la Sección~\ref{macro} el índice de $\mathcal F_s$ era el número de pasos. Sea
-$M=\lceil\delta n\rceil$. En el tablero de tamaño $k$ escribimos $D_{\max}(k)$ para el máximo, sobre
+Denotamos por $\mathcal F^{(k)}=\mathcal F_{n-k}$ la historia hasta el tablero $B^{(k)}$ de tamaño $k$.
+Sea $M=\lceil\delta n\rceil$. En el tablero de tamaño $k$ escribimos $D_{\max}(k)$ para el máximo, sobre
 las diagonales de las dos familias del tablero inicial, del número de cruces vacíos que
 contiene la línea, disponibles o no. Esta cantidad es
 decreciente a lo largo de la historia y domina la cuenta de casillas disponibles en cualquier
@@ -18,24 +17,32 @@ columna $j$ dada la elección de la fila $i$, con $\nu_B(j\mid i)=0$ en las casi
 Existen constantes $C_q,C_{\rm c}$, que se pueden fijar antes de $\delta$ y de la cota $\varepsilon$
 de la masa diagonal, tales que, para $n$ suficientemente grande y $k$ mayor que un umbral fijo,
 \begin{align*}
- \nu(i\text{ elegida}\mid\mathcal F_k)&=1/k,\\
- \left|\nu(j\text{ elegida}\mid\mathcal F_k)-1/k\right|&\le C_{\rm c}/k^2,\\
- \nu((i,j)\text{ elegida}\mid\mathcal F_k)&\le C_q/k^2 .
+ \nu(i\text{ elegida}\mid\mathcal F^{(k)})&=1/k,\\
+ \left|\nu(j\text{ elegida}\mid\mathcal F^{(k)})-1/k\right|&\le C_{\rm c}/k^2,\\
+ \nu((i,j)\text{ elegida}\mid\mathcal F^{(k)})&\le C_q/k^2 .
 \end{align*}
 \end{lema}
 \begin{proof}
-En la representación por hijo de \cite[Teoremas~7.1 y~8.1]{pred}, la perturbación relativa
-de $p_e$ es $d_e+O(k^{-2})$, con $d_e=O(k^{-1})$ y $B(p\odot d)=0$ por \cite[Sección~6.1]{pred},
-donde $B$ designa aquí la matriz de incidencia de filas y columnas y no el tablero. Al
-normalizar por la fila se conserva el resto relativo $O(k^{-2})$ porque $\sum_jp_{ij}d_{ij}=0$. Al
-sumar por la columna también desaparece la parte lineal, pues $\sum_i p_{ij}d_{ij}=0$. Así $\sum_i
-\nu_B(j\mid i)=1+O(k^{-2})$. En el tramo macroscópico, el resto de la probabilidad de elegir la
-columna es $O_\delta(k^{-3})$. Para cada $\delta$ fijado, $k\ge\delta n$ permite absorberlo en
-$k^{-2}$ con coeficiente uno tomando $n$ grande. En el mismo tramo, $\nu_B(j\mid i)\le 2p_{ij}$ para
-$n$ grande y la constante de difusión de $p$ proviene del perfil. En el tramo mesoscópico se usan las
-cotas de difusión, vacancia y brecha de la clase exterior, cuyas constantes no dependen de $\delta$
-ni de $\varepsilon$. La representación requiere que el padre sea regular y las estimaciones por hijo de la
-prueba del teorema citado, también para el tablero de primera salida.
+Para un padre regular, el desarrollo por hijo en las pruebas de los Teoremas~7.1 y~8.1
+de~\cite[Secciones~7.8 y~8.3--8.5]{pred} da $e^{L(B+e)-L(B)}=p_e(1+d_e+O(k^{-2}))$, con
+$d_e=O(k^{-1})$, uniformemente en sus casillas disponibles. Esto incluye al hijo en la primera salida.
+Si $B_{\rm RC}$ es la matriz de incidencia de filas y columnas, la restricción exacta
+$B_{\rm RC}(p\odot d)=0$ de \cite[Sección~6.1]{pred} da tanto $\sum_jp_{ij}d_{ij}=0$ como
+$\sum_i p_{ij}d_{ij}=0$. Como cada fila tiene masa de $p$ igual a uno, su factor de normalización
+es $1+O(k^{-2})$. Así, en cada casilla disponible la ley normalizada por filas satisface
+\[
+ \nu_B(j\mid i)=p_{ij}\bigl(1+d_{ij}+O(k^{-2})\bigr).
+\]
+Al sumar en $i$, la identidad de la columna cancela el término lineal. Los errores suman $O(k^{-2})$
+porque $\sum_i p_{ij}=1$. Así, $\sum_i\nu_B(j\mid i)=1+O(k^{-2})$, y la elección uniforme de la fila da
+$\nu(j\text{ elegida}\mid\mathcal F^{(k)})=1/k+O(k^{-3})$.
+
+Para $k>M$ el último resto es $O_\delta(k^{-3})$. Una vez fijado $\delta$, al aumentar $n$ se acota
+el resto por $k^{-2}$ con coeficiente uno y se obtiene $\nu_B(j\mid i)\le2p_{ij}$. La constante de
+difusión para estos padres proviene del perfil. Para $k\le M$ las constantes del desarrollo sólo
+dependen de las cotas fijas de difusión, vacancia y brecha de la clase exterior, siempre que la masa
+diagonal esté por debajo del umbral de \cite[Teorema~8.1]{pred}. Estas dos estimaciones fijan
+$C_q,C_{\rm c}$ antes que $\delta$ y $\varepsilon$.
 \end{proof}
 
 \begin{lema}[Filas y columnas prescritas]\label{meso:prescripciones}

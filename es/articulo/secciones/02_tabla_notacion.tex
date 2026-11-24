@@ -1,0 +1,32 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Notación utilizada en la demostración.}
+\label{tab:proof-notation}
+\begin{tabular}{@{}p{.29\linewidth}>{\raggedright\arraybackslash}p{.65\linewidth}@{}}
+\toprule
+Símbolo & Significado \\
+\midrule
+$n,k$ & Orden del tablero inicial y número de filas vacías en el tablero residual. \\
+$M,K$ & Corte $M=\lceil\delta n\rceil$ entre los dos tramos y tamaño terminal $K$. \\
+$B_t,B^{(k)},B_\tau$ & Tablero tras $t$ inserciones, tablero con $k$ filas vacías
+($B^{(k)}=B_{n-k}$) y tablero en la parada. \\
+$\mathcal F_t,\mathcal F^{(k)}$ & Historia revelada, indexada por inserciones o por filas restantes,
+con $\mathcal F^{(k)}=\mathcal F_{n-k}$. \\
+\addlinespace[.22em]
+$Q(B),L(B),g(B)$ & Conteo de completaciones, logaritmo del predictor y diferencia
+$g(B)=\log Q(B)-L(B)$ cuando $Q(B)>0$. \\
+$p_e,\ell_f,h_f$ & Peso de Bethe de la casilla $e$, masa de la diagonal $f$ y su vacancia
+$h_f=1-\ell_f$. \\
+\addlinespace[.22em]
+$\mu,\nu,P^{\rm B}$ & Ley uniforme de revelado, ley adaptativa basada en el predictor
+y ley auxiliar de Bethe. \\
+$\tau,\rho(B,i),A_\tau$ & Tiempo de la primera salida o de la llegada al tamaño $K$, lo que ocurra
+primero, cociente de normalización de la fila y logaritmo acumulado del cociente
+$A_\tau=\sum_{t<\tau}\log\rho(B_t,i_t)$. \\
+\addlinespace[.22em]
+$F,G$ & Llegada al tamaño $K$ con regularidad hasta ese tablero inclusive, y subsuceso
+$G=F\cap\{Q(B^{(K)})>0\}$. \\
+$D_K$ & Suceso en el que dos cruces vacíos distintos en el tamaño $K$ comparten una diagonal. \\
+\bottomrule
+\end{tabular}
+\end{table}

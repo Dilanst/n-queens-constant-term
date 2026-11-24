@@ -23,9 +23,10 @@ For any such parent and any of its children, the one-step expansion in
  \sum_{e\in i}p_ed_e=0
 \]
 in each available row $i$. Here $d_e$ is the relative correction $\delta_c$
-in~\cite[Theorem~7.1]{pred}, and $r_e$ is the remainder $r_c$ in its proof. The construction of the
-child by deletion in \cite[Section~6.5]{pred} also allows us to use the expansion for the first-exit
-board. Only control of the parent is required. Both laws choose the next row uniformly. Conditional on that
+in~\cite[Theorem~7.1]{pred}, and $r_e$ is the remainder $r_c$ in its proof. For every available
+choice on the parent, \cite[Sections~6.5 and~7.2]{pred} rebalance the child and construct its
+interior stationary point. The uniform remainder in \cite[Section~7.8]{pred} therefore includes
+the step reaching a first-exit board. Both laws choose the next row uniformly. Conditional on that
 row, the ratio of the column probability under $\nu$ to its probability $p_e$ under $P^{\rm B}$ is
 \[
  \frac{(1+d_e)e^{r_e}}{\sum_{e'\in i}p_{e'}(1+d_{e'})e^{r_{e'}}} .
@@ -35,9 +36,10 @@ $\sum_{e'\in i}p_{e'}(1+d_{e'})=1$, so the denominator belongs to
 $[e^{-C''_\delta/k^2},e^{C''_\delta/k^2}]$. The absolute value of the logarithm of the ratio is at
 most $2C'_\delta/k+2C''_\delta/k^2$.
 
-We stop the history at the first board of size at least $M$ whose discrepancy reaches or exceeds
-$\varrho_{\rm mac}$, or at the board of size $M$ at the latest. The absolute value of the logarithm
-of the relative density is bounded by
+Use the same stopped tree as in Proposition~\ref{macro:parada} for both laws, with the discrepancy
+on the chosen refinement when a coarser partition is observed. Each atom records the row order
+and the square choices through the first exit or size $M$, whichever comes first. The absolute
+value of the logarithm of the relative density is bounded by
 \[
  \sum_{k=M+1}^{n}\left(\frac{2C'_\delta}{k}+\frac{2C''_\delta}{k^2}\right)
  \le 2C'_\delta\log(n/M)+2C''_\delta/M=O_\delta(1).

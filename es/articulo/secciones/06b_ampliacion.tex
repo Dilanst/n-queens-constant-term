@@ -6,12 +6,9 @@ iguales a uno y $h_f>0$. Existen números positivos $a_i,b_j$ tales que, en toda
 \[
  v_e:=p_e(1-p_e)^3=a_i b_j h_{D(e)}h_{A(e)} .
 \]
-Si además $p_{\max}\le C/k$, para $k$ suficientemente grande, con $\mathcal K=\prod_i a_i\prod_j
-b_j\prod_f h_f$ y $W=\sum_e v_e$, entonces
-\[
- W=k+O_C(1),\qquad H_B(p)=-\log\mathcal K+3\sum_e\log(1-p_e)
-             =-\log\mathcal K-3k+O_C(1).
-\]
+Pongamos $\mathcal K=\prod_i a_i\prod_j b_j\prod_f h_f$ y $W=\sum_e v_e$. Entonces
+$H_B(p)=-\log\mathcal K+3\sum_e\log(1-p_e)$. Si además $p_{\max}\le C/k$, para $k$
+suficientemente grande se tiene $W=k+O_C(1)$ y $H_B(p)=-\log\mathcal K-3k+O_C(1)$.
 \end{lema}
 \begin{proof}
 La derivada de $H_B$ con respecto a $p_e$ es
@@ -26,7 +23,10 @@ $|\log(1-p_e)+p_e|\le p_e^2/(1-p_{\max})$. Ambas cotas se pueden sumar, pues $\s
 \end{proof}
 
 \begin{lema}[Comparación con colocaciones aumentadas]\label{coste-comparacion}
-Supongamos que $Q(B)>0$ y que $n$ es el orden del tablero inicial. Pongamos $N=2n-1$ y $H=N-k$.
+Sea $B$ un tablero con $Q(B)>0$ y con un punto estacionario interior de Bethe $p$ de masas de fila y
+de columna iguales a uno y vacancias diagonales positivas. Usamos los pesos $v_e=p_e(1-p_e)^3$ de las
+piezas reales y el producto $\mathcal K$ de la factorización del Lema~\ref{coste-vacancias}. Si $n$
+es el orden del tablero inicial, pongamos $N=2n-1$ y $H=N-k$.
 Existe una ley de comparación, uniforme sobre colocaciones aumentadas ordenadas, con $k$ piezas
 reales y $H$ piezas
 virtuales, para la cual
@@ -63,7 +63,7 @@ inicial sea $H^4$, aunque hubiese diagonales ocupadas antes de llegar a $B$.
 Una colocación real completa deja descubiertos $H$ vértices en cada familia. Para completarla fijamos
 las $H$ filas ficticias como índices y elegimos independientemente tres biyecciones con los vértices
 descubiertos de las otras tres familias. Esto da exactamente $(H!)^3$ completaciones virtuales, todas
-de peso positivo por $h_f\ge\eta$. Recíprocamente, en una colocación aumentada que cubre todos los
+de peso positivo porque cada $h_f>0$. Recíprocamente, en una colocación aumentada que cubre todos los
 vértices, las filas físicas deben estar cubiertas por piezas reales y las ficticias por virtuales. Las
 piezas reales forman así una de las $Q(B)$ completaciones de $B$. Cada colocación aumentada admite $N!$
 órdenes. En cualquiera de ellos el producto de los pesos de todas las piezas es $\mathcal K$. En

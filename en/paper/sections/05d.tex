@@ -23,7 +23,19 @@ rank-one approximation and the bound on $q-V$ give
 \]
 If $D_R,D_C$ are the diagonal matrices of degrees of $q$, then $D_R^{-1/2}qD_C^{-1/2}$ differs from $q$ by
 $O(\varrho_{\rm mes})$ in operator norm. With the preceding tolerances sufficiently small, its second
-singular value is $\le1-\theta/2$.
+singular value is $\le1-\theta/2$. Write $L_q$ for the weighted row--column Laplacian,
+$D=\operatorname{diag}(D_R,D_C)$ and $d_{\min}=\min_v D_{vv}$. The normalized adjacency has
+off-diagonal blocks $D_R^{-1/2}qD_C^{-1/2}$ and its transpose, so its eigenvalues are the signed
+singular values. Its top eigenvalue is one, with eigenvector $D^{1/2}\mathbf1$. The normalized
+Laplacian $D^{-1/2}L_qD^{-1/2}$ thus has gap
+$\lambda=1-\sigma_2(D_R^{-1/2}qD_C^{-1/2})\ge\theta/2$. For every real vector $f$, its Rayleigh
+inequality after subtracting the degree-weighted mean gives
+\[
+ f^TL_q f\ \ge\ \lambda\min_{a\in\mathbb R}\sum_v D_{vv}(f_v-a)^2
+ \ \ge\ \lambda d_{\min}\min_{a\in\mathbb R}\sum_v(f_v-a)^2 .
+\]
+For $f\perp\mathbf1$ the last minimum is $\|f\|_2^2$, so $\operatorname{gap}(L_q)\ge d_{\min}\lambda$.
+Here all degrees are $1+O(\varrho_{\rm mes})$.
 
 We detail the passage from these observables to the Bethe point. On the support of $q$, let $B$ be the
 row--column incidence matrix of Section~\ref{macro:reconstruccion} and let $P_q=\operatorname{diag}(q_e)$.

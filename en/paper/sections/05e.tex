@@ -12,23 +12,43 @@ without a prior exit and with $D_{\max}(M)\ge\alpha M$ satisfies $\nu(G_M^-,D_{\
 C_\lambda e^{-\lambda M}$.
 \end{lema}
 \begin{proof}
-At $M=\lceil\delta n\rceil$, the macroscopic availability targets satisfy $U_f=u_f+O(\delta+1/n)$ uniformly.
-Since $u_f\ge\kappa_\nu$, the macroscopic weight $W_x$, with $x=M/n$, and the fixed weight $W_0$ differ by a
-relative $O(\delta+1/n)$. In a pattern with available positions $S$, the survival density of its distinct
-diagonal lines contributes $\prod_{e\in S}U_{D(e)}U_{A(e)}$. Multiplication by $\prod_{e\in
-S}W_{0,e}\prod_{e\notin S}\nu_{1,e}$ gives $\prod_{e\in T}\nu_{1,e}(1+O(\delta+1/n))$. Assignments in which
-lines from distinct positions coincide lie in a finite union of hyperplanes of measure zero. The sum over
-the initial board contains $O(n^3)$ such assignments, whose contribution after normalization at $M$ is
-$O_\delta(1/n)$. The same calculation for a single square in a fiber gives $1+O(\delta+1/n)$ uniformly in
-the tracked line, since the integral of $\nu_1$ over the transverse coordinate is $1$. The interval
-proportions are those of the uniform profile of surviving rows and columns. By the hypothesis on $\delta$,
-these deterministic differences leave each target strictly within its entry tolerance. Passing from
-macroscopic counts in units of $n$ to residual counts in units of $M$ requires division by $(M/n)$ for each
-free index. For fixed $\delta$ we may require the macroscopic errors in Section~\ref{macro} to be so small,
-by taking $\varrho_{\rm mac}$ and $a_{\rm mac}$ sufficiently small and $\mathcal I$ a refinement of the
-partition of mesh $a_{\rm mes}$, that after this division all random errors fit within the remaining margins
-of their respective entry tolerances. Increasing $n$ makes the discretization errors $O_\delta(1/n)$ vanish.
-By the fiber estimates of that section, this holds simultaneously for all available tracked lines.
+Put $x=M/n$. Uniformly in $f$, $U_f=u_f+O(\delta+1/n)$ and $u_f\ge\kappa_\nu$, so
+$W_0U_DU_A=\nu_1(1+O(\delta+1/n))$. For a surviving row or column $\ell$, let $F_\ell(M)$ be its
+sum of available weights $W_0$. The macroscopic target on $\ell$ has density $xU_DU_A$ in its
+transverse coordinate. Dividing by $x$ and integrating against $W_0$ gives $1+O(\delta+1/n)$,
+because the marginal of $\nu_1$ is one. In particular,
+\[
+ \left|\frac{F_\ell(M)}M-1\right|
+ \le \frac{\|W_0\|_\infty}{x}\Delta_F+2\omega_F(a_{\rm mac})+C(\delta+1/n).
+\]
+Here $\omega_F(a_{\rm mac})$ bounds the oscillation of $W_0$ on each subfiber. Replacing the weight
+by one sample value per interval in the sum and the target integral costs at most twice this
+oscillation in residual units, since each total mass in macroscopic units is at most $x$.
+
+For a rectangle of type $S\subseteq T$, let $w_S=\prod_{e\in S}W_{0,e}\prod_{e\in T\setminus S}\nu_{1,e}$,
+let $Z_S(M)$ be its injective observable, and let $I_*=\int_{[0,1]^4}\prod_{e\in T}\nu_{1,e}$
+be the common target. The macroscopic target density for this type is
+$x^4\prod_{e\in S}U_{D(e)}U_{A(e)}$. After division by $x^4$ and multiplication by $w_S$, its
+integral is $I_*+O(\delta+1/n)$. Write $\omega_S(a_{\rm mac})$ for the maximum oscillation of $w_S$
+on a partition box. Then
+\begin{align*}
+ |Z_S(M)-I_*|
+ &\le \frac{\|w_S\|_\infty}{x^4}\Delta_R+2\omega_S(a_{\rm mac})+C(\delta+1/n)\\
+ &\quad +\frac{C}{M}+\|w_S\|_\infty\left|\frac{M^4}{(M)_2^2}-1\right| .
+\end{align*}
+Indeed, the ordinary empirical and target masses in units of $n^4$ are each at most $x^4$ in total.
+The $C/M$ term restores injective quadruples with coincident diagonal labels. Each coincidence fixes
+one index once the other three are given, so at most $O(M^3)$ such assignments use surviving indices.
+The last term changes the normalization from $M^4$ to $(M)_2^2$ and is also $O(1/M)$.
+
+Choose the macroscopic partition to refine the mesoscopic one. For each mesoscopic interval, the
+error in the residual row or column proportion is then at most $x^{-1}\Delta_0$. All oscillations
+above are $O(a_{\rm mac})$ by Lipschitz regularity, uniformly over the tracked lines and the sixteen
+types. Once $\delta$ leaves a strict margin in the entry tolerances, $x\ge\delta$ bounds both
+amplification factors. We can choose $\varrho_{\rm mac}$, then a sufficiently fine refining mesh
+as in Proposition~\ref{macro:parada}, and finally $n$ large enough for the rounding and
+discretization terms. These choices fit all three bounds within the entry tolerances whenever
+$\Delta<\varrho_{\rm mac}$.
 
 The bound on $D_{\max}(M)$ is the second estimate of Lemma~\ref{lema:presupuesto-meso} at $M$. The condition
 concerns all empty crossings, so we estimate it from the initial board and include unavailable crossings as
@@ -51,17 +71,20 @@ fix the constants for the prescriptions, increments, and inheritance by each chi
 \item Choose $a_{\rm mes},\varrho_{\rm mes}$ and the tolerances for the fibers, the intervals, and each of
 the sixteen terms so that rebalancing and spectral reconstruction hold. Reserve, for example, one quarter of
 each individual tolerance for entry. These are the \emph{entry tolerances}.
-\item With this family fixed, choose $\chi,b_1>0$ so that $C_H\chi+b_1$ lies strictly within another quarter
-of every tolerance, absorbing the constants in the budget bound. This gives $c_{\rm pat}>0$ in
-Proposition~\ref{prop:concentracion-meso} independently of the diagonal mass bound $\varepsilon$ and the
-floor.
+\item Fix $A\ge4C_{\rm geo}$. With the family of observables fixed, choose $\chi,b_1>0$ so that
+$C_H\chi+b_1$ lies strictly within another quarter of every tolerance, absorbing the budget constant.
+The first estimate of Lemma~\ref{lema:presupuesto-meso} now fixes $c_\chi>0$, and the martingale
+estimates of Proposition~\ref{prop:concentracion-meso} fix positive concentration rates. Choose
+$c_{\rm pat}>0$ below all these rates. Their inputs have already been fixed, independently of
+$\varepsilon$, $\delta$, and the floor.
 \item Now take $\varepsilon>0$ sufficiently small for reconstruction, with $\varepsilon_{\rm
 out}=2\varepsilon$ at most the bound $\varepsilon_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$ of
 Theorem~8.1 of~\cite{pred}, and small enough that $2\beta(\varepsilon_{\rm out})<c_{\rm pat}/4$, where
 ${\beta(v)=2v/(1-v)}$. Fix $\alpha=\varepsilon/(4\|W_0\|_\infty)<1/4$ and choose $\delta>0$ so that the
 deterministic entry errors and the term $C_HA\delta$ lie strictly within their tolerances, the restriction
-$A(\delta+1/n)+\chi+1/K<1/4$ holds strictly, and the rate $\lambda$ in Lemma~\ref{lema:presupuesto-meso} can
-be chosen greater than $c_{\rm pat}$.
+$A(\delta+1/n)+\chi+1/K<1/4$ holds for large $n,K$, and the \emph{second} estimate of
+Lemma~\ref{lema:presupuesto-meso}, for the geometric event $D_{\max}(k)\ge\alpha k$, holds with
+some $\lambda>c_{\rm pat}$.
 \item Finally, fix $K_0\ge k_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$ sufficiently large, with $k_0$
 from the same theorem. Fix the radius $\varrho_{\rm mac}$ and mesh $a_{\rm mac}$ in the macroscopic range
 according to Lemma~\ref{meso:entrada}. Then take $n$ sufficiently large for this $\delta$. These choices
@@ -85,8 +108,10 @@ their exceptional events, at every size $k\ge K'$ reached up to the first exit, 
 its reconstruction tolerance and $D_{\max}(k)<\alpha k$. If the first exit occurred in this range, the
 board just reached would itself satisfy these conditions and Proposition~\ref{meso:reconstruccion} would
 place it in the inner class. Thus an exit requires one of the exceptional events, of probability $\le
-Ce^{-cK'}$ with, for example, $c=c_{\rm pat}/2$. Taking $K'=2^jK$, with the same class and constants, gives
-the claim. The bound is on the probability of histories from the initial board. The diagonal budget is not
-conditioned on an arbitrary board at the cut-off. A step that reaches $K$ and violates a condition counts as
-an exit at $K$.
+Ce^{-cK'}$ with $c=c_{\rm pat}/2$. Taking $K'=2^jK$ with the same class and constants gives the claim.
+The cost factor in Section~\ref{balance} is at most $\exp(C_0+2\beta(\varepsilon_{\rm out})K')$ on
+this band, so $c>2\beta(\varepsilon_{\rm out})$ leaves a summable exponential in $K'=2^jK$.
+The probability and the diagonal budget are both taken from the initial board under $\nu$. A step
+that reaches $K$ and
+violates a condition counts as an exit at $K$.
 \end{proof}

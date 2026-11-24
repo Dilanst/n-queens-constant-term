@@ -13,26 +13,46 @@ probabilidad de llegar a $M$ sin salida previa y con $D_{\max}(M)\ge\alpha M$ cu
 $\nu(G_M^-,D_{\max}(M)\ge\alpha M)\le C_\lambda e^{-\lambda M}$.
 \end{lema}
 \begin{proof}
-En $M=\lceil\delta n\rceil$ los objetivos de disponibilidad del tramo macroscópico cumplen
-$U_f=u_f+O(\delta+1/n)$ uniformemente. Como $u_f\ge\kappa_\nu$, el peso macroscópico $W_x$, con
-$x=M/n$, y el peso fijo $W_0$ difieren relativamente en $O(\delta+1/n)$. En un patrón de posiciones
-disponibles $S$, la densidad de supervivencia de sus líneas diagonales distintas aporta
-$\prod_{e\in S}U_{D(e)}U_{A(e)}$. Multiplicada por $\prod_{e\in S}W_{0,e}\prod_{e\notin S}\nu_{1,e}$
-da $\prod_{e\in T}\nu_{1,e}(1+O(\delta+1/n))$. Las asignaciones con coincidencias de líneas entre
-posiciones diferentes están en una unión finita de hiperplanos de medida cero; en la suma sobre el
-tablero inicial hay $O(n^3)$ asignaciones de ese tipo y su coste al normalizar en $M$ es
-$O_\delta(1/n)$. El mismo cálculo para una sola casilla de una fibra da $1+O(\delta+1/n)$,
-uniformemente en la línea distinguida, porque la integral de $\nu_1$ por la coordenada transversal
-vale $1$. Los intervalos tienen las proporciones del perfil uniforme de filas y columnas que
-sobreviven. Por la hipótesis sobre $\delta$, estas diferencias deterministas dejan cada objetivo
-dentro de su tolerancia de entrada con desigualdad estricta. Al pasar de cuentas macroscópicas en
-unidades de $n$ a cuentas residuales en unidades de $M$, se divide por $(M/n)$ por cada índice
-libre. Para $\delta$ fijo se pueden exigir en la Sección~\ref{macro} errores macroscópicos tan
-pequeños, es decir, $\varrho_{\rm mac}$ y $a_{\rm mac}$ tan pequeños, con $\mathcal I$ un
-refinamiento de la partición de paso $a_{\rm mes}$, que todos los errores aleatorios, tras esa
-división, quepan en lo que queda de las respectivas tolerancias de entrada; los errores de
-discretización $O_\delta(1/n)$ desaparecen aumentando $n$. Esto vale simultáneamente para todas las
-líneas distinguidas disponibles, con las estimaciones de fibras de aquella sección.
+Pongamos $x=M/n$. Uniformemente en $f$, se tiene $U_f=u_f+O(\delta+1/n)$ y $u_f\ge\kappa_\nu$, de
+modo que $W_0U_DU_A=\nu_1(1+O(\delta+1/n))$. Para una fila o columna $\ell$ que sobrevive, sea
+$F_\ell(M)$ la suma de los pesos $W_0$ de sus casillas disponibles. El objetivo macroscópico sobre
+$\ell$ tiene densidad $xU_DU_A$ en la coordenada transversal. Al dividir por $x$ e integrar contra
+$W_0$ se obtiene $1+O(\delta+1/n)$, pues la marginal de $\nu_1$ vale uno. En particular,
+\[
+ \left|\frac{F_\ell(M)}M-1\right|
+ \le \frac{\|W_0\|_\infty}{x}\Delta_F+2\omega_F(a_{\rm mac})+C(\delta+1/n).
+\]
+Aquí $\omega_F(a_{\rm mac})$ acota la oscilación de $W_0$ en cada subfibra. Sustituir el peso por
+un valor elegido en cada intervalo, tanto en la suma como en la integral objetivo, cuesta a lo sumo
+el doble de esta oscilación en unidades residuales, pues cada masa total en unidades macroscópicas
+es a lo sumo $x$.
+
+Para un rectángulo de tipo $S\subseteq T$, sea
+$w_S=\prod_{e\in S}W_{0,e}\prod_{e\in T\setminus S}\nu_{1,e}$, sea $Z_S(M)$ su observable inyectivo
+y sea $I_*=\int_{[0,1]^4}\prod_{e\in T}\nu_{1,e}$ el objetivo
+común. La densidad objetivo macroscópica para este tipo es $x^4\prod_{e\in S}U_{D(e)}U_{A(e)}$.
+Tras dividir por $x^4$ y multiplicar por $w_S$, su integral es $I_*+O(\delta+1/n)$. Denotemos por
+$\omega_S(a_{\rm mac})$ la oscilación máxima de $w_S$ en una caja de la partición. Entonces
+\begin{align*}
+ |Z_S(M)-I_*|
+ &\le \frac{\|w_S\|_\infty}{x^4}\Delta_R+2\omega_S(a_{\rm mac})+C(\delta+1/n)\\
+ &\quad +\frac{C}{M}+\|w_S\|_\infty\left|\frac{M^4}{(M)_2^2}-1\right| .
+\end{align*}
+En efecto, tanto la masa empírica ordinaria como la masa objetivo en unidades de $n^4$ suman a lo
+sumo $x^4$ cada una. El término $C/M$ reincorpora las cuádruplas inyectivas con etiquetas diagonales
+coincidentes. Cada coincidencia fija un índice una vez dados los otros tres, por lo que a lo sumo
+$O(M^3)$ asignaciones de este tipo usan índices supervivientes. El último término cambia la
+normalización de $M^4$ a $(M)_2^2$ y también es $O(1/M)$.
+
+Elegimos la partición macroscópica de modo que refine la mesoscópica. En cada intervalo mesoscópico,
+el error en la proporción residual de filas o de columnas es entonces a lo sumo $x^{-1}\Delta_0$.
+Por la regularidad de Lipschitz, todas las oscilaciones anteriores son $O(a_{\rm mac})$,
+uniformemente en las líneas distinguidas y en los dieciséis tipos. Una vez que $\delta$ deja un
+margen estricto en las tolerancias de entrada, $x\ge\delta$ acota ambos factores de amplificación.
+Podemos elegir $\varrho_{\rm mac}$, después un refinamiento de paso suficientemente fino como en la
+Proposición~\ref{macro:parada} y finalmente $n$ suficientemente grande para los términos de redondeo
+y de discretización. Con estas elecciones, las tres cotas quedan dentro de las tolerancias de entrada
+siempre que $\Delta<\varrho_{\rm mac}$.
 
 La cota para $D_{\max}(M)$ es la segunda estimación del Lema~\ref{lema:presupuesto-meso} en $M$.
 Es una condición sobre todos los cruces vacíos y por ello se estima desde el tablero inicial, también
@@ -61,18 +81,21 @@ por hijo se fijan una sola vez.
 de cada uno de los dieciséis términos para que valgan el reequilibrado y la reconstrucción
 espectral. Reservamos, por ejemplo, un cuarto de cada tolerancia individual para la entrada: son las
 \emph{tolerancias de entrada}.
-\item Con esta familia fijada, escogemos $\chi,b_1>0$ para que $C_H\chi+b_1$ quepa estrictamente en
-otro cuarto de todas las tolerancias, absorbiendo las constantes del presupuesto. Esto da $c_{\rm
-pat}>0$ en la Proposición~\ref{prop:concentracion-meso} con independencia de la cota $\varepsilon$ de
-la masa diagonal y del suelo.
+\item Fijamos $A\ge4C_{\rm geo}$. Con la familia de observables fijada, escogemos $\chi,b_1>0$ para
+que $C_H\chi+b_1$ quepa estrictamente en otro cuarto de cada tolerancia, absorbiendo la constante
+del presupuesto. La primera estimación del Lema~\ref{lema:presupuesto-meso} fija ahora $c_\chi>0$ y
+las estimaciones de martingalas de la Proposición~\ref{prop:concentracion-meso} fijan tasas de
+concentración positivas. Elegimos $c_{\rm pat}>0$ menor que todas estas tasas. Los parámetros de que
+dependen ya se han fijado, independientemente de $\varepsilon$, de $\delta$ y del suelo.
 \item Tomamos ahora $\varepsilon>0$ suficientemente pequeña para la reconstrucción, con
 $\varepsilon_{\rm out}=2\varepsilon$ no mayor que la cota
 $\varepsilon_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$ del Teorema~8.1 de~\cite{pred}, y para
 que se cumpla $2\beta(\varepsilon_{\rm out})<c_{\rm pat}/4$, donde ${\beta(v)=2v/(1-v)}$. Fijamos
 $\alpha=\varepsilon/(4\|W_0\|_\infty)<1/4$ y elegimos $\delta>0$ de modo que los errores
 deterministas de entrada y el término $C_HA\delta$ quepan con desigualdad estricta en sus
-tolerancias, la restricción $A(\delta+1/n)+\chi+1/K<1/4$ se cumpla con desigualdad estricta, y la
-tasa $\lambda$ del Lema~\ref{lema:presupuesto-meso} pueda escogerse mayor que $c_{\rm pat}$.
+tolerancias, la restricción $A(\delta+1/n)+\chi+1/K<1/4$ se cumpla para $n,K$ grandes y la
+\emph{segunda} estimación del Lema~\ref{lema:presupuesto-meso} para el suceso geométrico
+$D_{\max}(k)\ge\alpha k$ valga con algún $\lambda>c_{\rm pat}$.
 \item Fijamos finalmente $K_0\ge k_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$, con el $k_0$ del
 mismo teorema, y suficientemente grande; según el Lema~\ref{meso:entrada}, el radio
 $\varrho_{\rm mac}$ y el paso $a_{\rm mac}$ del tramo macroscópico; y después $n$ suficientemente
@@ -97,9 +120,10 @@ regular, salvo sus excepciones, cada observable al llegar a cualquier tamaño $k
 primera salida queda dentro de su tolerancia de reconstrucción, y $D_{\max}(k)<\alpha k$. Si se
 produjera la primera salida en este rango, su propio tablero de llegada cumpliría esas condiciones y
 la Proposición~\ref{meso:reconstruccion} lo situaría en la clase interior. Por tanto la salida exige
-una de las excepciones, de probabilidad $\le Ce^{-cK'}$ con, por ejemplo, $c=c_{\rm pat}/2$. Se toma
-$K'=2^jK$, con la misma clase y las mismas constantes, para obtener el enunciado. La cota es una
-probabilidad de historias desde el tablero inicial; el presupuesto diagonal no se condiciona a un
-tablero arbitrario del corte. Un
-paso que llegue a $K$ y viole una condición se contabiliza como salida en $K$.
+una de las excepciones, de probabilidad $\le Ce^{-cK'}$ con $c=c_{\rm pat}/2$. Se toma $K'=2^jK$,
+con la misma clase y las mismas constantes, para obtener el enunciado. El factor de coste de la
+Sección~\ref{balance} es a lo sumo $\exp(C_0+2\beta(\varepsilon_{\rm out})K')$ en esta banda, por
+lo que $c>2\beta(\varepsilon_{\rm out})$ deja una exponencial sumable en $K'=2^jK$. Tanto la
+probabilidad como el presupuesto diagonal se toman desde el tablero inicial bajo $\nu$. Un paso que
+llegue a $K$ y viole una condición se contabiliza como salida en $K$.
 \end{proof}

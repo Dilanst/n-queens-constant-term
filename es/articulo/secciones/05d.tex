@@ -31,13 +31,24 @@ Si $D_R,D_C$ son las
 matrices diagonales de
 los grados de $q$, la matriz $D_R^{-1/2}qD_C^{-1/2}$ difiere de $q$ en norma de operador en
 $O(\varrho_{\rm mes})$. Con las tolerancias anteriores suficientemente pequeñas, su segundo valor
-singular es
-$\le1-\theta/2$.
+singular es $\le1-\theta/2$. Denotemos por $L_q$ el laplaciano ponderado de filas y columnas y
+pongamos $D=\operatorname{diag}(D_R,D_C)$ y $d_{\min}=\min_v D_{vv}$. Los bloques no diagonales de
+la matriz de adyacencia normalizada son $D_R^{-1/2}qD_C^{-1/2}$ y su traspuesta, de modo que sus
+valores propios son los valores singulares con ambos signos. Su mayor valor propio es uno, con vector
+propio $D^{1/2}\mathbf1$. Así, el laplaciano normalizado $D^{-1/2}L_qD^{-1/2}$ tiene brecha
+$\lambda=1-\sigma_2(D_R^{-1/2}qD_C^{-1/2})\ge\theta/2$. Para todo vector real $f$, al restar la
+media ponderada por los grados, la desigualdad de Rayleigh da
+\[
+ f^TL_q f\ \ge\ \lambda\min_{a\in\mathbb R}\sum_v D_{vv}(f_v-a)^2
+ \ \ge\ \lambda d_{\min}\min_{a\in\mathbb R}\sum_v(f_v-a)^2 .
+\]
+Para $f\perp\mathbf1$ el último mínimo es $\|f\|_2^2$, por lo que
+$\operatorname{gap}(L_q)\ge d_{\min}\lambda$. Aquí todos los grados son $1+O(\varrho_{\rm mes})$.
 
 Detallamos cómo pasar de estos observables al punto de Bethe. En el soporte de $q$, sea $B$ la matriz
 de incidencia de filas y columnas de la Sección~\ref{macro:reconstruccion} y
 $P_q=\operatorname{diag}(q_e)$. Para el reequilibrado resolvemos
-$(BP_qB^T)z=\mathbf1-Bq$ en el complemento del gauge $(\mathbf1,-\mathbf1)$. El segundo
+$(BP_qB^T)z=\mathbf1-Bq$ en el complemento ortogonal del gauge $(\mathbf1,-\mathbf1)$. El segundo
 miembro es ortogonal a ese vector. El cambio de signo en las coordenadas de columna convierte la
 matriz en el laplaciano de filas y columnas de pesos $q$. La brecha anterior y los grados acotados
 superior e inferiormente dan $\|z\|_2/\sqrt{k}=O(\varrho_{\rm mes})$. En la ecuación de cada vértice,
@@ -60,7 +71,7 @@ Para precisar la inversión relativa, pongamos $P=\operatorname{diag}(\bar q)$ y
  \mathcal T=\{x:BPx=0\},\qquad
  \Pi=I-B^T(BPB^T)^+BP ,
 \]
-donde el superíndice $+$ denota la inversa en el complemento del gauge, prolongada por cero. Esta
+donde el superíndice $+$ denota la inversa en el complemento ortogonal del gauge, prolongada por cero. Esta
 proyección sobre $\mathcal T$ anula $\operatorname{im}B^T$, el espacio de los multiplicadores de fila
 y de columna, y tiene norma de $\ell^\infty$
 acotada uniformemente: se aplica la estimación anterior del laplaciano con segundo miembro $BPv$, de

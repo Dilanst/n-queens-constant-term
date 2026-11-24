@@ -55,16 +55,20 @@ perturbaciones y la elección de $A_0,\rho_0$ son uniformes para los parámetros
 \end{proof}
 
 \begin{lema}[Identificación con el factor de torres]\label{terminal-normalizador}
-Con los pesos del Lema~\ref{terminal-escalado},
+Sea $P$ una matriz bistocástica de orden $K$ que cumpla \eqref{terminal-hipotesis-matriz}.
+Pongamos $W_{ij}=P_{ij}(1-P_{ij})$. Formemos $S_2,C_2,\Gamma_2$ a partir de $P$ mediante
+\eqref{coste:rook-def}, con $k=K$ y la matriz de incidencia de filas y columnas de su soporte.
+Entonces, cuando $K\to\infty$,
 \[
  \log\frac{\per W}{\prod_{ij}(1-P_{ij})}=\log\Gamma_2+o(1)
 \]
-uniformemente bajo \eqref{terminal-hipotesis-matriz}.
+uniformemente para $M_0$ y $\rho_*<1$ fijos.
 \end{lema}
 \begin{proof}
-Para $S_0=\left(\begin{smallmatrix}I&P\\P^T&I\end{smallmatrix}\right)$ el autovalor constante positivo
-es dos, el otro constante es nulo y, fuera de esas rectas, los valores singulares de $P-J_K$ producen
-los factores $(1-\sigma)(1+\sigma)$. Por tanto
+Escribamos $B=P-J_K$ y $a_K=\sum_{ij}P_{ij}^2$ como en la Proposición~\ref{terminal-permanente}.
+Para $S_0=\left(\begin{smallmatrix}I&P\\P^T&I\end{smallmatrix}\right)$, los autovalores en las dos
+rectas de vectores constantes son dos y cero. En su complemento ortogonal, los valores singulares de
+$P-J_K$ dan los factores $(1-\sigma)(1+\sigma)$. Por tanto
 \[
  \pdet S_0=2\det(I-B^TB).
 \]
@@ -81,7 +85,7 @@ op}=O(K^{-1})$. Además
 $\operatorname{tr}\Delta=2\sum_e P_e^2/(1-2P_e)=2a_K+O(K^{-1})$ y
 $\|\Delta\|_{\rm HS}^2\le\|\Delta\|_{\rm op}\operatorname{tr}\Delta=O(K^{-1})$.
 
-El complemento del modo cero de $S_0$ tiene brecha al menos $1-\rho_*$. Allí ponemos
+El complemento ortogonal del modo cero de $S_0$ tiene brecha al menos $1-\rho_*$. Allí ponemos
 $X=S_0^{-1/2}\Delta S_0^{-1/2}$. Se tiene $X\ge0$ y $\|X\|_{\rm HS}^2=O(K^{-1})$. Aplicando
 $|\log(1+x)-x|\le x^2/2$ para $x\ge0$ obtenemos
 \[
@@ -89,7 +93,7 @@ $|\log(1+x)-x|\le x^2/2$ para $x\ge0$ obtenemos
  =\operatorname{tr}(S_0^+\Delta)+O(K^{-1}).
 \]
 Para estimar la traza observemos que $\|S_0^+-I\|_{\rm HS}=O(1)$. En las rectas constantes esto es
-inmediato. En el complemento de ambas, $S_0-I$ tiene bloques cruzados $B,B^T$ y por tanto norma de
+inmediato. En el complemento ortogonal de ambas, $S_0-I$ tiene bloques cruzados $B,B^T$ y por tanto norma de
 Hilbert--Schmidt $O(1)$. Multiplicarlo por la inversa acotada $-S_0^{-1}$ da allí $S_0^{-1}-I$. La
 desigualdad de Cauchy--Schwarz para la traza muestra entonces que
 \[

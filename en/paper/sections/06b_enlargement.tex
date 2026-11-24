@@ -6,12 +6,9 @@ equal to one and $h_f>0$. There are positive numbers $a_i,b_j$ such that, on eve
 \[
  v_e:=p_e(1-p_e)^3=a_i b_j h_{D(e)}h_{A(e)} .
 \]
-Suppose also that $p_{\max}\le C/k$. Then for sufficiently large $k$, writing
-$\mathcal K=\prod_i a_i\prod_j b_j\prod_f h_f$ and $W=\sum_e v_e$, we have
-\[
- W=k+O_C(1),\qquad H_B(p)=-\log\mathcal K+3\sum_e\log(1-p_e)
-             =-\log\mathcal K-3k+O_C(1).
-\]
+Set $\mathcal K=\prod_i a_i\prod_j b_j\prod_f h_f$ and $W=\sum_e v_e$. Then
+$H_B(p)=-\log\mathcal K+3\sum_e\log(1-p_e)$. If also $p_{\max}\le C/k$, then for
+sufficiently large $k$ we have $W=k+O_C(1)$ and $H_B(p)=-\log\mathcal K-3k+O_C(1)$.
 \end{lema}
 \begin{proof}
 The derivative of $H_B$ with respect to $p_e$ is
@@ -27,7 +24,10 @@ $|\log(1-p_e)+p_e|\le p_e^2/(1-p_{\max})$. Both bounds can be summed because $\s
 \end{proof}
 
 \begin{lema}[Comparison with augmented placements]\label{coste-comparacion}
-Suppose that $Q(B)>0$ and that $n$ is the order of the initial board. Put $N=2n-1$ and $H=N-k$.
+Let $B$ have $Q(B)>0$ and an interior stationary Bethe point $p$ with unit row and column
+masses and positive diagonal vacancies. Use the real-piece weights $v_e=p_e(1-p_e)^3$ and the
+product $\mathcal K$ from the factorization in Lemma~\ref{coste-vacancias}.
+With $n$ the order of the initial board, put $N=2n-1$ and $H=N-k$.
 There is a comparison law, uniform on ordered augmented placements with $k$ real pieces and $H$
 virtual pieces, for which
 \[
@@ -63,7 +63,7 @@ mass is $H^4$, even if some diagonals were occupied before reaching $B$.
 A complete real placement leaves $H$ vertices uncovered in each family. To complete it, use the
 $H$ dummy rows as indices and independently choose three bijections from them to the uncovered
 vertices of the other three families. This gives exactly $(H!)^3$ virtual completions, all of
-positive weight since $h_f\ge\eta$. Conversely, in an augmented placement covering every vertex,
+positive weight since every $h_f>0$. Conversely, in an augmented placement covering every vertex,
 real pieces must cover the physical rows and virtual pieces must cover the dummy rows. The real
 pieces thus form one of the $Q(B)$ completions of $B$. Each augmented placement admits $N!$
 orderings. In every ordering the product of the weights of all the pieces is $\mathcal K$.

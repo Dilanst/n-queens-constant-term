@@ -66,7 +66,9 @@ tamaño $M$, la discrepancia alcance o supere $\varrho_{\rm mac}$. Para $n$ sufi
 \[
  P^{\rm B}(\mathcal H_M)\le C_{\delta,\varrho_{\rm mac}}\exp(-c_{\delta,\varrho_{\rm mac}}n).
 \]
-Se puede imponer el mismo control a una partición de observación fija pasando a un refinamiento suyo.
+Una partición de observación fija puede seguirse en las mismas historias tomando $\mathcal I$ como
+refinamiento suyo. Fuera de $\mathcal H_M$, su discrepancia queda por debajo del mismo radio hasta el
+tamaño $M$ inclusive.
 \end{proposicion}
 \begin{proof}
 Sea $\tau$ el índice del primer tablero de la historia de tamaño al menos $M$ cuya discrepancia
@@ -94,7 +96,8 @@ número de intervalos,
  +C_\delta(a_{\rm mac}+C_{\mathcal I}/n),\qquad 0\le s\le n-M .
 \end{equation}
 Para las fibras primero se suman los errores absolutos sobre sus intervalos y luego se toma el máximo
-sobre las líneas. La contribución de cada fibra cesa desde su congelación. Las estimaciones del
+sobre las líneas. Una vez congelada una fibra, sus incrementos se anulan y su discrepancia en el
+instante de congelación permanece en $\Delta_F$. Las estimaciones del
 Lema~\ref{macro:deriva} sólo emplean en la deriva $\zeta$, que es lineal en $\Delta_0+\Delta_F$. El
 exponente $1/4$ del Lema~\ref{macro:brecha} no afecta al coeficiente de \eqref{macro:gronwall}.
 
@@ -116,11 +119,9 @@ aplicar la misma cuenta a $-\xi_j$ y optimizar $\theta$ da
  \le 2\exp\!\left(-\frac{u^2}{2\sum_{j\le m}d_j^2}\right).
 \end{equation}
 Para la partición $\mathcal I$ fija existe $C'_{\mathcal I}$ tal que si todas las martingalas escalares
-tienen máximo absoluto menor
-que $b/C'_{\mathcal I}$ entonces $\mathcal M^*<b$. El factor $C'_{\mathcal I}$ cuenta los intervalos de
-una sola fibra y las
-observaciones de intervalos y rectángulos. El número de líneas distinguidas sólo interviene en la
-unión de sucesos. De \eqref{macro:max-mart} resulta
+tienen máximo absoluto menor que $b/C'_{\mathcal I}$ entonces $\mathcal M^*<b$. El factor $C'_{\mathcal I}$
+cuenta los intervalos de una sola fibra y las observaciones de intervalos y rectángulos. El número de
+líneas distinguidas sólo interviene en la unión de sucesos. De \eqref{macro:max-mart} resulta
 \[
  P^{\rm B}(\mathcal M^*\ge b)\le C_{\mathcal I}(n+1)\exp(-c_{\delta,\mathcal I}b^2 n).
 \]
@@ -133,7 +134,17 @@ $e^{C_\delta}(b+C_\delta a_{\rm mac})<\varrho_{\rm mac}/3$, y finalmente $n$ gra
 fija. Gronwall discreto en \eqref{macro:gronwall} da $\Delta(s\wedge\tau)<\varrho_{\rm mac}$ siempre
 que $\mathcal M^*<b$, también para el paso que llega a $\tau$. Así
 $\mathcal H_M\subseteq\{\mathcal M^*\ge b\}$, lo que prueba la cota, absorbiendo $n+1$ en la
-exponencial. Al refinar una partición todas las masas y
-objetivos de una región gruesa se obtienen sumando los de las regiones finas, también para fibras
-congeladas. La desigualdad triangular transfiere la cota a la partición gruesa.
+exponencial.
+
+Para una partición de observación fija, tomemos como $\mathcal I$ un refinamiento de paso
+suficientemente pequeño. Usamos el árbol común de órdenes de filas y prefijos de elecciones de
+casillas disponibles, detenido en la primera salida de la partición fina o en el tamaño $M$. En cada
+prefijo, las masas y los objetivos de la partición gruesa se obtienen sumando sus partes finas. El instante
+de congelación de una línea depende sólo de las casillas elegidas, de modo que esto vale también para
+las fibras congeladas. La desigualdad triangular, seguida para las fibras del máximo sobre las
+líneas, da $\Delta_{\rm coarse}\le\Delta_{\rm fine}$ en ese mismo prefijo. Por tanto, al radio común,
+la partición gruesa no puede salir antes que la fina. Si un prefijo de salida de la partición fina
+admite una continuación, toda salida posterior de la gruesa pertenece al suceso ya contado con la
+masa total de ese prefijo. En este argumento sólo intervienen transiciones desde padres estrictamente
+anteriores a la parada fina. Esos padres tienen punto de Bethe por la Proposición~\ref{macro:maximo}.
 \end{proof}

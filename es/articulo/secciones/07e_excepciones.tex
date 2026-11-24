@@ -2,15 +2,15 @@
 Existe una sucesión $\theta_K\to0$, dependiente sólo de las cotas exteriores, tal que en
 $F\cap D_K^c$
 \[
- |\log Q(B_K)-L(B_K)|\le\theta_K .
+ |\log Q(B^{(K)})-L(B^{(K)})|\le\theta_K .
 \]
-Si $G=F\cap\{Q(B_K)>0\}$, entonces $\nu(G)\ge\nu(F)-d_{n,K}$. Para $L_K^{\max}=C K\log(K+1)$ y
+Si $G=F\cap\{Q(B^{(K)})>0\}$, entonces $\nu(G)\ge\nu(F)-d_{n,K}$. Para $L_K^{\max}=C K\log(K+1)$ y
 $\nu(G)>0$ se cumplen
 \[
  \begin{aligned}
- \E_\mu\!\left[|g(B_K)|\mathbf1_F\right]
+ \E_\mu\!\left[|g(B^{(K)})|\mathbf1_F\right]
  &\le\theta_K+(L_K^{\max}+\log K!)\, CK^4/n,\\
- \E_{\nu(\cdot\mid G)}[g(B_K)^-]
+ \E_{\nu(\cdot\mid G)}[g(B^{(K)})^-]
  &\le\theta_K+L_K^{\max}\,d_{n,K}/\nu(G).
  \end{aligned}
 \]
@@ -18,7 +18,7 @@ Aquí $u^-=\max\{-u,0\}$.
 \end{proposicion}
 \begin{proof}
 En $F\cap D_K^c$ tomemos $P=(p_{ij})$ igual al punto de Bethe, extendido por cero fuera de $A$. El
-Lema~\ref{terminal-pivotes} da $H_B=H_T$, $L=H_T+\log\Gamma_2$ y $Q(B_K)=\per A>0$. La estacionariedad
+Lema~\ref{terminal-pivotes} da $H_B=H_T$, $L=H_T+\log\Gamma_2$ y $Q(B^{(K)})=\per A>0$. La estacionariedad
 de torres dice que $W_{ij}=a_i b_j$ en todo el soporte de $A$. Sea
 $\mathcal K_T=\prod_i a_i\prod_j b_j$.
 Al multiplicar los pesos de una permutación y sumar obtenemos $\per W=\mathcal K_T\,\per A$. Al
@@ -42,9 +42,9 @@ casillas y sobre diagonales, con $\sum_e p_e=K$ y $\sum_f\ell_f=2K$, se deduce
 \[
  -3K\le H_B(p)\le K\log K+2K .
 \]
-El Lema~\ref{coste-estatico} da entonces $|L(B_K)|\le L_K^{\max}$ para $K$ suficientemente grande. En
-una historia que se puede completar, $1\le Q(B_K)\le K!$, de modo que $|g(B_K)|\le L_K^{\max}+\log K!$
-y $g(B_K)^-\le L_K^{\max}$.
+El Lema~\ref{coste-estatico} da entonces $|L(B^{(K)})|\le L_K^{\max}$ para $K$ suficientemente grande.
+En una historia que se puede completar, $1\le Q(B^{(K)})\le K!$, de modo que
+$|g(B^{(K)})|\le L_K^{\max}+\log K!$ y $g(B^{(K)})^-\le L_K^{\max}$.
 
 Bajo $\mu$ las historias siempre se pueden completar. Aplicamos la primera conclusión en $F\cap D_K^c$
 y la última cota absoluta en $F\cap D_K$, cuya probabilidad es a lo sumo $CK^4/n$ al promediar el

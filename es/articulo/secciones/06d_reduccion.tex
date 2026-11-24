@@ -1,13 +1,15 @@
 \subsection{Reducción a un permanente auxiliar}\label{costes:permanente}
 
 Sea $\varepsilon_{\rm out}\ge\max_f\ell_f$ la cota exterior común, con $\varepsilon_{\rm out}<1$.
-Sean $P=(p_{ij})$ con ceros fuera del soporte y
+Sea $P=(p_{ij})$ la matriz del punto estacionario interior de Bethe, con ceros fuera del soporte, y sea
 $W_{ij}=p_{ij}(1-p_{ij})$. En lo que sigue $W$ denota esta matriz auxiliar. Escribimos
-\[
- S_{R,d}=A_R^T\operatorname{diag}(\tau_d(p_e))A_R,\qquad
- S_2=S_{R,2},\qquad
+\begin{equation}\label{coste:rook-def}
+ \begin{gathered}
+ S_{R,d}=A_R^T\operatorname{diag}(\tau_d(p_e))A_R,\qquad S_2=S_{R,2},\\
+ C_2=\sum_{ij}\bigl[\log(1-2p_{ij})-2\log(1-p_{ij})\bigr],\qquad
  \Gamma_2=\frac{e^{-C_2/2}\sqrt{4\pi k}}{\sqrt{\pdet S_2}} .
-\]
+ \end{gathered}
+\end{equation}
 Una permutación en el soporte usa una casilla por fila y por columna. La llamamos legal si además usa
 cada diagonal a lo sumo una vez.
 
@@ -25,8 +27,9 @@ Entonces
  Q(B)e^{-H_B(p)}
    =\frac{\per W}{\prod_e(1-p_e)}\,\E_{\mu_W}F.
 \]
-Para $Q(B)>0$, si $P$ cumple las hipótesis \eqref{terminal-hipotesis-matriz} de la
-Sección~\ref{permanente} con $K=k$, resulta uniformemente
+Para $Q(B)>0$, supongamos que la matriz bistocástica $P$ cumple las cotas de
+\eqref{terminal-hipotesis-matriz} con $K=k$, es decir, $p_{ij}\le M_0/k$ y
+$\|P-\mathbf1\mathbf1^T/k\|_{\rm op}\le\rho_*<1$. Entonces, uniformemente para $M_0,\rho_*$ fijos,
 \[
  g(B)=\log\E_{\mu_W}F-\log(\Gamma_4/\Gamma_2)+o(1)
  \qquad (k\longrightarrow\infty).
@@ -44,13 +47,12 @@ b_j$, independientemente de la colocación. Sumando sobre las $Q(B)$ permutacion
 derecho de la primera igualdad es
 $Q(B)\mathcal K/\prod_e(1-p_e)^3$, que vale $Q(B)e^{-H_B(p)}$ por ese mismo lema.
 
-El Lema~\ref{terminal-normalizador} da
-$\log(\per W/\prod_e(1-p_e))=\log\Gamma_2+o(1)$ para la matriz bistocástica $P$ y los pesos
-$W=P\circ(1-P)$. Su prueba, como la de la Proposición~\ref{terminal-permanente}, sólo toma de esta
-sección las definiciones de $S_2$, $C_2$ y $\Gamma_2$. Los pesos se construyen con este mismo $P$ en
-el mismo tablero, de modo que en la
-ecuación estacionaria ponderada de torres, $p_e(1-p_e)=W_e$, los multiplicadores pueden tomarse
-iguales a uno. Tomar logaritmos en la primera igualdad y usar $L(B)=H_B(p)+\log\Gamma_4$ prueba la
+Para la fórmula asintótica aplicamos la estimación matricial del Lema~\ref{terminal-normalizador} a
+esta $P$, con $K=k$, $W_{ij}=p_{ij}(1-p_{ij})$ y el factor de torres de \eqref{coste:rook-def}. Se
+obtiene $\log(\per W/\prod_e(1-p_e))=\log\Gamma_2+o(1)$. Su prueba usa las estimaciones del escalado
+y del permanente de la Sección~\ref{permanente}. En la ecuación estacionaria ponderada de torres,
+$p_e(1-p_e)=W_e$, todos los multiplicadores pueden tomarse iguales a uno. Tomar logaritmos en la
+primera igualdad y usar $L(B)=H_B(p)+\log\Gamma_4$ prueba la
 segunda. La ley $\mu_W$ se usa únicamente para contar en $B$.
 \end{proof}
 

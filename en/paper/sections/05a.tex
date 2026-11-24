@@ -1,6 +1,6 @@
 \section{Permanence from the cut-off down to a fixed number of rows}\label{meso}
-In this section we index by size, so $\mathcal F_k$ is the history up to the board of size $k$, whereas in
-Section~\ref{macro} the index of $\mathcal F_s$ was the number of steps. Let $M=\lceil\delta n\rceil$. For
+We use $\mathcal F^{(k)}=\mathcal F_{n-k}$ for the history through the board $B^{(k)}$ of size $k$.
+Let $M=\lceil\delta n\rceil$. For
 the board of size $k$, write $D_{\max}(k)$ for the maximum, over diagonals of both families of the initial
 board, of the number of empty crossings on the line, whether available or not. This quantity is
 nonincreasing along the history and bounds from above the number of available squares on any diagonal in
@@ -15,23 +15,32 @@ given that row $i$ is chosen, with $\nu_B(j\mid i)=0$ on unavailable squares. Th
 $C_q,C_{\rm c}$, which can be fixed before $\delta$ and the diagonal mass bound $\varepsilon$, such that,
 for all sufficiently large $n$ and all $k$ above a fixed threshold,
 \begin{align*}
- \nu(i\text{ chosen}\mid\mathcal F_k)&=1/k,\\
- \left|\nu(j\text{ chosen}\mid\mathcal F_k)-1/k\right|&\le C_{\rm c}/k^2,\\
- \nu((i,j)\text{ chosen}\mid\mathcal F_k)&\le C_q/k^2 .
+ \nu(i\text{ chosen}\mid\mathcal F^{(k)})&=1/k,\\
+ \left|\nu(j\text{ chosen}\mid\mathcal F^{(k)})-1/k\right|&\le C_{\rm c}/k^2,\\
+ \nu((i,j)\text{ chosen}\mid\mathcal F^{(k)})&\le C_q/k^2 .
 \end{align*}
 \end{lema}
 \begin{proof}
-In the representation for each child in \cite[Theorems~7.1 and~8.1]{pred}, the relative perturbation of
-$p_e$ is $d_e+O(k^{-2})$, with $d_e=O(k^{-1})$ and $B(p\odot d)=0$ by \cite[Section~6.1]{pred}, where $B$
-here denotes the row--column incidence matrix rather than the board. Normalizing by the row preserves the
-relative remainder $O(k^{-2})$ because $\sum_jp_{ij}d_{ij}=0$. The linear part also vanishes when we sum
-over the column, since $\sum_i p_{ij}d_{ij}=0$. Thus $\sum_i \nu_B(j\mid i)=1+O(k^{-2})$. In the macroscopic
-range, the remainder in the probability of choosing the column is $O_\delta(k^{-3})$. For each fixed
-$\delta$, since $k\ge\delta n$, taking $n$ large bounds this remainder by $k^{-2}$ with coefficient one. In
-the same range, $\nu_B(j\mid i)\le 2p_{ij}$ for large $n$, and the diffusion constant for $p$ comes from the
-profile. In the mesoscopic range we use the diffusion, vacancy, and gap bounds of the outer class, whose
-constants are independent of both $\delta$ and $\varepsilon$. The representation requires a regular parent
-and the estimates for each child from the proof of the cited theorem, including for the first-exit board.
+For a regular parent, the child expansion in the proofs of Theorems~7.1 and~8.1
+of~\cite[Sections~7.8 and~8.3--8.5]{pred} gives
+$e^{L(B+e)-L(B)}=p_e(1+d_e+O(k^{-2}))$, with $d_e=O(k^{-1})$, uniformly over its available squares.
+This includes a child at the first exit. With $B_{\rm RC}$ the row--column incidence matrix, the exact
+constraint $B_{\rm RC}(p\odot d)=0$ of \cite[Section~6.1]{pred} gives both
+$\sum_jp_{ij}d_{ij}=0$ and $\sum_i p_{ij}d_{ij}=0$. Since each row has unit $p$-mass, its normalizing
+factor is $1+O(k^{-2})$. Hence on every available square the row-normalized law satisfies
+\[
+ \nu_B(j\mid i)=p_{ij}\bigl(1+d_{ij}+O(k^{-2})\bigr).
+\]
+Summing in $i$, the column identity cancels the linear term. The errors sum to $O(k^{-2})$ because
+$\sum_i p_{ij}=1$. Thus $\sum_i\nu_B(j\mid i)=1+O(k^{-2})$, and the uniform choice of row gives
+$\nu(j\text{ chosen}\mid\mathcal F^{(k)})=1/k+O(k^{-3})$.
+
+For $k>M$ the last remainder is $O_\delta(k^{-3})$. Once $\delta$ is fixed, increasing $n$ bounds
+it by $k^{-2}$ with coefficient one and gives $\nu_B(j\mid i)\le2p_{ij}$. The diffusion constant for
+these parents comes from the profile. For $k\le M$ the constants in the expansion depend only on the
+fixed diffusion, vacancy, and gap bounds of the outer class, provided the diagonal mass is below the
+threshold of \cite[Theorem~8.1]{pred}. These two estimates fix $C_q,C_{\rm c}$ before $\delta$ and
+$\varepsilon$.
 \end{proof}
 
 \begin{lema}[Prescribed rows and columns]\label{meso:prescripciones}

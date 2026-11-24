@@ -21,15 +21,32 @@ On the ordinary board, as $n\to\infty$,
 \]
 \end{teorema}
 Here $\nu_1$ is the optimal profile of mass one from~\cite{perfil}, $\Phi=s_1+1$ with $s_1$ its
-entropy, and $I_2=\int_{[0,1]^2}\nu_1^2$. The operator $J$ is given by (D3.6) of~\cite{pred}, and
-its regularized determinant is described in (D4.1) there. An error tending to zero in the logarithm
-is equivalent to a ratio of counts tending to one. The quantitative estimate $|R_Q(n)|\le C/n$ in
-the same conjecture remains open.
+entropy, and $I_2=\int_{[0,1]^2}\nu_1^2$. Put $\alpha=-s_1$, so $\Phi=1-\alpha$. Stirling's formula
+turns the theorem into a multiplicative equivalent refining Simkin's leading-order estimate:
+\[
+ Q(n)\sim e^{C_{\rm pred}}\,n!\,e^{n\Phi}
+      \sim e^{C_{\rm pred}}\sqrt{2\pi n}\,(n e^{-\alpha})^n .
+\]
+Subtracting $\log n!+n\Phi$ from $\log Q(n)$ leaves the constant $C_{\rm pred}$ in the limit;
+subtracting $n\log n-\alpha n+\tfrac12\log n$ leaves $C_{\rm pred}+\tfrac12\log(2\pi)$.
+The theorem gives $Q(n)/Q_{\rm pred}(n)\to1$. The quantitative estimate $|R_Q(n)|\le C/n$
+in the same conjecture remains open.
+
+The operator $J=\mathcal K+P_0$ acts on two parity sheets for each line family (rows, columns,
+diagonals and antidiagonals), with measure $dt/2$ on each sheet. The off-diagonal kernels of
+$\mathcal K$ evaluate $\nu_1$ at the intersection of the two lines when it lies on the board.
+The diagonal--antidiagonal block couples only opposite sheets: the indices $i-j$ and $i+j-1$
+sum to the odd integer $2i-1$. The other five blocks are independent of the sheet indices.
+The projection $P_0$ is onto the unit vector taking the values $1/\sqrt2$ on the row sheets,
+$-1/\sqrt2$ on the column sheets, and zero on the other sheets
+\cite[\S5.3, (D3.4)--(D3.6)]{pred}. The uniform gap gives $I+J\ge aI$ for some $a>0$;
+the regularized logarithm in the theorem is therefore real \cite[\S5.4, (D4.1)]{pred}.
 
 Section~9 of~\cite{pred} gives the estimate $C_{\rm pred}\approx0.9401$, and direct evaluation of
 the formula gives $0.940144$. Neither value has a certified error bound. With the reference value
 $\Phi_0=1-1.944001$ from that section, the exact counts for $16\le n\le27$ give values of
-$\log Q(n)-\log n!-n\Phi_0$ between $0.913$ and $0.941$ \cite[Table~2]{pred}. Using numerical
+$\log Q(n)-\log n!-n\Phi_0$ between $0.913$ and $0.941$ \cite[Table~2]{pred}. This residual
+minus the one computed with $\Phi$ is exactly $n(\Phi-\Phi_0)$. Using numerical
 values of the predictor, the same section gives $R_Q(20)\approx0.0208$ and $R_Q(27)\approx0.0119$.
 These values are consistent with Theorem~\ref{princ}, which establishes a limit without giving a
 rate of convergence.
@@ -53,14 +70,16 @@ Fix a small $\delta>0$ and a large integer $K$, and set $M=\lceil\delta n\rceil$
 Section~\ref{meso:constantes} specifies the order in which the constants are chosen.
 Sections~\ref{macro} and~\ref{meso} prove that, under $\nu$, the boards in the history are regular
 (Definition~\ref{def:regular}) until $K$ empty rows remain, except with probability
-$O(e^{-cK})+o(1)$: first while at least $M$ rows remain, and then between $M$ and $K$.
-Section~\ref{costes} bounds $g$ from above on the first board that ceases to be regular. Let $B_K$
-be the board with $K$ empty rows (the subscript counts empty rows rather than steps), and let $F$
-be the permanence event: all boards up to and including $B_K$ are regular. Let $D_K$ be the event
-that two empty crossings of $B_K$ share a diagonal. Section~\ref{terminal} proves that
+$O(e^{-cK})+o(1)$. Down to $M$ empty rows we track the availability of lines and squares
+against a deterministic trajectory. From $M$ to $K$ we control diagonal mass and preserve the
+diffusion, vacancy, and gap bounds needed for consistency.
+Section~\ref{costes} bounds $g$ from above on the first board that ceases to be regular.
+Write $B^{(K)}$ for the board with $K$ empty rows and $F$ for the event that every board up to
+and including $B^{(K)}$ is regular. Let $D_K$ be the event that two empty crossings of
+$B^{(K)}$ share a diagonal. Section~\ref{terminal} proves that
 $\nu(F\cap D_K)=O(K^4/n)$ and that, under $\mu$, the uniform row order gives
 $\mu(D_K\mid\pi)=O(K^4/n)$ for every fixed solution $\pi$. On $F\cap D_K^c$ the count is a
-permanent and $|g(B_K)|\le\theta_K$, with $\theta_K\to0$ as $K\to\infty$. In Section~\ref{balance}
+permanent and $|g(B^{(K)})|\le\theta_K$, with $\theta_K\to0$ as $K\to\infty$. In Section~\ref{balance}
 we first let $n\to\infty$ with $\delta$ and $K$ fixed, and then let $K\to\infty$.
 
 Theorems~1.1--1.3, Proposition~5.2 and Theorem~7.7 of~\cite{perfil} give the continuous profile

@@ -53,13 +53,16 @@ and the choice of $A_0,\rho_0$ are uniform for the parameters in \eqref{terminal
 \end{proof}
 
 \begin{lema}[Identification with the rook factor]\label{terminal-normalizador}
-With the weights of Lemma~\ref{terminal-escalado},
+Let $P$ be a doubly stochastic matrix of order $K$ satisfying \eqref{terminal-hipotesis-matriz}.
+Set $W_{ij}=P_{ij}(1-P_{ij})$. Form $S_2,C_2,\Gamma_2$ from $P$ by \eqref{coste:rook-def},
+using $k=K$ and the row--column incidence matrix of its support. Then, as $K\to\infty$,
 \[
  \log\frac{\per W}{\prod_{ij}(1-P_{ij})}=\log\Gamma_2+o(1)
 \]
-uniformly under \eqref{terminal-hipotesis-matriz}.
+uniformly for fixed $M_0$ and $\rho_*<1$.
 \end{lema}
 \begin{proof}
+Write $B=P-J_K$ and $a_K=\sum_{ij}P_{ij}^2$ as in Proposition~\ref{terminal-permanente}.
 For $S_0=\left(\begin{smallmatrix}I&P\\P^T&I\end{smallmatrix}\right)$, the eigenvalues on the
 two lines of constant vectors are two and zero. On their orthogonal complement the singular values
 of $P-J_K$ give the factors $(1-\sigma)(1+\sigma)$. Hence

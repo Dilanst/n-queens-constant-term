@@ -52,14 +52,16 @@ disponibilidad y $\ell_f^*(x)$ el de su masa. En un punto $(r,c)$, $J_x$ es el o
 de disponibilidad de la casilla y $v_x/n$ el del peso de Bethe de una casilla disponible.
 
 \begin{proposicion}[Trayectoria de comparación]\label{macro:trayectoria}
-Para una línea diagonal $f$ y un punto $(r,c)$ escribimos
+Para una línea diagonal $f$, un punto $(r,c)$ y $0\le x\le1$, escribimos
 \begin{gather*}
  U_f(x)=u_f+xm_f,\qquad \ell_f^*(x)=\frac{xm_f}{U_f(x)},\\
  J_x=x^2U_D(x)U_A(x),\qquad
- W_x=\frac{\nu_1}{U_D(x)U_A(x)},\qquad v_x=\frac{W_x}{x}.
+ W_x=\frac{\nu_1}{U_D(x)U_A(x)}.
 \end{gather*}
-Los subíndices $D,A$ sin argumento se evalúan en $r-c,r+c$. Entonces $J_1=1$, $J_xv_x=x\nu_1$, ambas
-marginales de $J_xv_x$ valen $x$ y
+Los subíndices $D,A$ sin argumento se evalúan en $r-c,r+c$, respectivamente. Como $u_f\ge\kappa_\nu$,
+$W_x$ se prolonga por continuidad hasta $W_0=\nu_1/(u_Du_A)=b_0r_Rr_C$, el peso usado en la
+Sección~\ref{meso:regularidad}. Se tiene $J_1=1$. Para $0<x\le1$, ponemos $v_x=W_x/x$. Entonces
+$J_xv_x=x\nu_1$, ambas marginales de $J_xv_x$ valen $x$ y
 \begin{equation}\label{macro:derivadas}
  \partial_t U_f=-\frac{\ell_f^*}{x}U_f,\qquad
  \partial_t\log J_x=-\frac{2+\ell_D^*+\ell_A^*}{x},\qquad

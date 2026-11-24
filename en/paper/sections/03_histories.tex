@@ -30,19 +30,20 @@ relative entropy in \eqref{super}.
 
 \begin{proposicion}[Lower bound from permanence]\label{hist:inferior}
 Let $\tau$ be the stopping time of Definition~\ref{def:regular}, namely the first exit or, if there is none,
-the time at which the board reaches size $K$. Let $F$ be the permanence event and $B_K$ the board of size
-$K$, so that $B_K=B_\tau$ on $F$. The subscript of $B_K$ counts empty rows rather than steps. Let
-$G=F\cap\{Q(B_K)>0\}$. If $s=\nu(G)>0$, then
+the time at which the board reaches size $K$. Let $F$ be the permanence event. On $F$ we have
+$B^{(K)}=B_\tau$. Let $G$ consist of those histories in $F$ with $Q(B^{(K)})>0$.
+If $s=\nu(G)>0$, then
 \begin{equation}\label{infer}
- g(B_0)\ge \E_{\nu(\cdot\mid G)}[A_\tau+g(B_K)]+\log s.
+ g(B_0)\ge \E_{\nu(\cdot\mid G)}[A_\tau+g(B^{(K)})]+\log s.
 \end{equation}
 \end{proposicion}
 \begin{proof}
 For each order, distinct stopped prefixes have disjoint sets of completions. For each history in $G$,
-multiplying its mass under $\nu^\tau$ by $\exp\{A_\tau+g(B_K)\}$ gives $Q(B_K)e^{-L(B_0)}/n!$. Summing first
+multiplying its mass under $\nu^\tau$ by $\exp\{A_\tau+g(B^{(K)})\}$ gives
+$Q(B^{(K)})e^{-L(B_0)}/n!$. Summing first
 over prefixes and then over orders gives
 \[
- \int_G\exp\{A_\tau+g(B_K)\}\,d\nu^\tau\le Q(B_0)e^{-L(B_0)} .
+ \int_G\exp\{A_\tau+g(B^{(K)})\}\,d\nu^\tau\le Q(B_0)e^{-L(B_0)} .
 \]
 The integral is $s$ times the conditional expectation of the exponential. Concavity of the logarithm gives
 \eqref{infer}, even when conditioning changes the distribution of the order.
@@ -56,8 +57,8 @@ Then $|A_\tau|\le C/K+O_\delta(n^{-1})$ uniformly over histories.
 \begin{proof}
 These results give $|\log\rho(B,i)|\le C_*/k^2$ in each row, with all the children in that row included in
 $\rho$. For parents with $k>M$, the constant depends on $\delta$ and the diffusion, vacancy, and gap bounds.
-For parents with $K<k\le M$, it depends on the constants of the weak class of~\cite[Section~8.1]{pred}. A
-regular parent in the sense of Definition~\ref{def:regular} belongs to the inner class, by definition if
+For parents with $K<k\le M$, it depends on the constants of the weak class of~\cite[Section~8.1]{pred}.
+In this range a regular parent of Definition~\ref{def:regular} belongs to the inner class, by definition if
 $k<M$ and by Proposition~\ref{meso:reconstruccion} if $k=M$. The sum of $k^{-2}$ over $k>m$ is at most
 $\int_m^\infty t^{-2}\,dt=1/m$. A history that stops earlier uses a subset of these summands.
 \end{proof}

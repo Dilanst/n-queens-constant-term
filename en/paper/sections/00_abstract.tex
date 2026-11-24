@@ -23,10 +23,12 @@ that the predictor satisfies the count recursion up to a factor $e^{O(k^{-2})}$ 
 boards with $k$ empty rows. Using this consistency, an entropy identity reduces the comparison of
 the counts to the board at which the process stops. Under the adaptive law, except with probability
 $O(e^{-cK})+o(1)$, the boards satisfy conditions that keep them in these classes until $K$ empty
-rows remain. We bound the cost at the first board that fails to satisfy the conditions. On the board
-with $K$ empty rows, except with probability $O(K^4/n)$, no diagonal contains two empty crossings
-of this board (the intersections of its empty rows and empty columns). The count is then a
-permanent, to which we apply McCullagh's estimate in the uniform form proved by Divoux and Wang.
+rows remain. We bound the cost at the first board that fails to satisfy the conditions. Under the
+adaptive law, the probability of reaching $K$ empty rows without an exit and having two empty
+crossings on a common diagonal is $O(K^4/n)$. An empty crossing is the intersection of an empty row
+and an empty column. When the process reaches $K$ without an exit and no two empty crossings
+share a diagonal, the count is a permanent, to which we apply McCullagh's estimate in the uniform
+form proved by Divoux and Wang.
 
 \smallskip\noindent Numerically, $C_{\rm pred}\approx0.9401$, with no certified error bound. The
 exact counts for ${16\le n\le27}$ are consistent with the theorem, which gives no rate of

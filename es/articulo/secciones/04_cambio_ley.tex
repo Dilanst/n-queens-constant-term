@@ -24,10 +24,10 @@ Corolario~7.2, con sus pruebas]{pred} da
  \sum_{e\in i}p_ed_e=0
 \]
 en cada fila disponible $i$. Aquí $d_e$ es la corrección relativa $\delta_c$
-de~\cite[Teorema~7.1]{pred} y $r_e$ es el resto $r_c$ de su prueba. La construcción del hijo por
-eliminación en \cite[Sección~6.5]{pred} permite usar la expansión también en el tablero de primera
-salida. Sólo
-se exige el control del padre. Las dos leyes usan la misma elección uniforme de la próxima fila.
+de~\cite[Teorema~7.1]{pred} y $r_e$ es el resto $r_c$ de su prueba. Para cada elección disponible en
+el padre, en \cite[Secciones~6.5 y~7.2]{pred} se reequilibra el hijo y se construye su punto
+estacionario interior. Por tanto, el resto uniforme de \cite[Sección~7.8]{pred} incluye el paso que
+llega a un tablero de primera salida. Las dos leyes usan la misma elección uniforme de la próxima fila.
 Condicionalmente a esa fila, el cociente de la probabilidad de columna bajo $\nu$ y su probabilidad
 $p_e$ bajo $P^{\rm B}$ es
 \[
@@ -38,9 +38,10 @@ $\sum_{e'\in i}p_{e'}(1+d_{e'})=1$, de modo que el denominador pertenece a
 $[e^{-C''_\delta/k^2},e^{C''_\delta/k^2}]$. El módulo del logaritmo del cociente es a lo sumo
 $2C'_\delta/k+2C''_\delta/k^2$.
 
-Paramos la historia en el primer tablero de tamaño al menos $M$ cuya discrepancia alcanza o supera
-$\varrho_{\rm mac}$ o, a más tardar, en el de tamaño $M$. El módulo del logaritmo de la densidad
-relativa se acota por
+Usamos para ambas leyes el mismo árbol detenido de la Proposición~\ref{macro:parada}, con la
+discrepancia del refinamiento elegido cuando se observa una partición más gruesa. Cada átomo registra
+el orden de las filas y las casillas elegidas hasta la primera salida o hasta el tamaño $M$, lo que
+ocurra primero. El módulo del logaritmo de la densidad relativa se acota por
 \[
  \sum_{k=M+1}^{n}\left(\frac{2C'_\delta}{k}+\frac{2C''_\delta}{k^2}\right)
  \le 2C'_\delta\log(n/M)+2C''_\delta/M=O_\delta(1).

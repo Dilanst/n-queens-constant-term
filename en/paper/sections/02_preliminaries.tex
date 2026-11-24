@@ -90,6 +90,10 @@ The \emph{auxiliary law} $P^{\rm B}$ uses the same uniformly chosen row and sele
 probability $p_e$. In $P^{\rm B}$ and in its expectation $\E_{\rm B}$, the upright B stands for
 Bethe and does not denote a board. A \emph{history} is the resulting sequence of boards
 $B_0,B_1,\dots$ together with the row order. A board with $k$ empty rows has \emph{size} $k$.
+We index $B_t$ and the revealed history $\mathcal F_t$ by the number $t$ of insertions.
+When indexing by size we use $B^{(k)}=B_{n-k}$ and $\mathcal F^{(k)}=\mathcal F_{n-k}$.
+The latter contains the rows revealed so far and their chosen squares, before the next row is
+revealed. On a stopped history these symbols refer only to levels that have been reached.
 
 \begin{definicion}[Regular boards and first exit]\label{def:regular}
 Fix $0<\delta<1$, set $M=\lceil\delta n\rceil$, and take an integer $K$ with $K_0\le K\le M$. We choose the
@@ -134,10 +138,12 @@ Permanence \ref{macro:cambio} & Balances \ref{macro:balances}, gap \ref{macro:br
 Bands \ref{prop:salida-banda-meso} & Prescriptions \eqref{prescr}, budget \ref{lema:presupuesto-meso},
 concentration \ref{prop:concentracion-meso}, and reconstruction \ref{meso:reconstruccion}.\\
 Costs \ref{coste-macro} and \ref{coste-debil} & Comparison \ref{coste-comparacion} and, in the mesoscopic
-range, normalizers \ref{coste-normalizadores} and permanent \ref{terminal-permanente}.\\
+range, normalizers \ref{coste-normalizadores} and permanent estimates
+\ref{terminal-permanente} and \ref{terminal-normalizador}.\\
 Last board \ref{terminal-error} & Geometry \ref{terminal-geometria}, pivots \ref{terminal-pivotes}, scaling
 \ref{terminal-escalado}, and Proposition~3.1 of~\cite{dw}.\\
 Theorem~\ref{princ} & Consistency \ref{hist:consistencia}, exit bounds, and the terminal estimate under the
 two laws.\\ \bottomrule
 \end{tabular}
 \end{table}
+\input{sections/02_notation_table}

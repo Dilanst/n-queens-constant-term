@@ -22,16 +22,34 @@ En el tablero ordinario, cuando $n\to\infty$,
 \]
 \end{teorema}
 Aquí $\nu_1$ es el perfil óptimo de masa uno de~\cite{perfil}, $\Phi=s_1+1$ con $s_1$ su entropía, e
-$I_2=\int_{[0,1]^2}\nu_1^2$. El operador $J$ es el de (D3.6) de~\cite{pred}, y su determinante
-regularizado se describe en (D4.1) de ese trabajo. Un error que tiende a cero en el logaritmo
-equivale a un cociente de conteos que tiende
-a uno. La estimación cuantitativa $|R_Q(n)|\le C/n$ de la misma conjetura sigue abierta.
+$I_2=\int_{[0,1]^2}\nu_1^2$. Pongamos $\alpha=-s_1$, de modo que $\Phi=1-\alpha$. Al aplicar la
+fórmula de Stirling al teorema obtenemos el siguiente equivalente multiplicativo, que precisa la
+estimación de primer orden de Simkin.
+\[
+ Q(n)\sim e^{C_{\rm pred}}\,n!\,e^{n\Phi}
+      \sim e^{C_{\rm pred}}\sqrt{2\pi n}\,(n e^{-\alpha})^n .
+\]
+Al restar $\log n!+n\Phi$ de $\log Q(n)$ se obtiene en el límite la constante $C_{\rm pred}$. Si se
+resta $n\log n-\alpha n+\tfrac12\log n$, el límite es $C_{\rm pred}+\tfrac12\log(2\pi)$.
+El teorema da $Q(n)/Q_{\rm pred}(n)\to1$. La estimación cuantitativa $|R_Q(n)|\le C/n$ de la misma
+conjetura sigue abierta.
+
+El operador $J=\mathcal K+P_0$ actúa sobre dos hojas de paridad por cada familia de líneas (filas,
+columnas, diagonales y antidiagonales), con medida $dt/2$ en cada hoja. Los núcleos de los bloques
+fuera de la diagonal de $\mathcal K$ evalúan $\nu_1$ en la intersección de las dos líneas cuando ésta
+pertenece al tablero. El bloque diagonal--antidiagonal sólo acopla hojas de paridades opuestas,
+pues los índices $i-j$ e $i+j-1$ suman el entero impar $2i-1$. Los otros cinco bloques son
+independientes de los índices de las hojas. El operador $P_0$ proyecta sobre el vector unitario que vale
+$1/\sqrt2$ en las hojas de filas, $-1/\sqrt2$ en las de columnas y cero en las demás
+\cite[\S5.3, (D3.4)--(D3.6)]{pred}. La brecha uniforme da $I+J\ge aI$ para algún $a>0$, por lo que
+el logaritmo regularizado del teorema es real \cite[\S5.4, (D4.1)]{pred}.
 
 En la Sección~9 de~\cite{pred} se estima $C_{\rm pred}\approx0{,}9401$, y la evaluación directa de
 la fórmula da $0{,}940144$; ninguna de las dos cifras tiene cota de error certificada. Con la
 referencia $\Phi_0=1-1{,}944001$ de esa sección, los conteos exactos para $16\le n\le27$ dan
-$\log Q(n)-\log n!-n\Phi_0$ entre $0{,}913$ y $0{,}941$ \cite[Tabla~2]{pred}. Con los valores
-numéricos del predictor, la misma sección da $R_Q(20)\approx0{,}0208$ y $R_Q(27)\approx0{,}0119$.
+$\log Q(n)-\log n!-n\Phi_0$ entre $0{,}913$ y $0{,}941$ \cite[Tabla~2]{pred}. Al restar de este
+residuo el calculado con $\Phi$ se obtiene exactamente $n(\Phi-\Phi_0)$. Con los valores numéricos
+del predictor, la misma sección da $R_Q(20)\approx0{,}0208$ y $R_Q(27)\approx0{,}0119$.
 Estos valores son compatibles con el Teorema~\ref{princ}, que afirma un límite sin dar una velocidad
 de convergencia.
 
@@ -54,14 +72,16 @@ Fijamos $\delta>0$ pequeño y un entero $K$ grande, y ponemos $M=\lceil\delta n\
 que se eligen las constantes está en la Sección~\ref{meso:constantes}. Las Secciones~\ref{macro}
 y~\ref{meso} prueban que, bajo $\nu$, los tableros de la historia son regulares
 (Definición~\ref{def:regular}) hasta que quedan $K$ filas vacías, salvo probabilidad
-$O(e^{-cK})+o(1)$: primero mientras quedan al menos $M$ filas y después entre $M$ y $K$. La
-Sección~\ref{costes} acota por arriba $g$ en el primer tablero que deja de ser regular. Sea $B_K$ el
-tablero de $K$ filas vacías, cuyo subíndice cuenta filas vacías y no pasos, y sea $F$ el suceso de
-permanencia: todos los tableros hasta $B_K$, incluido éste, son regulares. Sea $D_K$ el suceso de que
-dos cruces vacíos de $B_K$ compartan diagonal. La Sección~\ref{terminal} prueba que
+$O(e^{-cK})+o(1)$. Hasta que quedan $M$ filas vacías, comparamos la disponibilidad de líneas y
+casillas con una trayectoria determinista. De $M$ a $K$ controlamos la masa diagonal y conservamos
+las cotas de difusión, vacancia y brecha necesarias para la consistencia. La Sección~\ref{costes}
+acota por arriba $g$ en el primer tablero que deja de ser regular. Denotamos por $B^{(K)}$ el tablero
+con $K$ filas vacías y por $F$ el suceso de que todos los tableros hasta $B^{(K)}$, incluido éste, sean
+regulares. Sea $D_K$ el suceso de que dos cruces vacíos de $B^{(K)}$ compartan diagonal. La
+Sección~\ref{terminal} prueba que
 $\nu(F\cap D_K)=O(K^4/n)$ y, bajo $\mu$, que el orden uniforme de las filas da
 $\mu(D_K\mid\pi)=O(K^4/n)$ para cada solución fija $\pi$. En $F\cap D_K^c$ el conteo es un permanente
-y $|g(B_K)|\le\theta_K$, con $\theta_K\to0$ cuando $K\to\infty$. En la Sección~\ref{balance} se hace
+y $|g(B^{(K)})|\le\theta_K$, con $\theta_K\to0$ cuando $K\to\infty$. En la Sección~\ref{balance} se hace
 primero $n\to\infty$ con $\delta$ y $K$ fijos y después $K\to\infty$.
 
 Los Teoremas~1.1--1.3, la Proposición~5.2 y el Teorema~7.7 de~\cite{perfil} proporcionan el
