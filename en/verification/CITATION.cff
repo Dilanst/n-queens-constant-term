@@ -14,7 +14,7 @@ references:
       - family-names: "Mejia"
         given-names: "Dilan Steven"
     year: 2026
-    doi: "10.5281/zenodo.24248206"
+    doi: "10.5281/zenodo.24492817"
     url: "https://github.com/Dilanst/n-queens-constant-term"
   - type: article
     title: "The Canonical Predictor for the n-Queens Problem: Constant Term and Consistency"
@@ -22,5 +22,5 @@ references:
       - family-names: "Mejia"
         given-names: "Dilan Steven"
     year: 2026
-    doi: "10.5281/zenodo.24241043"
+    doi: "10.5281/zenodo.24519517"
     url: "https://github.com/Dilanst/n-queens-canonical-predictor"

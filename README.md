@@ -2,7 +2,7 @@
 
 Dilan Steven Mejia
 
-DOI: [10.5281/zenodo.24248206](https://doi.org/10.5281/zenodo.24248206)
+DOI: [10.5281/zenodo.24492817](https://doi.org/10.5281/zenodo.24492817)
 
 Este repositorio reúne el artículo y los programas de verificación exacta.
 
