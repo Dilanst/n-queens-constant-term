@@ -1,16 +1,19 @@
 \begin{proposicion}[Concentration of the observables]\label{prop:concentracion-meso}
 For a fixed family of patterns and fiber types with bounded weights, fix $b_1>0$ and $\chi>0$.
-There is a rate $c_{\rm pat}>0$ such that, for each floor $K$, the following event has probability
-at most $C e^{-c_{\rm pat}K}$ under $\nu$. The history enters regularly at $M$ and some observable
-at a reached size $k\ge K$, up to and including the first-exit board, has deviation greater than
+For each floor $K$, let $\mathcal E_K$ be the following event: the history has regular entry at $M$
+and, at some size $K\le k\le M$ reached from that entry up to and including the first-exit board,
+some observable has deviation greater than
 \[
  C_H\{A(\delta+1/n)+\chi+1/K\}+b_1 .
 \]
-We measure deviations from the value at $M$, comparing each surviving tracked line with its own fiber.
+There is a rate $c_{\rm pat}>0$, the same for all floors, such that
+$\nu(\mathcal E_K)\le C e^{-c_{\rm pat}K}$. We measure deviations from the value at $M$, comparing
+each surviving tracked line with its own fiber.
 The rate depends on the constants of the outer class, the family of observables, $b_1$, and $\chi$.
 \end{proposicion}
 \begin{proof}
-We subtract from each increment its conditional expectation, which is predictable, and freeze the
+\emph{Patterns with no tracked line.} We subtract from each increment its conditional expectation,
+which is predictable, and freeze the
 process upon reaching the first-exit board. For a pattern with no tracked line, the centered jump in
 the step from size $u$ is at most $2C_H/u$. Azuma's maximal inequality \eqref{macro:max-mart}, with
 $\sum_{u>k}u^{-2}\le1/k$, bounds by $2\exp(-c_H b_1^2k)$ the probability that the absolute value of
@@ -18,7 +21,8 @@ the martingale reaches $b_1$ between $M$ and $k$.
 Lemma~\ref{lema:presupuesto-meso} and the sum of $u^{-2}$ bound the cumulative drift simultaneously for all
 prefixes.
 
-Fix a history of regular entry, leaving the unrevealed row order random, and fix one of its tracked
+\emph{Transfer for a tracked line.} Fix a history of regular entry, leaving the unrevealed row
+order random, and fix one of its tracked
 lines. At a regular parent of size $u$, restrict the original transition to children where the line
 survives and divide by their total probability $y_u$. This conditions just the next step. Stop this
 auxiliary law at the first exit or at the floor. On each surviving prefix from $M$ to $k$ its
@@ -36,7 +40,8 @@ auxiliary kernel, we subtract the conditional drift of
 Lemma~\ref{lema:incrementos-meso} and freeze the process upon reaching the first-exit board. Azuma's
 maximal inequality holds in the same way starting from any history with regular entry.
 
-In the band $m\le k<2m$, with $m=2^jK$, stop at the first reached board in the band at which the
+\emph{Bands.} In the band $m\le k<2m$, with $m=2^jK$, stop at the first reached board in the band
+at which the
 martingale for this tracked line has absolute value $\ge b_1$, if there is one. These prefixes are
 disjoint, and their auxiliary probability is bounded by the maximal inequality down to size $m$.
 Transferring them to $\nu$ introduces a factor of at most $(2m/M)e^{C/m}$. A union bound over the $M$

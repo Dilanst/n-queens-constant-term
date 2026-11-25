@@ -23,19 +23,18 @@ that the predictor satisfies the count recursion up to a factor $e^{O(k^{-2})}$ 
 boards with $k$ empty rows. Using this consistency, an entropy identity reduces the comparison of
 the counts to the board at which the process stops. Under the adaptive law, except with probability
 $O(e^{-cK})+o(1)$, the boards satisfy conditions that keep them in these classes until $K$ empty
-rows remain. We bound the cost at the first board that fails to satisfy the conditions. Under the
-adaptive law, the probability of reaching $K$ empty rows without an exit and having two empty
-crossings on a common diagonal is $O(K^4/n)$. An empty crossing is the intersection of an empty row
-and an empty column. When the process reaches $K$ without an exit and no two empty crossings
-share a diagonal, the count is a permanent, to which we apply McCullagh's estimate in the uniform
-form proved by Divoux and Wang.
+rows remain. We bound the cost at the first board that fails to satisfy the conditions. If the
+process reaches $K$ without an exit, then, outside an exceptional event whose probability tends to
+zero as $n\to\infty$, the count for the last $K$ rows is a permanent, to which we apply McCullagh's
+estimate in the uniform form proved by Divoux and Wang.
 
 \smallskip\noindent Numerically, $C_{\rm pred}\approx0.9401$, with no certified error bound. The
 exact counts for ${16\le n\le27}$ are consistent with the theorem, which gives no rate of
 convergence.
 
 \medskip\noindent
-\textbf{Keywords:} $n$-queens problem; asymptotic enumeration; constant term; relative entropy; permanent.
+\textbf{Keywords:} $n$-queens problem; asymptotic enumeration; constant term; relative entropy;
+permanent.
 
 \noindent
 \textbf{MSC 2020:} 05A16; 05A05; 60C05; 94A17; 15A15.

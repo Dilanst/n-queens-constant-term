@@ -1,0 +1,33 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Orden en que se fijan las constantes y de qué depende cada una. Cada fila sólo depende de
+las anteriores.}
+\label{tab:constantes}
+\begin{tabular}{@{}p{.25\linewidth}p{.22\linewidth}>{\raggedright\arraybackslash}p{.45\linewidth}@{}}
+\toprule
+Constantes & Dónde se fijan & De qué dependen \\
+\midrule
+$c_\nu,C_\nu,\kappa_\nu,L_\nu$ & Sección~\ref{leyes} & Perfil $\nu_1$. \\
+$C_{\rm int},\eta_{\rm int},\gamma_{\rm int}$ & Proposición~\ref{meso:reconstruccion} & Perfil. \\
+$C_{\rm ext},\eta_{\rm ext},\gamma_{\rm ext}$ & Punto~1 & Constantes de la clase interior. \\
+$C_q,C_{\rm c}$ & Lema~\ref{meso:paso} & Perfil y cotas exteriores; no dependen de $\delta$ ni de
+$\varepsilon$. \\
+$C_{\rm geo}$ & \eqref{geompres} & $C_q,C_{\rm c}$. \\
+\addlinespace[.22em]
+$a_{\rm mes},\varrho_{\rm mes}$ y tolerancias & Punto~2 & Perfil y clase interior; no dependen de
+$\varepsilon$. \\
+$A$; $\chi,b_1$ & Punto~3 & $C_{\rm geo}$; tolerancias y constantes $C_H$ de los observables. \\
+$c_\chi,c_{\rm pat}$ & Punto~3 & $A,\chi,b_1$, observables y cotas exteriores; no dependen de
+$\varepsilon$, de $\delta$ ni del suelo. \\
+\addlinespace[.22em]
+$\varepsilon$, $\varepsilon_{\rm ext}=2\varepsilon$, $\alpha_{\rm geo}$ & Punto~4 &
+$\varepsilon_0(C_{\rm ext},\eta_{\rm ext},\gamma_{\rm ext})$, $c_{\rm pat}$ y $\|W_0\|_\infty$. \\
+$\delta$, $\lambda$ & Punto~4 & Tolerancias de entrada, $C_HA$, $\alpha_{\rm geo}$ y $c_{\rm pat}$. \\
+$K_0$ & Punto~5 & $k_0(C_{\rm ext},\eta_{\rm ext},\gamma_{\rm ext})$ y los términos $O(1/K_0)$. \\
+$\varrho_{\rm mac},a_{\rm mac}$ & Punto~5 y Lema~\ref{meso:entrada} & $\delta$, partición
+mesoscópica y tolerancias de entrada. \\
+$n$ & Punto~5 & Todas las anteriores. \\
+$K$ & Sección~\ref{balance} & $K_0\le K\le M$; tiende a infinito después de $n$. \\
+\bottomrule
+\end{tabular}
+\end{table}

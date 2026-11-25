@@ -12,15 +12,9 @@ Section~\ref{costes:permanente}.
 \end{lema}
 \begin{proof}
 On $F$ the Bethe point $p$ of $B^{(K)}$ has row and column masses equal to one and is positive on all
-available squares. For any set $I$ of rows, its entire mass $|I|$ goes to the set of neighboring
-columns, which admits at most one unit per column. Consequently $|\mathcal N(I)|\ge|I|$.
-To see directly that every row can be covered, take a matching of maximum cardinality. If it
-leaves a row uncovered, start from all uncovered rows and follow alternating paths, taking
-unmatched edges from rows and matched edges from columns. A reachable uncovered column would give
-an augmenting path, a contradiction. Every reachable column is therefore matched to a reachable
-row, and these matched rows do not exhaust the reachable rows, which include an uncovered row.
-Every neighbor of a reachable row is reachable, including the column from which that row was
-entered, if any. This contradicts the inequality for the set of reachable rows. Thus $\per A>0$.
+available squares. Extended by zero outside $A$, it is a doubly stochastic matrix. By Birkhoff's
+theorem~\cite{birkhoff}, it is a convex combination of permutation matrices, and the support of each
+of them is contained in that of $p$, which is that of $A$. Thus $\per A>0$.
 
 On $D_K^c$ each diagonal contains at most one empty crossing. Every permutation on the support
 therefore satisfies the constraints from both diagonal families. Moreover, squares on occupied
@@ -33,6 +27,7 @@ diagonal terms subtract two copies of $\sum_e q_e\log q_e$, leaving exactly the 
 \[
  H_T(p)=-\sum_e p_e\log p_e+\sum_e q_e\log q_e .
 \]
+This functional is the Bethe entropy associated with the permanent~\cite{vontobel}.
 The stationarity equation of Lemma~\ref{coste-vacancias} becomes $p_eq_e=a_ib_j$ on every
 available square, with the same $a_i,b_j$. The equality $H_B=H_T$ also follows directly as an
 identity of functionals at the feasible points on the support, since on every single-square

@@ -20,7 +20,7 @@ deterministic and works offline.
 | Histories | Prefix masses and the ratio of the two laws on boards of sizes 4, 5, and 6, with two weight systems and four stopping rules. |
 | Geometry | Label counts for small solutions, computed directly and by distances, with a check on subsets of rows. |
 | Four figures | Reads the positions from TikZ and uses integer arithmetic to check the children for the chosen row, both diagonal families, the permanent of the mask, and the witnesses. |
-| Paper | Checks 38 LaTeX files, 1,940 mathematical expressions, 713 numerical tokens in the prose, 21 definitions, and 37 inclusions in order. |
+| Paper | Checks 43 LaTeX files, 2,253 mathematical expressions, 979 numerical tokens in the prose, 22 definitions, and 42 inclusions in order. |
 
 Nine deliberate mutations and two positive controls are performed on English source extracts in memory.
 All nine mutations must be detected. The two positive controls check that the parser accepts harmless

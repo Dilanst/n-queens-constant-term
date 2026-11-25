@@ -1,18 +1,20 @@
 \begin{proposicion}[Concentración de los observables]\label{prop:concentracion-meso}
 Para una familia fija de patrones y tipos de fibras de pesos acotados, fijemos $b_1>0$ y $\chi>0$.
-Existe una tasa $c_{\rm pat}>0$ tal que, para cada suelo $K$, el siguiente suceso tiene probabilidad
-a lo sumo $C e^{-c_{\rm pat}K}$ bajo $\nu$. La historia tiene entrada regular en $M$ y, en algún
-tamaño $k\ge K$ alcanzado hasta el tablero de primera salida inclusive, la desviación de algún
-observable es mayor que
+Para cada suelo $K$, sea $\mathcal E_K$ el suceso siguiente: la historia tiene entrada regular en
+$M$ y, en algún tamaño $K\le k\le M$ alcanzado desde esa entrada hasta el tablero de primera salida
+inclusive, la desviación de algún observable es mayor que
 \[
  C_H\{A(\delta+1/n)+\chi+1/K\}+b_1 .
 \]
-Medimos las desviaciones respecto del valor en $M$ y comparamos cada línea distinguida que
+Existe una tasa $c_{\rm pat}>0$, la misma para todos los suelos, tal que
+$\nu(\mathcal E_K)\le C e^{-c_{\rm pat}K}$. Medimos las desviaciones respecto del valor en $M$ y
+comparamos cada línea distinguida que
 sobrevive con su propia fibra. La tasa depende de las constantes de la clase exterior, de la
 familia de observables, de $b_1$ y de $\chi$.
 \end{proposicion}
 \begin{proof}
-Restamos a cada incremento su esperanza predecible y congelamos el proceso a partir del tablero de
+\emph{Patrones sin línea distinguida.} Restamos a cada incremento su esperanza predecible y congelamos
+el proceso a partir del tablero de
 primera salida. Para un patrón sin línea distinguida, el salto centrado en el paso desde el tamaño
 $u$ es a lo sumo $2C_H/u$. La desigualdad maximal de Azuma \eqref{macro:max-mart}, con
 $\sum_{u>k}u^{-2}\le1/k$, acota por $2\exp(-c_H b_1^2k)$ la probabilidad de que la martingala alcance
@@ -20,7 +22,8 @@ en módulo $b_1$ desde $M$ hasta $k$. El
 Lema~\ref{lema:presupuesto-meso} y la suma de $u^{-2}$ acotan la deriva acumulada en todos los
 prefijos a la vez.
 
-Fijemos una historia de entrada regular, de modo que el orden de las filas aún no revelado siga
+\emph{Transferencia para una línea distinguida.} Fijemos una historia de entrada regular, de modo
+que el orden de las filas aún no revelado siga
 siendo aleatorio, y fijemos una de sus líneas distinguidas. En un padre regular de tamaño $u$
 restringimos la transición original a los hijos en que sobrevive la línea y dividimos por su
 probabilidad total $y_u$. Así se condiciona sólo el paso siguiente. Detenemos esta ley auxiliar en la
@@ -41,7 +44,8 @@ deriva condicional del Lema~\ref{lema:incrementos-meso} y congelamos al llegar a
 salida. La
 misma desigualdad maximal de Azuma vale desde cualquier historia de entrada regular.
 
-En la banda $m\le k<2m$, con $m=2^jK$, paremos en el primer tablero alcanzado en la banda en que la
+\emph{Bandas.} En la banda $m\le k<2m$, con $m=2^jK$, paremos en el primer tablero alcanzado en la
+banda en que la
 martingala de esta línea distinguida tenga módulo $\ge b_1$, si existe. Estos prefijos son disjuntos
 y la desigualdad maximal hasta el tamaño $m$ acota su probabilidad bajo la ley auxiliar. Al
 transferirlos a $\nu$ se introduce un factor a lo sumo $(2m/M)e^{C/m}$. La cota de la unión sobre las

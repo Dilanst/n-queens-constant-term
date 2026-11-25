@@ -1,6 +1,6 @@
 \subsection{Reduction to an auxiliary permanent}\label{costes:permanente}
 
-Let $\varepsilon_{\rm out}\ge\max_f\ell_f$ be the common outer bound, with $\varepsilon_{\rm out}<1$.
+Let $\varepsilon_{\rm ext}\ge\max_f\ell_f$ be the common outer bound, with $\varepsilon_{\rm ext}<1$.
 Let $P=(p_{ij})$ be the matrix of the interior stationary Bethe point, with zeros off the support, and put
 $W_{ij}=p_{ij}(1-p_{ij})$. In what follows $W$ denotes this auxiliary matrix. Write
 \begin{equation}\label{coste:rook-def}
@@ -36,9 +36,10 @@ $\|P-\mathbf1\mathbf1^T/k\|_{\rm op}\le\rho_*<1$. Then uniformly for fixed $M_0,
 \]
 \end{lema}
 \begin{proof}
-The rows and columns of $P$ sum to one. The mass of any set of rows is contained in its
-neighboring columns, each of capacity one. Hall's theorem gives a permutation on the support,
-so $\per W>0$. On a legal permutation, multiplying $W_e$ by the fraction in the last product gives
+The rows and columns of $P$ sum to one. By Birkhoff's theorem~\cite{birkhoff}, $P$ is a convex
+combination of permutation matrices, and the support of each of them is contained in that of $P$.
+Hence there is a permutation on the support, and $\per W>0$. On a legal permutation, multiplying $W_e$ by
+the fraction in the last product gives
 \[
  \frac{p_e(1-p_e)^3}{h_{D(e)}h_{A(e)}}=a_i b_j
 \]
@@ -50,7 +51,9 @@ by the same lemma.
 For the asymptotic formula apply the matrix estimate of Lemma~\ref{terminal-normalizador} to this
 $P$, with $K=k$, $W_{ij}=p_{ij}(1-p_{ij})$, and the rook factor \eqref{coste:rook-def}. It gives
 $\log(\per W/\prod_e(1-p_e))=\log\Gamma_2+o(1)$. Its proof uses the scaling and permanent
-estimates of Section~\ref{permanente}. The multipliers in the weighted rook stationarity equation
+estimates of Section~\ref{permanente}. Those statements concern doubly stochastic matrices, use only
+\eqref{terminal-hipotesis-matriz}, and do not depend on this section. The multipliers in the weighted
+rook stationarity equation
 $p_e(1-p_e)=W_e$ can all be taken equal to one. Taking logarithms in the first equality and using
 $L(B)=H_B(p)+\log\Gamma_4$ proves the second. We use the law $\mu_W$ only for counting on $B$.
 \end{proof}

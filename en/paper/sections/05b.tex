@@ -1,5 +1,5 @@
-We call the size $K$ down to which we follow the history the \emph{floor}. The \emph{diagonal budget} is the
-sum in the following lemma, which controls the cumulative effect of the diagonals on the drifts.
+We call the size $K$ down to which we follow the history the \emph{floor}. The \emph{diagonal budget} is
+the sum in the following lemma, which controls the cumulative effect of the diagonals on the drifts.
 \begin{lema}[Diagonal budget]\label{lema:presupuesto-meso}
 Fix $A\ge4C_{\rm geo}$ and a small $\chi>0$. For any integer floor $K_0\le K\le M$, except on an event of
 probability $\le C_\chi e^{-c_\chi K}$, we have, up to and including the first-exit board,
@@ -8,18 +8,19 @@ probability $\le C_\chi e^{-c_\chi K}$, we have, up to and including the first-e
           \frac{(D_{\max}(k)-1)_+}{k^2}
  \le C\{A(\delta+1/n)+\chi+1/K\}.
 \]
-Here it suffices that $A(\delta+1/n)+\chi+1/K<1/4$. Moreover, for fixed $0<\alpha<1/4$ and any rate
-$\lambda>0$, one can take $\delta>0$ sufficiently small and then $K_0,n$ sufficiently large that
-\[
- \nu\big(\exists\,K\le k\le M:\ G_k^-,\ D_{\max}(k)\ge\alpha k\big)
- \le C_\lambda e^{-\lambda K},\qquad
- \nu(G_M^-,D_{\max}(M)\ge\alpha M)\le C_\lambda e^{-\lambda M}.
-\]
+Here it suffices that $A(\delta+1/n)+\chi+1/K<1/4$. Moreover, for fixed $0<\alpha_{\rm geo}<1/4$ and
+any rate $\lambda>0$, one can take $\delta>0$ sufficiently small and then $K_0,n$ sufficiently large
+that
+\begin{gather*}
+ \nu\big(\exists\,K\le k\le M:\ G_k^-,\ D_{\max}(k)\ge\alpha_{\rm geo} k\big)
+ \le C_\lambda e^{-\lambda K},\\
+ \nu(G_M^-,D_{\max}(M)\ge\alpha_{\rm geo} M)\le C_\lambda e^{-\lambda M}.
+\end{gather*}
 \end{lema}
 \begin{proof}
-Take the upper endpoints $m$ of the nonempty intervals $[2^jK,\min(2^{j+1}K,M)]$, including $M$ in the last
-one, and set $s_m=\lceil Am^2/n+\chi\sqrt{Km}\rceil$ for each of them. Then $s_m/m\le1/4$ and $v=C_{\rm
-geo}m^2/(ns_m)\le1/4$. The bound
+Take the upper endpoints $m$ of the nonempty intervals $[2^jK,\min(2^{j+1}K,M)]$, including $M$ in the
+last one, and set $s_m=\lceil Am^2/n+\chi\sqrt{Km}\rceil$ for each of them. Then $s_m/m\le1/4$ and
+$v=C_{\rm geo}m^2/(ns_m)\le1/4$. The bound
 $4nv^{s_m}=4C_{\rm geo}m^2v^{s_m-1}/s_m\le C m^2e^{-c s_m}$
 removes the factor $n$ that comes from the initial board. Summing over the endpoints gives
 $C_\chi e^{-c_\chi K}$. In fact, summing $m^2e^{-c\chi\sqrt{Km}}$ over all integers $m\ge K$ gives
@@ -29,9 +30,11 @@ prior exit. Outside the exceptional event, $D_{\max}(m)<s_m$ at that endpoint. M
 $s_m-1\le Am^2/n+\chi\sqrt{Km}$ bound the contribution of the interval by $C(Am/n+\chi\sqrt{K/m})$.
 We sum the two geometric progressions, including the last, truncated band.
 
-For the second estimate, take $s=\lceil\alpha k\rceil\le k/4$ in \eqref{geompres}. Now $v\le 2C_{\rm
-geo}\delta/\alpha$ for large $n$, and $4nv^s\le4C_{\rm geo} k^2v^{s-1}/s$. We choose
-$\alpha\log(\alpha/(2C_{\rm geo}\delta))>\lambda$ with strict inequality. The difference absorbs the
+For the second estimate, take $s=\lceil\alpha_{\rm geo} k\rceil\le k/4$ in \eqref{geompres}. Now
+$v\le 2C_{\rm geo}\delta/\alpha_{\rm geo}$ for large $n$, and
+$4nv^s\le4C_{\rm geo} k^2v^{s-1}/s$. We choose
+$\alpha_{\rm geo}\log(\alpha_{\rm geo}/(2C_{\rm geo}\delta))>\lambda$ with strict inequality. The
+difference absorbs the
 polynomial factor and the sum over $k\ge K$, upon increasing $K_0$ if necessary. The estimate at $M$ uses
 only the term $k=M$.
 \end{proof}
@@ -39,9 +42,9 @@ only the term $k=M$.
 \subsection{Patterns and fibers with an available tracked line}
 A fixed pattern $H$ has $s$ row indices, $t$ column indices, a set $S$ of positions that must be available
 squares, and a deterministic weight $w$ of bounded norm on each assignment of indices. Interval indicators
-may be incorporated into $w$. Let $Z_H$ be the sum over assignments injective within each family, with their
-weights and availability indicators, divided by $(k)_s(k)_t$, where $(k)_s=k(k-1)\cdots(k-s+1)$. We take
-$K_0$ greater than twice the order of every pattern used.
+may be incorporated into $w$. Let $Z_H$ be the sum over assignments injective within each family, with
+their weights and availability indicators, divided by $(k)_s(k)_t$, where $(k)_s=k(k-1)\cdots(k-s+1)$. We
+take $K_0$ greater than twice the order of every pattern used.
 \begin{lema}[Pattern increments]\label{lema:incrementos-meso}
 For a regular parent of size $k$ and $\Delta Z_H=Z_H(k-1)-Z_H(k)$,
 \[
@@ -55,16 +58,16 @@ column conditioned to survive. Here $Y_{ij}$ is the availability indicator of th
 are fixed and bounded.
 \end{lema}
 \begin{proof}
-By inclusion--exclusion and Lemma~\ref{meso:paso}, the probability that deleting a row and a column affects
-a fixed assignment is $(s+t)/k+O_H(k^{-2})$. The exact ratio of the normalizations is $(1-s/k)(1-t/k)$. Thus
-the first-order term in the drift cancels. After accounting for the row and column deletions, losing a
-square $e\in S$ that is still available requires choosing another square on one of its two diagonals. Each
-diagonal offers at most $(D_{\max}(k)-1)_+$ possibilities, each with probability $\le C_q/k^2$. We sum over
-$S$ and over assignments, using the absolute value of the weight. For the jump, deleting one row and one
-column affects $O_H(k^{s+t-1})$ assignments. When $S\ne\varnothing$, the two deleted diagonals contain at
-most $2k$ empty crossings, and fixing a square at a position of $S$ affects at most $O_H(k^{s+t-2})$
-assignments. The relative change in normalization is $O_H(1/k)$. The positions of a pattern need not lie on
-distinct diagonals.
+By inclusion--exclusion and Lemma~\ref{meso:paso}, the probability that deleting a row and a column
+affects a fixed assignment is $(s+t)/k+O_H(k^{-2})$. The exact ratio of the normalizations is
+$(1-s/k)(1-t/k)$. Thus the first-order term in the drift cancels. After accounting for the row and column
+deletions, losing a square $e\in S$ that is still available requires choosing another square on one of its
+two diagonals. Each diagonal offers at most $(D_{\max}(k)-1)_+$ possibilities, each with probability $\le
+C_q/k^2$. We sum over $S$ and over assignments, using the absolute value of the weight. For the jump,
+deleting one row and one column affects $O_H(k^{s+t-1})$ assignments. When $S\ne\varnothing$, the two
+deleted diagonals contain at most $2k$ empty crossings, and fixing a square at a position of $S$ affects
+at most $O_H(k^{s+t-2})$ assignments. The relative change in normalization is $O_H(1/k)$. The positions of
+a pattern need not lie on distinct diagonals.
 
 Now condition only the next step on the survival of $i$. The probability of deleting a column $j$ is
 \[
@@ -75,8 +78,8 @@ Now condition only the next step on the survival of $i$. The probability of dele
 uniformly. For a tracked column the families exchange roles and the denominator is $1-1/k+O(k^{-2})$. In
 either case the expected loss from the transverse deletion is $F_i/k+O(1/k)$, since there are at most $k$
 bounded summands. After division by $k-1$, this cancels the change in normalization up to an error of
-$O(k^{-2})$. For each square of the fiber, the additional probability of losing it through a diagonal is at
-most $2C_q(D_{\max}(k)-1)_+/k^2$ divided by the probability that the tracked line survives this step, which
-is uniformly bounded away from zero. We sum over the fiber and divide by $k-1$. Each diagonal meets the
-fiber in at most one square, so the normalized jump is $O(1/k)$.
+$O(k^{-2})$. For each square of the fiber, the additional probability of losing it through a diagonal is
+at most $2C_q(D_{\max}(k)-1)_+/k^2$ divided by the probability that the tracked line survives this step,
+which is uniformly bounded away from zero. We sum over the fiber and divide by $k-1$. Each diagonal meets
+the fiber in at most one square, so the normalized jump is $O(1/k)$.
 \end{proof}

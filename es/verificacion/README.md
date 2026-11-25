@@ -15,7 +15,7 @@ Se necesita Python 3.10 o posterior con la biblioteca estándar. La ejecución s
 | Historias | Masas de los prefijos y razón de las dos leyes sobre tableros 4, 5 y 6, con dos sistemas de pesos y cuatro reglas de parada. |
 | Geometría | Conteo de etiquetas en soluciones pequeñas; recuento directo y por distancias, con comprobación de los subconjuntos de filas. |
 | Cuatro figuras | Lee las posiciones del TikZ y comprueba con enteros los hijos de la fila, las dos familias de diagonales, el permanente de la máscara y los testigos. |
-| Artículo | Comprueba 41 archivos LaTeX, 1 940 expresiones matemáticas, los números reconocidos por el analizador, las definiciones y el orden de las inclusiones. Nueve alteraciones deliberadas deben detectarse. Dos controles positivos admiten el espaciado inocuo y distinguen macros distintas. |
+| Artículo | Comprueba 46 archivos LaTeX, 2 253 expresiones matemáticas, los números reconocidos por el analizador, las definiciones y el orden de las inclusiones. Nueve alteraciones deliberadas deben detectarse. Dos controles positivos admiten el espaciado inocuo y distinguen macros distintas. |
 
 Las tablas y archivos JSON de `resultados/` se comparan byte por byte. `METODO.md` describe las construcciones independientes y el dominio de las identidades. El catálogo comprueba la correspondencia con el texto. La validez de las estimaciones asintóticas, del teorema externo de permanentes y de la constante límite se estudia en las demostraciones del artículo. El valor decimal del predictor procede del artículo citado allí.
 

@@ -1,6 +1,6 @@
 \subsection{Reducción a un permanente auxiliar}\label{costes:permanente}
 
-Sea $\varepsilon_{\rm out}\ge\max_f\ell_f$ la cota exterior común, con $\varepsilon_{\rm out}<1$.
+Sea $\varepsilon_{\rm ext}\ge\max_f\ell_f$ la cota exterior común, con $\varepsilon_{\rm ext}<1$.
 Sea $P=(p_{ij})$ la matriz del punto estacionario interior de Bethe, con ceros fuera del soporte, y sea
 $W_{ij}=p_{ij}(1-p_{ij})$. En lo que sigue $W$ denota esta matriz auxiliar. Escribimos
 \begin{equation}\label{coste:rook-def}
@@ -36,9 +36,10 @@ $\|P-\mathbf1\mathbf1^T/k\|_{\rm op}\le\rho_*<1$. Entonces, uniformemente para $
 \]
 \end{lema}
 \begin{proof}
-Las filas y columnas de $P$ suman uno. La masa de cualquier conjunto de filas está contenida en sus
-columnas vecinas, cada una de capacidad uno. Por el teorema de Hall existe una permutación del soporte
-y $\per W>0$. En una permutación legal, multiplicar $W_e$ por la fracción de la última productoria da
+Las filas y columnas de $P$ suman uno. Por el teorema de Birkhoff~\cite{birkhoff}, $P$ es
+combinación convexa de matrices de permutación, y el soporte de cada una está contenido en el de
+$P$. Existe, pues, una permutación del soporte y $\per W>0$. En una permutación legal, multiplicar
+$W_e$ por la fracción de la última productoria da
 \[
  \frac{p_e(1-p_e)^3}{h_{D(e)}h_{A(e)}}=a_i b_j
 \]
@@ -50,7 +51,9 @@ $Q(B)\mathcal K/\prod_e(1-p_e)^3$, que vale $Q(B)e^{-H_B(p)}$ por ese mismo lema
 Para la fórmula asintótica aplicamos la estimación matricial del Lema~\ref{terminal-normalizador} a
 esta $P$, con $K=k$, $W_{ij}=p_{ij}(1-p_{ij})$ y el factor de torres de \eqref{coste:rook-def}. Se
 obtiene $\log(\per W/\prod_e(1-p_e))=\log\Gamma_2+o(1)$. Su prueba usa las estimaciones del escalado
-y del permanente de la Sección~\ref{permanente}. En la ecuación estacionaria ponderada de torres,
+y del permanente de la Sección~\ref{permanente}. Esos enunciados tratan de matrices bistocásticas,
+sólo usan \eqref{terminal-hipotesis-matriz} y no dependen de esta sección. En la ecuación estacionaria
+ponderada de torres,
 $p_e(1-p_e)=W_e$, todos los multiplicadores pueden tomarse iguales a uno. Tomar logaritmos en la
 primera igualdad y usar $L(B)=H_B(p)+\log\Gamma_4$ prueba la
 segunda. La ley $\mu_W$ se usa únicamente para contar en $B$.

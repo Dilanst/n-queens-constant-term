@@ -6,10 +6,16 @@ por orden de filas identifica cada solución con una permutación. Las restricci
 determinan cuáles de las $n!$ permutaciones sirven.
 
 Simkin~\cite[Teorema~1.1]{simkin} obtuvo el orden principal de $\log Q(n)$ mediante
-un problema variacional. Los resultados de Luria y Simkin~\cite{ls} y de Bowtell y
-Keevash~\cite{bk} estudian el conteo por métodos combinatorios. Nobel, Agrawal y Boyd~\cite{nab}
-acotaron la constante de primer orden. Para determinar el factor multiplicativo que queda en
-el conteo después de extraer el término principal hace falta una estimación más precisa.
+un problema variacional. Luria~\cite{luria} obtuvo cotas superiores por el método de la entropía.
+Luria y Simkin~\cite{ls} y, de forma independiente, Bowtell y Keevash~\cite{bk} probaron la cota
+inferior $Q(n)\ge((1-o(1))ne^{-3})^n$, que confirma una conjetura de Rivin, Vardi y
+Zimmermann~\cite{rvz}. Nobel, Agrawal y Boyd~\cite{nab} acotaron la constante de primer orden.
+Liu, Liao y Wang~\cite{llw} estudiaron el problema como un gas de red y estimaron numéricamente
+esa constante con simulaciones de Monte Carlo. La
+completación de configuraciones parciales, que aquí aparece en cada tablero residual, se estudia
+en~\cite{gms}, y la historia del problema se recoge en~\cite{bs}. Para determinar el factor
+multiplicativo que queda en el conteo después de extraer el término principal hace falta una
+estimación más precisa.
 
 Sea $Q_{\rm pred}(n)$ el predictor canónico de~\cite{pred} y pongamos
 $R_Q(n)=\log Q(n)-\log Q_{\rm pred}(n)$. El siguiente resultado establece que
@@ -22,13 +28,20 @@ En el tablero ordinario, cuando $n\to\infty$,
 \]
 \end{teorema}
 Aquí $\nu_1$ es el perfil óptimo de masa uno de~\cite{perfil}, $\Phi=s_1+1$ con $s_1$ su entropía, e
-$I_2=\int_{[0,1]^2}\nu_1^2$. Pongamos $\alpha=-s_1$, de modo que $\Phi=1-\alpha$. Al aplicar la
-fórmula de Stirling al teorema obtenemos el siguiente equivalente multiplicativo, que precisa la
+$I_2=\int_{[0,1]^2}\nu_1^2$. El símbolo ${\det}_2$ denota el determinante regularizado de
+Carleman--Fredholm, ${\det}_2(I+J)=\det\bigl((I+J)e^{-J}\bigr)$, definido para todo operador $J$ de
+Hilbert--Schmidt \cite[cap.~9]{simon}; es la convención de~\cite[(D4.1)]{pred}. El operador $J$ del
+teorema se describe más abajo.
+Pongamos $\alpha=-s_1$, de modo que $\Phi=1-\alpha$. Al aplicar la
+fórmula de Stirling al teorema obtenemos el siguiente equivalente asintótico, que precisa la
 estimación de primer orden de Simkin.
 \[
  Q(n)\sim e^{C_{\rm pred}}\,n!\,e^{n\Phi}
       \sim e^{C_{\rm pred}}\sqrt{2\pi n}\,(n e^{-\alpha})^n .
 \]
+Como \cite[Teorema~1.1]{simkin} da $Q(n)^{1/n}/n\to e^{-\alpha_{\rm S}}$ para una constante
+$\alpha_{\rm S}$, el teorema implica $\alpha=\alpha_{\rm S}$: el número $-s_1$ es la constante de
+Simkin, que las cotas de~\cite{nab} sitúan en $[1{,}944000752;\,1{,}944001082]$.
 Al restar $\log n!+n\Phi$ de $\log Q(n)$ se obtiene en el límite la constante $C_{\rm pred}$. Si se
 resta $n\log n-\alpha n+\tfrac12\log n$, el límite es $C_{\rm pred}+\tfrac12\log(2\pi)$.
 El teorema da $Q(n)/Q_{\rm pred}(n)\to1$. La estimación cuantitativa $|R_Q(n)|\le C/n$ de la misma
@@ -45,10 +58,18 @@ $1/\sqrt2$ en las hojas de filas, $-1/\sqrt2$ en las de columnas y cero en las d
 el logaritmo regularizado del teorema es real \cite[\S5.4, (D4.1)]{pred}.
 
 En la Sección~9 de~\cite{pred} se estima $C_{\rm pred}\approx0{,}9401$, y la evaluación directa de
-la fórmula da $0{,}940144$; ninguna de las dos cifras tiene cota de error certificada. Con la
-referencia $\Phi_0=1-1{,}944001$ de esa sección, los conteos exactos para $16\le n\le27$ dan
-$\log Q(n)-\log n!-n\Phi_0$ entre $0{,}913$ y $0{,}941$ \cite[Tabla~2]{pred}. Al restar de este
-residuo el calculado con $\Phi$ se obtiene exactamente $n(\Phi-\Phi_0)$. Con los valores numéricos
+la fórmula da $0{,}940144$. Esta evaluación \cite[Sección~9, «Evaluación directa de la
+fórmula»]{pred} usa una discretización de Nyström del operador de la Sección~5.3 de ese trabajo, en
+mallas sucesivas y con extrapolación en el paso; las parejas de mallas de tamaños 192 y 384, y 193
+y 385, dieron $0{,}94014395698$ y $0{,}94014395711$. Ninguna de estas cifras tiene cota de error
+certificada. Con la
+referencia $\Phi_0=1-1{,}944001$ de esa sección, los conteos exactos para $16\le n\le27$
+\cite{oeis} dan $\log Q(n)-\log n!-n\Phi_0$ entre $0{,}913$ y $0{,}941$ \cite[Tabla~2]{pred}; el
+valor $Q(27)$ procede de~\cite{q27} y fue verificado de forma independiente en~\cite{yaoli}. En
+ese rango, al sustituir $C_{\rm pred}$ por $0{,}940144$, el cociente
+$Q(n)/(e^{C_{\rm pred}}n!\,e^{n\Phi_0})$ queda entre $0{,}973$ y $1{,}001$. Al restar del residuo
+calculado con $\Phi_0$ el calculado con $\Phi$ se obtiene exactamente $n(\Phi-\Phi_0)$. Con los
+valores numéricos
 del predictor, la misma sección da $R_Q(20)\approx0{,}0208$ y $R_Q(27)\approx0{,}0119$.
 Estos valores son compatibles con el Teorema~\ref{princ}, que afirma un límite sin dar una velocidad
 de convergencia.
@@ -77,12 +98,14 @@ casillas con una trayectoria determinista. De $M$ a $K$ controlamos la masa diag
 las cotas de difusión, vacancia y brecha necesarias para la consistencia. La Sección~\ref{costes}
 acota por arriba $g$ en el primer tablero que deja de ser regular. Denotamos por $B^{(K)}$ el tablero
 con $K$ filas vacías y por $F$ el suceso de que todos los tableros hasta $B^{(K)}$, incluido éste, sean
-regulares. Sea $D_K$ el suceso de que dos cruces vacíos de $B^{(K)}$ compartan diagonal. La
+regulares. Llamamos cruce vacío a la intersección de una fila vacía y una columna vacía. Sea $D_K$
+el suceso de que dos cruces vacíos de $B^{(K)}$ compartan diagonal. La
 Sección~\ref{terminal} prueba que
 $\nu(F\cap D_K)=O(K^4/n)$ y, bajo $\mu$, que el orden uniforme de las filas da
 $\mu(D_K\mid\pi)=O(K^4/n)$ para cada solución fija $\pi$. En $F\cap D_K^c$ el conteo es un permanente
 y $|g(B^{(K)})|\le\theta_K$, con $\theta_K\to0$ cuando $K\to\infty$. En la Sección~\ref{balance} se hace
-primero $n\to\infty$ con $\delta$ y $K$ fijos y después $K\to\infty$.
+primero $n\to\infty$ con $\delta$ y $K$ fijos y después $K\to\infty$. La
+Figura~\ref{fig:tramos} resume los tres tramos.
 
 Los Teoremas~1.1--1.3, la Proposición~5.2 y el Teorema~7.7 de~\cite{perfil} proporcionan el
 perfil continuo y sus cotas. La comparación entrópica del Teorema~3.6 de~\cite{ultimas}
@@ -90,5 +113,5 @@ motiva el argumento de la Sección~\ref{costes}, donde verificamos las estimacio
 soporte de cada residual. Usamos los Teoremas~7.1 y~8.1 y el Corolario~7.2 de~\cite{pred}
 para las inserciones, y sus Teoremas~1.1 y~5.7 para la constante. La única estimación
 asintótica de permanentes que usamos es la de McCullagh~\cite{mccullagh}, en la forma uniforme
-probada por Divoux y Wang~\cite[Proposición~3.1 y Observación~2.1]{dw}. En la
-Sección~\ref{permanente} verificamos sus hipótesis tras escalar la matriz del residual.
+probada por Divoux y Wang~\cite[Proposición~3.1 y Observación~2.1]{dw}.
+En la Sección~\ref{permanente} verificamos sus hipótesis tras escalar la matriz del residual.

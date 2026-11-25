@@ -1,7 +1,7 @@
 \begin{proposicion}[Ratio of normalizers]\label{coste-normalizadores}
 Under the same hypotheses,
 \[
- \log(\Gamma_4/\Gamma_2)=O_{C,\eta,\gamma}(\varepsilon_{\rm out}+k^{-1}).
+ \log(\Gamma_4/\Gamma_2)=O_{C,\eta,\gamma}(\varepsilon_{\rm ext}+k^{-1}).
 \]
 \end{proposicion}
 \begin{proof}
@@ -37,7 +37,7 @@ $A_{ff}=\sum_{e\in f}(\tau_e-p_e)$. Off the diagonal, only the entries between t
 families can be nonzero. Such an entry equals $\tau_e$ when the lines meet in an available square
 $e$ and is zero otherwise. It follows that
 \[
- \|A\|_{\rm op}=O(\varepsilon_{\rm out}),\qquad
+ \|A\|_{\rm op}=O(\varepsilon_{\rm ext}),\qquad
  \operatorname{tr}A=6a_2+O(k^{-1}),\qquad
  \operatorname{tr}A^2=2a_2+O(k^{-1}).
 \]
@@ -48,16 +48,16 @@ because $\max_f A_{ff}=O(k^{-1})$ and $\sum_f A_{ff}=O(1)$.
 
 Each nonzero entry of $V$ equals $\tau_e$, since a row or column and a diagonal determine at most
 one square. The row sums of $V$ are at most $2\max_u\sum_{e\in u}\tau_e=O(1)$, where $u$ ranges
-over rows and columns. The column sums are at most $2\max_f\sum_{e\in f}\tau_e=O(\varepsilon_{\rm out})$.
+over rows and columns. The column sums are at most $2\max_f\sum_{e\in f}\tau_e=O(\varepsilon_{\rm ext})$.
 The bound on the spectral norm in terms of the row and column sum norms gives
-$\|V\|_{\rm op}^2=O(\varepsilon_{\rm out})$. Moreover,
+$\|V\|_{\rm op}^2=O(\varepsilon_{\rm ext})$. Moreover,
 $\|V\|_{\rm HS}^2=4\sum_e\tau_e^2=O(1)$. Since $G$ is positive semidefinite with norm at most
 $\gamma^{-1}$,
 \[
- T\ge0,\qquad \|T\|_{\rm op}=O(\varepsilon_{\rm out}),\qquad
+ T\ge0,\qquad \|T\|_{\rm op}=O(\varepsilon_{\rm ext}),\qquad
  \operatorname{tr}T=O(1),\qquad
  \operatorname{tr}T^2\le\|T\|_{\rm op}\operatorname{tr}T
-             =O(\varepsilon_{\rm out}) .
+             =O(\varepsilon_{\rm ext}) .
 \]
 
 To find the leading term in the trace of $T$, we use the incidence structure.
@@ -65,7 +65,7 @@ By Lemma~\ref{coste-inversa},
 \[
  \operatorname{tr}T
  =\sum_f\sum_{e,e'\in f}\tau_e\tau_{e'}\iota_e^TG\iota_{e'}
- =4a_2+O(\varepsilon_{\rm out}+k^{-1}) .
+ =4a_2+O(\varepsilon_{\rm ext}+k^{-1}) .
 \]
 The pairs $e=e'$ contribute $2\sum_e\tau_e^2(2+O(k^{-1}))$ because each square lies on two
 diagonals. Distinct squares on the same diagonal have distinct rows and columns, so their mixed
@@ -73,24 +73,24 @@ term is $O(k^{-1})$. The total absolute error from these pairs is bounded by
 \[
  \frac{C'}k\sum_f\Bigl(\sum_{e\in f}\tau_e\Bigr)^2
  \le\frac{C''}k\sum_f\ell_f^2
- \le\frac{C''}k\,\varepsilon_{\rm out}\sum_f\ell_f
- =O(\varepsilon_{\rm out}),
+ \le\frac{C''}k\,\varepsilon_{\rm ext}\sum_f\ell_f
+ =O(\varepsilon_{\rm ext}),
 \]
 since $\sum_f\ell_f=2k$.
 
-For $E=A-T$ we have $\|E\|_{\rm op}=O(\varepsilon_{\rm out})$ and $\operatorname{tr}E^2=O(1)$.
-Also $|\operatorname{tr}(AT)|\le\|A\|_{\rm op}\operatorname{tr}T=O(\varepsilon_{\rm out})$
+For $E=A-T$ we have $\|E\|_{\rm op}=O(\varepsilon_{\rm ext})$ and $\operatorname{tr}E^2=O(1)$.
+Also $|\operatorname{tr}(AT)|\le\|A\|_{\rm op}\operatorname{tr}T=O(\varepsilon_{\rm ext})$
 by positivity of $T$. Consequently,
 \[
- \operatorname{tr}E=2a_2+O(\varepsilon_{\rm out}+k^{-1}),\qquad
- \operatorname{tr}E^2=2a_2+O(\varepsilon_{\rm out}+k^{-1}).
+ \operatorname{tr}E=2a_2+O(\varepsilon_{\rm ext}+k^{-1}),\qquad
+ \operatorname{tr}E^2=2a_2+O(\varepsilon_{\rm ext}+k^{-1}).
 \]
 If $\xi$ is an eigenvalue of $E$, then $1+\xi\ge c$. Taylor's formula gives
 $|\log(1+\xi)-\xi+\xi^2/2|\le|\xi|^3/(3\min\{c,1\}^3)$.
-Upon summing, the error is $O(\|E\|_{\rm op}\operatorname{tr}E^2)=O(\varepsilon_{\rm out})$.
+Upon summing, the error is $O(\|E\|_{\rm op}\operatorname{tr}E^2)=O(\varepsilon_{\rm ext})$.
 In particular,
 \[
- \log\det U=a_2+O(\varepsilon_{\rm out}+k^{-1}).
+ \log\det U=a_2+O(\varepsilon_{\rm ext}+k^{-1}).
 \]
 Finally, the quadratic coefficient of $\log(1-dp)-d\log(1-p)$ is $-d(d-1)/2$, with an $O(p^3)$
 remainder for $d=2,4$. Thus $C_4-C_2=-5a_2+O(k^{-1})$. The factor $\sqrt{4\pi k}$ is common
@@ -98,7 +98,7 @@ to $\Gamma_4$ and $\Gamma_2$. Combining the three terms gives
 \[
  \log(\Gamma_4/\Gamma_2)
  =-\tfrac12\bigl((-5+4+1)a_2\bigr)
-      +O(\varepsilon_{\rm out}+k^{-1}),
+      +O(\varepsilon_{\rm ext}+k^{-1}),
 \]
 as claimed.
 \end{proof}

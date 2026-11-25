@@ -29,6 +29,11 @@ urlcolor={blue!55!black}]{hyperref}
 \setlength{\intextsep}{12pt plus 3pt minus 3pt}
 \setlength{\abovecaptionskip}{6pt}
 \setlength{\belowcaptionskip}{2pt}
+\makeatletter % float barrier, as \FloatBarrier in placeins
+\providecommand\FloatBarrier{\par\begingroup\let\@elt\relax
+  \edef\@tempa{\@botlist\@deferlist\@dbldeferlist}%
+  \ifx\@tempa\@empty\endgroup\else\endgroup\newpage\fi\suppressfloats[t]}
+\makeatother
 \AtBeginDocument{\setlength{\abovedisplayskip}{9pt plus 2pt minus 3pt}%
   \setlength{\belowdisplayskip}{9pt plus 2pt minus 3pt}}
 \clubpenalty=7000

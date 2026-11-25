@@ -1,0 +1,40 @@
+If $(\xi_j)$ are martingale differences with $|\xi_j|\le d_j$, then for $\theta>0$ convexity of the
+exponential between $-d_j$ and $d_j$ and the zero conditional mean give
+$\E[\exp(\theta\xi_j)\mid\mathcal F_{j-1}]\le\cosh(\theta d_j)\le\exp(\theta^2d_j^2/2)$. The
+compensated product is a positive supermartingale. Stopping it at the first $h$ with
+$\sum_{j\le h}\xi_j\ge u$, applying the same calculation to $-\xi_j$, and optimizing over $\theta$ give
+\begin{equation}\label{macro:max-mart}
+ P\left(\max_{h\le m}\left|\sum_{j\le h}\xi_j\right|\ge u\right)
+ \le 2\exp\!\left(-\frac{u^2}{2\sum_{j\le m}d_j^2}\right).
+\end{equation}
+This is the maximal form of Azuma's inequality~\cite{azuma}. For the fixed partition $\mathcal I$,
+there is a $C'_{\mathcal I}$ such that if all the scalar
+martingales have absolute maximum less than $b/C'_{\mathcal I}$, then $\mathcal M^*<b$. The factor
+$C'_{\mathcal I}$ counts the intervals on a single fiber and the interval and rectangle observations.
+The number of tracked lines enters only when we take the union of events. From \eqref{macro:max-mart},
+\[
+ P^{\rm B}(\mathcal M^*\ge b)\le C_{\mathcal I}(n+1)\exp(-c_{\delta,\mathcal I}b^2 n).
+\]
+
+Initially $x=U_f=1$. The lattice sums over intervals and boxes, the approximation of the fiber
+endpoints, and the $O(n^3)$ exceptional quadruples give $\Delta(0)\le C_{\mathcal I}/n$, uniformly in
+the tracked line. We first choose $\varrho_{\rm mac}$ within the deterministic thresholds, then
+$a_{\rm mac}$ and $b$ with $e^{C_\delta}(b+C_\delta a_{\rm mac})<\varrho_{\rm mac}/3$, and finally
+take $n$ large with the partition fixed. The discrete Gronwall inequality applied to
+\eqref{macro:gronwall} gives $\Delta(s\wedge\tau)<\varrho_{\rm mac}$ whenever $\mathcal M^*<b$,
+including the step reaching $\tau$. Thus $\mathcal H_M\subseteq\{\mathcal M^*\ge b\}$, which proves
+the bound after absorbing $n+1$ into the exponential.
+
+\emph{Refinement of the partition.} It remains to prove the claim about a fixed observation
+partition. Take as $\mathcal I$ a refinement of it of sufficiently small mesh.
+Use the common tree of row orders and prefixes of available square choices, stopped at the first
+fine exit or at size $M$. At every prefix, each coarse mass and target is the sum of its fine
+parts. The freezing time of a line depends only on the chosen squares, so this also holds for
+frozen fibers. The triangle inequality, followed for fibers by the maximum over lines, gives
+$\Delta_{\rm coarse}\le\Delta_{\rm fine}$ on that same prefix, where the subscripts indicate the
+partition with which the discrepancy is computed. A coarse exit at the common radius
+is therefore impossible before the first fine exit. If a fine-exit prefix admits a continuation,
+any later coarse exit belongs to the event already counted with the full mass of that prefix.
+Only transitions from parents strictly before the fine
+stop enter this argument, and those parents have a Bethe point by Proposition~\ref{macro:maximo}.
+\end{proof}

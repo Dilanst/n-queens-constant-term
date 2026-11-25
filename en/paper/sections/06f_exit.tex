@@ -1,8 +1,8 @@
 \begin{corolario}[Exit cost in the mesoscopic range]\label{coste-debil}
 For a first-exit board in the mesoscopic range satisfying the outer class bounds, with
-$\max_f\ell_f\le\varepsilon_{\rm out}<1$, we have for all sufficiently large $k$
+$\max_f\ell_f\le\varepsilon_{\rm ext}<1$, we have for all sufficiently large $k$
 \[
- g^+(B)\le C_0+\beta(\varepsilon_{\rm out})k,\qquad
+ g^+(B)\le C_0+\beta(\varepsilon_{\rm ext})k,\qquad
  \beta(v)=\frac{2v}{1-v},
 \]
 where $\beta$ is the function from Section~\ref{meso:constantes}. The constant $C_0$ can be
@@ -18,10 +18,13 @@ $F$ common to all permutations, we use $\log(1-\ell_f)\le-\ell_f$ to obtain
  =O_C(1).
 \]
 For legal permutations, the numerator $(1-p_e)^2$ of each square factor is at most one.
-Moreover, $-\log h_f\le\ell_f/(1-\ell_f)\le\varepsilon_{\rm out}/(1-\varepsilon_{\rm out})$.
+Moreover, $-\log h_f\le\ell_f/(1-\ell_f)\le\varepsilon_{\rm ext}/(1-\varepsilon_{\rm ext})$.
 There are two such logarithms for each of the $k$ chosen squares. It follows that
-$F(\sigma)\le\exp(C'+\beta(\varepsilon_{\rm out})k)$, which also holds if the indicator of
-legality is zero. Lemma~\ref{coste-factor} and Proposition~\ref{coste-normalizadores} give the
+$F(\sigma)\le\exp(C'+\beta(\varepsilon_{\rm ext})k)$, which also holds if the indicator of
+legality is zero. The outer bounds give \eqref{terminal-hipotesis-matriz} with $K=k$,
+$M_0=C_{\rm ext}$ and $\rho_*=1-\gamma_{\rm ext}$, by the paragraph following
+\eqref{terminal-hipotesis-matriz}. Lemma~\ref{coste-factor} and
+Proposition~\ref{coste-normalizadores} give the
 bound on $g$ when $Q(B)>0$. Absorb the uniform bound on $\log(\Gamma_4/\Gamma_2)$ and the uniform
 $o(1)$ term into a positive constant $C_0$. This gives the bound on $g^+$ and also covers
 the case $Q(B)=0$.

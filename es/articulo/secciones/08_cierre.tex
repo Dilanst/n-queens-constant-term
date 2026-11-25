@@ -1,9 +1,16 @@
 \section{Comparación final de los conteos}\label{balance}
+\input{figuras/tramos}
 \begin{proof}[Demostración del Teorema~\ref{princ}]
 Fijamos las constantes de las clases, $a_{\rm mes}$, $\varrho_{\rm mes}$ y las tolerancias,
 $\varepsilon$, $\delta$, $K_0$, $\varrho_{\rm mac}$ y $a_{\rm mac}$ en el orden de la
 Sección~\ref{meso:constantes}. Sea $K\ge K_0$ un entero fijo y sea $\tau$ la parada de la
-Definición~\ref{def:regular}. Sea $E_{\rm mac}$ el suceso de que el tablero de primera salida tenga
+Definición~\ref{def:regular}. Esta parada cumple las hipótesis de la Sección~\ref{historias}. En
+efecto, todo padre anterior a $\tau$ es regular y tiene, por tanto, punto de Bethe con cotas fijas:
+por la Proposición~\ref{macro:maximo} y el Corolario~\ref{macro:cambio} en el tramo macroscópico,
+por la Proposición~\ref{meso:reconstruccion} en el corte y por definición en el tramo mesoscópico.
+Por el punto (I1) de la Sección~\ref{leyes}, cada uno de sus hijos tiene punto de Bethe y predictor
+finito. Esas mismas cotas son las hipótesis del Corolario~\ref{hist:consistencia}. Sea $E_{\rm mac}$ el
+suceso de que el tablero de primera salida tenga
 tamaño ${k\ge M}$; incluye un fallo de entrada en el corte $k=M$. Para $j\ge0$, sea $E_j$ el suceso
 de que la historia tenga entrada regular en $M$ y su tablero de primera salida tenga tamaño $k$ con
 ${2^jK\le k<2^{j+1}K}$; es el suceso de la Proposición~\ref{prop:salida-banda-meso}. Si $K<M$, una
@@ -11,20 +18,21 @@ salida en el tablero de tamaño $K$ pertenece a $E_0$. Estos sucesos y la perman
 partición de las historias detenidas.
 
 En $E_{\rm mac}$ y en cada $E_j$, el tablero de primera salida $B_\tau$ hereda de su padre regular
-las cotas exteriores; en $E_j$, también la masa diagonal a lo sumo $\varepsilon_{\rm out}$
+las cotas exteriores; en $E_j$, también la masa diagonal a lo sumo $\varepsilon_{\rm ext}$
 (Proposición~\ref{meso:reconstruccion}). En $E_{\rm mac}$ su tamaño es $k\ge M\ge\delta n$, de modo
 que $N=2n-1=O_\delta(k)$, y la Proposición~\ref{coste-macro} acota su coste de salida por
 $\Lambda_{\rm mac}=C_\delta n^{2/3}$. En $E_j$, si $k$ es su tamaño, el Corolario~\ref{coste-debil}
 da
 \[
- g(B_\tau)\le C_0+\beta(\varepsilon_{\rm out})k
-           \le C_0+2\beta(\varepsilon_{\rm out})2^jK=:\Lambda_j .
+ g(B_\tau)\le C_0+\beta(\varepsilon_{\rm ext})k
+           \le C_0+2\beta(\varepsilon_{\rm ext})2^jK=:\Lambda_j .
 \]
 Ambas cotas valen en las historias con masa positiva bajo $\mu$. Sea $\Lambda$ la función de la
 historia detenida que vale $\Lambda_{\rm mac}$ en $E_{\rm mac}$, $\Lambda_j$ en $E_j$ y cero en $F$.
 Así, $g(B_\tau)\mathbf1_{F^c}\le\Lambda$ en esas historias.
 
-Aplicamos la desigualdad variacional de Gibbs~\cite[cap.~2]{ct} a $\Lambda$ y a las leyes de
+Aplicamos la desigualdad variacional de Gibbs~\cite[Proposición~1.4.2]{de} (véase
+también~\cite[cap.~2]{ct}) a $\Lambda$ y a las leyes de
 las historias detenidas. En este espacio finito se obtiene directamente por Jensen,
 restringiendo la suma bajo $\nu$ al soporte de $\mu$:
 \[
@@ -33,15 +41,15 @@ restringiendo la suma bajo $\nu$ al soporte de $\mu$:
               +\sum_{j\ge0}\nu(E_j)(e^{\Lambda_j}-1)\right).
 \]
 Si la primera salida ocurre en $M$ con $\Delta<\varrho_{\rm mac}$, el Lema~\ref{meso:entrada} sitúa
-los observables dentro de sus tolerancias de entrada y, por tanto, $D_{\max}(M)\ge\alpha M$. Así
+los observables dentro de sus tolerancias de entrada y, por tanto, $D_{\max}(M)\ge\alpha_{\rm geo} M$. Así
 \[
- E_{\rm mac}\subseteq\mathcal H_M\cup\bigl(G_M^-\cap\{D_{\max}(M)\ge\alpha M\}\bigr),
+ E_{\rm mac}\subseteq\mathcal H_M\cup\bigl(G_M^-\cap\{D_{\max}(M)\ge\alpha_{\rm geo} M\}\bigr),
 \]
 y el Corolario~\ref{macro:cambio} y ese lema acotan el sumando macroscópico por
 ${C_1\exp(-c_1n+C_\delta n^{2/3})}$, con $C_1,c_1>0$ que dependen de $\delta$ y de $\varrho_{\rm mac}$.
 La Proposición~\ref{prop:salida-banda-meso} da ${\nu(E_j)\le C\exp(-c\,2^jK)}$ si $2^jK\le M$; si no,
 $E_j$ es vacío. Como
-$c>2\beta(\varepsilon_{\rm out})$, para $0<c'<c-2\beta(\varepsilon_{\rm out})$ la suma de
+$c>2\beta(\varepsilon_{\rm ext})$, para $0<c'<c-2\beta(\varepsilon_{\rm ext})$ la suma de
 $\nu(E_j)(e^{\Lambda_j}-1)$ es $O(e^{-c'K})$ para $K$ grande.
 El Corolario~\ref{hist:consistencia}, \eqref{super} y la estimación terminal bajo $\mu$
 de la Proposición~\ref{terminal-error} dan
@@ -65,5 +73,5 @@ máximo global de la Proposición~\ref{macro:maximo} satisface $p_{\max}<1/4$ pa
 por tanto, coincide con el maximizador canónico de~\cite{pred}. La relación entre el cofactor y el
 pseudodeterminante de la Sección~\ref{leyes} da $L(B_0)=\log Q_{\rm pred}(n)$. Resulta
 $g(B_0)=\log Q(n)-\log Q_{\rm pred}(n)\to0$. Aplicar el Teorema~1.1 de~\cite{pred} al
-segundo logaritmo identifica la constante que aparece en el enunciado.
+segundo logaritmo, que es el punto (I5), identifica la constante que aparece en el enunciado.
 \end{proof}

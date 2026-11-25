@@ -1,4 +1,5 @@
 \subsection{Reconstruction of the Bethe point}\label{macro:reconstruccion}
+Throughout this subsection we assume $k\ge\delta n$, as in Lemma~\ref{macro:balances}.
 
 \begin{proposicion}[Row and column rebalancing]\label{macro:reequilibrado}
 Under the thresholds of Lemma~\ref{macro:brecha}, there exists a matrix $\bar p$ with the same
@@ -46,7 +47,7 @@ $\ker B$. For large $n$,
 \]
 \end{lema}
 \begin{proof}
-We give the matrix argument of \cite[Sections~6.3 and~7.2]{pred} at this feasible point. Let $D$ be
+We give the matrix argument of \cite[Sections~6.3, 6.4 and~7.2]{pred} at this feasible point. Let $D$ be
 the square--diagonal incidence matrix for both diagonal families, as in~\cite[Section~6.1]{pred}.
 The letter $D$ alone denotes this matrix, and $D(e)$ still denotes the diagonal of square $e$. Let
 $H=\operatorname{diag}(h_f(\bar p))$ and
@@ -88,7 +89,9 @@ four signed multipliers, the second formula in \eqref{macro:sistema-inverso} giv
 \begin{proposicion}[Stationary point and unique maximizer]\label{macro:maximo}
 There are positive thresholds for $\Delta$, $a_{\rm mac}$, and $C_{\mathcal I}/n$, and a minimum
 value of $n$, depending on $\delta$ and the profile, such that the Bethe point $p$ of the board
-exists and is the unique global maximizer of the Bethe entropy over all feasible points. It satisfies
+exists and is the unique global maximizer of the Bethe entropy over all feasible points. We call
+\emph{feasible} every $s=(s_e)$, with one coordinate per available square, such that $s_e\ge0$, the
+row and column sums equal one, and $h_f(s)\ge0$ on every diagonal. The point $p$ satisfies
 \begin{equation}\label{macro:predictor}
  \max_{q_e>0}|p_e/q_e-1|\le C_\delta(\zeta+k^{-1}),\qquad
  \max_{f\ {\rm available\ diagonal}}|\ell_f(p)-\ell_f^*|

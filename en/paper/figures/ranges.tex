@@ -1,0 +1,40 @@
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+ \draw[->,line width=.6pt] (0,0) -- (13.5,0);
+ \foreach \x/\lab in {0/{k=n},4.4/{k=M=\lceil\delta n\rceil},9.5/{k=K}}{
+  \draw[line width=.6pt] (\x,.12) -- (\x,-.12);
+  \node[above,font=\small] at (\x,.14) {$\lab$};
+ }
+ \foreach \x in {4.4,9.5}{\draw[black!35,line width=.3pt] (\x,-.12) -- (\x,-3.25);}
+ \node[font=\small,align=center,text width=4.1cm] at (2.2,-.62)
+  {Macroscopic range\\ (Section~\ref{macro})};
+ \node[font=\small,align=center,text width=4.8cm] at (6.95,-.62)
+  {Mesoscopic range\\ (Section~\ref{meso})};
+ \node[font=\small,align=center,text width=3.6cm] at (11.5,-.62)
+  {Last board\\ (Section~\ref{terminal})};
+ \foreach \y/\lab in {-1.55/Regularity,-2.25/Exit,-2.95/Cost}{
+  \node[font=\footnotesize,anchor=east] at (-.25,\y) {\lab};
+ }
+ \node[font=\footnotesize] at (2.2,-1.55) {$\Delta<\varrho_{\rm mac}$};
+ \node[font=\footnotesize] at (6.95,-1.55) {inner class};
+ \node[font=\footnotesize] at (11.5,-1.55) {event $F$};
+ \node[font=\footnotesize] at (2.2,-2.25) {$\nu(E_{\rm mac})\le Ce^{-cn}$};
+ \node[font=\footnotesize] at (6.95,-2.25) {$\nu(E_j)\le Ce^{-c\,2^jK}$};
+ \node[font=\footnotesize] at (11.5,-2.25) {$\nu(F\cap D_K)\le d_{n,K}$};
+ \node[font=\footnotesize] at (2.2,-2.95) {$g^+\le C_\delta n^{2/3}$};
+ \node[font=\footnotesize] at (6.95,-2.95)
+  {$g^+\le C_0+2\beta(\varepsilon_{\rm ext})2^jK$};
+ \node[font=\footnotesize] at (11.5,-2.95) {$|g|\le\theta_K$ on $F\cap D_K^c$};
+\end{tikzpicture}
+\caption{The three ranges of a history, from left to right as the size $k$ decreases. The first
+row gives the regularity condition of Definition~\ref{def:regular}. The second gives the bound on
+the exit probability under $\nu$, with the events $E_{\rm mac}$ and $E_j$ of this section
+(Corollary~\ref{macro:cambio}, Lemma~\ref{meso:entrada}, and
+Proposition~\ref{prop:salida-banda-meso}) and, on the last board, the bound of
+Lemma~\ref{terminal-geometria}. The third gives the bound on the cost at the first-exit board
+(Proposition~\ref{coste-macro} and Corollary~\ref{coste-debil}) and the bound of
+Proposition~\ref{terminal-error}. The constants $C$ and $c$ in the macroscopic range depend on
+$\delta$ and $\varrho_{\rm mac}$. Corollary~\ref{hist:consistencia} bounds $A_\tau$ along the whole
+history.}\label{fig:tramos}
+\end{figure}

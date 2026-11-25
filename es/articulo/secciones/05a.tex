@@ -1,4 +1,13 @@
 \section{Permanencia desde el corte hasta un número fijo de filas}\label{meso}
+El objetivo de esta sección es la Proposición~\ref{prop:salida-banda-meso}: bajo $\nu$, una
+historia con entrada regular en $M$ tiene su primera salida en un tamaño de la banda
+$[2^jK,2^{j+1}K)$ con probabilidad a lo sumo $Ce^{-c\,2^jK}$. Para ello controlamos, entre $M$ y
+$K$, el número de cruces vacíos de cada diagonal (Lemas~\ref{meso:prescripciones}
+y~\ref{lema:presupuesto-meso}) y unos observables de filas, columnas, fibras y rectángulos
+(Proposición~\ref{prop:concentracion-meso}). A partir de ellos se reconstruye el punto de Bethe y se
+comprueba que el tablero sigue en la clase interior (Proposición~\ref{meso:reconstruccion}). El
+orden en que se fijan las constantes está en la Sección~\ref{meso:constantes}.
+
 Denotamos por $\mathcal F^{(k)}=\mathcal F_{n-k}$ la historia hasta el tablero $B^{(k)}$ de tamaño $k$.
 Sea $M=\lceil\delta n\rceil$. En el tablero de tamaño $k$ escribimos $D_{\max}(k)$ para el máximo, sobre
 las diagonales de las dos familias del tablero inicial, del número de cruces vacíos que
@@ -23,11 +32,13 @@ de la masa diagonal, tales que, para $n$ suficientemente grande y $k$ mayor que 
 \end{align*}
 \end{lema}
 \begin{proof}
-Para un padre regular, el desarrollo por hijo en las pruebas de los Teoremas~7.1 y~8.1
-de~\cite[Secciones~7.8 y~8.3--8.5]{pred} da $e^{L(B+e)-L(B)}=p_e(1+d_e+O(k^{-2}))$, con
+Para un padre regular, el desarrollo por hijo del Teorema~7.1 de~\cite{pred} y de la prueba de su
+Teorema~8.1 \cite[Secciones~7.8, 8.2 y~8.5]{pred}, que es el punto (I2) de la Sección~\ref{leyes}, da
+$e^{L(B+e)-L(B)}=p_e(1+d_e+O(k^{-2}))$, con
 $d_e=O(k^{-1})$, uniformemente en sus casillas disponibles. Esto incluye al hijo en la primera salida.
 Si $B_{\rm RC}$ es la matriz de incidencia de filas y columnas, la restricción exacta
-$B_{\rm RC}(p\odot d)=0$ de \cite[Sección~6.1]{pred} da tanto $\sum_jp_{ij}d_{ij}=0$ como
+$B_{\rm RC}(p\odot d)=0$ de \cite[Sección~6.1]{pred}, que es el punto (I3), da tanto
+$\sum_jp_{ij}d_{ij}=0$ como
 $\sum_i p_{ij}d_{ij}=0$. Como cada fila tiene masa de $p$ igual a uno, su factor de normalización
 es $1+O(k^{-2})$. Así, en cada casilla disponible la ley normalizada por filas satisface
 \[
@@ -35,7 +46,8 @@ es $1+O(k^{-2})$. Así, en cada casilla disponible la ley normalizada por filas 
 \]
 Al sumar en $i$, la identidad de la columna cancela el término lineal. Los errores suman $O(k^{-2})$
 porque $\sum_i p_{ij}=1$. Así, $\sum_i\nu_B(j\mid i)=1+O(k^{-2})$, y la elección uniforme de la fila da
-$\nu(j\text{ elegida}\mid\mathcal F^{(k)})=1/k+O(k^{-3})$.
+$\nu(j\text{ elegida}\mid\mathcal F^{(k)})=1/k+O(k^{-3})$. En lo que sigue basta la cota más débil
+del enunciado.
 
 Para $k>M$ el último resto es $O_\delta(k^{-3})$. Una vez fijado $\delta$, al aumentar $n$ se acota
 el resto por $k^{-2}$ con coeficiente uno y se obtiene $\nu_B(j\mid i)\le2p_{ij}$. La constante de
@@ -46,7 +58,8 @@ $C_q,C_{\rm c}$ antes que $\delta$ y $\varepsilon$.
 \end{proof}
 
 \begin{lema}[Filas y columnas prescritas]\label{meso:prescripciones}
-Para cualesquiera $s$ filas y $t$ columnas fijas del tablero inicial se cumple
+Para cualesquiera $s$ filas y $t$ columnas fijas del tablero inicial y todo tamaño $m$ con
+$K_0\le m\le n$ se cumple
 \begin{equation}\label{prescr}
  \nu(\text{las $s$ filas y $t$ columnas siguen vacías en el tamaño $m$},G_m^-)
  \le (m/n)^{s+t}\exp\{C(st+s+t)/m\}.

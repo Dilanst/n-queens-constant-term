@@ -1,4 +1,13 @@
 \section{Permanence from the cut-off down to a fixed number of rows}\label{meso}
+The goal of this section is Proposition~\ref{prop:salida-banda-meso}: under $\nu$, a history with
+regular entry at $M$ has its first exit at a size in the band $[2^jK,2^{j+1}K)$ with probability at
+most $Ce^{-c\,2^jK}$. To this end we control, between $M$ and $K$, the number of empty crossings on
+each diagonal (Lemmas~\ref{meso:prescripciones} and~\ref{lema:presupuesto-meso}) and certain
+observables of rows, columns, fibers, and rectangles (Proposition~\ref{prop:concentracion-meso}).
+From them we reconstruct the Bethe point and check that the board remains in the inner class
+(Proposition~\ref{meso:reconstruccion}). The order in which the constants are fixed is given in
+Section~\ref{meso:constantes}.
+
 We use $\mathcal F^{(k)}=\mathcal F_{n-k}$ for the history through the board $B^{(k)}$ of size $k$.
 Let $M=\lceil\delta n\rceil$. For
 the board of size $k$, write $D_{\max}(k)$ for the maximum, over diagonals of both families of the initial
@@ -21,11 +30,11 @@ for all sufficiently large $n$ and all $k$ above a fixed threshold,
 \end{align*}
 \end{lema}
 \begin{proof}
-For a regular parent, the child expansion in the proofs of Theorems~7.1 and~8.1
-of~\cite[Sections~7.8 and~8.3--8.5]{pred} gives
+For a regular parent, the child expansion of Theorem~7.1 of~\cite{pred} and of the proof of its
+Theorem~8.1 \cite[Sections~7.8, 8.2 and~8.5]{pred}, which is item (I2) of Section~\ref{leyes}, gives
 $e^{L(B+e)-L(B)}=p_e(1+d_e+O(k^{-2}))$, with $d_e=O(k^{-1})$, uniformly over its available squares.
 This includes a child at the first exit. With $B_{\rm RC}$ the row--column incidence matrix, the exact
-constraint $B_{\rm RC}(p\odot d)=0$ of \cite[Section~6.1]{pred} gives both
+constraint $B_{\rm RC}(p\odot d)=0$ of \cite[Section~6.1]{pred}, which is item (I3), gives both
 $\sum_jp_{ij}d_{ij}=0$ and $\sum_i p_{ij}d_{ij}=0$. Since each row has unit $p$-mass, its normalizing
 factor is $1+O(k^{-2})$. Hence on every available square the row-normalized law satisfies
 \[
@@ -33,7 +42,8 @@ factor is $1+O(k^{-2})$. Hence on every available square the row-normalized law 
 \]
 Summing in $i$, the column identity cancels the linear term. The errors sum to $O(k^{-2})$ because
 $\sum_i p_{ij}=1$. Thus $\sum_i\nu_B(j\mid i)=1+O(k^{-2})$, and the uniform choice of row gives
-$\nu(j\text{ chosen}\mid\mathcal F^{(k)})=1/k+O(k^{-3})$.
+$\nu(j\text{ chosen}\mid\mathcal F^{(k)})=1/k+O(k^{-3})$. In what follows the weaker bound of the
+statement suffices.
 
 For $k>M$ the last remainder is $O_\delta(k^{-3})$. Once $\delta$ is fixed, increasing $n$ bounds
 it by $k^{-2}$ with coefficient one and gives $\nu_B(j\mid i)\le2p_{ij}$. The diffusion constant for
@@ -44,7 +54,8 @@ $\varepsilon$.
 \end{proof}
 
 \begin{lema}[Prescribed rows and columns]\label{meso:prescripciones}
-For any fixed $s$ rows and $t$ columns of the initial board,
+For any fixed $s$ rows and $t$ columns of the initial board and every size $m$ with
+$K_0\le m\le n$,
 \begin{equation}\label{prescr}
  \nu(\text{the $s$ rows and $t$ columns remain empty at size $m$},G_m^-)
  \le (m/n)^{s+t}\exp\{C(st+s+t)/m\}.

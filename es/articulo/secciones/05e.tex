@@ -1,7 +1,8 @@
 \subsection{Entrada, elección de constantes y salida por bandas}\label{meso:constantes}
 \begin{lema}[Entrada regular en $M$]\label{meso:entrada}
 Sean dadas las tolerancias de entrada de los observables de la Sección~\ref{meso:regularidad} y
-$0<\alpha<1/4$. Supongamos que $\delta$ es tan pequeño que los errores deterministas de entrada, es
+$0<\alpha_{\rm geo}<1/4$. Supongamos que $\delta$ es tan pequeño que los errores deterministas de
+entrada, es
 decir, las diferencias $O(\delta+1/n)$ entre los objetivos del tramo macroscópico en $M$ y los de esa
 sección, caben con desigualdad estricta en esas tolerancias, uniformemente en las líneas distinguidas,
 y que vale la segunda estimación del Lema~\ref{lema:presupuesto-meso} con una tasa $\lambda$. Si el
@@ -9,8 +10,8 @@ radio $\varrho_{\rm mac}$ y el paso $a_{\rm mac}$ de la Proposición~\ref{macro:
 suficientemente pequeños y $n$ es suficientemente grande, en todo tablero de tamaño $M$ cuya
 discrepancia $\Delta$ es menor que $\varrho_{\rm mac}$ los observables están dentro de sus
 tolerancias de entrada, simultáneamente para todas las líneas distinguidas disponibles. Además, la
-probabilidad de llegar a $M$ sin salida previa y con $D_{\max}(M)\ge\alpha M$ cumple
-$\nu(G_M^-,D_{\max}(M)\ge\alpha M)\le C_\lambda e^{-\lambda M}$.
+probabilidad de llegar a $M$ sin salida previa y con $D_{\max}(M)\ge\alpha_{\rm geo} M$ cumple
+$\nu(G_M^-,D_{\max}(M)\ge\alpha_{\rm geo} M)\le C_\lambda e^{-\lambda M}$.
 \end{lema}
 \begin{proof}
 Pongamos $x=M/n$. Uniformemente en $f$, se tiene $U_f=u_f+O(\delta+1/n)$ y $u_f\ge\kappa_\nu$, de
@@ -69,11 +70,11 @@ $\delta$ ya fijado.
 Fijamos las constantes en el siguiente orden.
 \begin{enumerate}
 \item Partimos del perfil y de dos clases de la forma de~\cite[Sección~8.1]{pred}. La \emph{clase
-interior} es la de las constantes $C_{\rm in},\eta_{\rm in},\gamma_{\rm in}$ de la
+interior} es la de las constantes $C_{\rm int},\eta_{\rm int},\gamma_{\rm int}$ de la
 Proposición~\ref{meso:reconstruccion}, con
 masa diagonal a lo sumo $\varepsilon$. La \emph{clase exterior}, que la contiene, tiene cotas de
-difusión, vacancia y brecha con constantes $C_{\rm out},\eta_{\rm out},\gamma_{\rm out}$
-estrictamente más débiles y masa diagonal a lo sumo $\varepsilon_{\rm out}=2\varepsilon$. El valor de
+difusión, vacancia y brecha con constantes $C_{\rm ext},\eta_{\rm ext},\gamma_{\rm ext}$
+estrictamente más débiles y masa diagonal a lo sumo $\varepsilon_{\rm ext}=2\varepsilon$. El valor de
 $\varepsilon$ se elige en el punto~4. Con las
 cotas de la clase exterior, las constantes de las prescripciones, de los incrementos y de la herencia
 por hijo se fijan una sola vez.
@@ -88,24 +89,26 @@ las estimaciones de martingalas de la Proposición~\ref{prop:concentracion-meso}
 concentración positivas. Elegimos $c_{\rm pat}>0$ menor que todas estas tasas. Los parámetros de que
 dependen ya se han fijado, independientemente de $\varepsilon$, de $\delta$ y del suelo.
 \item Tomamos ahora $\varepsilon>0$ suficientemente pequeña para la reconstrucción, con
-$\varepsilon_{\rm out}=2\varepsilon$ no mayor que la cota
-$\varepsilon_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$ del Teorema~8.1 de~\cite{pred}, y para
-que se cumpla $2\beta(\varepsilon_{\rm out})<c_{\rm pat}/4$, donde ${\beta(v)=2v/(1-v)}$. Fijamos
-$\alpha=\varepsilon/(4\|W_0\|_\infty)<1/4$ y elegimos $\delta>0$ de modo que los errores
+$\varepsilon_{\rm ext}=2\varepsilon$ no mayor que la cota
+$\varepsilon_0(C_{\rm ext},\eta_{\rm ext},\gamma_{\rm ext})$ del Teorema~8.1 de~\cite{pred}, y para
+que se cumpla $2\beta(\varepsilon_{\rm ext})<c_{\rm pat}/4$, donde ${\beta(v)=2v/(1-v)}$. Fijamos
+$\alpha_{\rm geo}=\varepsilon/(4\|W_0\|_\infty)<1/4$ y elegimos $\delta>0$ de modo que los errores
 deterministas de entrada y el término $C_HA\delta$ quepan con desigualdad estricta en sus
 tolerancias, la restricción $A(\delta+1/n)+\chi+1/K<1/4$ se cumpla para $n,K$ grandes y la
 \emph{segunda} estimación del Lema~\ref{lema:presupuesto-meso} para el suceso geométrico
-$D_{\max}(k)\ge\alpha k$ valga con algún $\lambda>c_{\rm pat}$.
-\item Fijamos finalmente $K_0\ge k_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$, con el $k_0$ del
+$D_{\max}(k)\ge\alpha_{\rm geo} k$ valga con algún $\lambda>c_{\rm pat}$.
+\item Fijamos finalmente $K_0\ge k_0(C_{\rm ext},\eta_{\rm ext},\gamma_{\rm ext})$, con el $k_0$ del
 mismo teorema, y suficientemente grande; según el Lema~\ref{meso:entrada}, el radio
 $\varrho_{\rm mac}$ y el paso $a_{\rm mac}$ del tramo macroscópico; y después $n$ suficientemente
 grande para este $\delta$. Se absorben así los errores de redondeo, los términos $O(1/K_0)$ y los
 restos macroscópicos. Las condiciones que definen la clase interior, incluida la masa diagonal
 $\le\varepsilon$, son independientes del suelo $K$.
 \end{enumerate}
+La Tabla~\ref{tab:constantes} resume ese orden y las dependencias.
+\input{secciones/05e_tabla_constantes}
 
 \begin{proposicion}[Salida por bandas]\label{prop:salida-banda-meso}
-Existen $C<\infty$ y $c>2\beta(\varepsilon_{\rm out})$ tales que para cada $K_0\le K\le M$ y $j\ge0$
+Existen $C<\infty$ y $c>2\beta(\varepsilon_{\rm ext})$ tales que para cada $K_0\le K\le M$ y $j\ge0$
 con $2^jK\le M$,
 \[
  \nu\big(\text{entrada regular en $M$ y primera salida en un tamaño }
@@ -116,14 +119,14 @@ con $2^jK\le M$,
 \begin{proof}
 Para cualquier suelo $K'$ entre $K_0$ y $M$, aplicamos la Proposición~\ref{prop:concentracion-meso} y
 la segunda estimación del Lema~\ref{lema:presupuesto-meso} con ese suelo. En una historia de entrada
-regular, salvo sus excepciones, cada observable al llegar a cualquier tamaño $k\ge K'$ hasta la
-primera salida queda dentro de su tolerancia de reconstrucción, y $D_{\max}(k)<\alpha k$. Si se
+regular, salvo sus excepciones, cada observable al llegar a cualquier tamaño $K'\le k\le M$ hasta la
+primera salida queda dentro de su tolerancia de reconstrucción, y $D_{\max}(k)<\alpha_{\rm geo} k$. Si se
 produjera la primera salida en este rango, su propio tablero de llegada cumpliría esas condiciones y
 la Proposición~\ref{meso:reconstruccion} lo situaría en la clase interior. Por tanto la salida exige
 una de las excepciones, de probabilidad $\le Ce^{-cK'}$ con $c=c_{\rm pat}/2$. Se toma $K'=2^jK$,
 con la misma clase y las mismas constantes, para obtener el enunciado. El factor de coste de la
-Sección~\ref{balance} es a lo sumo $\exp(C_0+2\beta(\varepsilon_{\rm out})K')$ en esta banda, por
-lo que $c>2\beta(\varepsilon_{\rm out})$ deja una exponencial sumable en $K'=2^jK$. Tanto la
+Sección~\ref{balance} es a lo sumo $\exp(C_0+2\beta(\varepsilon_{\rm ext})K')$ en esta banda, por
+lo que $c>2\beta(\varepsilon_{\rm ext})$ deja una exponencial sumable en $K'=2^jK$. Tanto la
 probabilidad como el presupuesto diagonal se toman desde el tablero inicial bajo $\nu$. Un paso que
 llegue a $K$ y viole una condición se contabiliza como salida en $K$.
 \end{proof}

@@ -67,7 +67,8 @@ en~\cite[Secciones~6.1 y~7.1]{pred}, da el mismo $L(B)$.
 El \emph{laplaciano de filas y columnas} de $p$ es, como en~\cite{pred}, el del grafo cuyos vértices
 son las filas y las columnas vacías y en el que cada casilla disponible $e$ es una arista de peso
 $p_e$ entre su fila y su columna. Su \emph{brecha} es su segundo autovalor más pequeño. Decimos que
-$p$ cumple una \emph{cota de difusión} si $k\max_ep_e\le C$, una \emph{cota de vacancia} si
+$p$ cumple una \emph{cota de difusión} si $k\max_ep_e\le C$, es decir, si ningún peso supera
+$C/k$; una \emph{cota de vacancia} si
 $h_f\ge\eta$ en toda diagonal y una \emph{cota de brecha} si esa brecha es al menos $\gamma$. Con
 constantes $C,\eta,\gamma>0$ fijas, éstas son las cotas que piden los Teoremas~7.1 y~8.1
 de~\cite{pred}: el primero para $k\ge\delta n$, y el segundo sin esa condición si la masa de cada
@@ -79,6 +80,18 @@ diagonal son $m_d$ y $h_d$; las demás diferencias se indican donde aparecen. Al
 $E$, $J$, $S$, $T$ o $W$, designan en ciertas secciones objetos locales, que se definen donde aparecen;
 por ejemplo, en la Sección~\ref{permanente} la letra $B$ denota la matriz $P-J_K$ y no un tablero.
 Fuera del resumen y de la introducción, la letra $J$ no denota el operador de~\cite{pred}.
+
+Algunas letras griegas tienen dos usos que no deben confundirse. La letra $\nu$ sin subíndice es la
+ley adaptativa, mientras que $\nu_1$ es siempre el perfil y $c_\nu,C_\nu,\kappa_\nu,L_\nu$ son sus
+constantes. La letra $\tau$ sola es la parada de la Sección~\ref{historias}, mientras que $\tau_d$ y
+$\tau_e$, siempre con subíndice, son los pesos de la Sección~\ref{costes:normalizador}. La letra
+$\alpha$ sola es la constante de la introducción; el umbral geométrico de la
+Sección~\ref{meso} se escribe $\alpha_{\rm geo}$. En el Lema~\ref{terminal-escalado}, $\alpha$ y
+$\beta$ son vectores de escalado, sin relación con esa constante ni con la función $\beta$ de la
+Sección~\ref{meso:constantes}.
+Asimismo, $F$ sin argumentos es el suceso de permanencia, mientras que $F_{\lambda,I}$, $F_i(k)$,
+$F(\sigma)$ y $F(x)$ son objetos locales de las Secciones~\ref{macro:observaciones}, \ref{meso},
+\ref{costes:permanente} y~\ref{meso:regularidad}.
 
 \paragraph{Leyes de revelado e inserción.}
 Sorteamos uniformemente un orden $\sigma$ de las filas. Bajo la \emph{ley uniforme} $\mu$ elegimos,
@@ -96,55 +109,3 @@ revelada $\mathcal F_t$, el índice $t$ cuenta inserciones. Al indexar por tama�
 $B^{(k)}=B_{n-k}$ y $\mathcal F^{(k)}=\mathcal F_{n-k}$. Esta última contiene las filas reveladas
 hasta ese momento y sus casillas elegidas, antes de revelar la fila siguiente. En una historia
 detenida, estos símbolos sólo se refieren a los niveles alcanzados.
-
-\begin{definicion}[Tableros regulares y primera salida]\label{def:regular}
-Fijamos $0<\delta<1$, $M=\lceil\delta n\rceil$ y un entero $K$ con $K_0\le K\le M$. El umbral $K_0$,
-las constantes y las tolerancias que siguen se eligen en la Sección~\ref{meso:constantes}. Sea $B$ un
-tablero de una historia, de tamaño $k$.
-\begin{enumerate}[(a)]
-\item \emph{Tramo macroscópico}, $k\ge M$. El tablero es \emph{regular} si la discrepancia $\Delta$
-de la historia al llegar a él es menor que el radio $\varrho_{\rm mac}$ de la
-Proposición~\ref{macro:parada}. La Sección~\ref{macro:observaciones} define esta discrepancia
-con la partición $\mathcal I$, de paso $a_{\rm mac}$, de esa proposición.
-\item \emph{Corte}, $k=M$. Se exige además que los observables de la
-Sección~\ref{meso:regularidad} estén dentro de sus tolerancias de entrada y que
-$D_{\max}(M)<\alpha M$, con la notación de la Sección~\ref{meso}.
-\item \emph{Tramo mesoscópico}, $K\le k<M$. El tablero es regular si su punto de Bethe existe y
-pertenece a la \emph{clase interior}: cumple las cotas de difusión, vacancia y brecha fijadas en la
-Sección~\ref{meso:constantes} y la masa de cada diagonal es a lo sumo $\varepsilon$.
-\end{enumerate}
-La \emph{primera salida} de una historia es su primer tablero no regular, que llamamos \emph{tablero
-de primera salida}. Su padre es regular. La historia se detiene en la primera salida o, si no la
-hay, al llegar al tamaño $K$. El \emph{suceso de permanencia} $F$ consiste en que no haya salida:
-todos los tableros hasta el de tamaño $K$, incluido éste, son regulares.
-\end{definicion}
-Para $n$ grande el tablero inicial es regular, pues su discrepancia es $O(1/n)$ (prueba de la
-Proposición~\ref{macro:parada}). El punto de Bethe de un tablero regular cumple cotas de difusión,
-vacancia y brecha con constantes fijas: en el tramo macroscópico por la Proposición~\ref{macro:maximo}
-y el Corolario~\ref{macro:cambio}, y en el mesoscópico por definición. En el corte, las condiciones
-adicionales lo sitúan ya en la clase interior, por la Proposición~\ref{meso:reconstruccion}. Sus
-hijos, entre ellos el tablero de primera salida, heredan cotas del mismo tipo con constantes más
-débiles, que llamamos \emph{cotas exteriores}; en el tramo mesoscópico, junto con una masa diagonal a
-lo sumo $2\varepsilon$, definen la \emph{clase exterior}. En $\rho(B,i)$ intervienen todos los hijos
-de $B$ en la fila $i$.
-
-\begin{table}[htbp]\centering\small
-\caption{Cómo se combinan las estimaciones en la comparación de los conteos.}
-\begin{tabular}{@{}p{.31\linewidth}p{.59\linewidth}@{}}
-\toprule Resultado & Estimaciones que utiliza \\ \midrule
-Identidades \ref{hist:igualdad} y \ref{hist:inferior} & Partición por la siguiente fila y
-normalización de las dos leyes.\\
-Permanencia \ref{macro:cambio} & Balances \ref{macro:balances}, brecha \ref{macro:brecha},
-reconstrucción \ref{macro:maximo} y parada \ref{macro:parada}.\\
-Bandas \ref{prop:salida-banda-meso} & Prescripciones \eqref{prescr}, presupuesto
-\ref{lema:presupuesto-meso}, concentración \ref{prop:concentracion-meso} y reconstrucción
-\ref{meso:reconstruccion}.\\
-Costes \ref{coste-macro} y \ref{coste-debil} & Comparación \ref{coste-comparacion} y, en el tramo
-mesoscópico, normalizadores \ref{coste-normalizadores} y estimaciones del permanente
-\ref{terminal-permanente} y \ref{terminal-normalizador}.\\
-Último tablero \ref{terminal-error} & Geometría \ref{terminal-geometria}, pivotes
-\ref{terminal-pivotes}, escalado \ref{terminal-escalado} y Proposición~3.1 de~\cite{dw}.\\
-Teorema~\ref{princ} & Consistencia \ref{hist:consistencia}, cotas de salida y estimación
-terminal bajo las dos leyes.\\ \bottomrule
-\end{tabular}
-\end{table}\input{secciones/02_tabla_notacion}

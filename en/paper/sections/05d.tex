@@ -1,23 +1,24 @@
 \begin{proposicion}[Reconstruction of the inner class]\label{meso:reconstruccion}
-There are constants $C_{\rm in},\eta_{\rm in},\gamma_{\rm in}>0$, depending only on the profile, with the
+There are constants $C_{\rm int},\eta_{\rm int},\gamma_{\rm int}>0$, depending only on the profile, with the
 following property. Suppose the observables of this section, namely the proportions in each interval, the
-fibers, and the sixteen rectangle terms, are within their tolerances, and suppose $D_{\max}(k)<\alpha k$
-with $\alpha=\varepsilon/(4\|W_0\|_\infty)$. If the mesh $a_{\rm mes}$, the tolerance $\varrho_{\rm mes}$,
-and $\varepsilon$ are sufficiently small and $k$ is large, the Bethe point of the board exists, satisfies
-the diffusion, vacancy, and gap bounds with strict inequalities for these constants, and has mass less than
-$\varepsilon$ on each diagonal. On the available squares $p_e/q_e=1+O(\varrho_{\rm mes}+\varepsilon+1/k)$,
-with a constant depending on the profile. Moreover, for these values of $\varepsilon$ and large $k$, every
-child of a board whose Bethe point satisfies these bounds with diagonal mass at most $\varepsilon$ satisfies
-the outer bounds, and each of its diagonals has mass at most $\varepsilon_{\rm out}=2\varepsilon$.
+fibers, and the sixteen rectangle terms, are within their tolerances, and suppose
+$D_{\max}(k)<\alpha_{\rm geo} k$ with $\alpha_{\rm geo}=\varepsilon/(4\|W_0\|_\infty)$. If the mesh
+$a_{\rm mes}$, the tolerance $\varrho_{\rm mes}$, and $\varepsilon$ are sufficiently small and $k$ is
+large, the Bethe point of the board exists, satisfies the diffusion, vacancy, and gap bounds with strict
+inequalities for these constants, and has mass less than $\varepsilon$ on each diagonal. On the available
+squares $p_e/q_e=1+O(\varrho_{\rm mes}+\varepsilon+1/k)$, with a constant depending on the profile.
+Moreover, for these values of $\varepsilon$ and large $k$, every child of a board whose Bethe point
+satisfies these bounds with diagonal mass at most $\varepsilon$ satisfies the outer bounds, and each of
+its diagonals has mass at most $\varepsilon_{\rm ext}=2\varepsilon$.
 \end{proposicion}
 \begin{proof}
 By the fiber bounds, each row and column of $q$ sums to $1+O(\varrho_{\rm mes})$. For $V$, approximate
 $\nu_1(r,\cdot)$ or $\nu_1(\cdot,c)$ by a constant on each interval. The continuous normalization of the
 profile, its Lipschitz regularity, and the sum of the interval tolerances give degrees $1+O(a_{\rm
-mes}+\varrho_{\rm mes})$ uniformly in the coordinate of the tracked line. Fix ${0<\theta<\min(c_\nu,1)/2}$.
-The matrix $V-\theta\mathbf1\mathbf1^T/k$ is nonnegative and has row and column sums ${\le1-\theta+O(a_{\rm
-mes}+\varrho_{\rm mes})}$. By Schur's inequality its operator norm is at most the same quantity. The
-rank-one approximation and the bound on $q-V$ give
+mes}+\varrho_{\rm mes})$ uniformly in the coordinate of the tracked line. Fix
+${0<\theta<\min(c_\nu,1)/2}$. The matrix $V-\theta\mathbf1\mathbf1^T/k$ is nonnegative and has row and
+column sums ${\le1-\theta+O(a_{\rm mes}+\varrho_{\rm mes})}$. By Schur's inequality its operator norm is
+at most the same quantity. The rank-one approximation and the bound on $q-V$ give
 \[
  \sigma_2(q)\le1-\theta+O(a_{\rm mes}+\varrho_{\rm mes})+\|q-V\|_{\rm op}.
 \]
@@ -34,7 +35,8 @@ inequality after subtracting the degree-weighted mean gives
  f^TL_q f\ \ge\ \lambda\min_{a\in\mathbb R}\sum_v D_{vv}(f_v-a)^2
  \ \ge\ \lambda d_{\min}\min_{a\in\mathbb R}\sum_v(f_v-a)^2 .
 \]
-For $f\perp\mathbf1$ the last minimum is $\|f\|_2^2$, so $\operatorname{gap}(L_q)\ge d_{\min}\lambda$.
+For $f\perp\mathbf1$ the last minimum is $\|f\|_2^2$, so the gap of $L_q$ is at least
+$d_{\min}\lambda$.
 Here all degrees are $1+O(\varrho_{\rm mes})$.
 
 We detail the passage from these observables to the Bethe point. On the support of $q$, let $B$ be the
@@ -50,8 +52,9 @@ likewise for columns. Dividing by the degree gives $\|z\|_\infty=O(\varrho_{\rm 
  \bar q=q+P_qB^Tz,\qquad B\bar q=\mathbf1,\qquad
  \bar q_e/q_e=1+O(\varrho_{\rm mes}).
 \]
-Comparison of the weights shows that the diffusion and gap bounds still hold with strict inequalities. If
-$D_{\max}(k)\le\alpha k$ with $\alpha=\varepsilon/(4\|W_0\|_\infty)$, each diagonal in either family has
+Comparison of the weights shows that the diffusion and gap bounds still hold with strict inequalities.
+Since $D_{\max}(k)<\alpha_{\rm geo} k$ with $\alpha_{\rm geo}=\varepsilon/(4\|W_0\|_\infty)$, each
+diagonal in either family has
 $q$-mass at most $\varepsilon/4$ and $\bar q$-mass at most $\varepsilon/2$ for $\varrho_{\rm mes}$
 sufficiently small independently of $\varepsilon$.
 
@@ -72,12 +75,13 @@ h_{A(e)}$. At $\bar q$, we have $\log q\in\operatorname{im}B^T$ because $W_0=b_0
 q/q)=B^Tz+O(\varrho_{\rm mes}^2)$ in the uniform norm. The terms from the vacancies and from $1-\bar q_e$
 are $O(\varepsilon+1/k)$. Consequently $\|F(0)\|_\infty\le C(\varrho_{\rm mes}^2+\varepsilon+1/k)$.
 
-On the ball $\|x\|_\infty\le t<1/2$, the derivative of $\log p$ in relative variables is the diagonal matrix
-with entries $1/(1+x_e)$, which differs from the identity by $O(t)$. The derivative of $\log(1-p_e)$ has
-norm $O(1/k)$, and each derivative of $\log h_f$ has norm $\le\sum_{e\in f}\bar q_e/h_f=O(\varepsilon)$. The
-projection is the identity on $\mathcal T$, so $\|DF(x)-I\|_{\infty,\mathcal T}\le C(t+\varepsilon+1/k)$.
-Fix $t$ small and then take $\varrho_{\rm mes},\varepsilon,1/K_0$ sufficiently small that $x\mapsto x-F(x)$
-is a contraction with constant $\le1/2$ on the ball and $2\|F(0)\|_\infty\le t$. The fixed point satisfies
+On the ball $\|x\|_\infty\le t<1/2$, the derivative of $\log p$ in relative variables is the diagonal
+matrix with entries $1/(1+x_e)$, which differs from the identity by $O(t)$. The derivative of
+$\log(1-p_e)$ has norm $O(1/k)$, and each derivative of $\log h_f$ has norm $\le\sum_{e\in f}\bar
+q_e/h_f=O(\varepsilon)$. The projection is the identity on $\mathcal T$, so $\|DF(x)-I\|_{\infty,\mathcal
+T}\le C(t+\varepsilon+1/k)$. Fix $t$ small and then take $\varrho_{\rm mes},\varepsilon,1/K_0$
+sufficiently small that $x\mapsto x-F(x)$ is a contraction with constant $\le1/2$ on the ball and
+$2\|F(0)\|_\infty\le t$. The fixed point satisfies
 \[
  \|p/\bar q-1\|_\infty\le 2\|F(0)\|_\infty,\qquad
  p_e/q_e=1+O(\varrho_{\rm mes}+\varepsilon+1/k).
@@ -86,11 +90,12 @@ All ratios are taken on available squares. The point is the unique stationary po
 $0<p_e<1/4$, $h_f>0$, since there the negative Hessian of the Bethe entropy is the sum of a positive
 diagonal matrix with entries $1/p_e-3/(1-p_e)$ and positive semidefinite forms from the lines. Since
 $p_{\max}\le C/k\le e^{-4}$ for large $k$, the scalar calculation in Proposition~\ref{macro:maximo} also
-shows that the point constructed is the unique global maximizer. It therefore lies on the branch selected in
-the representation of \cite[Theorem~8.1 and its proof]{pred}. We obtain strict diffusion, gap, and vacancy
-bounds, with diagonal mass $<\varepsilon$. The construction used only observables of the board reached. For
-every child of a last regular parent, even if one of these observables fails its bound, the inheritance
-result of \cite[Sections~8.2--8.3]{pred} gives, on the squares that remain available, a relative variation
-$1+O(1/k)$ with respect to the parent, with constants from the outer class. The diagonal mass of the child
-is at most $(1+O(1/k))\varepsilon\le\varepsilon_{\rm out}=2\varepsilon$ after increasing $K_0$.
+shows that the point constructed is the unique global maximizer. It therefore lies on the branch selected
+in the representation of \cite[Theorem~8.1 and the paragraph following it]{pred}. We obtain strict
+diffusion, gap, and vacancy bounds, with diagonal mass $<\varepsilon$. The construction used only
+observables of the board reached. For every child of a last regular parent, even if one of these
+observables fails its bound, the inheritance result of \cite[Sections~6.5 and~8.2--8.3]{pred}, which
+is item (I1) of Section~\ref{leyes}, gives, on the squares that remain available, a relative variation
+$1+O(1/k)$ with respect to the parent, with constants from the outer class. The diagonal mass of the
+child is at most $(1+O(1/k))\varepsilon\le\varepsilon_{\rm ext}=2\varepsilon$ after increasing $K_0$.
 \end{proof}

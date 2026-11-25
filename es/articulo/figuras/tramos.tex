@@ -1,0 +1,40 @@
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+ \draw[->,line width=.6pt] (0,0) -- (13.5,0);
+ \foreach \x/\lab in {0/{k=n},4.4/{k=M=\lceil\delta n\rceil},9.5/{k=K}}{
+  \draw[line width=.6pt] (\x,.12) -- (\x,-.12);
+  \node[above,font=\small] at (\x,.14) {$\lab$};
+ }
+ \foreach \x in {4.4,9.5}{\draw[black!35,line width=.3pt] (\x,-.12) -- (\x,-3.25);}
+ \node[font=\small,align=center,text width=4.1cm] at (2.2,-.62)
+  {Tramo macroscópico\\ (Sección~\ref{macro})};
+ \node[font=\small,align=center,text width=4.8cm] at (6.95,-.62)
+  {Tramo mesoscópico\\ (Sección~\ref{meso})};
+ \node[font=\small,align=center,text width=3.6cm] at (11.5,-.62)
+  {Último tablero\\ (Sección~\ref{terminal})};
+ \foreach \y/\lab in {-1.55/Regularidad,-2.25/Salida,-2.95/Coste}{
+  \node[font=\footnotesize,anchor=east] at (-.25,\y) {\lab};
+ }
+ \node[font=\footnotesize] at (2.2,-1.55) {$\Delta<\varrho_{\rm mac}$};
+ \node[font=\footnotesize] at (6.95,-1.55) {clase interior};
+ \node[font=\footnotesize] at (11.5,-1.55) {suceso $F$};
+ \node[font=\footnotesize] at (2.2,-2.25) {$\nu(E_{\rm mac})\le Ce^{-cn}$};
+ \node[font=\footnotesize] at (6.95,-2.25) {$\nu(E_j)\le Ce^{-c\,2^jK}$};
+ \node[font=\footnotesize] at (11.5,-2.25) {$\nu(F\cap D_K)\le d_{n,K}$};
+ \node[font=\footnotesize] at (2.2,-2.95) {$g^+\le C_\delta n^{2/3}$};
+ \node[font=\footnotesize] at (6.95,-2.95)
+  {$g^+\le C_0+2\beta(\varepsilon_{\rm ext})2^jK$};
+ \node[font=\footnotesize] at (11.5,-2.95) {$|g|\le\theta_K$ en $F\cap D_K^c$};
+\end{tikzpicture}
+\caption{Los tres tramos de una historia, de izquierda a derecha según disminuye el tamaño $k$.
+La primera fila indica la condición de regularidad de la Definición~\ref{def:regular}. La segunda,
+la cota de la probabilidad de salida bajo $\nu$, con los sucesos $E_{\rm mac}$ y $E_j$ de esta
+sección (Corolario~\ref{macro:cambio}, Lema~\ref{meso:entrada} y
+Proposición~\ref{prop:salida-banda-meso}) y, en el último tablero, la cota del
+Lema~\ref{terminal-geometria}. La tercera, la cota del coste en el tablero de primera salida
+(Proposición~\ref{coste-macro} y Corolario~\ref{coste-debil}) y la cota de la
+Proposición~\ref{terminal-error}. Las constantes $C$ y $c$ del tramo macroscópico dependen de
+$\delta$ y de $\varrho_{\rm mac}$. El Corolario~\ref{hist:consistencia} acota $A_\tau$ en toda la
+historia.}\label{fig:tramos}
+\end{figure}

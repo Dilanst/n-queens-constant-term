@@ -1,0 +1,95 @@
+\begin{definicion}[Tableros regulares y primera salida]\label{def:regular}
+Fijamos $0<\delta<1$, $M=\lceil\delta n\rceil$ y un entero $K$ con $K_0\le K\le M$. El umbral $K_0$,
+las constantes y las tolerancias que siguen se eligen en la Sección~\ref{meso:constantes}. Sea $B$ un
+tablero de una historia, de tamaño $k$.
+\begin{enumerate}[(a)]
+\item \emph{Tramo macroscópico}, $k\ge M$. El tablero es \emph{regular} si la discrepancia $\Delta$
+de la historia al llegar a él es menor que el radio $\varrho_{\rm mac}$ de la
+Proposición~\ref{macro:parada}. La Sección~\ref{macro:observaciones} define esta discrepancia
+con la partición $\mathcal I$, de paso $a_{\rm mac}$, de esa proposición.
+\item \emph{Corte}, $k=M$. Se exige además que los observables de la
+Sección~\ref{meso:regularidad} estén dentro de sus tolerancias de entrada y que
+$D_{\max}(M)<\alpha_{\rm geo}M$, con la notación de la Sección~\ref{meso}.
+\item \emph{Tramo mesoscópico}, $K\le k<M$. El tablero es regular si su punto de Bethe existe y
+pertenece a la \emph{clase interior}: cumple las cotas de difusión, vacancia y brecha fijadas en la
+Sección~\ref{meso:constantes} y la masa de cada diagonal es a lo sumo $\varepsilon$.
+\end{enumerate}
+La \emph{primera salida} de una historia es su primer tablero no regular, que llamamos \emph{tablero
+de primera salida}. Su padre es regular. La historia se detiene en la primera salida o, si no la
+hay, al llegar al tamaño $K$. El \emph{suceso de permanencia} $F$ consiste en que no haya salida:
+todos los tableros hasta el de tamaño $K$, incluido éste, son regulares.
+\end{definicion}
+Para $n$ grande el tablero inicial es regular, pues su discrepancia es $O(1/n)$ (prueba de la
+Proposición~\ref{macro:parada}). El punto de Bethe de un tablero regular cumple cotas de difusión,
+vacancia y brecha con constantes fijas: en el tramo macroscópico por la Proposición~\ref{macro:maximo}
+y el Corolario~\ref{macro:cambio}, y en el mesoscópico por definición. En el corte, las condiciones
+adicionales lo sitúan ya en la clase interior, por la Proposición~\ref{meso:reconstruccion}. Sus
+hijos, entre ellos el tablero de primera salida, heredan cotas del mismo tipo con constantes más
+débiles, que llamamos \emph{cotas exteriores}; en el tramo mesoscópico, junto con una masa diagonal a
+lo sumo $2\varepsilon$, definen la \emph{clase exterior}. En $\rho(B,i)$ intervienen todos los hijos
+de $B$ en la fila $i$.
+
+\begin{table}[htbp]\centering\small
+\caption{Cómo se combinan las estimaciones en la comparación de los conteos.}
+\begin{tabular}{@{}p{.31\linewidth}p{.59\linewidth}@{}}
+\toprule Resultado & Estimaciones que utiliza \\ \midrule
+Identidades \ref{hist:igualdad} y \ref{hist:inferior} & Partición por la siguiente fila y
+normalización de las dos leyes.\\
+Permanencia \ref{macro:cambio} & Balances \ref{macro:balances}, brecha \ref{macro:brecha},
+reconstrucción \ref{macro:maximo} y parada \ref{macro:parada}.\\
+Bandas \ref{prop:salida-banda-meso} & Prescripciones \eqref{prescr}, presupuesto
+\ref{lema:presupuesto-meso}, concentración \ref{prop:concentracion-meso} y reconstrucción
+\ref{meso:reconstruccion}.\\
+Costes \ref{coste-macro} y \ref{coste-debil} & Comparación \ref{coste-comparacion} y, en el tramo
+mesoscópico, normalizadores \ref{coste-normalizadores} y estimaciones del permanente
+\ref{terminal-permanente} y \ref{terminal-normalizador}.\\
+Último tablero \ref{terminal-error} & Geometría \ref{terminal-geometria}, pivotes
+\ref{terminal-pivotes}, escalado \ref{terminal-escalado} y Proposición~3.1 de~\cite{dw}.\\
+Teorema~\ref{princ} & Consistencia \ref{hist:consistencia}, cotas de salida y estimación
+terminal bajo las dos leyes.\\ \bottomrule
+\end{tabular}
+\end{table}\input{secciones/02_tabla_notacion}
+\FloatBarrier
+
+\paragraph{Resultados que se usan de~\cite{pred}.}
+Reunimos aquí, con una etiqueta, lo que las secciones siguientes toman de~\cite{pred}. Sea $B$ un
+padre regular de tamaño $k$, con punto de Bethe $p$, sea $i$ una fila vacía y sea
+$e\in R_i\cap E(B)$. En (I1)--(I3) reproducimos entre comillas la redacción de~\cite{pred}, donde la
+casilla insertada se escribe $c$, su fila $r$, la corrección relativa $\delta_c$ y el resto $r_c$;
+aquí escribimos $e$, $i$, $d_e$ y $r_e$.
+\begin{enumerate}[({I}1)]
+\item \emph{Herencia.} Para $k\ge k_0$, «cada hijo legal tiene un punto estacionario interior único
+en la rama pequeña», es decir, con todos sus pesos menores que $1/4$, y «no se excluyen hijos
+desfavorables ni se exige una cota inferior por casilla» \cite[Teorema~7.1]{pred}. En la clase
+débil, «todos sus hijos legales tienen el punto estacionario pequeño construido en la
+Sección~8.3» \cite[Teorema~8.1]{pred}. Sean $w$ la restricción de $p$ al soporte del hijo,
+$\bar p=w+z$ su reequilibrado y $p^*$ el punto estacionario del hijo. Si $p$ cumple las cotas de
+difusión, vacancia y brecha con constantes $C,\eta,\gamma$, para $k>12C/\gamma$ «todo hijo
+restringido es conexo y su brecha es al menos $\gamma/2$»; además $|z_e|/w_e=O(k^{-1})$, las
+vacancias de $\bar p$ son al menos $\eta/2$ y «la comparación multiplicativa de pesos conserva una
+brecha uniforme» \cite[Sección~6.5]{pred}. Por último, $\|(p^*-\bar p)/\bar p\|_\infty=O(k^{-1})$ y
+$p^*$ «permanece factible y positivo, con vacancias uniformes y $p^*<1/4$»
+\cite[Sección~7.2]{pred}. En la clase débil valen las mismas cotas relativas y «la herencia es de
+una clase interior a una exterior con margen» \cite[Secciones~8.2 y~8.3]{pred}. Los hijos legales son
+todos los $B+e$ con $e\in E(B)$, tengan o no completaciones.
+\item \emph{Desarrollo de un paso.} Se tiene
+$|L(B+c)-L(B)-\log[p_c(1+\delta_c)]|\le C_*/k^2$ «para todo hijo $c$», con
+$\delta_c=O(k^{-1})$ \cite[Teorema~7.1]{pred}. En la clase débil, $\delta_c=O(k^{-1})$ y
+$r_c=L(B+c)-L(B)-\log[p_c(1+\delta_c)]=O(k^{-2})$ \cite[Secciones~7.8, 8.2 y~8.5]{pred}. Con
+nuestra notación, $L(B+e)-L(B)=\log[p_e(1+d_e)]+r_e$, con $d_e=O(1/k)$ y $r_e=O(1/k^2)$
+uniformemente en las casillas disponibles.
+\item \emph{Cancelaciones.} En~\cite[Sección~6.1]{pred}, donde $B$ designa también la matriz de
+las restricciones de filas y columnas, «$B(p\odot\delta)=BRg=0$» y, «en toda fila original,
+$\sum_{c\in{\rm fila}}p_c\delta_c=0$»; además, «la restricción eliminada en cada componente se
+reconstruye por la igualdad de las sumas de filas y columnas». Con nuestra notación, si
+$B_{\rm RC}$ es esa matriz, $B_{\rm RC}(p\odot d)=0$: $\sum_{e'\in R_i}p_{e'}d_{e'}=0$ en cada fila
+vacía y $\sum_{e'\in C_j}p_{e'}d_{e'}=0$ en cada columna vacía.
+\item \emph{Consistencia.} $|\log\rho(B,i)|\le C_*/k^2$ \cite[Corolario~7.2 y Teorema~8.1]{pred}.
+\item \emph{Constante del predictor.} $\log Q_{\rm pred}(n)-\log n!-n\Phi\to C_{\rm pred}$
+\cite[Teoremas~1.1 y~5.7]{pred}.
+\end{enumerate}
+Las constantes implícitas, $k_0$ y $C_*$ dependen sólo de las cotas del padre y, cuando $k>M$,
+también de $\delta$; en la clase débil no dependen de $n/k$. Los puntos (I4) e (I5), y las partes
+de (I1) e (I2) citadas por un teorema, son enunciados numerados de~\cite{pred}; el resto de (I1)
+e (I2) y el punto (I3) están en el texto de las secciones indicadas. Cada uso posterior repite el
+lugar.

@@ -9,13 +9,13 @@ tiene
           \frac{(D_{\max}(k)-1)_+}{k^2}
  \le C\{A(\delta+1/n)+\chi+1/K\}.
 \]
-Aquí basta que $A(\delta+1/n)+\chi+1/K<1/4$. Además, fijado $0<\alpha<1/4$, para cualquier tasa
+Aquí basta que $A(\delta+1/n)+\chi+1/K<1/4$. Además, fijado $0<\alpha_{\rm geo}<1/4$, para cualquier tasa
 $\lambda>0$ se puede tomar $\delta>0$ tan pequeño y luego $K_0,n$ tan grandes que
-\[
- \nu\big(\exists\,K\le k\le M:\ G_k^-,\ D_{\max}(k)\ge\alpha k\big)
- \le C_\lambda e^{-\lambda K},\qquad
- \nu(G_M^-,D_{\max}(M)\ge\alpha M)\le C_\lambda e^{-\lambda M}.
-\]
+\begin{gather*}
+ \nu\big(\exists\,K\le k\le M:\ G_k^-,\ D_{\max}(k)\ge\alpha_{\rm geo} k\big)
+ \le C_\lambda e^{-\lambda K},\\
+ \nu(G_M^-,D_{\max}(M)\ge\alpha_{\rm geo} M)\le C_\lambda e^{-\lambda M}.
+\end{gather*}
 \end{lema}
 \begin{proof}
 Tomamos los extremos superiores $m$ de los intervalos $[2^jK,\min(2^{j+1}K,M)]$ no vacíos, incluyendo
@@ -31,9 +31,11 @@ La monotonía y $s_m-1\le Am^2/n+\chi\sqrt{Km}$ acotan la contribución del inte
 $C(Am/n+\chi\sqrt{K/m})$. Sumamos las dos progresiones geométricas, incluida la última banda
 truncada.
 
-Para la segunda estimación ponemos $s=\lceil\alpha k\rceil\le k/4$ en \eqref{geompres}. Ahora $v\le
-2C_{\rm geo}\delta/\alpha$ para $n$ grande y $4nv^s\le4C_{\rm geo} k^2v^{s-1}/s$. Escogemos
-$\alpha\log(\alpha/(2C_{\rm geo}\delta))>\lambda$ con desigualdad estricta. La diferencia absorbe el
+Para la segunda estimación ponemos $s=\lceil\alpha_{\rm geo} k\rceil\le k/4$ en \eqref{geompres}.
+Ahora $v\le
+2C_{\rm geo}\delta/\alpha_{\rm geo}$ para $n$ grande y $4nv^s\le4C_{\rm geo} k^2v^{s-1}/s$. Escogemos
+$\alpha_{\rm geo}\log(\alpha_{\rm geo}/(2C_{\rm geo}\delta))>\lambda$ con desigualdad estricta. La
+diferencia absorbe el
 factor polinómico
 y la suma sobre $k\ge K$, aumentando $K_0$ si hace falta. La estimación en $M$ usa únicamente el
 término $k=M$.

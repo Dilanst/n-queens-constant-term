@@ -1,15 +1,15 @@
 \subsection{Entry, choice of constants, and exit by bands}\label{meso:constantes}
 \begin{lema}[Regular entry at $M$]\label{meso:entrada}
-Let the entry tolerances for the observables of Section~\ref{meso:regularidad} and $0<\alpha<1/4$ be given.
-Suppose $\delta$ is small enough that the deterministic entry errors, namely the $O(\delta+1/n)$ differences
-between the macroscopic targets at $M$ and those of that section, lie strictly within these tolerances,
-uniformly over the tracked lines. Suppose also that the second estimate of Lemma~\ref{lema:presupuesto-meso}
-holds with rate $\lambda$. If the radius $\varrho_{\rm mac}$ and mesh $a_{\rm mac}$ of
-Proposition~\ref{macro:parada} are sufficiently small and $n$ is sufficiently large, then on every board of
-size $M$ whose discrepancy $\Delta$ is smaller than $\varrho_{\rm mac}$, the observables lie within their
-entry tolerances simultaneously for all available tracked lines. Moreover, the probability of reaching $M$
-without a prior exit and with $D_{\max}(M)\ge\alpha M$ satisfies $\nu(G_M^-,D_{\max}(M)\ge\alpha M)\le
-C_\lambda e^{-\lambda M}$.
+Let the entry tolerances for the observables of Section~\ref{meso:regularidad} and
+$0<\alpha_{\rm geo}<1/4$ be given. Suppose $\delta$ is small enough that the deterministic entry errors,
+namely the $O(\delta+1/n)$ differences between the macroscopic targets at $M$ and those of that section,
+lie strictly within these tolerances, uniformly over the tracked lines. Suppose also that the second
+estimate of Lemma~\ref{lema:presupuesto-meso} holds with rate $\lambda$. If the radius $\varrho_{\rm mac}$
+and mesh $a_{\rm mac}$ of Proposition~\ref{macro:parada} are sufficiently small and $n$ is sufficiently
+large, then on every board of size $M$ whose discrepancy $\Delta$ is smaller than $\varrho_{\rm mac}$, the
+observables lie within their entry tolerances simultaneously for all available tracked lines. Moreover,
+the probability of reaching $M$ without a prior exit and with $D_{\max}(M)\ge\alpha_{\rm geo} M$ satisfies
+$\nu(G_M^-,D_{\max}(M)\ge\alpha_{\rm geo} M)\le C_\lambda e^{-\lambda M}$.
 \end{lema}
 \begin{proof}
 Put $x=M/n$. Uniformly in $f$, $U_f=u_f+O(\delta+1/n)$ and $u_f\ge\kappa_\nu$, so
@@ -50,27 +50,28 @@ as in Proposition~\ref{macro:parada}, and finally $n$ large enough for the round
 discretization terms. These choices fit all three bounds within the entry tolerances whenever
 $\Delta<\varrho_{\rm mac}$.
 
-The bound on $D_{\max}(M)$ is the second estimate of Lemma~\ref{lema:presupuesto-meso} at $M$. The condition
-concerns all empty crossings, so we estimate it from the initial board and include unavailable crossings as
-well.
+The bound on $D_{\max}(M)$ is the second estimate of Lemma~\ref{lema:presupuesto-meso} at $M$. The
+condition concerns all empty crossings, so we estimate it from the initial board and include unavailable
+crossings as well.
 \end{proof}
 A history has \emph{regular entry} at $M$ if it has no exit up to and including the board of size $M$.
-Failure of entry at $M$, whether due to an observable or to the geometry, is a macroscopic exit at the board
-of size $M$ (Definition~\ref{def:regular}). This board inherits the macroscopic outer bounds from its last
-regular parent. In particular, geometric failure at $M$ has probability at most $C_\lambda e^{-\lambda M}$,
-exponentially small in $n$ for the $\delta$ already fixed.
+Failure of entry at $M$, whether due to an observable or to the geometry, is a macroscopic exit at the
+board of size $M$ (Definition~\ref{def:regular}). This board inherits the macroscopic outer bounds from
+its last regular parent. In particular, geometric failure at $M$ has probability at most $C_\lambda
+e^{-\lambda M}$, exponentially small in $n$ for the $\delta$ already fixed.
 
 We fix the constants in the following order.
 \begin{enumerate}
-\item Start with the profile and two classes of the form in~\cite[Section~8.1]{pred}. The \emph{inner class}
-has the constants $C_{\rm in},\eta_{\rm in},\gamma_{\rm in}$ of Proposition~\ref{meso:reconstruccion} and
-diagonal mass at most $\varepsilon$. The \emph{outer class}, which contains it, has diffusion, vacancy, and
-gap bounds with strictly weaker constants $C_{\rm out},\eta_{\rm out},\gamma_{\rm out}$ and diagonal mass at
-most $\varepsilon_{\rm out}=2\varepsilon$. We choose $\varepsilon$ in item~4. The outer bounds allow us to
-fix the constants for the prescriptions, increments, and inheritance by each child once and for all.
+\item Start with the profile and two classes of the form in~\cite[Section~8.1]{pred}. The \emph{inner
+class} has the constants $C_{\rm int},\eta_{\rm int},\gamma_{\rm int}$ of
+Proposition~\ref{meso:reconstruccion} and diagonal mass at most $\varepsilon$. The \emph{outer class},
+which contains it, has diffusion, vacancy, and gap bounds with strictly weaker constants $C_{\rm
+ext},\eta_{\rm ext},\gamma_{\rm ext}$ and diagonal mass at most $\varepsilon_{\rm ext}=2\varepsilon$. We
+choose $\varepsilon$ in item~4. The outer bounds allow us to fix the constants for the prescriptions,
+increments, and inheritance by each child once and for all.
 \item Choose $a_{\rm mes},\varrho_{\rm mes}$ and the tolerances for the fibers, the intervals, and each of
-the sixteen terms so that rebalancing and spectral reconstruction hold. Reserve, for example, one quarter of
-each individual tolerance for entry. These are the \emph{entry tolerances}.
+the sixteen terms so that rebalancing and spectral reconstruction hold. Reserve, for example, one quarter
+of each individual tolerance for entry. These are the \emph{entry tolerances}.
 \item Fix $A\ge4C_{\rm geo}$. With the family of observables fixed, choose $\chi,b_1>0$ so that
 $C_H\chi+b_1$ lies strictly within another quarter of every tolerance, absorbing the budget constant.
 The first estimate of Lemma~\ref{lema:presupuesto-meso} now fixes $c_\chi>0$, and the martingale
@@ -78,23 +79,26 @@ estimates of Proposition~\ref{prop:concentracion-meso} fix positive concentratio
 $c_{\rm pat}>0$ below all these rates. Their inputs have already been fixed, independently of
 $\varepsilon$, $\delta$, and the floor.
 \item Now take $\varepsilon>0$ sufficiently small for reconstruction, with $\varepsilon_{\rm
-out}=2\varepsilon$ at most the bound $\varepsilon_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$ of
-Theorem~8.1 of~\cite{pred}, and small enough that $2\beta(\varepsilon_{\rm out})<c_{\rm pat}/4$, where
-${\beta(v)=2v/(1-v)}$. Fix $\alpha=\varepsilon/(4\|W_0\|_\infty)<1/4$ and choose $\delta>0$ so that the
-deterministic entry errors and the term $C_HA\delta$ lie strictly within their tolerances, the restriction
-$A(\delta+1/n)+\chi+1/K<1/4$ holds for large $n,K$, and the \emph{second} estimate of
-Lemma~\ref{lema:presupuesto-meso}, for the geometric event $D_{\max}(k)\ge\alpha k$, holds with
+ext}=2\varepsilon$ at most the bound $\varepsilon_0(C_{\rm ext},\eta_{\rm ext},\gamma_{\rm ext})$ of
+Theorem~8.1 of~\cite{pred}, and small enough that $2\beta(\varepsilon_{\rm ext})<c_{\rm pat}/4$, where
+${\beta(v)=2v/(1-v)}$. Fix $\alpha_{\rm geo}=\varepsilon/(4\|W_0\|_\infty)<1/4$ and choose $\delta>0$ so
+that the deterministic entry errors and the term $C_HA\delta$ lie strictly within their tolerances, the
+restriction $A(\delta+1/n)+\chi+1/K<1/4$ holds for large $n,K$, and the \emph{second} estimate of
+Lemma~\ref{lema:presupuesto-meso}, for the geometric event $D_{\max}(k)\ge\alpha_{\rm geo} k$, holds with
 some $\lambda>c_{\rm pat}$.
-\item Finally, fix $K_0\ge k_0(C_{\rm out},\eta_{\rm out},\gamma_{\rm out})$ sufficiently large, with $k_0$
-from the same theorem. Fix the radius $\varrho_{\rm mac}$ and mesh $a_{\rm mac}$ in the macroscopic range
-according to Lemma~\ref{meso:entrada}. Then take $n$ sufficiently large for this $\delta$. These choices
-absorb rounding errors, the $O(1/K_0)$ terms, and the macroscopic remainders. The conditions defining the
-inner class, including the diagonal mass bound $\le\varepsilon$, are independent of the floor $K$.
+\item Finally, fix $K_0\ge k_0(C_{\rm ext},\eta_{\rm ext},\gamma_{\rm ext})$ sufficiently large, with
+$k_0$ from the same theorem. Fix the radius $\varrho_{\rm mac}$ and mesh $a_{\rm mac}$ in the macroscopic
+range according to Lemma~\ref{meso:entrada}. Then take $n$ sufficiently large for this $\delta$. These
+choices absorb rounding errors, the $O(1/K_0)$ terms, and the macroscopic remainders. The conditions
+defining the inner class, including the diagonal mass bound $\le\varepsilon$, are independent of the floor
+$K$.
 \end{enumerate}
+Table~\ref{tab:constantes} summarizes this order and the dependencies.
+\input{sections/05e_constants_table}
 
 \begin{proposicion}[Exit by bands]\label{prop:salida-banda-meso}
-There exist $C<\infty$ and $c>2\beta(\varepsilon_{\rm out})$ such that for each $K_0\le K\le M$ and $j\ge0$
-with $2^jK\le M$,
+There exist $C<\infty$ and $c>2\beta(\varepsilon_{\rm ext})$ such that for each $K_0\le K\le M$ and
+$j\ge0$ with $2^jK\le M$,
 \[
  \nu\big(\text{regular entry at $M$ and first exit at a size }
               k\in[2^jK,2^{j+1}K)\big)
@@ -104,14 +108,14 @@ with $2^jK\le M$,
 \begin{proof}
 For any floor $K'$ between $K_0$ and $M$, apply Proposition~\ref{prop:concentracion-meso} and the second
 estimate of Lemma~\ref{lema:presupuesto-meso} with that floor. On a history with regular entry, outside
-their exceptional events, at every size $k\ge K'$ reached up to the first exit, each observable is within
-its reconstruction tolerance and $D_{\max}(k)<\alpha k$. If the first exit occurred in this range, the
-board just reached would itself satisfy these conditions and Proposition~\ref{meso:reconstruccion} would
-place it in the inner class. Thus an exit requires one of the exceptional events, of probability $\le
-Ce^{-cK'}$ with $c=c_{\rm pat}/2$. Taking $K'=2^jK$ with the same class and constants gives the claim.
-The cost factor in Section~\ref{balance} is at most $\exp(C_0+2\beta(\varepsilon_{\rm out})K')$ on
-this band, so $c>2\beta(\varepsilon_{\rm out})$ leaves a summable exponential in $K'=2^jK$.
-The probability and the diagonal budget are both taken from the initial board under $\nu$. A step
-that reaches $K$ and
+their exceptional events, at every size $K'\le k\le M$ reached up to the first exit, each observable is
+within its reconstruction tolerance and $D_{\max}(k)<\alpha_{\rm geo} k$. If the first exit occurred in this
+range, the board just reached would itself satisfy these conditions and
+Proposition~\ref{meso:reconstruccion} would place it in the inner class. Thus an exit requires one of the
+exceptional events, of probability $\le Ce^{-cK'}$ with $c=c_{\rm pat}/2$. Taking $K'=2^jK$ with the same
+class and constants gives the claim. The cost factor in Section~\ref{balance} is at most
+$\exp(C_0+2\beta(\varepsilon_{\rm ext})K')$ on this band, so $c>2\beta(\varepsilon_{\rm ext})$ leaves a
+summable exponential in $K'=2^jK$. The probability and the diagonal budget are both taken from the initial
+board under $\nu$. A step that reaches $K$ and
 violates a condition counts as an exit at $K$.
 \end{proof}

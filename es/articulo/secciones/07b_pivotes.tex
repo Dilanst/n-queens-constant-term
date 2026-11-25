@@ -12,17 +12,9 @@ Sección~\ref{costes:permanente}.
 \end{lema}
 \begin{proof}
 En $F$ el punto de Bethe $p$ de $B^{(K)}$ tiene masas de fila y de columna iguales a uno y es positivo en
-todas las casillas disponibles. Para un conjunto cualquiera $I$ de filas, toda su masa $|I|$ llega al
-conjunto
-de columnas vecinas, que admite a lo sumo una unidad por columna. En consecuencia $|\mathcal
-N(I)|\ge|I|$. Para ver directamente que se puede cubrir toda fila, tómese un emparejamiento de
-cardinal máximo. Si deja una fila sin cubrir, desde todas las filas descubiertas se recorren
-alternativamente aristas fuera del emparejamiento desde las filas y aristas del emparejamiento desde
-las columnas. Una columna descubierta alcanzable daría un camino aumentante, contradicción. Luego cada
-columna alcanzable está emparejada con una fila alcanzable, y estas filas emparejadas no agotan las
-filas alcanzables, entre las que hay una descubierta. Todas las vecinas de una fila alcanzable son
-alcanzables, incluida, si existe, la columna por la que se entró en esa fila. Esto contradice la
-desigualdad para el conjunto de filas alcanzables. Así $\per A>0$.
+todas las casillas disponibles. Extendido por cero fuera de $A$, es una matriz bistocástica. Por el
+teorema de Birkhoff~\cite{birkhoff}, es combinación convexa de matrices de permutación, y el soporte
+de cada una está contenido en el de $p$, que es el de $A$. Así $\per A>0$.
 
 En $D_K^c$, cada diagonal contiene a lo sumo un cruce vacío. Toda permutación del
 soporte respeta por ello las dos restricciones diagonales. Además, las casillas de diagonales ocupadas
@@ -36,6 +28,7 @@ torres
 \[
  H_T(p)=-\sum_e p_e\log p_e+\sum_e q_e\log q_e .
 \]
+Este funcional es la entropía de Bethe asociada al permanente~\cite{vontobel}.
 La ecuación estacionaria del Lema~\ref{coste-vacancias} pasa a ser $p_eq_e=a_ib_j$ en toda casilla
 disponible, con los mismos $a_i,b_j$. También se obtiene $H_B=H_T$
 directamente como identidad de los funcionales en los puntos factibles del soporte: en toda diagonal

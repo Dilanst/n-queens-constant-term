@@ -1,4 +1,5 @@
 \subsection{Reconstrucción del punto de Bethe}\label{macro:reconstruccion}
+En toda esta subsección suponemos $k\ge\delta n$, como en el Lema~\ref{macro:balances}.
 
 \begin{proposicion}[Reequilibrado de filas y columnas]\label{macro:reequilibrado}
 Bajo los umbrales del Lema~\ref{macro:brecha}, existe una matriz $\bar p$ con el soporte de $q$,
@@ -46,7 +47,7 @@ grande,
 \]
 \end{lema}
 \begin{proof}
-Damos el argumento matricial de \cite[Secciones~6.3 y~7.2]{pred} en este punto factible. Sea $D$ la
+Damos el argumento matricial de \cite[Secciones~6.3, 6.4 y~7.2]{pred} en este punto factible. Sea $D$ la
 incidencia de casillas por diagonales de las dos familias, como en~\cite[Sección~6.1]{pred}; la
 letra $D$ sola designa esa matriz y $D(e)$ sigue siendo la diagonal de la casilla $e$. Sean
 $H=\operatorname{diag}(h_f(\bar p))$ y
@@ -90,7 +91,9 @@ multiplicadores con signo, la segunda fórmula de \eqref{macro:sistema-inverso} 
 Existen umbrales positivos para $\Delta$, $a_{\rm mac}$, $C_{\mathcal I}/n$ y un $n$ mínimo,
 dependientes de $\delta$ y del
 perfil, tales que el punto de Bethe $p$ del tablero existe y es el máximo global único de la entropía
-de Bethe entre los puntos factibles. Cumple
+de Bethe entre los puntos factibles. Llamamos \emph{factible} a todo $s=(s_e)$, con una coordenada
+por casilla disponible, tal que $s_e\ge0$, las sumas de fila y de columna valen uno y $h_f(s)\ge0$
+en toda diagonal. El punto $p$ cumple
 \begin{equation}\label{macro:predictor}
  \max_{q_e>0}|p_e/q_e-1|\le C_\delta(\zeta+k^{-1}),\qquad
  \max_{f\ {\rm diagonal\ disponible}}|\ell_f(p)-\ell_f^*|

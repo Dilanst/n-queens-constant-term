@@ -14,7 +14,7 @@ MAC = re.compile(r"(?m)^\s*(\\(?:newcommand|renewcommand|providecommand|DeclareM
 ANCHAS = {
  "pivote":(r"\tau_d-\frac{\tau_d^2}{q+\tau_d}=\tau_{d-1}",r"b_d(q+\tau_d)=b_{d-1}"),
  "rectangulo":(r"{\rm tr}((EE^T)^2)",),
- "prefactor":(r"-5a_2+O(k^{-1})",r"4a_2+O(k^{-1})",r"\log\det U=a_2+O(\varepsilon_{\rm out}+k^{-1})"),
+ "prefactor":(r"-5a_2+O(k^{-1})",r"4a_2+O(k^{-1})",r"\log\det U=a_2+O(\varepsilon_{\rm ext}+k^{-1})"),
  "generador":(r"-\frac{Y_e(s)}{k}\bigl(2+\ell_{D(e)}+\ell_{A(e)}-3p_e\bigr)",),
  "permanente":(r"\pdet S_0=2\det(I-B^TB)",),
  "covolumen":(r"-\tfrac12\bigl((-5+4+1)a_2\bigr)",),

@@ -5,10 +5,16 @@ symmetry separately. Reading the column of each queen in row order identifies ea
 permutation. The diagonal constraints determine which of the $n!$ permutations qualify.
 
 Simkin~\cite[Theorem~1.1]{simkin} obtained the leading order of $\log Q(n)$ from a variational
-problem. Luria and Simkin~\cite{ls} and Bowtell and Keevash~\cite{bk} studied the count by
-combinatorial methods. Nobel, Agrawal and Boyd~\cite{nab} bounded the first-order constant. A
-sharper estimate is needed to determine the multiplicative factor that remains in the count after
-the leading term is extracted.
+problem. Luria~\cite{luria} obtained upper bounds by the entropy method. Luria and
+Simkin~\cite{ls} and, independently, Bowtell and Keevash~\cite{bk} proved the lower bound
+$Q(n)\ge((1-o(1))ne^{-3})^n$, which confirms a conjecture of Rivin, Vardi and
+Zimmermann~\cite{rvz}. Nobel, Agrawal and Boyd~\cite{nab} bounded the first-order constant.
+Liu, Liao and Wang~\cite{llw} studied the problem as a lattice gas and estimated that constant
+numerically from Monte Carlo simulations. The
+completion of partial configurations, which arises here in every residual board, is studied
+in~\cite{gms}, and the history of the problem is surveyed in~\cite{bs}. A sharper estimate is
+needed to determine the multiplicative factor that remains in the count after the leading term is
+extracted.
 
 Let $Q_{\rm pred}(n)$ be the canonical predictor of~\cite{pred} and write
 $R_Q(n)=\log Q(n)-\log Q_{\rm pred}(n)$. The following result establishes that $R_Q(n)\to0$, the
@@ -21,12 +27,19 @@ On the ordinary board, as $n\to\infty$,
 \]
 \end{teorema}
 Here $\nu_1$ is the optimal profile of mass one from~\cite{perfil}, $\Phi=s_1+1$ with $s_1$ its
-entropy, and $I_2=\int_{[0,1]^2}\nu_1^2$. Put $\alpha=-s_1$, so $\Phi=1-\alpha$. Stirling's formula
-turns the theorem into a multiplicative equivalent refining Simkin's leading-order estimate:
+entropy, and $I_2=\int_{[0,1]^2}\nu_1^2$. The symbol ${\det}_2$ denotes the regularized
+Carleman--Fredholm determinant, ${\det}_2(I+J)=\det\bigl((I+J)e^{-J}\bigr)$, defined for every
+Hilbert--Schmidt operator $J$ \cite[Chapter~9]{simon}; this is the convention
+of~\cite[(D4.1)]{pred}. The operator $J$ of the theorem is described below.
+Put $\alpha=-s_1$, so $\Phi=1-\alpha$. Stirling's formula
+turns the theorem into an asymptotic formula refining Simkin's leading-order estimate:
 \[
  Q(n)\sim e^{C_{\rm pred}}\,n!\,e^{n\Phi}
       \sim e^{C_{\rm pred}}\sqrt{2\pi n}\,(n e^{-\alpha})^n .
 \]
+Since \cite[Theorem~1.1]{simkin} gives $Q(n)^{1/n}/n\to e^{-\alpha_{\rm S}}$ for a constant
+$\alpha_{\rm S}$, the theorem implies $\alpha=\alpha_{\rm S}$: the number $-s_1$ is Simkin's
+constant, which the bounds of~\cite{nab} place in $[1.944000752,\,1.944001082]$.
 Subtracting $\log n!+n\Phi$ from $\log Q(n)$ leaves the constant $C_{\rm pred}$ in the limit;
 subtracting $n\log n-\alpha n+\tfrac12\log n$ leaves $C_{\rm pred}+\tfrac12\log(2\pi)$.
 The theorem gives $Q(n)/Q_{\rm pred}(n)\to1$. The quantitative estimate $|R_Q(n)|\le C/n$
@@ -43,10 +56,17 @@ $-1/\sqrt2$ on the column sheets, and zero on the other sheets
 the regularized logarithm in the theorem is therefore real \cite[\S5.4, (D4.1)]{pred}.
 
 Section~9 of~\cite{pred} gives the estimate $C_{\rm pred}\approx0.9401$, and direct evaluation of
-the formula gives $0.940144$. Neither value has a certified error bound. With the reference value
-$\Phi_0=1-1.944001$ from that section, the exact counts for $16\le n\le27$ give values of
-$\log Q(n)-\log n!-n\Phi_0$ between $0.913$ and $0.941$ \cite[Table~2]{pred}. This residual
-minus the one computed with $\Phi$ is exactly $n(\Phi-\Phi_0)$. Using numerical
+the formula gives $0.940144$. This evaluation \cite[Section~9, ``Direct evaluation of the
+formula'']{pred} uses a Nyström discretization of the operator of Section~5.3 of that work, on
+successive grids and with extrapolation in the step size; the pairs of grids of sizes 192 and 384,
+and 193 and 385, gave $0.94014395698$ and $0.94014395711$. None of these values has a certified
+error bound. With the reference value
+$\Phi_0=1-1.944001$ from that section, the exact counts for $16\le n\le27$ \cite{oeis} give
+values of $\log Q(n)-\log n!-n\Phi_0$ between $0.913$ and $0.941$ \cite[Table~2]{pred}; the value
+$Q(27)$ comes from~\cite{q27} and was verified independently in~\cite{yaoli}. In that range, when
+$C_{\rm pred}$ is replaced by $0.940144$, the ratio $Q(n)/(e^{C_{\rm pred}}n!\,e^{n\Phi_0})$ lies
+between $0.973$ and $1.001$. The residual computed with $\Phi_0$ minus the one computed with
+$\Phi$ is exactly $n(\Phi-\Phi_0)$. Using numerical
 values of the predictor, the same section gives $R_Q(20)\approx0.0208$ and $R_Q(27)\approx0.0119$.
 These values are consistent with Theorem~\ref{princ}, which establishes a limit without giving a
 rate of convergence.
@@ -75,12 +95,14 @@ against a deterministic trajectory. From $M$ to $K$ we control diagonal mass and
 diffusion, vacancy, and gap bounds needed for consistency.
 Section~\ref{costes} bounds $g$ from above on the first board that ceases to be regular.
 Write $B^{(K)}$ for the board with $K$ empty rows and $F$ for the event that every board up to
-and including $B^{(K)}$ is regular. Let $D_K$ be the event that two empty crossings of
+and including $B^{(K)}$ is regular. We call the intersection of an empty row and an empty column an
+empty crossing. Let $D_K$ be the event that two empty crossings of
 $B^{(K)}$ share a diagonal. Section~\ref{terminal} proves that
 $\nu(F\cap D_K)=O(K^4/n)$ and that, under $\mu$, the uniform row order gives
 $\mu(D_K\mid\pi)=O(K^4/n)$ for every fixed solution $\pi$. On $F\cap D_K^c$ the count is a
 permanent and $|g(B^{(K)})|\le\theta_K$, with $\theta_K\to0$ as $K\to\infty$. In Section~\ref{balance}
 we first let $n\to\infty$ with $\delta$ and $K$ fixed, and then let $K\to\infty$.
+Figure~\ref{fig:tramos} summarizes the three ranges.
 
 Theorems~1.1--1.3, Proposition~5.2 and Theorem~7.7 of~\cite{perfil} give the continuous profile
 and its bounds. The entropy comparison in Theorem~3.6 of~\cite{ultimas} motivates the argument in
@@ -88,5 +110,6 @@ Section~\ref{costes}, where we verify the estimates on the support of each resid
 Theorems~7.1 and~8.1 and Corollary~7.2 of~\cite{pred} for insertions, and Theorems~1.1 and~5.7 of
 that work for the constant. The only asymptotic estimate for permanents that we use is that of
 McCullagh~\cite{mccullagh}, in the uniform form proved by Divoux and
-Wang~\cite[Proposition~3.1 and Remark~2.1]{dw}. In Section~\ref{permanente} we verify its
-hypotheses after scaling the matrix of the residual board.
+Wang~\cite[Proposition~3.1 and Remark~2.1]{dw}.
+In Section~\ref{permanente} we verify its hypotheses after scaling the matrix of the residual
+board.

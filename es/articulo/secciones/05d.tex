@@ -1,9 +1,10 @@
 \begin{proposicion}[Reconstrucción de la clase interior]\label{meso:reconstruccion}
-Existen constantes $C_{\rm in},\eta_{\rm in},\gamma_{\rm in}>0$, que dependen sólo del perfil, con
+Existen constantes $C_{\rm int},\eta_{\rm int},\gamma_{\rm int}>0$, que dependen sólo del perfil, con
 la propiedad siguiente.
 Supongamos que los observables de esta sección, es decir, las proporciones por intervalos, las fibras
 y los dieciséis términos del rectángulo, están dentro de sus tolerancias y que
-$D_{\max}(k)<\alpha k$ con $\alpha=\varepsilon/(4\|W_0\|_\infty)$. Si el paso $a_{\rm mes}$, la tolerancia
+$D_{\max}(k)<\alpha_{\rm geo} k$ con $\alpha_{\rm geo}=\varepsilon/(4\|W_0\|_\infty)$. Si el paso
+$a_{\rm mes}$, la tolerancia
 $\varrho_{\rm mes}$ y $\varepsilon$ son suficientemente pequeños y $k$ es grande, el punto de
 Bethe del tablero existe, cumple con desigualdad estricta las cotas de difusión, vacancia y brecha
 con esas constantes, y la masa de cada diagonal es menor que $\varepsilon$. En las casillas
@@ -11,7 +12,7 @@ disponibles $p_e/q_e=1+O(\varrho_{\rm mes}+\varepsilon+1/k)$, con constante depe
 para esos $\varepsilon$ y $k$ grande, todo hijo de un tablero cuyo punto de Bethe cumple esas cotas con
 masa diagonal a lo
 sumo $\varepsilon$ cumple las cotas exteriores, y la masa de cada una de sus diagonales es a lo sumo
-$\varepsilon_{\rm out}=2\varepsilon$.
+$\varepsilon_{\rm ext}=2\varepsilon$.
 \end{proposicion}
 \begin{proof}
 La suma de cada fila y columna de $q$ es $1+O(\varrho_{\rm mes})$ por las fibras. Para $V$ se aproxima
@@ -43,7 +44,7 @@ media ponderada por los grados, la desigualdad de Rayleigh da
  \ \ge\ \lambda d_{\min}\min_{a\in\mathbb R}\sum_v(f_v-a)^2 .
 \]
 Para $f\perp\mathbf1$ el último mínimo es $\|f\|_2^2$, por lo que
-$\operatorname{gap}(L_q)\ge d_{\min}\lambda$. Aquí todos los grados son $1+O(\varrho_{\rm mes})$.
+la brecha de $L_q$ es al menos $d_{\min}\lambda$. Aquí todos los grados son $1+O(\varrho_{\rm mes})$.
 
 Detallamos cómo pasar de estos observables al punto de Bethe. En el soporte de $q$, sea $B$ la matriz
 de incidencia de filas y columnas de la Sección~\ref{macro:reconstruccion} y
@@ -61,7 +62,8 @@ análogamente en columnas. Al dividir por el grado resulta $\|z\|_\infty=O(\varr
  \bar q_e/q_e=1+O(\varrho_{\rm mes}).
 \]
 Las cotas de difusión y de brecha siguen cumpliéndose con desigualdad estricta por comparación de los
-pesos. Si $D_{\max}(k)\le\alpha k$ con $\alpha=\varepsilon/(4\|W_0\|_\infty)$, cada diagonal de las
+pesos. Como $D_{\max}(k)<\alpha_{\rm geo} k$ con $\alpha_{\rm geo}=\varepsilon/(4\|W_0\|_\infty)$, cada
+diagonal de las
 dos familias tiene masa de $q$
 a lo sumo $\varepsilon/4$ y masa de $\bar q$ a lo sumo $\varepsilon/2$ tomando $\varrho_{\rm mes}$
 suficientemente pequeño con independencia de $\varepsilon$.
@@ -104,13 +106,12 @@ positiva
 $1/p_e-3/(1-p_e)$ más formas positivas semidefinidas de las líneas. Como $p_{\max}\le C/k\le e^{-4}$
 para $k$ grande,
 el cálculo escalar de la Proposición~\ref{macro:maximo} muestra además que el punto construido es
-el único máximo global. Es, por tanto, la rama
-seleccionada en la representación de \cite[Teorema~8.1 y su prueba]{pred}. Obtenemos las cotas de
-difusión, brecha y vacancia con desigualdad estricta, y masa diagonal $<\varepsilon$. La construcción
-usó solamente observables del tablero alcanzado. Para cualquier hijo de un último padre regular, aun
-cuando falle uno de esos observables, la herencia de \cite[Secciones~8.2--8.3]{pred} da en las
-casillas que siguen disponibles una variación relativa $1+O(1/k)$ respecto del padre, con constantes
-de la clase exterior. Su masa diagonal es a lo sumo $(1+O(1/k))\varepsilon\le\varepsilon_{\rm
-out}=2\varepsilon$
-tras aumentar $K_0$.
+el único máximo global. Es, por tanto, la rama seleccionada en la representación de
+\cite[Teorema~8.1 y el párrafo que lo sigue]{pred}. Obtenemos las cotas de difusión, brecha y
+vacancia con desigualdad estricta, y masa diagonal $<\varepsilon$. La construcción usó solamente
+observables del tablero alcanzado. Para cualquier hijo de un último padre regular, aun cuando falle
+uno de esos observables, la herencia de \cite[Secciones~6.5 y~8.2--8.3]{pred}, que es el punto (I1)
+de la Sección~\ref{leyes}, da en las casillas que siguen disponibles una variación relativa
+$1+O(1/k)$ respecto del padre, con constantes de la clase exterior. Su masa diagonal es a lo sumo
+$(1+O(1/k))\varepsilon\le\varepsilon_{\rm ext}=2\varepsilon$ tras aumentar $K_0$.
 \end{proof}

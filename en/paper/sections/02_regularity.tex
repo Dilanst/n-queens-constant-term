@@ -1,0 +1,97 @@
+\begin{definicion}[Regular boards and first exit]\label{def:regular}
+Fix $0<\delta<1$, set $M=\lceil\delta n\rceil$, and take an integer $K$ with $K_0\le K\le M$. We choose the
+threshold $K_0$ and the constants and tolerances below in Section~\ref{meso:constantes}. Let $B$ be a board
+of size $k$ in a history.
+\begin{enumerate}[(a)]
+\item \emph{Macroscopic range}, $k\ge M$. The board is \emph{regular} if the discrepancy $\Delta$ of the
+history upon reaching that board is smaller than the radius $\varrho_{\rm mac}$ of
+Proposition~\ref{macro:parada}.
+Section~\ref{macro:observaciones} defines this discrepancy using the partition $\mathcal I$ of mesh $a_{\rm
+mac}$ from that proposition.
+\item \emph{Cut-off}, $k=M$. We also require that the observables of Section~\ref{meso:regularidad} lie
+within their entry tolerances and that $D_{\max}(M)<\alpha_{\rm geo}M$, in the notation of
+Section~\ref{meso}.
+\item \emph{Mesoscopic range}, $K\le k<M$. The board is regular if its Bethe point exists and belongs to the
+\emph{inner class}, meaning that it satisfies the diffusion, vacancy, and gap bounds fixed in
+Section~\ref{meso:constantes} and each diagonal has mass at most $\varepsilon$.
+\end{enumerate}
+The \emph{first exit} of a history is its first board that fails to be regular. We call it the
+\emph{first-exit board}. Its parent is regular. The history stops at the first exit or, if there is none,
+upon reaching size $K$. The \emph{permanence event} $F$ occurs when there is no exit, that is, when every
+board up to and including the one of size $K$ is regular.
+\end{definicion}
+For large $n$, the initial board is regular because its discrepancy is $O(1/n)$ (proof of
+Proposition~\ref{macro:parada}). The Bethe point of a regular board satisfies diffusion, vacancy, and gap
+bounds with fixed constants. This follows from Proposition~\ref{macro:maximo} and
+Corollary~\ref{macro:cambio} in the macroscopic range, and from the definition in the mesoscopic range. At
+the cut-off, the additional conditions already place it in the inner class by
+Proposition~\ref{meso:reconstruccion}. The children of a regular board, including the first-exit
+board, inherit bounds of the same type with weaker constants, which we call \emph{outer bounds}. In
+the mesoscopic range these bounds, together with a diagonal mass of at most $2\varepsilon$, define
+the \emph{outer class}. Every child of $B$ in row $i$ enters $\rho(B,i)$.
+
+\begin{table}[htbp]
+\centering\small
+\caption{How the estimates combine in the comparison of the counts.}
+\begin{tabular}{@{}p{.31\linewidth}p{.59\linewidth}@{}}
+\toprule Result & Estimates used \\ \midrule
+Identities \ref{hist:igualdad} and \ref{hist:inferior} & Partition by the next row and normalization of the
+two laws.\\
+Permanence \ref{macro:cambio} & Balances \ref{macro:balances}, gap \ref{macro:brecha}, reconstruction
+\ref{macro:maximo}, and stopping \ref{macro:parada}.\\
+Bands \ref{prop:salida-banda-meso} & Prescriptions \eqref{prescr}, budget \ref{lema:presupuesto-meso},
+concentration \ref{prop:concentracion-meso}, and reconstruction \ref{meso:reconstruccion}.\\
+Costs \ref{coste-macro} and \ref{coste-debil} & Comparison \ref{coste-comparacion} and, in the mesoscopic
+range, normalizers \ref{coste-normalizadores} and permanent estimates
+\ref{terminal-permanente} and \ref{terminal-normalizador}.\\
+Last board \ref{terminal-error} & Geometry \ref{terminal-geometria}, pivots \ref{terminal-pivotes}, scaling
+\ref{terminal-escalado}, and Proposition~3.1 of~\cite{dw}.\\
+Theorem~\ref{princ} & Consistency \ref{hist:consistencia}, exit bounds, and the terminal estimate under the
+two laws.\\ \bottomrule
+\end{tabular}
+\end{table}\input{sections/02_notation_table}
+\FloatBarrier
+
+\paragraph{Results used from~\cite{pred}.}
+We collect here, with a label, what the following sections take from~\cite{pred}. Let $B$ be a
+regular parent of size $k$, with Bethe point $p$, let $i$ be an empty row, and let
+$e\in R_i\cap E(B)$. In (I1)--(I3) we reproduce in quotation marks the wording of~\cite{pred}, in
+our translation of its Spanish edition; there the inserted square is written $c$, its row $r$, the
+relative correction $\delta_c$ and the remainder $r_c$; here we write $e$, $i$, $d_e$ and $r_e$.
+\begin{enumerate}[({I}1)]
+\item \emph{Inheritance.} For $k\ge k_0$, ``every legal child has a unique interior stationary point
+on the small branch'', that is, with all its weights less than $1/4$, and ``no unfavorable children
+are excluded, nor is a lower bound per square required'' \cite[Theorem~7.1]{pred}. In the weak
+class, ``all its legal children have the small stationary point constructed in
+Section~8.3'' \cite[Theorem~8.1]{pred}. Let $w$ be the restriction of $p$ to the support of the
+child, $\bar p=w+z$ its rebalancing, and $p^*$ the stationary point of the child. If $p$ satisfies
+the diffusion, vacancy, and gap bounds with constants $C,\eta,\gamma$, then for $k>12C/\gamma$
+``every restricted child is connected and its gap is at least $\gamma/2$''; moreover
+$|z_e|/w_e=O(k^{-1})$, the vacancies of $\bar p$ are at least $\eta/2$, and ``the multiplicative
+comparison of weights preserves a uniform gap'' \cite[Section~6.5]{pred}. Finally,
+$\|(p^*-\bar p)/\bar p\|_\infty=O(k^{-1})$ and $p^*$ ``remains feasible and positive, with uniform
+vacancies and $p^*<1/4$'' \cite[Section~7.2]{pred}. In the weak class the same relative bounds hold
+and ``the inheritance is from an inner class to an outer one with a margin''
+\cite[Sections~8.2 and~8.3]{pred}. The legal children are all the $B+e$ with $e\in E(B)$, whether or not
+they have completions.
+\item \emph{One-step expansion.} One has
+$|L(B+c)-L(B)-\log[p_c(1+\delta_c)]|\le C_*/k^2$ ``for every child $c$'', with
+$\delta_c=O(k^{-1})$ \cite[Theorem~7.1]{pred}. In the weak class, $\delta_c=O(k^{-1})$ and
+$r_c=L(B+c)-L(B)-\log[p_c(1+\delta_c)]=O(k^{-2})$ \cite[Sections~7.8, 8.2 and~8.5]{pred}. In our
+notation, $L(B+e)-L(B)=\log[p_e(1+d_e)]+r_e$, with $d_e=O(1/k)$ and $r_e=O(1/k^2)$
+uniformly over the available squares.
+\item \emph{Cancellations.} In~\cite[Section~6.1]{pred}, where $B$ also denotes the matrix of the
+row and column constraints, ``$B(p\odot\delta)=BRg=0$'' and, ``in every original row,
+$\sum_{c\in{\rm row}}p_c\delta_c=0$''; moreover, ``the constraint removed in each component is
+recovered from the equality of the row and column sums''. In our notation, if
+$B_{\rm RC}$ is that matrix, $B_{\rm RC}(p\odot d)=0$: $\sum_{e'\in R_i}p_{e'}d_{e'}=0$ in every
+empty row and $\sum_{e'\in C_j}p_{e'}d_{e'}=0$ in every empty column.
+\item \emph{Consistency.} $|\log\rho(B,i)|\le C_*/k^2$ \cite[Corollary~7.2 and Theorem~8.1]{pred}.
+\item \emph{Constant of the predictor.} $\log Q_{\rm pred}(n)-\log n!-n\Phi\to C_{\rm pred}$
+\cite[Theorems~1.1 and~5.7]{pred}.
+\end{enumerate}
+The implicit constants, $k_0$ and $C_*$ depend only on the bounds of the parent and, when $k>M$,
+also on $\delta$; in the weak class they do not depend on $n/k$. Items (I4) and (I5), and the
+parts of (I1) and (I2) cited from a theorem, are numbered statements of~\cite{pred}; the rest of
+(I1) and (I2) and item (I3) are in the text of the sections indicated. Each later use repeats the
+location.
